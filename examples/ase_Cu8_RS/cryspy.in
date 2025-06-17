@@ -3,12 +3,11 @@ algo = RS
 calc_code = ASE
 tot_struc = 5
 nstage = 1
-njob = 2
+njob = 5
 jobcmd = zsh
 jobfile = job_cryspy
 
 [structure]
-natot = 8
 atype = Cu
 nat = 8
 

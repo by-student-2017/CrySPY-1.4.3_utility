@@ -1,18 +1,17 @@
 [basic]
 algo = RS
 calc_code = ASE
-tot_struc = 5
+tot_struc = 10
 nstage = 1
-njob = 2
-jobcmd = zsh
+njob = 4
+jobcmd = bash
 jobfile = job_cryspy
 
 [structure]
-natot = 8
-atype = Cu
+atype = Si
 nat = 8
 
 [ASE]
-ase_python = ase_in.py
+ase_python = chgnet_in.py
 
 [option]

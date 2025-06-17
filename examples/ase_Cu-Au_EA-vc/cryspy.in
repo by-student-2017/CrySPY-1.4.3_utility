@@ -3,7 +3,7 @@ algo = EA-vc
 calc_code = ASE
 tot_struc = 20
 nstage = 1
-njob = 10
+njob = 5
 jobcmd = zsh
 jobfile = job_cryspy
 
@@ -33,4 +33,3 @@ maxgen_ea = 5
 end_point = 0.0 0.0
 
 [option]
-

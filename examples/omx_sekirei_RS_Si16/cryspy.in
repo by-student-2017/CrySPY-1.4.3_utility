@@ -8,7 +8,6 @@ jobcmd = qsub
 jobfile = job_cryspy
 
 [structure]
-natot = 16
 atype = Si
 nat = 16
 

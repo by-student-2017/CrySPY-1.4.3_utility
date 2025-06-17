@@ -8,7 +8,6 @@ jobcmd = zsh
 jobfile = job_cryspy
 
 [structure]
-natot = 8
 atype = Cu
 nat = 8
 

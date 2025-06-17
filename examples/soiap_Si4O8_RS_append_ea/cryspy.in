@@ -8,7 +8,6 @@ jobcmd = zsh
 jobfile = job_cryspy
 
 [structure]
-natot = 12
 atype = Si O
 nat = 4  8
 mindist_1 = 1.5  1.2

@@ -1,0 +1,16 @@
+#!/bin/sh
+#$ -cwd
+#$ -V -S /bin/bash
+####$ -V -S /bin/zsh
+#$ -N Ti
+#$ -pe smp 2
+####$ -q ibis1.q
+####$ -q ibis2.q
+
+
+# ---------- OpenMP
+export OMP_NUM_THREADS=2
+
+# ---------- ASE
+/usr/local/Python-3.10.13/bin/python3 chgnet_in.py > out.log
+

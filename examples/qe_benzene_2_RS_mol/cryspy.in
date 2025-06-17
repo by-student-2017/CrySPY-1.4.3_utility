@@ -9,7 +9,6 @@ jobfile = job_cryspy
 
 [structure]
 struc_mode = mol
-natot = 24
 atype = H C
 nat = 12 12
 mol_file = benzene

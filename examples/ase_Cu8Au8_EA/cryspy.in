@@ -1,7 +1,6 @@
 [basic]
 algo = EA
 calc_code = ASE
-tot_struc = 10
 nstage = 1
 njob = 5
 jobcmd = zsh
@@ -17,7 +16,7 @@ n_crsov = 5
 n_perm = 2
 n_strain = 2
 n_rand = 1
-n_elite = 2
+n_elite = 1
 n_fittest = 5
 slct_func = TNM
 t_size = 2

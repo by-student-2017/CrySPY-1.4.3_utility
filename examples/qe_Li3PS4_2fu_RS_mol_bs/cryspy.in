@@ -9,7 +9,6 @@ jobfile = job_cryspy
 
 [structure]
 struc_mode = mol_bs
-natot = 16
 atype = Li P S
 nat = 6 2 8
 mol_file = ./Li.xyz  ./PS4.xyz

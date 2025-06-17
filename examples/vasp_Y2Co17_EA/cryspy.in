@@ -1,14 +1,12 @@
 [basic]
 algo = EA
 calc_code = VASP
-tot_struc = 20
 nstage = 3
 njob = 4
 jobcmd = qsub
 jobfile = job_cryspy
 
 [structure]
-natot = 19
 atype = Y Co
 nat = 2 17
 

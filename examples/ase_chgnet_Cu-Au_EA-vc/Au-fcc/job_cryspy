@@ -1,0 +1,14 @@
+#!/bin/sh
+#$ -cwd
+#$ -V -S /bin/bash
+####$ -V -S /bin/zsh
+#$ -N Au
+#$ -pe smp 2
+
+
+# ---------- OpenMP
+export OMP_NUM_THREADS=2
+
+# ---------- ASE
+/usr/local/Python-3.10.13/bin/python3 chgnet_in.py > out.log
+

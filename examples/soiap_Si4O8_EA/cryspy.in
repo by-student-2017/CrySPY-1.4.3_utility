@@ -1,14 +1,12 @@
 [basic]
 algo = EA
 calc_code = soiap
-tot_struc = 20
 nstage = 1
 njob = 4
 jobcmd = zsh
 jobfile = job_cryspy
 
 [structure]
-natot = 12
 atype = Si O
 nat = 4  8
 mindist_1 = 1.5  1.2

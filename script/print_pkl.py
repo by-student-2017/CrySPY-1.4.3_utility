@@ -3,7 +3,7 @@
 # print_pkl.py
 #
 #   yyyy/mm/dd
-#   2024/??/?? T. Yamashita
+#   2024/05/25 T. Yamashita
 #
 import argparse
 import gzip
