@@ -4,5 +4,4 @@
 
 lmp_serial -in ./in.si -log ./out.si -screen none
 
-sed -i -e '3 s/^.*$/done/' stat_job
 

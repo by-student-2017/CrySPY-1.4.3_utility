@@ -1,0 +1,13 @@
+#!/bin/sh
+#$ -cwd
+#$ -V -S /bin/bash
+####$ -V -S /bin/zsh
+#$ -N qe_pwscf
+#$ -pe smp 64
+
+
+QEROOT=/usr/local/qe/q-e-qe-7.3.1/bin
+
+mpirun -np $NSLOTS $QEROOT/pw.x -nk 4 < pwscf.in > pwscf.out
+
+

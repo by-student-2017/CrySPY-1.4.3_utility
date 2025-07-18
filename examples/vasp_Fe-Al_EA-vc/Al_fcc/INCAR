@@ -1,0 +1,27 @@
+SYSTEM = Al
+
+Algo = Fast
+####LREAL = Auto
+ENCUT = 348
+
+ISMEAR = 1
+SIGMA = 0.2
+
+NSW = 50
+IBRION = 1
+ISIF = 3
+
+ISPIN = 2
+MAGMOM = 0.0
+
+EDIFF = 1e-5
+EDIFFG = -0.01
+
+KSPACING = 0.15
+
+NPAR = 4
+KPAR = 4
+
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+

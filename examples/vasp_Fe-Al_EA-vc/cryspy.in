@@ -1,18 +1,19 @@
 [basic]
 algo = EA-vc
-calc_code = ASE
-nstage = 1
-njob = 5
-jobcmd = zsh
+calc_code = VASP
+nstage = 2
+njob = 10
+jobcmd = qsub
 jobfile = job_cryspy
 
 [structure]
-atype = Cu Au
-ll_nat = 0 0
-ul_nat = 8 8
+atype =  Fe Al
+ll_nat =  0  0
+ul_nat =  8  8
 
-[ASE]
-ase_python = ase_in.py
+[VASP]
+kppvol = 40 120
+vasp_MAGMOM = 4.0 0.0
 
 [EA]
 n_pop = 20
@@ -28,7 +29,7 @@ n_elite = 2
 n_fittest = 10
 slct_func = TNM
 t_size = 2
-maxgen_ea = 5
-end_point = 0.0 0.0
+maxgen_ea = 10
+end_point = -8.24249611  -3.74226843
 
 [option]

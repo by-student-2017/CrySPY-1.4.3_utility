@@ -12,5 +12,3 @@ python3 chgnet_in.py > out.log
 #    exit 1
 #fi
 
-# ---------- CrySPY
-sed -i -e '3 s/^.*$/done/' stat_job

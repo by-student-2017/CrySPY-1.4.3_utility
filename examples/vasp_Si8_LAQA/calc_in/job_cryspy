@@ -13,5 +13,3 @@
 VASPROOT=/usr/local/vasp/vasp.6.4.2/bin
 mpirun -np $NSLOTS $VASPROOT/vasp_std
 
-# ---------- CrySPY
-sed -i -e '3 s/^.*$/done/' stat_job

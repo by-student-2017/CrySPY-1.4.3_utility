@@ -18,9 +18,6 @@ opt = BFGS(cell_filter, trajectory='opt.traj')
 # ---------- run
 opt.run(fmax=0.01, steps=2000)
 
-# ---------- write structure
-write('opt_struc.vasp', cell_filter.atoms, format='vasp', direct=True)
-
 # ---------- opt. structure and energy
 # [rule in ASE interface]
 # output file for energy: 'log.tote' in eV/cell

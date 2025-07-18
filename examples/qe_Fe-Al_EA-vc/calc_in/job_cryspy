@@ -2,14 +2,17 @@
 #$ -cwd
 #$ -V -S /bin/bash
 ####$ -V -S /bin/zsh
-#$ -N bz_CrySPY_ID
-#$ -pe smp 20
+#$ -N FeAl_CrySPY_ID
+#$ -pe smp 32
 
-# ---------- qe run
-mpirun -np $NSLOTS pw.x  < pwscf.in > pwscf.out
 
-# ---------- qe if crash
+QEROOT=/usr/local/qe/q-e-qe-7.3.1/bin
+mpirun -np $NSLOTS $QEROOT/pw.x -nk 4 < pwscf.in > pwscf.out
+
+
 if [ -e "CRASH" ]; then
     sed -i -e '3 s/^.*$/skip/' stat_job
     exit 1
 fi
+
+

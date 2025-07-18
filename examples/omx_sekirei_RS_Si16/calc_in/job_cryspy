@@ -18,6 +18,3 @@ module load intel intel-mkl mpt
 source /home/issp/materiapps/openmx/openmxvars.sh
 
 mpijob openmx omx.in > scf.std
-
-# ---------- for cryspy
-sed -i -e '3 s/^.*$/done/' stat_job

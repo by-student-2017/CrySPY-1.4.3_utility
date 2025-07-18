@@ -4,5 +4,3 @@
 EXEPATH=/path/to/soiap
 $EXEPATH/soiap soiap.in 2>&1 > soiap.out
 
-# ---------- CrySPY
-sed -i -e '3 s/^.*$/done/' stat_job

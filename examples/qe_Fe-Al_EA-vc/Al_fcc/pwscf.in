@@ -1,0 +1,43 @@
+&control
+calculation = 'vc-relax'
+pseudo_dir = '/usr/local/qe/gbrv/all_pbe_UPF_v1.5/'
+outdir='./outdir/'
+/
+
+
+&system
+ibrav = 2
+a = 4.0
+nat = 1
+ntyp = 1
+
+ecutwfc = 40
+ecutrho = 200
+
+occupations = "smearing"
+smearing    = "mp"
+degauss     =  0.01
+
+nspin = 2
+starting_magnetization(1) = 0.0
+/
+
+
+&electrons
+mixing_beta = 0.4
+/
+
+&ions
+/
+
+&cell
+/
+
+ATOMIC_SPECIES
+Al -1.0 al_pbe_v1.uspp.F.UPF
+
+ATOMIC_POSITIONS {crystal}
+Al 0.00 0.00 0.00
+
+K_POINTS {automatic}
+14 14 14 0 0 0

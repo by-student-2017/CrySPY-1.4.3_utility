@@ -16,16 +16,15 @@ cell_filter = FrechetCellFilter(atoms)
 opt = BFGS(cell_filter, trajectory='opt.traj')
 
 # ---------- run
-opt.run(fmax=0.01, steps=2000)
+converged = opt.run(fmax=0.01, steps=2000)
 
-# ---------- write structure
-write('opt_struc.vasp', cell_filter.atoms, format='vasp', direct=True)
-
-# ---------- opt. structure and energy
-# [rule in ASE interface]
+# ---------- rule in ASE interface
 # output file for energy: 'log.tote' in eV/cell
-#                         CrySPY reads the last line of 'log.tote'
-# output file for structure: 'CONTCAR' in vasp format
+#                         CrySPY reads the last line of 'log.tote' file
+# outimized structure: 'CONTCAR' file in vasp format
+# check_opt: 'out_check_opt' file ('done' or 'not yet')
+#                         CrySPY reads the last line of 'out_check_opt' file
+
 # ------ energy
 e = cell_filter.atoms.get_total_energy()    # eV/cell
 with open('log.tote', mode='w') as f:
@@ -36,4 +35,9 @@ opt_atoms = cell_filter.atoms.copy()
 opt_atoms.set_constraint(None)    # remove constraint for pymatgen
 write('CONTCAR', opt_atoms, format='vasp', direct=True)
 
-
+# ------ check_opt
+with open('out_check_opt', mode='w') as f:
+    if converged:
+        f.write('done\n')
+    else:
+        f.write('not yet\n')

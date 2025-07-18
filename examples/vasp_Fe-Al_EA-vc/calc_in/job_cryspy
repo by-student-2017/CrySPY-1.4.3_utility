@@ -2,12 +2,9 @@
 #$ -cwd
 #$ -V -S /bin/bash
 ####$ -V -S /bin/zsh
-#$ -N Na8Cl8_CrySPY_ID
-#$ -pe smp 20
-####$ -q ibis1.q
-####$ -q ibis2.q
-####$ -q ibis3.q
-####$ -q ibis4.q
+#$ -N FeAl_CrySPY_ID
+#$ -pe smp 32
+
 
 # ---------- vasp
 VASPROOT=/usr/local/vasp/vasp.6.4.2/bin

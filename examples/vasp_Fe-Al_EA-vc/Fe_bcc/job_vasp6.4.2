@@ -1,0 +1,15 @@
+#!/bin/sh
+#$ -cwd
+#$ -V -S /bin/bash
+####$ -V -S /bin/zsh
+#$ -N vasp_Fe
+#$ -pe smp 64
+
+
+#VASP=vasp_gam
+#EVASP=vasp_ncl
+VASP=vasp_std
+VASPROOT=/usr/local/vasp/vasp.6.4.2/bin
+
+mpirun -np $NSLOTS $VASPROOT/$VASP
+

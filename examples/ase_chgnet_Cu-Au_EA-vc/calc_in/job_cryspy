@@ -16,6 +16,3 @@ export OMP_NUM_THREADS=2
 #    sed -i -e '3 s/^.*$/skip/' stat_job
 #    exit 1
 #fi
-
-# --------- CrySPY
-sed -i -e '3 s/^.*$/done/' stat_job

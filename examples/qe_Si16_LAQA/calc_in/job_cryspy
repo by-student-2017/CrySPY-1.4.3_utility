@@ -8,7 +8,7 @@
 ####$ -q ibis2.q
 
 # ---------- qe run
-mpirun -np $NSLOTS /path/to/pw.x  < pwscf.in > pwscf.out
+mpirun -np $NSLOTS pw.x  < pwscf.in > pwscf.out
 
 # ---------- qe if crash
 if [ -e "CRASH" ]; then
@@ -16,5 +16,3 @@ if [ -e "CRASH" ]; then
     exit 1
 fi
 
-# ---------- cryspy
-sed -i -e '3 s/^.*$/done/' stat_job

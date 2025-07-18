@@ -1,9 +1,9 @@
+# ---------- import
 from ase.constraints import FixSymmetry
 from ase.filters import FrechetCellFilter
 from ase.io import read, write
-from ase.optimize import BFGS, LBFGS, FIRE
+from ase.optimize import FIRE, BFGS, LBFGS
 from chgnet.model import CHGNetCalculator
-
 
 # ---------- input structure
 # CrySPY outputs 'POSCAR' as an input file in work/xxxxxx directory
@@ -28,7 +28,9 @@ e = cell_filter.atoms.get_total_energy()    # eV/cell
 with open('log.tote', mode='w') as f:
     f.write(str(e))
 
-# ------ write structure
+# ------ struc
 opt_atoms = cell_filter.atoms.copy()
 opt_atoms.set_constraint(None)    # remove constraint for pymatgen
 write('CONTCAR', opt_atoms, format='vasp', direct=True)
+
+
