@@ -1,0 +1,19 @@
+[basic]
+algo = RS
+calc_code = ASE
+tot_struc = 5
+nstage = 1
+njob = 5
+jobcmd = bash
+jobfile = job_cryspy
+
+[structure]
+atype = Cu
+nat = 8
+
+[ASE]
+ase_python = ase_in.py
+
+[option]
+symprec = 0.1
+out_cif = False
