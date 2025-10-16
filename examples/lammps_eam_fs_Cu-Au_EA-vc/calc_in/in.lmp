@@ -9,8 +9,8 @@ box  tilt large
 # "read_data data.si" --> "lammps_data = data.si" in "cryspy.in"
 atom_style  atomic
 read_data  data.lmp
-mass  1 63.55
-mass  2 196.9665
+#mass  1 63.55
+#mass  2 196.9665
 
 
 # Setup force field
