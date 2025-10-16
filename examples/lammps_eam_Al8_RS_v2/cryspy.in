@@ -1,0 +1,20 @@
+[basic]
+algo = RS
+calc_code = LAMMPS
+tot_struc = 40
+nstage = 2
+njob = 40
+jobcmd = bash
+jobfile = job_cryspy
+
+[structure]
+atype = Al
+nat = 8
+
+[LAMMPS]
+lammps_infile = in.al
+lammps_outfile = out.al
+lammps_data = data.al
+lammps_potential = NiAlH_jea.eam.alloy
+
+[option]
