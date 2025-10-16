@@ -1,6 +1,16 @@
 # CrySPY-1.4.3_utility
 - This is unofficial, but it has more examples than the original. I added them after confirming that it works.
 
+- DFTB+
+```
+### DFTB+ ver. 24.1
+cd $HOME
+wget https://github.com/dftbplus/dftbplus/releases/download/24.1/dftbplus-24.1.x86_64-linux.tar.xz
+tar -xvf dftbplus-24.1.x86_64-linux.tar.xz
+echo 'export PATH=$PATH:$HOME/dftbplus-24.1.x86_64-linux/bin' >> ~/.bashrc
+source ~/.bashrc
+```
+
 - Operating environment
 ```
 [2025-10-16 16:02:16,307][cryspy_init][INFO]
