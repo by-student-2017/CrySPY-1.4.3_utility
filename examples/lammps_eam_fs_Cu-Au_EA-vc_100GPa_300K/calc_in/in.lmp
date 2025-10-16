@@ -1,0 +1,37 @@
+# Do not change "units metal" for CrySPY
+units  metal
+
+# Setup simulation box
+boundary  p p p
+box  tilt large
+
+# Setup atoms
+# "read_data data.si" --> "lammps_data = data.si" in "cryspy.in"
+atom_style  atomic
+read_data  data.lmp
+#mass  1 63.55
+#mass  2 196.9665
+
+
+# Setup force field
+# If you use a potential file, you should write the file name in cryspy.in like "lammps_potential = SiO.tersoff"
+pair_style eam/fs
+pair_coeff * * ./../../CuAgAu.eam.fs Cu Au
+
+# Setup output
+thermo  100
+thermo_style  custom step etotal fmax vol press
+dump  struc  all atom 100 log.struc
+
+# optimize cell (100 GPa = 1000000 bar)
+fix 1 all box/relax  aniso 1000000.0 vmax 0.001
+
+# Minimize
+min_style  cg
+minimize  1e-8 1e-8 20000 200000
+
+# pressure + temperature
+timestep 0.0002 # 0.2 fs
+unfix 1
+fix 1 all npt temp 300.0 300.0 0.1 aniso 1000000.0 1000000.0 5.0
+run 20000
