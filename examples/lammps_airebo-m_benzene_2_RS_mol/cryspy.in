@@ -1,0 +1,23 @@
+[basic]
+algo = RS
+calc_code = LAMMPS
+tot_struc = 6
+nstage = 2
+njob = 2
+jobcmd = bash
+jobfile = job_cryspy
+
+[structure]
+struc_mode = mol
+atype = H C
+nat = 12 12
+mol_file = benzene
+nmol = 2
+mindist_factor = 0.7
+
+[LAMMPS]
+lammps_infile = in.lmp
+lammps_outfile = out.lmp
+lammps_data = data.lmp
+
+[option]
