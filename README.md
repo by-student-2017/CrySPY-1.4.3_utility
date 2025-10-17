@@ -107,6 +107,11 @@ pip install --upgrade numba
 - Ga-In-Zn
 - Li-Si-P
 - Mg-Sn-Ca
+---
+- La-Si-Mg
+- Zr-Y-Ti
+- Li-Zr-P
+- Fe-Mo-B
 
 ## Quaternary system
 - Fe-Cr-Al-Y
@@ -134,3 +139,6 @@ pip install --upgrade numba
 - Ga-In-Zn-O
 - Fe-Ni-Co-Cr
 - Mo-Si-B-Ti
+---
+- Li-Mn-Co-Ni
+- Ga-Zn-In-O
