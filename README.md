@@ -1,5 +1,6 @@
 # CrySPY-1.4.3_utility
 - This is unofficial, but it has more examples than the original. I added them after confirming that it works.
+- LAQA: only VASP, QE, or soiap for now
 
 # DFTB+ Installation
 - Older versions of DFTB+ allow you to use Pressure with LBFGS, so in some cases you may want to consider using an older version. 
