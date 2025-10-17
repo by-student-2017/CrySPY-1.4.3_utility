@@ -15,6 +15,17 @@
 - Fe-Ni-Si
 - Ti-Fe-Al
 
+- Li-Cu-Sb
+- Zn-Sn-O
+- Cu-Al-Mn
+
+- Ti-V-Cr
+- Ti-V-Al
+- Ti-V-Ni
+- Ti-V-H
+- Mg-Ti-H
+- Fe-Ti-H
+
 ## Quaternary system
 - Fe-Cr-Al-Y
 - Mn-Al-C-Ni
