@@ -14,11 +14,11 @@
 - Mn-Al-C
 - Fe-Ni-Si
 - Ti-Fe-Al
-# ----
+---
 - Li-Cu-Sb
 - Zn-Sn-O
 - Cu-Al-Mn
-# ----
+---
 - Ti-V-Cr
 - Ti-V-Al
 - Ti-V-Ni
