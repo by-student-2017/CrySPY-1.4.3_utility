@@ -1,6 +1,7 @@
 # CrySPY-1.4.3_utility
 - This is unofficial, but it has more examples than the original. I added them after confirming that it works.
 - LAQA: only VASP, QE, or soiap for now
+- The "end_point" is a parameter that specifies the search range of the chemical potential. The standard is to obtain the DFT energy of a single molecule from databases such as Material Projects, literature, or your own calculations, and expand it by about +/- 1 eV.
 
 # How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
