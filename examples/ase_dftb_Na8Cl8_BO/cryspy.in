@@ -1,0 +1,26 @@
+[basic]
+algo = BO
+calc_code = ASE
+tot_struc = 10
+nstage = 1
+njob = 1
+jobcmd = bash
+jobfile = job_cryspy
+
+[structure]
+atype = Na Cl
+nat = 8 8
+
+[BO]
+nselect_bo = 6
+dscrpt = FP
+score = EI
+fp_rmax = 8.0
+fp_npoints = 20
+fp_sigma = 0.7
+
+[ASE]
+ase_python = ase_in.py
+
+[option]
+keep_all_structures = True
