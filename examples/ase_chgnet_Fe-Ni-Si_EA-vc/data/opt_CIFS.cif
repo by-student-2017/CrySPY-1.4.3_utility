@@ -1,0 +1,959 @@
+# generated using pymatgen
+data_Fe8Si11Ni4
+_symmetry_space_group_name_H-M   Pmm2
+_cell_length_a   7.16337187
+_cell_length_b   7.29109263
+_cell_length_c   5.91295728
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   25
+_chemical_formula_structural   Fe8Si11Ni4
+_chemical_formula_sum   'ID_0'
+_cell_volume   308.82670977
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x, y, z'
+  4  'x, -y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  2  0.23151208  0.50000000  0.56890144  1
+  Fe  Fe1  2  0.32932080  0.50000000  0.16377653  1
+  Fe  Fe2  2  0.50000000  0.18355491  0.05757989  1
+  Fe  Fe3  1  0.50000000  0.00000000  0.43021824  1
+  Fe  Fe4  1  0.50000000  0.50000000  0.81843379  1
+  Si  Si5  4  0.24414234  0.30254895  0.87070972  1
+  Si  Si6  4  0.28539829  0.23236631  0.36760982  1
+  Si  Si7  2  0.33474204  0.00000000  0.76845414  1
+  Si  Si8  1  0.00000000  0.00000000  0.36450397  1
+  Ni  Ni9  2  0.00000000  0.23773527  0.60490757  1
+  Ni  Ni10  1  0.00000000  0.50000000  0.29560154  1
+  Ni  Ni11  1  0.00000000  0.50000000  0.89833965  1
+# generated using pymatgen
+data_SiNi2
+_symmetry_space_group_name_H-M   P4/mmm
+_cell_length_a   4.38940413
+_cell_length_b   4.38940413
+_cell_length_c   6.70950397
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   123
+_chemical_formula_structural   SiNi2
+_chemical_formula_sum   'ID_1'
+_cell_volume   129.27113118
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Si  Si0  2  0.00000000  0.50000000  0.50000000  1
+  Si  Si1  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni2  2  0.00000000  0.50000000  0.00000000  1
+  Ni  Ni3  2  0.50000000  0.50000000  0.32719627  1
+  Ni  Ni4  1  0.00000000  0.00000000  0.50000000  1
+  Ni  Ni5  1  0.50000000  0.50000000  0.00000000  1
+# generated using pymatgen
+data_SiNi3
+_symmetry_space_group_name_H-M   R-3m
+_cell_length_a   6.74990670
+_cell_length_b   6.74990670
+_cell_length_c   12.69557504
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   166
+_chemical_formula_structural   SiNi3
+_chemical_formula_sum   'ID_2'
+_cell_volume   500.93173817
+_cell_formula_units_Z   9
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'y, x, -z'
+  8  '-y, -x, z'
+  9  'x-y, -y, -z'
+  10  '-x+y, y, z'
+  11  '-x, -x+y, -z'
+  12  'x, x-y, z'
+  13  'x+2/3, y+1/3, z+1/3'
+  14  '-x+2/3, -y+1/3, -z+1/3'
+  15  '-y+2/3, x-y+1/3, z+1/3'
+  16  'y+2/3, -x+y+1/3, -z+1/3'
+  17  '-x+y+2/3, -x+1/3, z+1/3'
+  18  'x-y+2/3, x+1/3, -z+1/3'
+  19  'y+2/3, x+1/3, -z+1/3'
+  20  '-y+2/3, -x+1/3, z+1/3'
+  21  'x-y+2/3, -y+1/3, -z+1/3'
+  22  '-x+y+2/3, y+1/3, z+1/3'
+  23  '-x+2/3, -x+y+1/3, -z+1/3'
+  24  'x+2/3, x-y+1/3, z+1/3'
+  25  'x+1/3, y+2/3, z+2/3'
+  26  '-x+1/3, -y+2/3, -z+2/3'
+  27  '-y+1/3, x-y+2/3, z+2/3'
+  28  'y+1/3, -x+y+2/3, -z+2/3'
+  29  '-x+y+1/3, -x+2/3, z+2/3'
+  30  'x-y+1/3, x+2/3, -z+2/3'
+  31  'y+1/3, x+2/3, -z+2/3'
+  32  '-y+1/3, -x+2/3, z+2/3'
+  33  'x-y+1/3, -y+2/3, -z+2/3'
+  34  '-x+y+1/3, y+2/3, z+2/3'
+  35  '-x+1/3, -x+y+2/3, -z+2/3'
+  36  'x+1/3, x-y+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Si  Si0  6  0.00000000  0.00000000  0.08944553  1
+  Si  Si1  3  -0.00000000  -0.00000000  0.50000000  1
+  Ni  Ni2  18  0.00000000  0.33578147  0.00000000  1
+  Ni  Ni3  9  0.00000000  0.50000000  0.50000000  1
+# generated using pymatgen
+data_Fe6Si7Ni5
+_symmetry_space_group_name_H-M   Cmmm
+_cell_length_a   8.71831535
+_cell_length_b   11.00881680
+_cell_length_c   6.07458733
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   65
+_chemical_formula_structural   Fe6Si7Ni5
+_chemical_formula_sum   'ID_3'
+_cell_volume   583.02878701
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z'
+  8  'x, -y, z'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, -z'
+  11  '-x+1/2, -y+1/2, z'
+  12  'x+1/2, y+1/2, -z'
+  13  'x+1/2, -y+1/2, -z'
+  14  '-x+1/2, y+1/2, z'
+  15  '-x+1/2, y+1/2, -z'
+  16  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  8  0.12585858  0.40308018  0.50000000  1
+  Fe  Fe1  4  0.25000000  0.25000000  0.00000000  1
+  Si  Si2  8  0.24191677  0.00000000  0.20792209  1
+  Si  Si3  4  0.25000000  0.25000000  0.50000000  1
+  Si  Si4  2  0.00000000  0.50000000  0.00000000  1
+  Ni  Ni5  4  0.00000000  0.00000000  0.33360259  1
+  Ni  Ni6  4  0.00000000  0.19846350  0.50000000  1
+  Ni  Ni7  2  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Fe2Si
+_symmetry_space_group_name_H-M   R-3m
+_cell_length_a   4.91778339
+_cell_length_b   4.91778339
+_cell_length_c   16.37288902
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   166
+_chemical_formula_structural   Fe2Si
+_chemical_formula_sum   'ID_4'
+_cell_volume   342.92152160
+_cell_formula_units_Z   9
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'y, x, -z'
+  8  '-y, -x, z'
+  9  'x-y, -y, -z'
+  10  '-x+y, y, z'
+  11  '-x, -x+y, -z'
+  12  'x, x-y, z'
+  13  'x+2/3, y+1/3, z+1/3'
+  14  '-x+2/3, -y+1/3, -z+1/3'
+  15  '-y+2/3, x-y+1/3, z+1/3'
+  16  'y+2/3, -x+y+1/3, -z+1/3'
+  17  '-x+y+2/3, -x+1/3, z+1/3'
+  18  'x-y+2/3, x+1/3, -z+1/3'
+  19  'y+2/3, x+1/3, -z+1/3'
+  20  '-y+2/3, -x+1/3, z+1/3'
+  21  'x-y+2/3, -y+1/3, -z+1/3'
+  22  '-x+y+2/3, y+1/3, z+1/3'
+  23  '-x+2/3, -x+y+1/3, -z+1/3'
+  24  'x+2/3, x-y+1/3, z+1/3'
+  25  'x+1/3, y+2/3, z+2/3'
+  26  '-x+1/3, -y+2/3, -z+2/3'
+  27  '-y+1/3, x-y+2/3, z+2/3'
+  28  'y+1/3, -x+y+2/3, -z+2/3'
+  29  '-x+y+1/3, -x+2/3, z+2/3'
+  30  'x-y+1/3, x+2/3, -z+2/3'
+  31  'y+1/3, x+2/3, -z+2/3'
+  32  '-y+1/3, -x+2/3, z+2/3'
+  33  'x-y+1/3, -y+2/3, -z+2/3'
+  34  '-x+y+1/3, y+2/3, z+2/3'
+  35  '-x+1/3, -x+y+2/3, -z+2/3'
+  36  'x+1/3, x-y+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  9  0.00000000  0.50000000  0.00000000  1
+  Fe  Fe1  9  0.00000000  0.50000000  0.50000000  1
+  Si  Si2  6  0.00000000  0.00000000  0.43547738  1
+  Si  Si3  3  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Fe3Si12Ni5
+_symmetry_space_group_name_H-M   I4mm
+_cell_length_a   7.86218688
+_cell_length_b   7.86218688
+_cell_length_c   9.91119487
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   107
+_chemical_formula_structural   Fe3Si12Ni5
+_chemical_formula_sum   'ID_7'
+_cell_volume   612.65042686
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x, z'
+  3  '-x, -y, z'
+  4  'y, -x, z'
+  5  '-x, y, z'
+  6  'y, x, z'
+  7  'x, -y, z'
+  8  '-y, -x, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-y+1/2, x+1/2, z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'y+1/2, -x+1/2, z+1/2'
+  13  '-x+1/2, y+1/2, z+1/2'
+  14  'y+1/2, x+1/2, z+1/2'
+  15  'x+1/2, -y+1/2, z+1/2'
+  16  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  4  0.00000000  0.50000000  0.35629564  1
+  Fe  Fe1  2  0.00000000  0.00000000  0.61275265  1
+  Si  Si2  8  0.00000000  0.26507172  0.24751171  1
+  Si  Si3  8  0.20396092  0.20396092  0.83586702  1
+  Si  Si4  4  0.00000000  0.50000000  0.08741653  1
+  Si  Si5  2  0.00000000  0.00000000  0.12273776  1
+  Si  Si6  2  0.00000000  0.00000000  0.38944227  1
+  Ni  Ni7  8  0.00000000  0.24067969  0.00712347  1
+  Ni  Ni8  2  0.00000000  0.00000000  0.83797345  1
+# generated using pymatgen
+data_Fe3Si4Ni5
+_symmetry_space_group_name_H-M   Amm2
+_cell_length_a   3.83495497
+_cell_length_b   5.08937908
+_cell_length_c   13.69945617
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   38
+_chemical_formula_structural   Fe3Si4Ni5
+_chemical_formula_sum   'ID_5'
+_cell_volume   267.37967868
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x, y, z'
+  4  'x, -y, z'
+  5  'x, y+1/2, z+1/2'
+  6  '-x, -y+1/2, z+1/2'
+  7  '-x, y+1/2, z+1/2'
+  8  'x, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  4  0.00000000  0.22994448  0.64297831  1
+  Fe  Fe1  2  0.00000000  0.00000000  0.29281048  1
+  Si  Si2  4  0.50000000  0.24877146  0.03555034  1
+  Si  Si3  2  0.00000000  0.00000000  0.81314599  1
+  Si  Si4  2  0.50000000  0.00000000  0.70529741  1
+  Ni  Ni5  4  0.50000000  0.24746321  0.86661631  1
+  Ni  Ni6  2  0.00000000  0.00000000  0.47580395  1
+  Ni  Ni7  2  0.00000000  0.00000000  0.97914516  1
+  Ni  Ni8  2  0.50000000  0.00000000  0.18596133  1
+# generated using pymatgen
+data_Fe6(SiNi2)5
+_symmetry_space_group_name_H-M   P-42m
+_cell_length_a   11.96539819
+_cell_length_b   11.96539819
+_cell_length_c   4.44056485
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   111
+_chemical_formula_structural   Fe6(SiNi2)5
+_chemical_formula_sum   'ID_6'
+_cell_volume   635.75901691
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x, -y, -z'
+  6  'y, x, z'
+  7  '-x, y, -z'
+  8  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  4  0.11005552  0.50000000  0.50000000  1
+  Fe  Fe1  2  0.00000000  0.00000000  0.23084049  1
+  Si  Si2  4  0.18049015  0.50000000  0.00000000  1
+  Si  Si3  1  0.50000000  0.50000000  0.50000000  1
+  Ni  Ni4  8  0.32378980  0.46016551  0.72792973  1
+  Ni  Ni5  2  0.00000000  0.50000000  0.00000000  1
+# generated using pymatgen
+data_FeSiNi
+_symmetry_space_group_name_H-M   I-42m
+_cell_length_a   8.16446234
+_cell_length_b   8.16446234
+_cell_length_c   9.73070961
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   121
+_chemical_formula_structural   FeSiNi
+_chemical_formula_sum   'ID_8'
+_cell_volume   648.63397369
+_cell_formula_units_Z   16
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x, -y, -z'
+  6  'y, x, z'
+  7  '-x, y, -z'
+  8  '-y, -x, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  'y+1/2, -x+1/2, -z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  '-y+1/2, x+1/2, -z+1/2'
+  13  'x+1/2, -y+1/2, -z+1/2'
+  14  'y+1/2, x+1/2, z+1/2'
+  15  '-x+1/2, y+1/2, -z+1/2'
+  16  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  4  0.00000000  0.00000000  0.24202575  1
+  Fe  Fe1  4  0.00000000  0.50000000  0.00000000  1
+  Fe  Fe2  4  0.00000000  0.50000000  0.25000000  1
+  Fe  Fe3  2  0.00000000  0.00000000  0.00000000  1
+  Fe  Fe4  2  0.00000000  0.00000000  0.50000000  1
+  Si  Si5  16  0.03800972  0.25733555  0.13303442  1
+  Ni  Ni6  16  0.03980225  0.25056468  0.62732330  1
+# generated using pymatgen
+data_Fe3SiNi6
+_symmetry_space_group_name_H-M   I4/mmm
+_cell_length_a   14.37037788
+_cell_length_b   14.37037788
+_cell_length_c   4.73738316
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   139
+_chemical_formula_structural   Fe3SiNi6
+_chemical_formula_sum   'ID_10'
+_cell_volume   978.30638518
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+  17  'x+1/2, y+1/2, z+1/2'
+  18  '-x+1/2, -y+1/2, -z+1/2'
+  19  '-y+1/2, x+1/2, z+1/2'
+  20  'y+1/2, -x+1/2, -z+1/2'
+  21  '-x+1/2, -y+1/2, z+1/2'
+  22  'x+1/2, y+1/2, -z+1/2'
+  23  'y+1/2, -x+1/2, z+1/2'
+  24  '-y+1/2, x+1/2, -z+1/2'
+  25  'x+1/2, -y+1/2, -z+1/2'
+  26  '-x+1/2, y+1/2, z+1/2'
+  27  '-y+1/2, -x+1/2, -z+1/2'
+  28  'y+1/2, x+1/2, z+1/2'
+  29  '-x+1/2, y+1/2, -z+1/2'
+  30  'x+1/2, -y+1/2, z+1/2'
+  31  'y+1/2, x+1/2, -z+1/2'
+  32  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  8  0.00000000  0.19578035  0.00000000  1
+  Fe  Fe1  2  0.00000000  0.00000000  0.00000000  1
+  Fe  Fe2  2  0.00000000  0.00000000  0.50000000  1
+  Si  Si3  4  0.00000000  0.50000000  0.00000000  1
+  Ni  Ni4  16  0.10281636  0.10281636  0.25960714  1
+  Ni  Ni5  8  0.00000000  0.35934785  0.00000000  1
+# generated using pymatgen
+data_Fe8Si5Ni2
+_symmetry_space_group_name_H-M   P6/m
+_cell_length_a   5.73523814
+_cell_length_b   5.73523814
+_cell_length_c   17.23015067
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   175
+_chemical_formula_structural   Fe8Si5Ni2
+_chemical_formula_sum   'ID_11'
+_cell_volume   490.82041426
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  'x-y, x, z'
+  4  '-x+y, -x, -z'
+  5  '-y, x-y, z'
+  6  'y, -x+y, -z'
+  7  '-x, -y, z'
+  8  'x, y, -z'
+  9  '-x+y, -x, z'
+  10  'x-y, x, -z'
+  11  'y, -x+y, z'
+  12  '-y, x-y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  6  0.12289728  0.71519159  0.50000000  1
+  Fe  Fe1  2  0.00000000  0.00000000  0.41215289  1
+  Si  Si2  4  0.33333333  0.66666667  0.39341629  1
+  Si  Si3  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni4  2  0.33333333  0.66666667  0.00000000  1
+# generated using pymatgen
+data_Fe6SiNi6
+_symmetry_space_group_name_H-M   Fdd2
+_cell_length_a   9.51912032
+_cell_length_b   14.24816878
+_cell_length_c   9.00021632
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   43
+_chemical_formula_structural   Fe6SiNi6
+_chemical_formula_sum   'ID_12'
+_cell_volume   1220.69963667
+_cell_formula_units_Z   8
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x+1/4, y+3/4, z+3/4'
+  4  'x+1/4, -y+3/4, z+3/4'
+  5  'x, y+1/2, z+1/2'
+  6  '-x, -y+1/2, z+1/2'
+  7  '-x+1/4, y+1/4, z+1/4'
+  8  'x+1/4, -y+1/4, z+1/4'
+  9  'x+1/2, y, z+1/2'
+  10  '-x+1/2, -y, z+1/2'
+  11  '-x+3/4, y+3/4, z+1/4'
+  12  'x+3/4, -y+3/4, z+1/4'
+  13  'x+1/2, y+1/2, z'
+  14  '-x+1/2, -y+1/2, z'
+  15  '-x+3/4, y+1/4, z+3/4'
+  16  'x+3/4, -y+1/4, z+3/4'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  16  0.09428262  0.15580943  0.33929218  1
+  Fe  Fe1  16  0.10317304  0.08027369  0.04388169  1
+  Fe  Fe2  8  0.00000000  0.00000000  0.23842646  1
+  Fe  Fe3  8  0.00000000  0.00000000  0.82649532  1
+  Si  Si4  8  0.00000000  0.00000000  0.47916593  1
+  Ni  Ni5  16  0.01042506  0.27022943  0.62355854  1
+  Ni  Ni6  16  0.07680416  0.20127450  0.87525496  1
+  Ni  Ni7  16  0.09310618  0.11530283  0.63278663  1
+# generated using pymatgen
+data_Fe6Si7Ni8
+_symmetry_space_group_name_H-M   C2
+_cell_length_a   4.16769009
+_cell_length_b   15.32983293
+_cell_length_c   8.15642015
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   104.32532758
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   5
+_chemical_formula_structural   Fe6Si7Ni8
+_chemical_formula_sum   'ID_13'
+_cell_volume   504.91035206
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, y, -z'
+  3  'x+1/2, y+1/2, z'
+  4  '-x+1/2, y+1/2, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  4  0.09869620  0.29642833  0.73366064  1
+  Fe  Fe1  2  0.00000000  0.36760494  0.00000000  1
+  Fe  Fe2  2  0.00000000  0.38360629  0.50000000  1
+  Fe  Fe3  2  0.00000000  0.77416523  0.50000000  1
+  Fe  Fe4  2  0.00000000  0.93389573  0.00000000  1
+  Si  Si5  4  0.09398980  0.89201727  0.72661812  1
+  Si  Si6  4  0.20523871  0.61649909  0.41576648  1
+  Si  Si7  2  0.00000000  0.08240717  0.00000000  1
+  Si  Si8  2  0.00000000  0.51024093  0.00000000  1
+  Si  Si9  2  0.00000000  0.78415429  0.00000000  1
+  Ni  Ni10  4  0.08204138  0.64771035  0.14626215  1
+  Ni  Ni11  4  0.09576123  0.48850301  0.73386416  1
+  Ni  Ni12  4  0.15481862  0.14566915  0.30091099  1
+  Ni  Ni13  2  0.00000000  0.21890074  0.00000000  1
+  Ni  Ni14  2  0.00000000  0.98720037  0.50000000  1
+# generated using pymatgen
+data_Fe2Si5Ni7
+_symmetry_space_group_name_H-M   C2
+_cell_length_a   7.77927110
+_cell_length_b   5.37815837
+_cell_length_c   8.40250306
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   111.76371146
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   5
+_chemical_formula_structural   Fe2Si5Ni7
+_chemical_formula_sum   'ID_14'
+_cell_volume   326.48735643
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, y, -z'
+  3  'x+1/2, y+1/2, z'
+  4  '-x+1/2, y+1/2, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  2  0.00000000  0.00425144  0.00000000  1
+  Fe  Fe1  2  0.00000000  0.52232333  0.00000000  1
+  Si  Si2  4  0.09898161  0.77366496  0.25622010  1
+  Si  Si3  4  0.23687611  0.25988120  0.00263695  1
+  Si  Si4  2  0.00000000  0.22647600  0.50000000  1
+  Ni  Ni5  4  0.14221583  0.50127766  0.75063323  1
+  Ni  Ni6  4  0.16038103  0.01469904  0.76391718  1
+  Ni  Ni7  4  0.22287308  0.48871662  0.48083381  1
+  Ni  Ni8  2  0.00000000  0.78229679  0.50000000  1
+# generated using pymatgen
+data_Fe3(SiNi3)2
+_symmetry_space_group_name_H-M   P31m
+_cell_length_a   6.06410028
+_cell_length_b   6.06410028
+_cell_length_c   15.71485381
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   157
+_chemical_formula_structural   Fe3(SiNi3)2
+_chemical_formula_sum   'ID_15'
+_cell_volume   500.46501720
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'y, x, z'
+  5  'x-y, -y, z'
+  6  '-x, -x+y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  6  0.20438586  0.79133005  0.43755115  1
+  Si  Si1  2  0.33333333  0.66666667  0.17910043  1
+  Si  Si2  2  0.33333333  0.66666667  0.56642629  1
+  Ni  Ni3  3  0.00000000  0.24350694  0.57648795  1
+  Ni  Ni4  3  0.00000000  0.60294043  0.65779442  1
+  Ni  Ni5  2  0.33333333  0.66666667  0.31609137  1
+  Ni  Ni6  2  0.33333333  0.66666667  0.74628659  1
+  Ni  Ni7  1  0.00000000  0.00000000  0.36541640  1
+  Ni  Ni8  1  0.00000000  0.00000000  0.70024073  1
+# generated using pymatgen
+data_Fe6Si12Ni5
+_symmetry_space_group_name_H-M   Im-3m
+_cell_length_a   8.49292912
+_cell_length_b   8.49292912
+_cell_length_c   8.49292912
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   229
+_chemical_formula_structural   Fe6Si12Ni5
+_chemical_formula_sum   'ID_17'
+_cell_volume   612.59366142
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+  17  'z, x, y'
+  18  '-z, -x, -y'
+  19  'z, -y, x'
+  20  '-z, y, -x'
+  21  'z, -x, -y'
+  22  '-z, x, y'
+  23  'z, y, -x'
+  24  '-z, -y, x'
+  25  '-z, x, -y'
+  26  'z, -x, y'
+  27  '-z, -y, -x'
+  28  'z, y, x'
+  29  '-z, -x, y'
+  30  'z, x, -y'
+  31  '-z, y, x'
+  32  'z, -y, -x'
+  33  'y, z, x'
+  34  '-y, -z, -x'
+  35  'x, z, -y'
+  36  '-x, -z, y'
+  37  '-y, z, -x'
+  38  'y, -z, x'
+  39  '-x, z, y'
+  40  'x, -z, -y'
+  41  '-y, -z, x'
+  42  'y, z, -x'
+  43  '-x, -z, -y'
+  44  'x, z, y'
+  45  'y, -z, -x'
+  46  '-y, z, x'
+  47  'x, -z, y'
+  48  '-x, z, -y'
+  49  'x+1/2, y+1/2, z+1/2'
+  50  '-x+1/2, -y+1/2, -z+1/2'
+  51  '-y+1/2, x+1/2, z+1/2'
+  52  'y+1/2, -x+1/2, -z+1/2'
+  53  '-x+1/2, -y+1/2, z+1/2'
+  54  'x+1/2, y+1/2, -z+1/2'
+  55  'y+1/2, -x+1/2, z+1/2'
+  56  '-y+1/2, x+1/2, -z+1/2'
+  57  'x+1/2, -y+1/2, -z+1/2'
+  58  '-x+1/2, y+1/2, z+1/2'
+  59  '-y+1/2, -x+1/2, -z+1/2'
+  60  'y+1/2, x+1/2, z+1/2'
+  61  '-x+1/2, y+1/2, -z+1/2'
+  62  'x+1/2, -y+1/2, z+1/2'
+  63  'y+1/2, x+1/2, -z+1/2'
+  64  '-y+1/2, -x+1/2, z+1/2'
+  65  'z+1/2, x+1/2, y+1/2'
+  66  '-z+1/2, -x+1/2, -y+1/2'
+  67  'z+1/2, -y+1/2, x+1/2'
+  68  '-z+1/2, y+1/2, -x+1/2'
+  69  'z+1/2, -x+1/2, -y+1/2'
+  70  '-z+1/2, x+1/2, y+1/2'
+  71  'z+1/2, y+1/2, -x+1/2'
+  72  '-z+1/2, -y+1/2, x+1/2'
+  73  '-z+1/2, x+1/2, -y+1/2'
+  74  'z+1/2, -x+1/2, y+1/2'
+  75  '-z+1/2, -y+1/2, -x+1/2'
+  76  'z+1/2, y+1/2, x+1/2'
+  77  '-z+1/2, -x+1/2, y+1/2'
+  78  'z+1/2, x+1/2, -y+1/2'
+  79  '-z+1/2, y+1/2, x+1/2'
+  80  'z+1/2, -y+1/2, -x+1/2'
+  81  'y+1/2, z+1/2, x+1/2'
+  82  '-y+1/2, -z+1/2, -x+1/2'
+  83  'x+1/2, z+1/2, -y+1/2'
+  84  '-x+1/2, -z+1/2, y+1/2'
+  85  '-y+1/2, z+1/2, -x+1/2'
+  86  'y+1/2, -z+1/2, x+1/2'
+  87  '-x+1/2, z+1/2, y+1/2'
+  88  'x+1/2, -z+1/2, -y+1/2'
+  89  '-y+1/2, -z+1/2, x+1/2'
+  90  'y+1/2, z+1/2, -x+1/2'
+  91  '-x+1/2, -z+1/2, -y+1/2'
+  92  'x+1/2, z+1/2, y+1/2'
+  93  'y+1/2, -z+1/2, -x+1/2'
+  94  '-y+1/2, z+1/2, x+1/2'
+  95  'x+1/2, -z+1/2, y+1/2'
+  96  '-x+1/2, z+1/2, -y+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  12  0.00000000  0.25000000  0.50000000  1
+  Si  Si1  24  0.00000000  0.21162535  0.21162535  1
+  Ni  Ni2  8  0.25000000  0.25000000  0.25000000  1
+  Ni  Ni3  2  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_FeNi2
+_symmetry_space_group_name_H-M   P-1
+_cell_length_a   2.48607800
+_cell_length_b   2.48633715
+_cell_length_c   12.29554233
+_cell_angle_alpha   89.97202085
+_cell_angle_beta   84.20546195
+_cell_angle_gamma   60.10797347
+_symmetry_Int_Tables_number   2
+_chemical_formula_structural   FeNi2
+_chemical_formula_sum   'ID_16'
+_cell_volume   65.44461461
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  2  0.28454430  0.10050640  0.83160842  1
+  Ni  Ni1  2  0.05463769  0.71884271  0.66565224  1
+  Ni  Ni2  1  0.50000000  0.00000000  0.50000000  1
+  Ni  Ni3  1  0.50000000  0.50000000  0.00000000  1
+# generated using pymatgen
+data_Fe4(SiNi2)3
+_symmetry_space_group_name_H-M   P-4n2
+_cell_length_a   8.01830941
+_cell_length_b   8.01830941
+_cell_length_c   4.80601530
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   118
+_chemical_formula_structural   Fe4(SiNi2)3
+_chemical_formula_sum   'ID_19'
+_cell_volume   308.99451561
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  '-x+1/2, y+1/2, z+1/2'
+  6  '-y+1/2, -x+1/2, -z+1/2'
+  7  'x+1/2, -y+1/2, z+1/2'
+  8  'y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  8  0.10553982  0.24968879  0.57872656  1
+  Si  Si1  4  0.20188159  0.70188159  0.75000000  1
+  Si  Si2  2  0.00000000  0.50000000  0.25000000  1
+  Ni  Ni3  8  0.00618278  0.78509718  0.08580988  1
+  Ni  Ni4  2  0.00000000  0.00000000  0.50000000  1
+  Ni  Ni5  2  0.00000000  0.50000000  0.75000000  1
+# generated using pymatgen
+data_Fe6(SiNi)5
+_symmetry_space_group_name_H-M   P3
+_cell_length_a   6.48180642
+_cell_length_b   6.48180642
+_cell_length_c   11.54887990
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   143
+_chemical_formula_structural   Fe6(SiNi)5
+_chemical_formula_sum   'ID_18'
+_cell_volume   420.20634929
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  3  0.09187633  0.61971894  0.40934856  1
+  Fe  Fe1  3  0.10300529  0.65233090  0.62587112  1
+  Fe  Fe2  3  0.23316515  0.00676289  0.73104501  1
+  Fe  Fe3  1  0.33333333  0.66666667  0.21241872  1
+  Fe  Fe4  1  0.66666667  0.33333333  0.34939096  1
+  Fe  Fe5  1  0.66666667  0.33333333  0.70463268  1
+  Si  Si6  3  0.04001161  0.75714868  0.20908135  1
+  Si  Si7  3  0.08735393  0.56587991  0.01655456  1
+  Si  Si8  3  0.40891311  0.36689204  0.82787052  1
+  Si  Si9  1  0.00000000  0.00000000  0.54646014  1
+  Ni  Ni10  3  0.23102777  0.03261567  0.35396051  1
+  Ni  Ni11  3  0.41260990  0.14593897  0.53557979  1
+  Ni  Ni12  3  0.44850409  0.09781740  0.16909406  1
+  Ni  Ni13  1  0.33333333  0.66666667  0.81734378  1
