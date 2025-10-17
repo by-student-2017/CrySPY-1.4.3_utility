@@ -1,7 +1,8 @@
 # CrySPY-1.4.3_utility
 - This is unofficial, but it has more examples than the original. I added them after confirming that it works.
 
-- DFTB+
+# DFTB+ Installation
+- Older versions of DFTB+ allow you to use Pressure with LBFGS, so in some cases you may want to consider using an older version. 
 ```
 ### DFTB+ ver. 24.1
 cd $HOME
@@ -11,7 +12,7 @@ echo 'export PATH=$PATH:$HOME/dftbplus-24.1.x86_64-linux/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-- Operating environment
+# Operating environment
 ```
 [2025-10-16 16:02:16,307][cryspy_init][INFO]
 
