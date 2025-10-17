@@ -25,12 +25,24 @@
 - Ti-V-H
 - Mg-Ti-H
 - Fe-Ti-H
+---
+- Ni-Cr-W
+- Fe-Mo-B
+- Zn-Sn-P
+- Li-Zr-O
+- Mg-Al-C
+- Ti-Al-N
+- Fe-Ni-Cr
 
 ## Quaternary system
 - Fe-Cr-Al-Y
 - Mn-Al-C-Ni
 - Li-La-Ti-Zr
 - Fe-Pd-In-Sn
+---
+- Li-La-Zr-O
+- Fe-Ni-Cr-Al
+- Ti-Al-Nb-Mo
 
 ## How to use "plot3d.py" or "plot3dn.py"
 - It is designed to correspond to a four-element system. The figure can be obtained by the following command.
