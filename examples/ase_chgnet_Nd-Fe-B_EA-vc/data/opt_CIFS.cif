@@ -1,0 +1,1122 @@
+# generated using pymatgen
+data_Nd2B
+_symmetry_space_group_name_H-M   P-6m2
+_cell_length_a   3.74812517
+_cell_length_b   3.74812517
+_cell_length_c   10.39839699
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   187
+_chemical_formula_structural   Nd2B
+_chemical_formula_sum   'ID_0'
+_cell_volume   126.51009967
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+y, -x, -z'
+  3  '-y, x-y, z'
+  4  'x, y, -z'
+  5  '-x+y, -x, z'
+  6  '-y, x-y, -z'
+  7  '-y, -x, -z'
+  8  'x, x-y, z'
+  9  '-x+y, y, -z'
+  10  '-y, -x, z'
+  11  'x, x-y, -z'
+  12  '-x+y, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  2  0.33333333  0.66666667  0.84520576  1
+  B  B1  1  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_B
+_symmetry_space_group_name_H-M   I-4
+_cell_length_a   4.27363353
+_cell_length_b   4.27363353
+_cell_length_c   5.38104870
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   82
+_chemical_formula_structural   B
+_chemical_formula_sum   'ID_2'
+_cell_volume   98.27916968
+_cell_formula_units_Z   12
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  'y+1/2, -x+1/2, -z+1/2'
+  7  '-x+1/2, -y+1/2, z+1/2'
+  8  '-y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  B  B0  8  0.13624226  0.16629312  0.59823387  1
+  B  B1  4  0.00000000  0.50000000  0.06310763  1
+# generated using pymatgen
+data_Fe4B
+_symmetry_space_group_name_H-M   I4/mmm
+_cell_length_a   3.98270762
+_cell_length_b   3.98270762
+_cell_length_c   6.77694883
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   139
+_chemical_formula_structural   Fe4B
+_chemical_formula_sum   'ID_1'
+_cell_volume   107.49569130
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+  17  'x+1/2, y+1/2, z+1/2'
+  18  '-x+1/2, -y+1/2, -z+1/2'
+  19  '-y+1/2, x+1/2, z+1/2'
+  20  'y+1/2, -x+1/2, -z+1/2'
+  21  '-x+1/2, -y+1/2, z+1/2'
+  22  'x+1/2, y+1/2, -z+1/2'
+  23  'y+1/2, -x+1/2, z+1/2'
+  24  '-y+1/2, x+1/2, -z+1/2'
+  25  'x+1/2, -y+1/2, -z+1/2'
+  26  '-x+1/2, y+1/2, z+1/2'
+  27  '-y+1/2, -x+1/2, -z+1/2'
+  28  'y+1/2, x+1/2, z+1/2'
+  29  '-x+1/2, y+1/2, -z+1/2'
+  30  'x+1/2, -y+1/2, z+1/2'
+  31  'y+1/2, x+1/2, -z+1/2'
+  32  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  4  0.00000000  0.00000000  0.28407071  1
+  Fe  Fe1  4  0.00000000  0.50000000  0.00000000  1
+  B  B2  2  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Nd3Fe6B11
+_symmetry_space_group_name_H-M   P-43m
+_cell_length_a   7.16498153
+_cell_length_b   7.16498153
+_cell_length_c   7.16498153
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   215
+_chemical_formula_structural   Nd3Fe6B11
+_chemical_formula_sum   'ID_3'
+_cell_volume   367.82837306
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x, -y, -z'
+  6  'y, x, z'
+  7  '-x, y, -z'
+  8  '-y, -x, z'
+  9  'z, x, y'
+  10  '-z, y, -x'
+  11  'z, -x, -y'
+  12  '-z, -y, x'
+  13  '-z, x, -y'
+  14  'z, y, x'
+  15  '-z, -x, y'
+  16  'z, -y, -x'
+  17  'y, z, x'
+  18  '-x, -z, y'
+  19  '-y, z, -x'
+  20  'x, -z, -y'
+  21  '-y, -z, x'
+  22  'x, z, y'
+  23  'y, -z, -x'
+  24  '-x, z, -y'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  3  0.00000000  0.00000000  0.50000000  1
+  Fe  Fe1  6  0.00000000  0.00000000  0.20960633  1
+  B  B2  6  0.13418623  0.50000000  0.50000000  1
+  B  B3  4  0.36068374  0.36068374  0.63931626  1
+  B  B4  1  0.50000000  0.50000000  0.50000000  1
+# generated using pymatgen
+data_Nd2Fe3B
+_symmetry_space_group_name_H-M   Fm-3m
+_cell_length_a   11.23621084
+_cell_length_b   11.23621084
+_cell_length_c   11.23621084
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   225
+_chemical_formula_structural   Nd2Fe3B
+_chemical_formula_sum   'ID_6'
+_cell_volume   1418.59896833
+_cell_formula_units_Z   12
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+  17  'z, x, y'
+  18  '-z, -x, -y'
+  19  'z, -y, x'
+  20  '-z, y, -x'
+  21  'z, -x, -y'
+  22  '-z, x, y'
+  23  'z, y, -x'
+  24  '-z, -y, x'
+  25  '-z, x, -y'
+  26  'z, -x, y'
+  27  '-z, -y, -x'
+  28  'z, y, x'
+  29  '-z, -x, y'
+  30  'z, x, -y'
+  31  '-z, y, x'
+  32  'z, -y, -x'
+  33  'y, z, x'
+  34  '-y, -z, -x'
+  35  'x, z, -y'
+  36  '-x, -z, y'
+  37  '-y, z, -x'
+  38  'y, -z, x'
+  39  '-x, z, y'
+  40  'x, -z, -y'
+  41  '-y, -z, x'
+  42  'y, z, -x'
+  43  '-x, -z, -y'
+  44  'x, z, y'
+  45  'y, -z, -x'
+  46  '-y, z, x'
+  47  'x, -z, y'
+  48  '-x, z, -y'
+  49  'x+1/2, y+1/2, z'
+  50  '-x+1/2, -y+1/2, -z'
+  51  '-y+1/2, x+1/2, z'
+  52  'y+1/2, -x+1/2, -z'
+  53  '-x+1/2, -y+1/2, z'
+  54  'x+1/2, y+1/2, -z'
+  55  'y+1/2, -x+1/2, z'
+  56  '-y+1/2, x+1/2, -z'
+  57  'x+1/2, -y+1/2, -z'
+  58  '-x+1/2, y+1/2, z'
+  59  '-y+1/2, -x+1/2, -z'
+  60  'y+1/2, x+1/2, z'
+  61  '-x+1/2, y+1/2, -z'
+  62  'x+1/2, -y+1/2, z'
+  63  'y+1/2, x+1/2, -z'
+  64  '-y+1/2, -x+1/2, z'
+  65  'z+1/2, x+1/2, y'
+  66  '-z+1/2, -x+1/2, -y'
+  67  'z+1/2, -y+1/2, x'
+  68  '-z+1/2, y+1/2, -x'
+  69  'z+1/2, -x+1/2, -y'
+  70  '-z+1/2, x+1/2, y'
+  71  'z+1/2, y+1/2, -x'
+  72  '-z+1/2, -y+1/2, x'
+  73  '-z+1/2, x+1/2, -y'
+  74  'z+1/2, -x+1/2, y'
+  75  '-z+1/2, -y+1/2, -x'
+  76  'z+1/2, y+1/2, x'
+  77  '-z+1/2, -x+1/2, y'
+  78  'z+1/2, x+1/2, -y'
+  79  '-z+1/2, y+1/2, x'
+  80  'z+1/2, -y+1/2, -x'
+  81  'y+1/2, z+1/2, x'
+  82  '-y+1/2, -z+1/2, -x'
+  83  'x+1/2, z+1/2, -y'
+  84  '-x+1/2, -z+1/2, y'
+  85  '-y+1/2, z+1/2, -x'
+  86  'y+1/2, -z+1/2, x'
+  87  '-x+1/2, z+1/2, y'
+  88  'x+1/2, -z+1/2, -y'
+  89  '-y+1/2, -z+1/2, x'
+  90  'y+1/2, z+1/2, -x'
+  91  '-x+1/2, -z+1/2, -y'
+  92  'x+1/2, z+1/2, y'
+  93  'y+1/2, -z+1/2, -x'
+  94  '-y+1/2, z+1/2, x'
+  95  'x+1/2, -z+1/2, y'
+  96  '-x+1/2, z+1/2, -y'
+  97  'x+1/2, y, z+1/2'
+  98  '-x+1/2, -y, -z+1/2'
+  99  '-y+1/2, x, z+1/2'
+  100  'y+1/2, -x, -z+1/2'
+  101  '-x+1/2, -y, z+1/2'
+  102  'x+1/2, y, -z+1/2'
+  103  'y+1/2, -x, z+1/2'
+  104  '-y+1/2, x, -z+1/2'
+  105  'x+1/2, -y, -z+1/2'
+  106  '-x+1/2, y, z+1/2'
+  107  '-y+1/2, -x, -z+1/2'
+  108  'y+1/2, x, z+1/2'
+  109  '-x+1/2, y, -z+1/2'
+  110  'x+1/2, -y, z+1/2'
+  111  'y+1/2, x, -z+1/2'
+  112  '-y+1/2, -x, z+1/2'
+  113  'z+1/2, x, y+1/2'
+  114  '-z+1/2, -x, -y+1/2'
+  115  'z+1/2, -y, x+1/2'
+  116  '-z+1/2, y, -x+1/2'
+  117  'z+1/2, -x, -y+1/2'
+  118  '-z+1/2, x, y+1/2'
+  119  'z+1/2, y, -x+1/2'
+  120  '-z+1/2, -y, x+1/2'
+  121  '-z+1/2, x, -y+1/2'
+  122  'z+1/2, -x, y+1/2'
+  123  '-z+1/2, -y, -x+1/2'
+  124  'z+1/2, y, x+1/2'
+  125  '-z+1/2, -x, y+1/2'
+  126  'z+1/2, x, -y+1/2'
+  127  '-z+1/2, y, x+1/2'
+  128  'z+1/2, -y, -x+1/2'
+  129  'y+1/2, z, x+1/2'
+  130  '-y+1/2, -z, -x+1/2'
+  131  'x+1/2, z, -y+1/2'
+  132  '-x+1/2, -z, y+1/2'
+  133  '-y+1/2, z, -x+1/2'
+  134  'y+1/2, -z, x+1/2'
+  135  '-x+1/2, z, y+1/2'
+  136  'x+1/2, -z, -y+1/2'
+  137  '-y+1/2, -z, x+1/2'
+  138  'y+1/2, z, -x+1/2'
+  139  '-x+1/2, -z, -y+1/2'
+  140  'x+1/2, z, y+1/2'
+  141  'y+1/2, -z, -x+1/2'
+  142  '-y+1/2, z, x+1/2'
+  143  'x+1/2, -z, y+1/2'
+  144  '-x+1/2, z, -y+1/2'
+  145  'x, y+1/2, z+1/2'
+  146  '-x, -y+1/2, -z+1/2'
+  147  '-y, x+1/2, z+1/2'
+  148  'y, -x+1/2, -z+1/2'
+  149  '-x, -y+1/2, z+1/2'
+  150  'x, y+1/2, -z+1/2'
+  151  'y, -x+1/2, z+1/2'
+  152  '-y, x+1/2, -z+1/2'
+  153  'x, -y+1/2, -z+1/2'
+  154  '-x, y+1/2, z+1/2'
+  155  '-y, -x+1/2, -z+1/2'
+  156  'y, x+1/2, z+1/2'
+  157  '-x, y+1/2, -z+1/2'
+  158  'x, -y+1/2, z+1/2'
+  159  'y, x+1/2, -z+1/2'
+  160  '-y, -x+1/2, z+1/2'
+  161  'z, x+1/2, y+1/2'
+  162  '-z, -x+1/2, -y+1/2'
+  163  'z, -y+1/2, x+1/2'
+  164  '-z, y+1/2, -x+1/2'
+  165  'z, -x+1/2, -y+1/2'
+  166  '-z, x+1/2, y+1/2'
+  167  'z, y+1/2, -x+1/2'
+  168  '-z, -y+1/2, x+1/2'
+  169  '-z, x+1/2, -y+1/2'
+  170  'z, -x+1/2, y+1/2'
+  171  '-z, -y+1/2, -x+1/2'
+  172  'z, y+1/2, x+1/2'
+  173  '-z, -x+1/2, y+1/2'
+  174  'z, x+1/2, -y+1/2'
+  175  '-z, y+1/2, x+1/2'
+  176  'z, -y+1/2, -x+1/2'
+  177  'y, z+1/2, x+1/2'
+  178  '-y, -z+1/2, -x+1/2'
+  179  'x, z+1/2, -y+1/2'
+  180  '-x, -z+1/2, y+1/2'
+  181  '-y, z+1/2, -x+1/2'
+  182  'y, -z+1/2, x+1/2'
+  183  '-x, z+1/2, y+1/2'
+  184  'x, -z+1/2, -y+1/2'
+  185  '-y, -z+1/2, x+1/2'
+  186  'y, z+1/2, -x+1/2'
+  187  '-x, -z+1/2, -y+1/2'
+  188  'x, z+1/2, y+1/2'
+  189  'y, -z+1/2, -x+1/2'
+  190  '-y, z+1/2, x+1/2'
+  191  'x, -z+1/2, y+1/2'
+  192  '-x, z+1/2, -y+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  24  0.00000000  0.00000000  0.22305712  1
+  Fe  Fe1  32  0.14853236  0.14853236  0.35146764  1
+  Fe  Fe2  4  0.00000000  0.00000000  0.50000000  1
+  B  B3  8  0.25000000  0.25000000  0.25000000  1
+  B  B4  4  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_NdB2
+_symmetry_space_group_name_H-M   C2
+_cell_length_a   4.67154061
+_cell_length_b   16.24818072
+_cell_length_c   7.61993742
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   97.57618623
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   5
+_chemical_formula_structural   NdB2
+_chemical_formula_sum   'ID_4'
+_cell_volume   573.33495759
+_cell_formula_units_Z   12
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, y, -z'
+  3  'x+1/2, y+1/2, z'
+  4  '-x+1/2, y+1/2, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  4  0.00740671  0.91254421  0.76758084  1
+  Nd  Nd1  2  0.00000000  0.27179140  0.00000000  1
+  Nd  Nd2  2  0.00000000  0.29147067  0.50000000  1
+  Nd  Nd3  2  0.00000000  0.56090653  0.50000000  1
+  Nd  Nd4  2  0.00000000  0.60043377  0.00000000  1
+  B  B5  4  0.04115480  0.72487058  0.64584549  1
+  B  B6  4  0.04486531  0.10372255  0.61637051  1
+  B  B7  4  0.08425343  0.07142970  0.19829140  1
+  B  B8  4  0.13402374  0.17265464  0.27228423  1
+  B  B9  4  0.24067206  0.18634279  0.71819226  1
+  B  B10  2  0.00000000  0.02899545  0.00000000  1
+  B  B11  2  0.00000000  0.43044345  0.00000000  1
+# generated using pymatgen
+data_Nd2Fe2B5
+_symmetry_space_group_name_H-M   C2/m
+_cell_length_a   5.67696335
+_cell_length_b   10.68591125
+_cell_length_c   3.95432714
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   92.49661367
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   12
+_chemical_formula_structural   Nd2Fe2B5
+_chemical_formula_sum   'ID_5'
+_cell_volume   239.65573178
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  4  0.00000000  0.15356426  0.50000000  1
+  Fe  Fe1  4  0.18776532  0.50000000  0.93892226  1
+  B  B2  8  0.15246250  0.31271304  0.00039228  1
+  B  B3  2  0.00000000  0.50000000  0.50000000  1
+# generated using pymatgen
+data_Nd8Fe5B7
+_symmetry_space_group_name_H-M   I-4m2
+_cell_length_a   9.61737410
+_cell_length_b   9.61737410
+_cell_length_c   8.23407961
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   119
+_chemical_formula_structural   Nd8Fe5B7
+_chemical_formula_sum   'ID_7'
+_cell_volume   761.60200930
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  '-x, y, z'
+  6  '-y, -x, -z'
+  7  'x, -y, z'
+  8  'y, x, -z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  'y+1/2, -x+1/2, -z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  '-y+1/2, x+1/2, -z+1/2'
+  13  '-x+1/2, y+1/2, z+1/2'
+  14  '-y+1/2, -x+1/2, -z+1/2'
+  15  'x+1/2, -y+1/2, z+1/2'
+  16  'y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  8  0.00000000  0.21117897  0.33948996  1
+  Nd  Nd1  8  0.20290224  0.79709776  0.00000000  1
+  Fe  Fe2  8  0.00000000  0.21551827  0.72417401  1
+  Fe  Fe3  2  0.00000000  0.00000000  0.00000000  1
+  B  B4  8  0.12204527  0.37795473  0.75000000  1
+  B  B5  4  0.00000000  0.50000000  0.15227643  1
+  B  B6  2  0.00000000  0.50000000  0.75000000  1
+# generated using pymatgen
+data_NdB4
+_symmetry_space_group_name_H-M   P6_3/mmc
+_cell_length_a   4.95946360
+_cell_length_b   4.95946360
+_cell_length_c   5.71276962
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   194
+_chemical_formula_structural   NdB4
+_chemical_formula_sum   'ID_10'
+_cell_volume   121.68772059
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  'x-y, x, z+1/2'
+  4  '-x+y, -x, -z+1/2'
+  5  '-y, x-y, z'
+  6  'y, -x+y, -z'
+  7  '-x, -y, z+1/2'
+  8  'x, y, -z+1/2'
+  9  '-x+y, -x, z'
+  10  'x-y, x, -z'
+  11  'y, -x+y, z+1/2'
+  12  '-y, x-y, -z+1/2'
+  13  '-y, -x, -z+1/2'
+  14  'y, x, z+1/2'
+  15  '-x, -x+y, -z'
+  16  'x, x-y, z'
+  17  '-x+y, y, -z+1/2'
+  18  'x-y, -y, z+1/2'
+  19  'y, x, -z'
+  20  '-y, -x, z'
+  21  'x, x-y, -z+1/2'
+  22  '-x, -x+y, z+1/2'
+  23  'x-y, -y, -z'
+  24  '-x+y, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  2  0.33333333  0.66666667  0.25000000  1
+  B  B1  6  0.11702080  0.23404161  0.75000000  1
+  B  B2  2  0.33333333  0.66666667  0.75000000  1
+# generated using pymatgen
+data_Nd7Fe9
+_symmetry_space_group_name_H-M   Pmm2
+_cell_length_a   4.93568340
+_cell_length_b   13.58948336
+_cell_length_c   5.06589447
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   25
+_chemical_formula_structural   Nd7Fe9
+_chemical_formula_sum   'ID_8'
+_cell_volume   339.78670235
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x, y, z'
+  4  'x, -y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  2  0.00000000  0.17685458  0.07472724  1
+  Nd  Nd1  2  0.50000000  0.14773224  0.57714071  1
+  Nd  Nd2  2  0.50000000  0.34384660  0.08260043  1
+  Nd  Nd3  1  0.50000000  0.00000000  0.07721386  1
+  Fe  Fe4  4  0.22505274  0.34727193  0.57836279  1
+  Fe  Fe5  2  0.22144788  0.50000000  0.82819757  1
+  Fe  Fe6  1  0.00000000  0.00000000  0.57914984  1
+  Fe  Fe7  1  0.00000000  0.50000000  0.33332605  1
+  Fe  Fe8  1  0.50000000  0.50000000  0.44995781  1
+# generated using pymatgen
+data_Nd7(FeB)8
+_symmetry_space_group_name_H-M   Fmm2
+_cell_length_a   10.74329314
+_cell_length_b   17.44836208
+_cell_length_c   7.67888119
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   42
+_chemical_formula_structural   Nd7(FeB)8
+_chemical_formula_sum   'ID_9'
+_cell_volume   1439.42830550
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x, y, z'
+  4  'x, -y, z'
+  5  'x, y+1/2, z+1/2'
+  6  '-x, -y+1/2, z+1/2'
+  7  '-x, y+1/2, z+1/2'
+  8  'x, -y+1/2, z+1/2'
+  9  'x+1/2, y, z+1/2'
+  10  '-x+1/2, -y, z+1/2'
+  11  '-x+1/2, y, z+1/2'
+  12  'x+1/2, -y, z+1/2'
+  13  'x+1/2, y+1/2, z'
+  14  '-x+1/2, -y+1/2, z'
+  15  '-x+1/2, y+1/2, z'
+  16  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  8  0.00000000  0.10871658  0.26304601  1
+  Nd  Nd1  8  0.00000000  0.17250260  0.89609053  1
+  Nd  Nd2  8  0.25000000  0.25000000  0.27398129  1
+  Nd  Nd3  4  0.00000000  0.00000000  0.63972674  1
+  Fe  Fe4  16  0.21826933  0.10986866  0.56091596  1
+  Fe  Fe5  8  0.12774674  0.00000000  0.98382967  1
+  Fe  Fe6  8  0.20039252  0.00000000  0.27782774  1
+  B  B7  16  0.07789109  0.18109848  0.54616995  1
+  B  B8  16  0.20598538  0.40786506  0.32391783  1
+# generated using pymatgen
+data_Nd6Fe7B
+_symmetry_space_group_name_H-M   R-3
+_cell_length_a   9.56201032
+_cell_length_b   9.56201032
+_cell_length_c   10.84523626
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   148
+_chemical_formula_structural   Nd6Fe7B
+_chemical_formula_sum   'ID_12'
+_cell_volume   858.75260048
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-x+2/3, -y+1/3, -z+1/3'
+  9  '-y+2/3, x-y+1/3, z+1/3'
+  10  'y+2/3, -x+y+1/3, -z+1/3'
+  11  '-x+y+2/3, -x+1/3, z+1/3'
+  12  'x-y+2/3, x+1/3, -z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-x+1/3, -y+2/3, -z+2/3'
+  15  '-y+1/3, x-y+2/3, z+2/3'
+  16  'y+1/3, -x+y+2/3, -z+2/3'
+  17  '-x+y+1/3, -x+2/3, z+2/3'
+  18  'x-y+1/3, x+2/3, -z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  18  0.03140747  0.76646036  0.62589329  1
+  Fe  Fe1  18  0.05031726  0.16742920  0.86829007  1
+  Fe  Fe2  3  0.00000000  0.00000000  0.50000000  1
+  B  B3  3  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Nd(Fe3B)2
+_symmetry_space_group_name_H-M   I-4
+_cell_length_a   5.42212069
+_cell_length_b   5.42212069
+_cell_length_c   8.81281680
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   82
+_chemical_formula_structural   Nd(Fe3B)2
+_chemical_formula_sum   'ID_13'
+_cell_volume   259.09146221
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  'y+1/2, -x+1/2, -z+1/2'
+  7  '-x+1/2, -y+1/2, z+1/2'
+  8  '-y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  2  0.00000000  0.50000000  0.75000000  1
+  Fe  Fe1  8  0.18217025  0.69485508  0.47192450  1
+  Fe  Fe2  4  0.00000000  0.00000000  0.15791786  1
+  B  B3  4  0.00000000  0.00000000  0.39900353  1
+# generated using pymatgen
+data_Nd3B2
+_symmetry_space_group_name_H-M   I-4m2
+_cell_length_a   7.42316148
+_cell_length_b   7.42316148
+_cell_length_c   14.33179340
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   119
+_chemical_formula_structural   Nd3B2
+_chemical_formula_sum   'ID_14'
+_cell_volume   789.72948912
+_cell_formula_units_Z   6
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  '-x, y, z'
+  6  '-y, -x, -z'
+  7  'x, -y, z'
+  8  'y, x, -z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  'y+1/2, -x+1/2, -z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  '-y+1/2, x+1/2, -z+1/2'
+  13  '-x+1/2, y+1/2, z+1/2'
+  14  '-y+1/2, -x+1/2, -z+1/2'
+  15  'x+1/2, -y+1/2, z+1/2'
+  16  'y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  16  0.21172828  0.25184430  0.12663056  1
+  Nd  Nd1  2  0.00000000  0.50000000  0.75000000  1
+  B  B2  8  0.10914009  0.10914009  0.50000000  1
+  B  B3  2  0.00000000  0.00000000  0.00000000  1
+  B  B4  2  0.00000000  0.50000000  0.25000000  1
+# generated using pymatgen
+data_Nd8Fe7B8
+_symmetry_space_group_name_H-M   R3
+_cell_length_a   6.20379083
+_cell_length_b   6.20379083
+_cell_length_c   35.59916942
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   146
+_chemical_formula_structural   Nd8Fe7B8
+_chemical_formula_sum   'ID_11'
+_cell_volume   1186.54657303
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'x+2/3, y+1/3, z+1/3'
+  5  '-y+2/3, x-y+1/3, z+1/3'
+  6  '-x+y+2/3, -x+1/3, z+1/3'
+  7  'x+1/3, y+2/3, z+2/3'
+  8  '-y+1/3, x-y+2/3, z+2/3'
+  9  '-x+y+1/3, -x+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  9  0.00461210  0.34278133  0.46351233  1
+  Nd  Nd1  9  0.02257285  0.68875513  0.70401246  1
+  Nd  Nd2  3  0.00000000  0.00000000  0.60021634  1
+  Nd  Nd3  3  0.00000000  0.00000000  0.93406104  1
+  Fe  Fe4  9  0.00089227  0.22590499  0.31446908  1
+  Fe  Fe5  9  0.06658939  0.68337561  0.86582613  1
+  Fe  Fe6  3  0.00000000  0.00000000  0.51835785  1
+  B  B7  9  0.00701662  0.17385673  0.23782089  1
+  B  B8  9  0.05808956  0.33812219  0.53919606  1
+  B  B9  3  0.00000000  0.00000000  0.27605804  1
+  B  B10  3  0.00000000  0.00000000  0.85822268  1
+# generated using pymatgen
+data_Nd5(Fe2B)3
+_symmetry_space_group_name_H-M   Pmmm
+_cell_length_a   6.06642652
+_cell_length_b   6.24552605
+_cell_length_c   10.19020837
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   47
+_chemical_formula_structural   Nd5(Fe2B)3
+_chemical_formula_sum   'ID_15'
+_cell_volume   386.08686825
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z'
+  8  'x, -y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  2  0.50000000  0.00000000  0.25529807  1
+  Nd  Nd1  2  0.50000000  0.50000000  0.25361972  1
+  Nd  Nd2  1  0.00000000  0.00000000  0.50000000  1
+  Fe  Fe3  2  0.31399951  0.50000000  0.50000000  1
+  Fe  Fe4  1  0.00000000  0.00000000  0.00000000  1
+  Fe  Fe5  1  0.00000000  0.50000000  0.50000000  1
+  Fe  Fe6  1  0.50000000  0.00000000  0.00000000  1
+  Fe  Fe7  1  0.50000000  0.50000000  0.00000000  1
+  B  B8  2  0.50000000  0.24431864  0.50000000  1
+  B  B9  1  0.50000000  0.00000000  0.50000000  1
+# generated using pymatgen
+data_NdFe5B3
+_symmetry_space_group_name_H-M   P-42c
+_cell_length_a   4.14148807
+_cell_length_b   4.14148807
+_cell_length_c   13.15535073
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   112
+_chemical_formula_structural   NdFe5B3
+_chemical_formula_sum   'ID_16'
+_cell_volume   225.63956821
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x, -y, -z+1/2'
+  6  'y, x, z+1/2'
+  7  '-x, y, -z+1/2'
+  8  '-y, -x, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  2  0.00000000  0.00000000  0.00000000  1
+  Fe  Fe1  8  0.25081777  0.44932760  0.65355822  1
+  Fe  Fe2  2  0.00000000  0.50000000  0.25000000  1
+  B  B3  4  0.00000000  0.00000000  0.18847216  1
+  B  B4  2  0.50000000  0.50000000  0.00000000  1
+# generated using pymatgen
+data_Nd5Fe2B5
+_symmetry_space_group_name_H-M   I4/mmm
+_cell_length_a   11.31348411
+_cell_length_b   11.31348411
+_cell_length_c   8.46207844
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   139
+_chemical_formula_structural   Nd5Fe2B5
+_chemical_formula_sum   'ID_17'
+_cell_volume   1083.10307647
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+  17  'x+1/2, y+1/2, z+1/2'
+  18  '-x+1/2, -y+1/2, -z+1/2'
+  19  '-y+1/2, x+1/2, z+1/2'
+  20  'y+1/2, -x+1/2, -z+1/2'
+  21  '-x+1/2, -y+1/2, z+1/2'
+  22  'x+1/2, y+1/2, -z+1/2'
+  23  'y+1/2, -x+1/2, z+1/2'
+  24  '-y+1/2, x+1/2, -z+1/2'
+  25  'x+1/2, -y+1/2, -z+1/2'
+  26  '-x+1/2, y+1/2, z+1/2'
+  27  '-y+1/2, -x+1/2, -z+1/2'
+  28  'y+1/2, x+1/2, z+1/2'
+  29  '-x+1/2, y+1/2, -z+1/2'
+  30  'x+1/2, -y+1/2, z+1/2'
+  31  'y+1/2, x+1/2, -z+1/2'
+  32  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  16  0.15722600  0.34277400  0.25000000  1
+  Nd  Nd1  4  0.00000000  0.00000000  0.25071749  1
+  Fe  Fe2  4  0.00000000  0.50000000  0.00000000  1
+  Fe  Fe3  4  0.00000000  0.50000000  0.25000000  1
+  B  B4  8  0.00000000  0.18845128  0.50000000  1
+  B  B5  8  0.13546968  0.13546968  0.50000000  1
+  B  B6  2  0.00000000  0.00000000  0.00000000  1
+  B  B7  2  0.00000000  0.00000000  0.50000000  1
+# generated using pymatgen
+data_Nd3Fe11B2
+_symmetry_space_group_name_H-M   Pm-3m
+_cell_length_a   6.26208324
+_cell_length_b   6.26208324
+_cell_length_c   6.26208324
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   221
+_chemical_formula_structural   Nd3Fe11B2
+_chemical_formula_sum   'ID_18'
+_cell_volume   245.55936922
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+  17  'z, x, y'
+  18  '-z, -x, -y'
+  19  'z, -y, x'
+  20  '-z, y, -x'
+  21  'z, -x, -y'
+  22  '-z, x, y'
+  23  'z, y, -x'
+  24  '-z, -y, x'
+  25  '-z, x, -y'
+  26  'z, -x, y'
+  27  '-z, -y, -x'
+  28  'z, y, x'
+  29  '-z, -x, y'
+  30  'z, x, -y'
+  31  '-z, y, x'
+  32  'z, -y, -x'
+  33  'y, z, x'
+  34  '-y, -z, -x'
+  35  'x, z, -y'
+  36  '-x, -z, y'
+  37  '-y, z, -x'
+  38  'y, -z, x'
+  39  '-x, z, y'
+  40  'x, -z, -y'
+  41  '-y, -z, x'
+  42  'y, z, -x'
+  43  '-x, -z, -y'
+  44  'x, z, y'
+  45  'y, -z, -x'
+  46  '-y, z, x'
+  47  'x, -z, y'
+  48  '-x, z, -y'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  3  0.00000000  0.00000000  0.50000000  1
+  Fe  Fe1  8  0.30633569  0.30633569  0.30633569  1
+  Fe  Fe2  3  0.00000000  0.50000000  0.50000000  1
+  B  B3  1  0.00000000  0.00000000  0.00000000  1
+  B  B4  1  0.50000000  0.50000000  0.50000000  1
+# generated using pymatgen
+data_Nd7Fe4
+_symmetry_space_group_name_H-M   I-4m2
+_cell_length_a   6.77882206
+_cell_length_b   6.77882206
+_cell_length_c   17.67303868
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   119
+_chemical_formula_structural   Nd7Fe4
+_chemical_formula_sum   'ID_19'
+_cell_volume   812.11904708
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  '-x, y, z'
+  6  '-y, -x, -z'
+  7  'x, -y, z'
+  8  'y, x, -z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  'y+1/2, -x+1/2, -z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  '-y+1/2, x+1/2, -z+1/2'
+  13  '-x+1/2, y+1/2, z+1/2'
+  14  '-y+1/2, -x+1/2, -z+1/2'
+  15  'x+1/2, -y+1/2, z+1/2'
+  16  'y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  8  0.23656987  0.26343013  0.25000000  1
+  Nd  Nd1  4  0.00000000  0.00000000  0.12338204  1
+  Nd  Nd2  2  0.00000000  0.00000000  0.50000000  1
+  Fe  Fe3  4  0.00000000  0.50000000  0.61967577  1
+  Fe  Fe4  2  0.00000000  0.00000000  0.00000000  1
+  Fe  Fe5  2  0.00000000  0.50000000  0.75000000  1
