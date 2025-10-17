@@ -12,7 +12,7 @@ echo 'export PATH=$PATH:$HOME/dftbplus-24.1.x86_64-linux/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-# Operating environment
+# Environments
 ```
 [2025-10-16 16:02:16,307][cryspy_init][INFO]
 
