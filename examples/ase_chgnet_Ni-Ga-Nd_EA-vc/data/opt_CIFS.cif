@@ -1,0 +1,976 @@
+# generated using pymatgen
+data_NdGa4Ni3
+_symmetry_space_group_name_H-M   P4/mmm
+_cell_length_a   5.45609239
+_cell_length_b   5.45609239
+_cell_length_c   4.96409531
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   123
+_chemical_formula_structural   NdGa4Ni3
+_chemical_formula_sum   'ID_3'
+_cell_volume   147.77587609
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  1  0.50000000  0.50000000  0.00000000  1
+  Ga  Ga1  2  0.00000000  0.50000000  0.00000000  1
+  Ga  Ga2  1  0.00000000  0.00000000  0.00000000  1
+  Ga  Ga3  1  0.00000000  0.00000000  0.50000000  1
+  Ni  Ni4  2  0.00000000  0.50000000  0.50000000  1
+  Ni  Ni5  1  0.50000000  0.50000000  0.50000000  1
+# generated using pymatgen
+data_Nd3Ga8Ni7
+_symmetry_space_group_name_H-M   P6mm
+_cell_length_a   8.29121453
+_cell_length_b   8.29121453
+_cell_length_c   5.87633106
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   183
+_chemical_formula_structural   Nd3Ga8Ni7
+_chemical_formula_sum   'ID_0'
+_cell_volume   349.84300269
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'x-y, x, z'
+  3  '-y, x-y, z'
+  4  '-x, -y, z'
+  5  '-x+y, -x, z'
+  6  'y, -x+y, z'
+  7  'y, x, z'
+  8  'x, x-y, z'
+  9  'x-y, -y, z'
+  10  '-y, -x, z'
+  11  '-x, -x+y, z'
+  12  '-x+y, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  2  0.33333333  0.66666667  0.71746149  1
+  Nd  Nd1  1  0.00000000  0.00000000  0.61749370  1
+  Ga  Ga2  6  0.17172578  0.34345157  0.09096048  1
+  Ga  Ga3  2  0.33333333  0.66666667  0.24072222  1
+  Ni  Ni4  3  0.00000000  0.50000000  0.38239549  1
+  Ni  Ni5  3  0.00000000  0.50000000  0.96845107  1
+  Ni  Ni6  1  0.00000000  0.00000000  0.12387006  1
+# generated using pymatgen
+data_Nd8(Ga3Ni)3
+_symmetry_space_group_name_H-M   P31m
+_cell_length_a   6.69159850
+_cell_length_b   6.69159850
+_cell_length_c   13.52113739
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   157
+_chemical_formula_structural   Nd8(Ga3Ni)3
+_chemical_formula_sum   'ID_1'
+_cell_volume   524.32867338
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'y, x, z'
+  5  'x-y, -y, z'
+  6  '-x, -x+y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  3  0.00000000  0.69687127  0.64630630  1
+  Nd  Nd1  2  0.33333333  0.66666667  0.07881474  1
+  Nd  Nd2  2  0.33333333  0.66666667  0.84246192  1
+  Nd  Nd3  1  0.00000000  0.00000000  0.92984384  1
+  Ga  Ga4  6  0.20636539  0.41302647  0.28093594  1
+  Ga  Ga5  3  0.00000000  0.41087335  0.47348775  1
+  Ni  Ni6  3  0.00000000  0.78360721  0.43491210  1
+# generated using pymatgen
+data_Ga11Ni5
+_symmetry_space_group_name_H-M   P31m
+_cell_length_a   7.01053553
+_cell_length_b   7.01053553
+_cell_length_c   9.11713035
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   157
+_chemical_formula_structural   Ga11Ni5
+_chemical_formula_sum   'ID_2'
+_cell_volume   388.05312509
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'y, x, z'
+  5  'x-y, -y, z'
+  6  '-x, -x+y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ga  Ga0  6  0.20606834  0.79024413  0.93756064  1
+  Ga  Ga1  3  0.00000000  0.65815742  0.62345348  1
+  Ga  Ga2  1  0.00000000  0.00000000  0.28829705  1
+  Ga  Ga3  1  0.00000000  0.00000000  0.78616244  1
+  Ni  Ni4  3  0.00000000  0.33456482  0.70493593  1
+  Ni  Ni5  1  0.00000000  0.00000000  0.03903055  1
+  Ni  Ni6  1  0.00000000  0.00000000  0.53499506  1
+# generated using pymatgen
+data_Nd3Ga9Ni11
+_symmetry_space_group_name_H-M   P2/m
+_cell_length_a   6.35623762
+_cell_length_b   8.85338699
+_cell_length_c   6.50978963
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   95.78715684
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   10
+_chemical_formula_structural   Nd3Ga9Ni11
+_chemical_formula_sum   'ID_4'
+_cell_volume   364.46632999
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  1  0.00000000  0.50000000  0.50000000  1
+  Nd  Nd1  1  0.50000000  0.00000000  0.00000000  1
+  Nd  Nd2  1  0.50000000  0.00000000  0.50000000  1
+  Ga  Ga3  4  0.22802562  0.23104733  0.25855953  1
+  Ga  Ga4  2  0.19294777  0.50000000  0.93727529  1
+  Ga  Ga5  2  0.43056328  0.50000000  0.30356470  1
+  Ga  Ga6  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni7  4  0.13716786  0.22953310  0.87330498  1
+  Ni  Ni8  4  0.36446148  0.28123420  0.62292534  1
+  Ni  Ni9  2  0.50000000  0.33397998  0.00000000  1
+  Ni  Ni10  1  0.00000000  0.00000000  0.50000000  1
+# generated using pymatgen
+data_Nd(GaNi)3
+_symmetry_space_group_name_H-M   P4_2nm
+_cell_length_a   5.45345908
+_cell_length_b   5.45345908
+_cell_length_c   17.00993620
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   102
+_chemical_formula_structural   Nd(GaNi)3
+_chemical_formula_sum   'ID_5'
+_cell_volume   505.87917499
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z+1/2'
+  3  '-x, -y, z'
+  4  'y+1/2, -x+1/2, z+1/2'
+  5  '-x+1/2, y+1/2, z+1/2'
+  6  'y, x, z'
+  7  'x+1/2, -y+1/2, z+1/2'
+  8  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  4  0.00000000  0.50000000  0.18271067  1
+  Ga  Ga1  4  0.00000000  0.50000000  0.37212753  1
+  Ga  Ga2  4  0.16264347  0.83735653  0.45977582  1
+  Ga  Ga3  2  0.00000000  0.00000000  0.04752223  1
+  Ga  Ga4  2  0.00000000  0.00000000  0.80259762  1
+  Ni  Ni5  4  0.00000000  0.50000000  0.02405385  1
+  Ni  Ni6  4  0.15443360  0.15443360  0.31051010  1
+  Ni  Ni7  2  0.00000000  0.00000000  0.18741296  1
+  Ni  Ni8  2  0.00000000  0.00000000  0.58443205  1
+# generated using pymatgen
+data_Nd7Ga12Ni
+_symmetry_space_group_name_H-M   P4/mmm
+_cell_length_a   8.18499624
+_cell_length_b   8.18499624
+_cell_length_c   8.66302443
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   123
+_chemical_formula_structural   Nd7Ga12Ni
+_chemical_formula_sum   'ID_7'
+_cell_volume   580.37207492
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  4  0.25017743  0.25017743  0.50000000  1
+  Nd  Nd1  2  0.00000000  0.50000000  0.00000000  1
+  Nd  Nd2  1  0.50000000  0.50000000  0.00000000  1
+  Ga  Ga3  4  0.00000000  0.50000000  0.35006286  1
+  Ga  Ga4  4  0.20634081  0.20634081  0.00000000  1
+  Ga  Ga5  2  0.00000000  0.00000000  0.24568181  1
+  Ga  Ga6  1  0.00000000  0.00000000  0.50000000  1
+  Ga  Ga7  1  0.50000000  0.50000000  0.50000000  1
+  Ni  Ni8  1  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Nd11Ga7Ni12
+_symmetry_space_group_name_H-M   F222
+_cell_length_a   9.75075828
+_cell_length_b   14.99587788
+_cell_length_c   20.94776957
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   22
+_chemical_formula_structural   Nd11Ga7Ni12
+_chemical_formula_sum   'ID_6'
+_cell_volume   3063.00759337
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x, -y, -z'
+  4  '-x, y, -z'
+  5  'x+1/2, y, z+1/2'
+  6  '-x+1/2, -y, z+1/2'
+  7  'x+1/2, -y, -z+1/2'
+  8  '-x+1/2, y, -z+1/2'
+  9  'x+1/2, y+1/2, z'
+  10  '-x+1/2, -y+1/2, z'
+  11  'x+1/2, -y+1/2, -z'
+  12  '-x+1/2, y+1/2, -z'
+  13  'x, y+1/2, z+1/2'
+  14  '-x, -y+1/2, z+1/2'
+  15  'x, -y+1/2, -z+1/2'
+  16  '-x, y+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  16  0.17587438  0.02442747  0.11913570  1
+  Nd  Nd1  8  0.07109502  0.25000000  0.75000000  1
+  Nd  Nd2  8  0.25000000  0.25000000  0.15253297  1
+  Nd  Nd3  8  0.25000000  0.25000000  0.50277639  1
+  Nd  Nd4  4  0.25000000  0.25000000  0.25000000  1
+  Ga  Ga5  16  0.10720120  0.46373326  0.76198690  1
+  Ga  Ga6  8  0.00000000  0.08758756  0.00000000  1
+  Ga  Ga7  4  0.00000000  0.00000000  0.50000000  1
+  Ni  Ni8  16  0.06656649  0.15276369  0.90046062  1
+  Ni  Ni9  16  0.23134009  0.12485763  0.81223027  1
+  Ni  Ni10  8  0.24776770  0.00000000  0.50000000  1
+  Ni  Ni11  8  0.25000000  0.25000000  0.62660454  1
+# generated using pymatgen
+data_Nd6(GaNi)5
+_symmetry_space_group_name_H-M   I4mm
+_cell_length_a   13.41874079
+_cell_length_b   13.41874079
+_cell_length_c   4.42276249
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   107
+_chemical_formula_structural   Nd6(GaNi)5
+_chemical_formula_sum   'ID_11'
+_cell_volume   796.37413223
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x, z'
+  3  '-x, -y, z'
+  4  'y, -x, z'
+  5  '-x, y, z'
+  6  'y, x, z'
+  7  'x, -y, z'
+  8  '-y, -x, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-y+1/2, x+1/2, z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'y+1/2, -x+1/2, z+1/2'
+  13  '-x+1/2, y+1/2, z+1/2'
+  14  'y+1/2, x+1/2, z+1/2'
+  15  'x+1/2, -y+1/2, z+1/2'
+  16  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  8  0.24999117  0.24999117  0.75634346  1
+  Nd  Nd1  4  0.00000000  0.50000000  0.41245357  1
+  Ga  Ga2  8  0.00000000  0.17411096  0.00471923  1
+  Ga  Ga3  2  0.00000000  0.00000000  0.73324268  1
+  Ni  Ni4  8  0.00000000  0.15742417  0.50099147  1
+  Ni  Ni5  2  0.00000000  0.00000000  0.22126996  1
+# generated using pymatgen
+data_NdGa5Ni3
+_symmetry_space_group_name_H-M   I4mm
+_cell_length_a   5.50512451
+_cell_length_b   5.50512451
+_cell_length_c   10.66143963
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   107
+_chemical_formula_structural   NdGa5Ni3
+_chemical_formula_sum   'ID_9'
+_cell_volume   323.10980992
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x, z'
+  3  '-x, -y, z'
+  4  'y, -x, z'
+  5  '-x, y, z'
+  6  'y, x, z'
+  7  'x, -y, z'
+  8  '-y, -x, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-y+1/2, x+1/2, z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'y+1/2, -x+1/2, z+1/2'
+  13  '-x+1/2, y+1/2, z+1/2'
+  14  'y+1/2, x+1/2, z+1/2'
+  15  'x+1/2, -y+1/2, z+1/2'
+  16  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  2  0.00000000  0.00000000  0.88502090  1
+  Ga  Ga1  8  0.23460459  0.23460459  0.62295051  1
+  Ga  Ga2  2  0.00000000  0.00000000  0.43858190  1
+  Ni  Ni3  4  0.00000000  0.50000000  0.26617614  1
+  Ni  Ni4  2  0.00000000  0.00000000  0.22922104  1
+# generated using pymatgen
+data_Nd5(GaNi3)2
+_symmetry_space_group_name_H-M   P4/n
+_cell_length_a   7.76790088
+_cell_length_b   7.76790088
+_cell_length_c   10.64086128
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   85
+_chemical_formula_structural   Nd5(GaNi3)2
+_chemical_formula_sum   'ID_8'
+_cell_volume   642.07259214
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z'
+  3  '-x, -y, z'
+  4  'y+1/2, -x+1/2, z'
+  5  '-x+1/2, -y+1/2, -z'
+  6  'y, -x, -z'
+  7  'x+1/2, y+1/2, -z'
+  8  '-y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  8  0.08367815  0.78110002  0.76780157  1
+  Nd  Nd1  2  0.00000000  0.00000000  0.50000000  1
+  Ga  Ga2  2  0.00000000  0.00000000  0.00000000  1
+  Ga  Ga3  2  0.00000000  0.50000000  0.98646458  1
+  Ni  Ni4  8  0.03560337  0.72721861  0.15023794  1
+  Ni  Ni5  4  0.25000000  0.25000000  0.00000000  1
+# generated using pymatgen
+data_Nd4Ga4Ni5
+_symmetry_space_group_name_H-M   P4_2nm
+_cell_length_a   6.45797849
+_cell_length_b   6.45797849
+_cell_length_c   15.16334480
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   102
+_chemical_formula_structural   Nd4Ga4Ni5
+_chemical_formula_sum   'ID_10'
+_cell_volume   632.39466748
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z+1/2'
+  3  '-x, -y, z'
+  4  'y+1/2, -x+1/2, z+1/2'
+  5  '-x+1/2, y+1/2, z+1/2'
+  6  'y, x, z'
+  7  'x+1/2, -y+1/2, z+1/2'
+  8  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  4  0.17896813  0.82103187  0.53886412  1
+  Nd  Nd1  2  0.00000000  0.00000000  0.04751892  1
+  Nd  Nd2  2  0.00000000  0.00000000  0.84066651  1
+  Ga  Ga3  8  0.00174913  0.68901430  0.30427551  1
+  Ni  Ni4  4  0.00000000  0.50000000  0.44189746  1
+  Ni  Ni5  2  0.00000000  0.00000000  0.21977713  1
+  Ni  Ni6  2  0.00000000  0.00000000  0.39119130  1
+  Ni  Ni7  2  0.00000000  0.00000000  0.67110569  1
+# generated using pymatgen
+data_Nd9Ga7
+_symmetry_space_group_name_H-M   R-3m
+_cell_length_a   14.80690997
+_cell_length_b   14.80690997
+_cell_length_c   7.11111926
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   166
+_chemical_formula_structural   Nd9Ga7
+_chemical_formula_sum   'ID_14'
+_cell_volume   1350.19801610
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'y, x, -z'
+  8  '-y, -x, z'
+  9  'x-y, -y, -z'
+  10  '-x+y, y, z'
+  11  '-x, -x+y, -z'
+  12  'x, x-y, z'
+  13  'x+2/3, y+1/3, z+1/3'
+  14  '-x+2/3, -y+1/3, -z+1/3'
+  15  '-y+2/3, x-y+1/3, z+1/3'
+  16  'y+2/3, -x+y+1/3, -z+1/3'
+  17  '-x+y+2/3, -x+1/3, z+1/3'
+  18  'x-y+2/3, x+1/3, -z+1/3'
+  19  'y+2/3, x+1/3, -z+1/3'
+  20  '-y+2/3, -x+1/3, z+1/3'
+  21  'x-y+2/3, -y+1/3, -z+1/3'
+  22  '-x+y+2/3, y+1/3, z+1/3'
+  23  '-x+2/3, -x+y+1/3, -z+1/3'
+  24  'x+2/3, x-y+1/3, z+1/3'
+  25  'x+1/3, y+2/3, z+2/3'
+  26  '-x+1/3, -y+2/3, -z+2/3'
+  27  '-y+1/3, x-y+2/3, z+2/3'
+  28  'y+1/3, -x+y+2/3, -z+2/3'
+  29  '-x+y+1/3, -x+2/3, z+2/3'
+  30  'x-y+1/3, x+2/3, -z+2/3'
+  31  'y+1/3, x+2/3, -z+2/3'
+  32  '-y+1/3, -x+2/3, z+2/3'
+  33  'x-y+1/3, -y+2/3, -z+2/3'
+  34  '-x+y+1/3, y+2/3, z+2/3'
+  35  '-x+1/3, -x+y+2/3, -z+2/3'
+  36  'x+1/3, x-y+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  18  0.09139164  0.18278328  0.77017344  1
+  Nd  Nd1  9  0.00000000  0.50000000  0.00000000  1
+  Ga  Ga2  18  0.00000000  0.29352786  0.00000000  1
+  Ga  Ga3  3  0.00000000  0.00000000  0.50000000  1
+# generated using pymatgen
+data_Nd3Ga10Ni
+_symmetry_space_group_name_H-M   Im-3m
+_cell_length_a   9.59313117
+_cell_length_b   9.59313117
+_cell_length_c   9.59313117
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   229
+_chemical_formula_structural   Nd3Ga10Ni
+_chemical_formula_sum   'ID_15'
+_cell_volume   882.83826521
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+  17  'z, x, y'
+  18  '-z, -x, -y'
+  19  'z, -y, x'
+  20  '-z, y, -x'
+  21  'z, -x, -y'
+  22  '-z, x, y'
+  23  'z, y, -x'
+  24  '-z, -y, x'
+  25  '-z, x, -y'
+  26  'z, -x, y'
+  27  '-z, -y, -x'
+  28  'z, y, x'
+  29  '-z, -x, y'
+  30  'z, x, -y'
+  31  '-z, y, x'
+  32  'z, -y, -x'
+  33  'y, z, x'
+  34  '-y, -z, -x'
+  35  'x, z, -y'
+  36  '-x, -z, y'
+  37  '-y, z, -x'
+  38  'y, -z, x'
+  39  '-x, z, y'
+  40  'x, -z, -y'
+  41  '-y, -z, x'
+  42  'y, z, -x'
+  43  '-x, -z, -y'
+  44  'x, z, y'
+  45  'y, -z, -x'
+  46  '-y, z, x'
+  47  'x, -z, y'
+  48  '-x, z, -y'
+  49  'x+1/2, y+1/2, z+1/2'
+  50  '-x+1/2, -y+1/2, -z+1/2'
+  51  '-y+1/2, x+1/2, z+1/2'
+  52  'y+1/2, -x+1/2, -z+1/2'
+  53  '-x+1/2, -y+1/2, z+1/2'
+  54  'x+1/2, y+1/2, -z+1/2'
+  55  'y+1/2, -x+1/2, z+1/2'
+  56  '-y+1/2, x+1/2, -z+1/2'
+  57  'x+1/2, -y+1/2, -z+1/2'
+  58  '-x+1/2, y+1/2, z+1/2'
+  59  '-y+1/2, -x+1/2, -z+1/2'
+  60  'y+1/2, x+1/2, z+1/2'
+  61  '-x+1/2, y+1/2, -z+1/2'
+  62  'x+1/2, -y+1/2, z+1/2'
+  63  'y+1/2, x+1/2, -z+1/2'
+  64  '-y+1/2, -x+1/2, z+1/2'
+  65  'z+1/2, x+1/2, y+1/2'
+  66  '-z+1/2, -x+1/2, -y+1/2'
+  67  'z+1/2, -y+1/2, x+1/2'
+  68  '-z+1/2, y+1/2, -x+1/2'
+  69  'z+1/2, -x+1/2, -y+1/2'
+  70  '-z+1/2, x+1/2, y+1/2'
+  71  'z+1/2, y+1/2, -x+1/2'
+  72  '-z+1/2, -y+1/2, x+1/2'
+  73  '-z+1/2, x+1/2, -y+1/2'
+  74  'z+1/2, -x+1/2, y+1/2'
+  75  '-z+1/2, -y+1/2, -x+1/2'
+  76  'z+1/2, y+1/2, x+1/2'
+  77  '-z+1/2, -x+1/2, y+1/2'
+  78  'z+1/2, x+1/2, -y+1/2'
+  79  '-z+1/2, y+1/2, x+1/2'
+  80  'z+1/2, -y+1/2, -x+1/2'
+  81  'y+1/2, z+1/2, x+1/2'
+  82  '-y+1/2, -z+1/2, -x+1/2'
+  83  'x+1/2, z+1/2, -y+1/2'
+  84  '-x+1/2, -z+1/2, y+1/2'
+  85  '-y+1/2, z+1/2, -x+1/2'
+  86  'y+1/2, -z+1/2, x+1/2'
+  87  '-x+1/2, z+1/2, y+1/2'
+  88  'x+1/2, -z+1/2, -y+1/2'
+  89  '-y+1/2, -z+1/2, x+1/2'
+  90  'y+1/2, z+1/2, -x+1/2'
+  91  '-x+1/2, -z+1/2, -y+1/2'
+  92  'x+1/2, z+1/2, y+1/2'
+  93  'y+1/2, -z+1/2, -x+1/2'
+  94  '-y+1/2, z+1/2, x+1/2'
+  95  'x+1/2, -z+1/2, y+1/2'
+  96  '-x+1/2, z+1/2, -y+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  6  0.00000000  0.00000000  0.50000000  1
+  Ga  Ga1  12  0.00000000  0.00000000  0.22729146  1
+  Ga  Ga2  8  0.25000000  0.25000000  0.25000000  1
+  Ni  Ni3  2  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Nd12Ga7Ni8
+_symmetry_space_group_name_H-M   I-4
+_cell_length_a   8.57705343
+_cell_length_b   8.57705343
+_cell_length_c   16.80625020
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   82
+_chemical_formula_structural   Nd12Ga7Ni8
+_chemical_formula_sum   'ID_12'
+_cell_volume   1236.36600766
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  'y+1/2, -x+1/2, -z+1/2'
+  7  '-x+1/2, -y+1/2, z+1/2'
+  8  '-y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  8  0.00060401  0.77868673  0.83207427  1
+  Nd  Nd1  8  0.00093699  0.78286355  0.31907636  1
+  Nd  Nd2  8  0.24101780  0.24193039  0.49979562  1
+  Ga  Ga3  8  0.00044240  0.73418981  0.63990969  1
+  Ga  Ga4  4  0.00000000  0.50000000  0.07777660  1
+  Ga  Ga5  2  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni6  8  0.00001070  0.24801100  0.14420783  1
+  Ni  Ni7  4  0.00000000  0.50000000  0.56312734  1
+  Ni  Ni8  2  0.00000000  0.00000000  0.50000000  1
+  Ni  Ni9  2  0.00000000  0.50000000  0.25000000  1
+# generated using pymatgen
+data_Nd5Ga11Ni12
+_symmetry_space_group_name_H-M   I4mm
+_cell_length_a   10.18626312
+_cell_length_b   10.18626312
+_cell_length_c   9.46500962
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   107
+_chemical_formula_structural   Nd5Ga11Ni12
+_chemical_formula_sum   'ID_13'
+_cell_volume   982.08898562
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x, z'
+  3  '-x, -y, z'
+  4  'y, -x, z'
+  5  '-x, y, z'
+  6  'y, x, z'
+  7  'x, -y, z'
+  8  '-y, -x, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-y+1/2, x+1/2, z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'y+1/2, -x+1/2, z+1/2'
+  13  '-x+1/2, y+1/2, z+1/2'
+  14  'y+1/2, x+1/2, z+1/2'
+  15  'x+1/2, -y+1/2, z+1/2'
+  16  '-y+1/2, -x+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  8  0.19036655  0.19036655  0.29632164  1
+  Nd  Nd1  2  0.00000000  0.00000000  0.14946050  1
+  Ga  Ga2  8  0.13112099  0.13112099  0.93034183  1
+  Ga  Ga3  8  0.13825228  0.13825228  0.62593416  1
+  Ga  Ga4  4  0.00000000  0.50000000  0.37943594  1
+  Ga  Ga5  2  0.00000000  0.00000000  0.45024115  1
+  Ni  Ni6  8  0.00000000  0.28458581  0.78053972  1
+  Ni  Ni7  8  0.00000000  0.30545714  0.52474137  1
+  Ni  Ni8  8  0.00000000  0.37935417  0.13863021  1
+# generated using pymatgen
+data_Nd6GaNi6
+_symmetry_space_group_name_H-M   P-31m
+_cell_length_a   10.42297883
+_cell_length_b   10.42297883
+_cell_length_c   6.29569184
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   162
+_chemical_formula_structural   Nd6GaNi6
+_chemical_formula_sum   'ID_16'
+_cell_volume   592.32192112
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  '-y, -x, -z'
+  8  'y, x, z'
+  9  '-x+y, y, -z'
+  10  'x-y, -y, z'
+  11  'x, x-y, -z'
+  12  '-x, -x+y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  6  0.00000000  0.31135177  0.57469068  1
+  Nd  Nd1  3  0.00000000  0.50000000  0.00000000  1
+  Nd  Nd2  2  0.33333333  0.66666667  0.50000000  1
+  Nd  Nd3  1  0.00000000  0.00000000  0.00000000  1
+  Ga  Ga4  2  0.33333333  0.66666667  0.00000000  1
+  Ni  Ni5  12  0.14734682  0.37863177  0.17250746  1
+# generated using pymatgen
+data_Nd5Ga5Ni11
+_symmetry_space_group_name_H-M   I222
+_cell_length_a   5.71558790
+_cell_length_b   9.06334193
+_cell_length_c   14.10190570
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   23
+_chemical_formula_structural   Nd5Ga5Ni11
+_chemical_formula_sum   'ID_17'
+_cell_volume   730.51153708
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x, -y, -z'
+  4  '-x, y, -z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  'x+1/2, -y+1/2, -z+1/2'
+  8  '-x+1/2, y+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  8  0.21791522  0.23742010  0.16617801  1
+  Nd  Nd1  2  0.00000000  0.50000000  0.00000000  1
+  Ga  Ga2  8  0.21493091  0.38191342  0.37364283  1
+  Ga  Ga3  2  0.00000000  0.00000000  0.50000000  1
+  Ni  Ni4  8  0.17173917  0.10279522  0.35504025  1
+  Ni  Ni5  4  0.00000000  0.13189087  0.00000000  1
+  Ni  Ni6  4  0.00000000  0.24727737  0.50000000  1
+  Ni  Ni7  4  0.00000000  0.50000000  0.23705851  1
+  Ni  Ni8  2  0.00000000  0.50000000  0.50000000  1
+# generated using pymatgen
+data_Nd6(GaNi)5
+_symmetry_space_group_name_H-M   Pnn2
+_cell_length_a   9.75367511
+_cell_length_b   13.07476311
+_cell_length_c   5.36770121
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   34
+_chemical_formula_structural   Nd6(GaNi)5
+_chemical_formula_sum   'ID_18'
+_cell_volume   684.52678618
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x+1/2, y+1/2, z+1/2'
+  4  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  4  0.03485279  0.78800512  0.78041436  1
+  Nd  Nd1  4  0.11927218  0.61147234  0.34769910  1
+  Nd  Nd2  4  0.23518820  0.37898694  0.70571261  1
+  Ga  Ga3  4  0.12789513  0.00655057  0.65447540  1
+  Ga  Ga4  4  0.13230796  0.22254780  0.26139701  1
+  Ga  Ga5  2  0.00000000  0.00000000  0.12311301  1
+  Ni  Ni6  4  0.16279146  0.40201125  0.18111282  1
+  Ni  Ni7  4  0.21390222  0.59098363  0.86699286  1
+  Ni  Ni8  2  0.00000000  0.50000000  0.87180369  1
+# generated using pymatgen
+data_Nd12Ga11Ni5
+_symmetry_space_group_name_H-M   Imm2
+_cell_length_a   10.57346324
+_cell_length_b   12.19306141
+_cell_length_c   10.75036036
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   44
+_chemical_formula_structural   Nd12Ga11Ni5
+_chemical_formula_sum   'ID_19'
+_cell_volume   1385.96748920
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x, y, z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  '-x+1/2, y+1/2, z+1/2'
+  8  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  8  0.16837635  0.19236187  0.33474183  1
+  Nd  Nd1  4  0.00000000  0.15809476  0.02259979  1
+  Nd  Nd2  4  0.00000000  0.18230835  0.67706792  1
+  Nd  Nd3  4  0.13599184  0.50000000  0.69864735  1
+  Nd  Nd4  4  0.21851016  0.50000000  0.36558071  1
+  Ga  Ga5  8  0.19463503  0.37866051  0.09792904  1
+  Ga  Ga6  8  0.21929267  0.68743915  0.56546675  1
+  Ga  Ga7  4  0.00000000  0.38411204  0.91273141  1
+  Ga  Ga8  2  0.00000000  0.50000000  0.16329633  1
+  Ni  Ni9  4  0.00000000  0.36183875  0.49024553  1
+  Ni  Ni10  4  0.11340999  0.00000000  0.18618671  1
+  Ni  Ni11  2  0.00000000  0.00000000  0.82830316  1
