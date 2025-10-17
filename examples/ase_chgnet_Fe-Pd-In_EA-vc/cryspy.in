@@ -1,0 +1,35 @@
+[basic]
+algo = EA-vc
+calc_code = ASE
+nstage = 1
+njob = 5
+jobcmd = bash
+jobfile = job_cryspy
+
+[structure]
+atype  = Fe In Pd
+ll_nat =  0  0  0
+ul_nat = 12 12 12
+
+[ASE]
+ase_python = chgnet_in.py
+
+[EA]
+n_pop = 20
+n_crsov = 5
+n_perm = 2
+n_strain = 2
+n_rand = 2
+n_add = 3
+n_elim = 3
+n_subs = 3
+target = random
+n_elite = 2
+n_fittest = 10
+slct_func = TNM
+t_size = 2
+maxgen_ea = 0
+end_point = -8.3000 -5.0000 -4.1000
+
+[option]
+
