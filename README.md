@@ -131,6 +131,16 @@ pip install --upgrade numba
 - Al-Nb-Mo
 - Ti-Cr-Mo
 - Ca-Mg-Zn
+---
+- Nb-Mo-Zr
+- Nb-Zr-Hf
+- Nb-Zr-Al
+- Nb-Zr-Si
+---
+- Sc-Y-Zr
+- Sc-Y-Ti
+- Sc-Y-Al
+- Sc-Y-Nb
 
 ## Quaternary system
 - Fe-Cr-Al-Y
