@@ -1,0 +1,971 @@
+# generated using pymatgen
+data_Y(CrFe)3
+_symmetry_space_group_name_H-M   C222_1
+_cell_length_a   6.21586672
+_cell_length_b   8.50050512
+_cell_length_c   8.47675052
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   20
+_chemical_formula_structural   Y(CrFe)3
+_chemical_formula_sum   'ID_0'
+_cell_volume   447.89460230
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z+1/2'
+  3  'x, -y, -z'
+  4  '-x, y, -z+1/2'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  'x+1/2, -y+1/2, -z'
+  8  '-x+1/2, y+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  4  0.00000000  0.22094501  0.75000000  1
+  Cr  Cr1  4  0.02073406  0.00000000  0.00000000  1
+  Cr  Cr2  4  0.16253162  0.50000000  0.50000000  1
+  Cr  Cr3  4  0.19056386  0.50000000  0.00000000  1
+  Fe  Fe4  8  0.01237928  0.24157451  0.40059165  1
+  Fe  Fe5  4  0.00000000  0.45865586  0.25000000  1
+# generated using pymatgen
+data_YAl5CrFe5
+_symmetry_space_group_name_H-M   R3
+_cell_length_a   6.92627448
+_cell_length_b   6.92627448
+_cell_length_c   25.25798918
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   146
+_chemical_formula_structural   YAl5CrFe5
+_chemical_formula_sum   'ID_1'
+_cell_volume   1049.37037805
+_cell_formula_units_Z   6
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'x+2/3, y+1/3, z+1/3'
+  5  '-y+2/3, x-y+1/3, z+1/3'
+  6  '-x+y+2/3, -x+1/3, z+1/3'
+  7  'x+1/3, y+2/3, z+2/3'
+  8  '-y+1/3, x-y+2/3, z+2/3'
+  9  '-x+y+1/3, -x+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  3  0.00000000  0.00000000  0.17834845  1
+  Y  Y1  3  0.00000000  0.00000000  0.82415754  1
+  Al  Al2  9  0.00186054  0.24526692  0.71298007  1
+  Al  Al3  9  0.02099034  0.27600143  0.27940124  1
+  Al  Al4  9  0.11247076  0.70421277  0.10716393  1
+  Al  Al5  3  0.00000000  0.00000000  0.05733139  1
+  Cr  Cr6  3  0.00000000  0.00000000  0.35815551  1
+  Cr  Cr7  3  0.00000000  0.00000000  0.95574880  1
+  Fe  Fe8  9  0.01112184  0.64589536  0.67055233  1
+  Fe  Fe9  9  0.05743878  0.68893159  0.57364219  1
+  Fe  Fe10  9  0.13888299  0.46572416  0.19044342  1
+  Fe  Fe11  3  0.00000000  0.00000000  0.61958651  1
+# generated using pymatgen
+data_Y9Al10Cr9Fe8
+_symmetry_space_group_name_H-M   P4/mmm
+_cell_length_a   8.32070414
+_cell_length_b   8.32070414
+_cell_length_c   10.76216057
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   123
+_chemical_formula_structural   Y9Al10Cr9Fe8
+_chemical_formula_sum   'ID_2'
+_cell_volume   745.10868714
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  4  0.00000000  0.31780501  0.00000000  1
+  Y  Y1  2  0.00000000  0.00000000  0.22649145  1
+  Y  Y2  2  0.50000000  0.50000000  0.25321754  1
+  Y  Y3  1  0.00000000  0.00000000  0.50000000  1
+  Al  Al4  8  0.24131835  0.24131835  0.36635481  1
+  Al  Al5  2  0.00000000  0.50000000  0.50000000  1
+  Cr  Cr6  4  0.30431088  0.50000000  0.00000000  1
+  Cr  Cr7  4  0.31135272  0.50000000  0.50000000  1
+  Cr  Cr8  1  0.00000000  0.00000000  0.00000000  1
+  Fe  Fe9  8  0.27622814  0.27622814  0.13184138  1
+# generated using pymatgen
+data_Y8AlCr7
+_symmetry_space_group_name_H-M   P2
+_cell_length_a   6.58151881
+_cell_length_b   8.76917484
+_cell_length_c   6.73835803
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   114.43625490
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   3
+_chemical_formula_structural   Y8AlCr7
+_chemical_formula_sum   'ID_3'
+_cell_volume   354.06395845
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  2  0.25375393  0.47652442  0.56513618  1
+  Y  Y1  2  0.25826377  0.98170819  0.05810622  1
+  Y  Y2  2  0.26555321  0.59015661  0.06650326  1
+  Y  Y3  1  0.00000000  0.08758476  0.50000000  1
+  Y  Y4  1  0.50000000  0.15944632  0.50000000  1
+  Al  Al5  1  0.50000000  0.27721449  0.00000000  1
+  Cr  Cr6  2  0.02570160  0.29190014  0.86421545  1
+  Cr  Cr7  2  0.06998793  0.77609760  0.34674677  1
+  Cr  Cr8  2  0.30046359  0.80715402  0.70563741  1
+  Cr  Cr9  1  0.50000000  0.78865873  0.50000000  1
+# generated using pymatgen
+data_Al4(Cr2Fe)5
+_symmetry_space_group_name_H-M   P2/m
+_cell_length_a   6.60339239
+_cell_length_b   4.34486437
+_cell_length_c   9.72005307
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   92.54317387
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   10
+_chemical_formula_structural   Al4(Cr2Fe)5
+_chemical_formula_sum   'ID_4'
+_cell_volume   278.60185523
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, y, -z'
+  4  'x, -y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Al  Al0  2  0.12577630  0.00000000  0.37922367  1
+  Al  Al1  2  0.16270184  0.00000000  0.10655393  1
+  Cr  Cr2  4  0.25615730  0.25467196  0.63292500  1
+  Cr  Cr3  2  0.20411444  0.00000000  0.84681690  1
+  Cr  Cr4  1  0.00000000  0.50000000  0.50000000  1
+  Cr  Cr5  1  0.50000000  0.00000000  0.00000000  1
+  Cr  Cr6  1  0.50000000  0.00000000  0.50000000  1
+  Cr  Cr7  1  0.50000000  0.50000000  0.00000000  1
+  Fe  Fe8  2  0.02181715  0.50000000  0.23932388  1
+  Fe  Fe9  2  0.47020604  0.00000000  0.24688945  1
+  Fe  Fe10  1  0.00000000  0.50000000  0.00000000  1
+# generated using pymatgen
+data_Y2Al10Cr5Fe9
+_symmetry_space_group_name_H-M   P-4m2
+_cell_length_a   6.20106948
+_cell_length_b   6.20106948
+_cell_length_c   14.27289402
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   115
+_chemical_formula_structural   Y2Al10Cr5Fe9
+_chemical_formula_sum   'ID_5'
+_cell_volume   548.83934301
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  '-x, y, z'
+  6  '-y, -x, -z'
+  7  'x, -y, z'
+  8  'y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  2  0.50000000  0.50000000  0.31968399  1
+  Al  Al1  4  0.18239152  0.50000000  0.16784962  1
+  Al  Al2  4  0.24099859  0.24099859  0.00000000  1
+  Al  Al3  1  0.00000000  0.00000000  0.50000000  1
+  Al  Al4  1  0.50000000  0.50000000  0.50000000  1
+  Cr  Cr5  4  0.00000000  0.24179025  0.82295133  1
+  Cr  Cr6  1  0.50000000  0.50000000  0.00000000  1
+  Fe  Fe7  4  0.00000000  0.28299673  0.30929138  1
+  Fe  Fe8  2  0.00000000  0.50000000  0.45538629  1
+  Fe  Fe9  2  0.50000000  0.50000000  0.13709632  1
+  Fe  Fe10  1  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Y6Al6Cr4Fe5
+_symmetry_space_group_name_H-M   R-3m
+_cell_length_a   8.63713267
+_cell_length_b   8.63713267
+_cell_length_c   19.62391758
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   166
+_chemical_formula_structural   Y6Al6Cr4Fe5
+_chemical_formula_sum   'ID_6'
+_cell_volume   1267.81394328
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'y, x, -z'
+  8  '-y, -x, z'
+  9  'x-y, -y, -z'
+  10  '-x+y, y, z'
+  11  '-x, -x+y, -z'
+  12  'x, x-y, z'
+  13  'x+2/3, y+1/3, z+1/3'
+  14  '-x+2/3, -y+1/3, -z+1/3'
+  15  '-y+2/3, x-y+1/3, z+1/3'
+  16  'y+2/3, -x+y+1/3, -z+1/3'
+  17  '-x+y+2/3, -x+1/3, z+1/3'
+  18  'x-y+2/3, x+1/3, -z+1/3'
+  19  'y+2/3, x+1/3, -z+1/3'
+  20  '-y+2/3, -x+1/3, z+1/3'
+  21  'x-y+2/3, -y+1/3, -z+1/3'
+  22  '-x+y+2/3, y+1/3, z+1/3'
+  23  '-x+2/3, -x+y+1/3, -z+1/3'
+  24  'x+2/3, x-y+1/3, z+1/3'
+  25  'x+1/3, y+2/3, z+2/3'
+  26  '-x+1/3, -y+2/3, -z+2/3'
+  27  '-y+1/3, x-y+2/3, z+2/3'
+  28  'y+1/3, -x+y+2/3, -z+2/3'
+  29  '-x+y+1/3, -x+2/3, z+2/3'
+  30  'x-y+1/3, x+2/3, -z+2/3'
+  31  'y+1/3, x+2/3, -z+2/3'
+  32  '-y+1/3, -x+2/3, z+2/3'
+  33  'x-y+1/3, -y+2/3, -z+2/3'
+  34  '-x+y+1/3, y+2/3, z+2/3'
+  35  '-x+1/3, -x+y+2/3, -z+2/3'
+  36  'x+1/3, x-y+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  18  0.04926112  0.52463056  0.08846905  1
+  Al  Al1  18  0.01150214  0.50575107  0.63525028  1
+  Cr  Cr2  9  0.00000000  0.50000000  0.50000000  1
+  Cr  Cr3  3  -0.00000000  -0.00000000  0.50000000  1
+  Fe  Fe4  6  0.00000000  0.00000000  0.12033355  1
+  Fe  Fe5  6  0.00000000  0.00000000  0.24166606  1
+  Fe  Fe6  3  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Y4Al12Cr3Fe2
+_symmetry_space_group_name_H-M   P-6m2
+_cell_length_a   10.21975562
+_cell_length_b   10.21975562
+_cell_length_c   8.48242026
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   187
+_chemical_formula_structural   Y4Al12Cr3Fe2
+_chemical_formula_sum   'ID_7'
+_cell_volume   767.24035830
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+y, -x, -z'
+  3  '-y, x-y, z'
+  4  'x, y, -z'
+  5  '-x+y, -x, z'
+  6  '-y, x-y, -z'
+  7  '-y, -x, -z'
+  8  'x, x-y, z'
+  9  '-x+y, y, -z'
+  10  '-y, -x, z'
+  11  'x, x-y, -z'
+  12  '-x+y, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  3  0.50585232  0.01170464  0.50000000  1
+  Y  Y1  1  0.00000000  0.00000000  0.00000000  1
+  Al  Al2  6  0.10084963  0.20169926  0.32811593  1
+  Al  Al3  3  0.24969141  0.49938281  0.00000000  1
+  Al  Al4  2  0.33333333  0.66666667  0.23688280  1
+  Al  Al5  1  0.33333333  0.66666667  0.50000000  1
+  Cr  Cr6  3  0.13033796  0.26067592  0.00000000  1
+  Fe  Fe7  2  0.66666667  0.33333333  0.38263088  1
+# generated using pymatgen
+data_Y2Al4Cr3Fe8
+_symmetry_space_group_name_H-M   P3
+_cell_length_a   6.41910909
+_cell_length_b   6.41910909
+_cell_length_c   7.07284299
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   143
+_chemical_formula_structural   Y2Al4Cr3Fe8
+_chemical_formula_sum   'ID_8'
+_cell_volume   252.39117294
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  1  0.00000000  0.00000000  0.96371425  1
+  Y  Y1  1  0.33333333  0.66666667  0.92700521  1
+  Al  Al2  3  0.43472437  0.03903810  0.21927478  1
+  Al  Al3  1  0.33333333  0.66666667  0.47577731  1
+  Cr  Cr4  3  0.44895540  0.37265578  0.68204982  1
+  Fe  Fe5  3  0.01105377  0.77657346  0.34436821  1
+  Fe  Fe6  3  0.02204196  0.25293740  0.60404090  1
+  Fe  Fe7  1  0.66666667  0.33333333  0.44855572  1
+  Fe  Fe8  1  0.66666667  0.33333333  0.93497220  1
+# generated using pymatgen
+data_Y4Al12Cr6Fe7
+_symmetry_space_group_name_H-M   P6/mmm
+_cell_length_a   10.20954926
+_cell_length_b   10.20954926
+_cell_length_c   6.17554425
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   191
+_chemical_formula_structural   Y4Al12Cr6Fe7
+_chemical_formula_sum   'ID_9'
+_cell_volume   557.46679916
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  'x-y, x, z'
+  4  '-x+y, -x, -z'
+  5  '-y, x-y, z'
+  6  'y, -x+y, -z'
+  7  '-x, -y, z'
+  8  'x, y, -z'
+  9  '-x+y, -x, z'
+  10  'x-y, x, -z'
+  11  'y, -x+y, z'
+  12  '-y, x-y, -z'
+  13  '-y, -x, -z'
+  14  'y, x, z'
+  15  '-x, -x+y, -z'
+  16  'x, x-y, z'
+  17  '-x+y, y, -z'
+  18  'x-y, -y, z'
+  19  'y, x, -z'
+  20  '-y, -x, z'
+  21  'x, x-y, -z'
+  22  '-x, -x+y, z'
+  23  'x-y, -y, -z'
+  24  '-x+y, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  2  0.00000000  0.00000000  0.18599600  1
+  Y  Y1  2  0.33333333  0.66666667  0.50000000  1
+  Al  Al2  6  0.00000000  0.26649974  0.00000000  1
+  Al  Al3  6  0.15573286  0.31146572  0.50000000  1
+  Cr  Cr4  3  0.00000000  0.50000000  0.00000000  1
+  Cr  Cr5  3  0.00000000  0.50000000  0.50000000  1
+  Fe  Fe6  6  0.25588855  0.51177710  0.00000000  1
+  Fe  Fe7  1  0.00000000  0.00000000  0.50000000  1
+# generated using pymatgen
+data_Y3Cr11Fe7
+_symmetry_space_group_name_H-M   Cmm2
+_cell_length_a   7.27071128
+_cell_length_b   12.83005943
+_cell_length_c   7.12434079
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   35
+_chemical_formula_structural   Y3Cr11Fe7
+_chemical_formula_sum   'ID_10'
+_cell_volume   664.58456899
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x, y, z'
+  4  'x, -y, z'
+  5  'x+1/2, y+1/2, z'
+  6  '-x+1/2, -y+1/2, z'
+  7  '-x+1/2, y+1/2, z'
+  8  'x+1/2, -y+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  4  0.00000000  0.23931731  0.01410996  1
+  Y  Y1  2  0.00000000  0.00000000  0.27963955  1
+  Cr  Cr2  8  0.14086062  0.19879416  0.40090174  1
+  Cr  Cr3  8  0.19566436  0.41565218  0.82073668  1
+  Cr  Cr4  4  0.14072294  0.50000000  0.12284770  1
+  Cr  Cr5  2  0.00000000  0.00000000  0.92497917  1
+  Fe  Fe6  8  0.15276306  0.41354328  0.49188550  1
+  Fe  Fe7  4  0.25000000  0.25000000  0.69272272  1
+  Fe  Fe8  2  0.00000000  0.00000000  0.63041450  1
+# generated using pymatgen
+data_Y3Al10Cr3Fe5
+_symmetry_space_group_name_H-M   R-3m
+_cell_length_a   7.31590874
+_cell_length_b   7.31590874
+_cell_length_c   26.08063232
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   166
+_chemical_formula_structural   Y3Al10Cr3Fe5
+_chemical_formula_sum   'ID_12'
+_cell_volume   1208.88588393
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'y, x, -z'
+  8  '-y, -x, z'
+  9  'x-y, -y, -z'
+  10  '-x+y, y, z'
+  11  '-x, -x+y, -z'
+  12  'x, x-y, z'
+  13  'x+2/3, y+1/3, z+1/3'
+  14  '-x+2/3, -y+1/3, -z+1/3'
+  15  '-y+2/3, x-y+1/3, z+1/3'
+  16  'y+2/3, -x+y+1/3, -z+1/3'
+  17  '-x+y+2/3, -x+1/3, z+1/3'
+  18  'x-y+2/3, x+1/3, -z+1/3'
+  19  'y+2/3, x+1/3, -z+1/3'
+  20  '-y+2/3, -x+1/3, z+1/3'
+  21  'x-y+2/3, -y+1/3, -z+1/3'
+  22  '-x+y+2/3, y+1/3, z+1/3'
+  23  '-x+2/3, -x+y+1/3, -z+1/3'
+  24  'x+2/3, x-y+1/3, z+1/3'
+  25  'x+1/3, y+2/3, z+2/3'
+  26  '-x+1/3, -y+2/3, -z+2/3'
+  27  '-y+1/3, x-y+2/3, z+2/3'
+  28  'y+1/3, -x+y+2/3, -z+2/3'
+  29  '-x+y+1/3, -x+2/3, z+2/3'
+  30  'x-y+1/3, x+2/3, -z+2/3'
+  31  'y+1/3, x+2/3, -z+2/3'
+  32  '-y+1/3, -x+2/3, z+2/3'
+  33  'x-y+1/3, -y+2/3, -z+2/3'
+  34  '-x+y+1/3, y+2/3, z+2/3'
+  35  '-x+1/3, -x+y+2/3, -z+2/3'
+  36  'x+1/3, x-y+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  9  0.00000000  0.50000000  0.50000000  1
+  Al  Al1  18  0.01549656  0.50774828  0.72799550  1
+  Al  Al2  6  0.00000000  0.00000000  0.26359379  1
+  Al  Al3  6  0.00000000  0.00000000  0.45332223  1
+  Cr  Cr4  6  0.00000000  0.00000000  0.35676449  1
+  Cr  Cr5  3  0.00000000  0.00000000  0.00000000  1
+  Fe  Fe6  9  0.00000000  0.50000000  0.00000000  1
+  Fe  Fe7  6  0.00000000  0.00000000  0.10048425  1
+# generated using pymatgen
+data_Y7(AlFe2)2
+_symmetry_space_group_name_H-M   Amm2
+_cell_length_a   6.28465339
+_cell_length_b   6.02628063
+_cell_length_c   15.73391642
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   38
+_chemical_formula_structural   Y7(AlFe2)2
+_chemical_formula_sum   'ID_13'
+_cell_volume   595.89195419
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x, y, z'
+  4  'x, -y, z'
+  5  'x, y+1/2, z+1/2'
+  6  '-x, -y+1/2, z+1/2'
+  7  '-x, y+1/2, z+1/2'
+  8  'x, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  4  0.24250431  0.00000000  0.40113770  1
+  Y  Y1  4  0.50000000  0.24453755  0.08930772  1
+  Y  Y2  2  0.00000000  0.00000000  0.00908469  1
+  Y  Y3  2  0.00000000  0.00000000  0.63265444  1
+  Y  Y4  2  0.50000000  0.00000000  0.86950732  1
+  Al  Al5  2  0.00000000  0.00000000  0.20437499  1
+  Al  Al6  2  0.00000000  0.00000000  0.81473550  1
+  Fe  Fe7  8  0.32517002  0.19789335  0.24567160  1
+# generated using pymatgen
+data_Y7Al12Cr3Fe8
+_symmetry_space_group_name_H-M   P3
+_cell_length_a   5.58421219
+_cell_length_b   5.58421219
+_cell_length_c   20.80533997
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   143
+_chemical_formula_structural   Y7Al12Cr3Fe8
+_chemical_formula_sum   'ID_14'
+_cell_volume   561.86149880
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  3  0.01530665  0.67378985  0.17361362  1
+  Y  Y1  1  0.00000000  0.00000000  0.60640462  1
+  Y  Y2  1  0.00000000  0.00000000  0.77100958  1
+  Y  Y3  1  0.66666667  0.33333333  0.32458547  1
+  Y  Y4  1  0.66666667  0.33333333  0.81599591  1
+  Al  Al5  3  0.00609571  0.50333109  0.69010274  1
+  Al  Al6  3  0.34484203  0.23646792  0.47897129  1
+  Al  Al7  1  0.00000000  0.00000000  0.91655161  1
+  Al  Al8  1  0.33333333  0.66666667  0.02610210  1
+  Al  Al9  1  0.33333333  0.66666667  0.52470246  1
+  Al  Al10  1  0.33333333  0.66666667  0.80445605  1
+  Al  Al11  1  0.66666667  0.33333333  0.58620970  1
+  Al  Al12  1  0.66666667  0.33333333  0.98663862  1
+  Cr  Cr13  1  0.00000000  0.00000000  0.04899131  1
+  Cr  Cr14  1  0.00000000  0.00000000  0.28933235  1
+  Cr  Cr15  1  0.33333333  0.66666667  0.30483130  1
+  Fe  Fe16  3  0.04872907  0.52778219  0.91238148  1
+  Fe  Fe17  3  0.10838948  0.43320192  0.40643415  1
+  Fe  Fe18  1  0.00000000  0.00000000  0.38939247  1
+  Fe  Fe19  1  0.66666667  0.33333333  0.09148224  1
+# generated using pymatgen
+data_Y11Al6Cr7Fe12
+_symmetry_space_group_name_H-M   P-1
+_cell_length_a   8.63429753
+_cell_length_b   9.07484830
+_cell_length_c   9.34659534
+_cell_angle_alpha   62.65157948
+_cell_angle_beta   88.90787672
+_cell_angle_gamma   85.95666959
+_symmetry_Int_Tables_number   2
+_chemical_formula_structural   Y11Al6Cr7Fe12
+_chemical_formula_sum   'ID_11'
+_cell_volume   648.80389247
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  2  0.21409882  0.12098385  0.18782069  1
+  Y  Y1  2  0.22136185  0.81223407  0.83061047  1
+  Y  Y2  2  0.27039779  0.76609395  0.51606671  1
+  Y  Y3  2  0.27761394  0.68009738  0.22437388  1
+  Y  Y4  2  0.29978751  0.41114029  0.80066656  1
+  Y  Y5  1  0.50000000  0.00000000  0.00000000  1
+  Al  Al6  2  0.04747551  0.33822692  0.32716425  1
+  Al  Al7  1  0.00000000  0.00000000  0.00000000  1
+  Al  Al8  1  0.00000000  0.50000000  0.50000000  1
+  Al  Al9  1  0.50000000  0.50000000  0.00000000  1
+  Al  Al10  1  0.50000000  0.50000000  0.50000000  1
+  Cr  Cr11  2  0.03126689  0.17370871  0.66492945  1
+  Cr  Cr12  2  0.23213720  0.46605661  0.09895436  1
+  Cr  Cr13  1  0.00000000  0.00000000  0.50000000  1
+  Cr  Cr14  1  0.00000000  0.50000000  0.00000000  1
+  Cr  Cr15  1  0.50000000  0.00000000  0.50000000  1
+  Fe  Fe16  2  0.00829710  0.32589121  0.87355261  1
+  Fe  Fe17  2  0.22193848  0.12353032  0.82273807  1
+  Fe  Fe18  2  0.23723854  0.09955804  0.52255135  1
+  Fe  Fe19  2  0.25321363  0.35856899  0.52241085  1
+  Fe  Fe20  2  0.41258537  0.32248846  0.32483550  1
+  Fe  Fe21  2  0.45484889  0.16335939  0.65372833  1
+# generated using pymatgen
+data_Y2Cr5
+_symmetry_space_group_name_H-M   Pn-3m
+_cell_length_a   7.10702565
+_cell_length_b   7.10702565
+_cell_length_c   7.10702565
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   224
+_chemical_formula_structural   Y2Cr5
+_chemical_formula_sum   'ID_15'
+_cell_volume   358.97454104
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z+1/2'
+  3  '-x, -y, z'
+  4  'y+1/2, -x+1/2, z+1/2'
+  5  'x, -y, -z'
+  6  '-y+1/2, -x+1/2, -z+1/2'
+  7  '-x, y, -z'
+  8  'y+1/2, x+1/2, -z+1/2'
+  9  'z, x, y'
+  10  'z+1/2, -y+1/2, x+1/2'
+  11  'z, -x, -y'
+  12  'z+1/2, y+1/2, -x+1/2'
+  13  '-z, x, -y'
+  14  '-z+1/2, -y+1/2, -x+1/2'
+  15  '-z, -x, y'
+  16  '-z+1/2, y+1/2, x+1/2'
+  17  'y, z, x'
+  18  'x+1/2, z+1/2, -y+1/2'
+  19  '-y, z, -x'
+  20  '-x+1/2, z+1/2, y+1/2'
+  21  '-y, -z, x'
+  22  '-x+1/2, -z+1/2, -y+1/2'
+  23  'y, -z, -x'
+  24  'x+1/2, -z+1/2, y+1/2'
+  25  '-x+1/2, -y+1/2, -z+1/2'
+  26  'y, -x, -z'
+  27  'x+1/2, y+1/2, -z+1/2'
+  28  '-y, x, -z'
+  29  '-x+1/2, y+1/2, z+1/2'
+  30  'y, x, z'
+  31  'x+1/2, -y+1/2, z+1/2'
+  32  '-y, -x, z'
+  33  '-z+1/2, -x+1/2, -y+1/2'
+  34  '-z, y, -x'
+  35  '-z+1/2, x+1/2, y+1/2'
+  36  '-z, -y, x'
+  37  'z+1/2, -x+1/2, y+1/2'
+  38  'z, y, x'
+  39  'z+1/2, x+1/2, -y+1/2'
+  40  'z, -y, -x'
+  41  '-y+1/2, -z+1/2, -x+1/2'
+  42  '-x, -z, y'
+  43  'y+1/2, -z+1/2, x+1/2'
+  44  'x, -z, -y'
+  45  'y+1/2, z+1/2, -x+1/2'
+  46  'x, z, y'
+  47  '-y+1/2, z+1/2, x+1/2'
+  48  '-x, z, -y'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  4  0.25000000  0.25000000  0.75000000  1
+  Cr  Cr1  8  0.17287446  0.17287446  0.17287446  1
+  Cr  Cr2  2  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Y8Al9Cr9Fe4
+_symmetry_space_group_name_H-M   P6mm
+_cell_length_a   10.09183920
+_cell_length_b   10.09183920
+_cell_length_c   10.82498938
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   183
+_chemical_formula_structural   Y8Al9Cr9Fe4
+_chemical_formula_sum   'ID_16'
+_cell_volume   954.76997758
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'x-y, x, z'
+  3  '-y, x-y, z'
+  4  '-x, -y, z'
+  5  '-x+y, -x, z'
+  6  'y, -x+y, z'
+  7  'y, x, z'
+  8  'x, x-y, z'
+  9  'x-y, -y, z'
+  10  '-y, -x, z'
+  11  '-x, -x+y, z'
+  12  '-x+y, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  6  0.14400579  0.57200289  0.01927459  1
+  Y  Y1  2  0.33333333  0.66666667  0.74065211  1
+  Al  Al2  6  0.00000000  0.26574392  0.85008447  1
+  Al  Al3  2  0.33333333  0.66666667  0.25361207  1
+  Al  Al4  1  0.00000000  0.00000000  0.03245888  1
+  Cr  Cr5  3  0.00000000  0.50000000  0.31216246  1
+  Cr  Cr6  3  0.00000000  0.50000000  0.75336941  1
+  Cr  Cr7  2  0.33333333  0.66666667  0.48181076  1
+  Cr  Cr8  1  0.00000000  0.00000000  0.80922189  1
+  Fe  Fe9  3  0.00000000  0.50000000  0.57186662  1
+  Fe  Fe10  1  0.00000000  0.00000000  0.63498139  1
+# generated using pymatgen
+data_Y7Al8Cr3Fe4
+_symmetry_space_group_name_H-M   P-62m
+_cell_length_a   7.40970969
+_cell_length_b   7.40970969
+_cell_length_c   10.92016201
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   189
+_chemical_formula_structural   Y7Al8Cr3Fe4
+_chemical_formula_sum   'ID_17'
+_cell_volume   519.23277622
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+y, -x, -z'
+  3  '-y, x-y, z'
+  4  'x, y, -z'
+  5  '-x+y, -x, z'
+  6  '-y, x-y, -z'
+  7  'y, x, z'
+  8  '-x, -x+y, -z'
+  9  'x-y, -y, z'
+  10  'y, x, -z'
+  11  '-x, -x+y, z'
+  12  'x-y, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  4  0.33333333  0.66666667  0.71771383  1
+  Y  Y1  3  0.00000000  0.37847259  0.50000000  1
+  Al  Al2  6  0.00000000  0.70866541  0.11934913  1
+  Al  Al3  2  0.00000000  0.00000000  0.27661297  1
+  Cr  Cr4  2  0.33333333  0.66666667  0.00000000  1
+  Cr  Cr5  1  0.00000000  0.00000000  0.50000000  1
+  Fe  Fe6  3  0.00000000  0.71283737  0.50000000  1
+  Fe  Fe7  1  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Y9Al5(CrFe2)4
+_symmetry_space_group_name_H-M   I222
+_cell_length_a   5.97537845
+_cell_length_b   9.94369708
+_cell_length_c   16.82775549
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   23
+_chemical_formula_structural   Y9Al5(CrFe2)4
+_chemical_formula_sum   'ID_18'
+_cell_volume   999.86069100
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x, -y, -z'
+  4  '-x, y, -z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  'x+1/2, -y+1/2, -z+1/2'
+  8  '-x+1/2, y+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  8  0.22483292  0.11606551  0.68166265  1
+  Y  Y1  4  0.00000000  0.30855843  0.00000000  1
+  Y  Y2  4  0.00000000  0.50000000  0.32242179  1
+  Y  Y3  2  0.00000000  0.00000000  0.50000000  1
+  Al  Al4  8  0.23681962  0.29568344  0.83147694  1
+  Al  Al5  2  0.00000000  0.50000000  0.50000000  1
+  Cr  Cr6  8  0.04210011  0.27770490  0.55948955  1
+  Fe  Fe7  8  0.07027751  0.11221394  0.17843111  1
+  Fe  Fe8  8  0.15717625  0.07254362  0.93500898  1
+# generated using pymatgen
+data_Y7Al7(CrFe3)3
+_symmetry_space_group_name_H-M   P-6m2
+_cell_length_a   10.59012543
+_cell_length_b   10.59012543
+_cell_length_c   7.15369308
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   187
+_chemical_formula_structural   Y7Al7(CrFe3)3
+_chemical_formula_sum   'ID_19'
+_cell_volume   694.80533274
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+y, -x, -z'
+  3  '-y, x-y, z'
+  4  'x, y, -z'
+  5  '-x+y, -x, z'
+  6  '-y, x-y, -z'
+  7  '-y, -x, -z'
+  8  'x, x-y, z'
+  9  '-x+y, y, -z'
+  10  '-y, -x, z'
+  11  'x, x-y, -z'
+  12  '-x+y, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  3  0.02032672  0.51016336  0.00000000  1
+  Y  Y1  2  0.00000000  0.00000000  0.25712335  1
+  Y  Y2  2  0.33333333  0.66666667  0.17417673  1
+  Al  Al3  3  0.05632817  0.52816409  0.50000000  1
+  Al  Al4  3  0.50101063  0.25050531  0.00000000  1
+  Al  Al5  1  0.33333333  0.66666667  0.50000000  1
+  Cr  Cr6  3  0.17322370  0.34644740  0.50000000  1
+  Fe  Fe7  3  0.14327279  0.85672721  0.00000000  1
+  Fe  Fe8  3  0.24103907  0.12051954  0.00000000  1
+  Fe  Fe9  3  0.60119997  0.20239993  0.50000000  1
