@@ -1,8 +1,10 @@
 # CrySPY-1.4.3_utility
 - This is unofficial, but it has more examples than the original. I added them after confirming that it works.
 - This is a calculation example. For practical use, it is recommended to increase the number of nat and tot_struc.
-- The random seed is changed so the results will not match those in the data. Therefore, even if the environment is almost the same and the user is the same, the results will be different.
 - LAQA: only VASP, QE, or soiap for now
+
+## Note
+- The random seed is changed so the results will not match those in the data. Therefore, even if the environment is almost the same and the user is the same, the results will be different.
 
 ## Calculated phase diagram
 - The "end_point" is a parameter that specifies the search range of the chemical potential. The standard is to obtain the DFT energy of a single molecule from databases such as Material Projects, literature, or your own calculations, and expand it by about +/- 1 eV.
