@@ -5,45 +5,6 @@
 ## Calculated phase diagram
 - The "end_point" is a parameter that specifies the search range of the chemical potential. The standard is to obtain the DFT energy of a single molecule from databases such as Material Projects, literature, or your own calculations, and expand it by about +/- 1 eV.
 
-## Ternary system
-- Fe-Pd-In
-- Li-La-Ti
-- Ni-Ga-Nd
-- Fe-Pd-Pb
-- Fe-Cr-Al
-- Mn-Al-C
-- Fe-Ni-Si
-- Ti-Fe-Al
----
-- Li-Cu-Sb
-- Zn-Sn-O
-- Cu-Al-Mn
----
-- Ti-V-Cr
-- Ti-V-Al
-- Ti-V-Ni
-- Ti-V-H
-- Mg-Ti-H
-- Fe-Ti-H
----
-- Ni-Cr-W
-- Fe-Mo-B
-- Zn-Sn-P
-- Li-Zr-O
-- Mg-Al-C
-- Ti-Al-N
-- Fe-Ni-Cr
-
-## Quaternary system
-- Fe-Cr-Al-Y
-- Mn-Al-C-Ni
-- Li-La-Ti-Zr
-- Fe-Pd-In-Sn
----
-- Li-La-Zr-O
-- Fe-Ni-Cr-Al
-- Ti-Al-Nb-Mo
-
 ## How to use "plot3d.py" or "plot3dn.py"
 - It is designed to correspond to a four-element system. The figure can be obtained by the following command.
 ```
@@ -90,3 +51,49 @@ pip3 install physbo==2.2.0
 pip3 install dscribe==2.1.2
 pip install --upgrade numba
 ```
+
+## Ternary system
+- Fe-Pd-In
+- Li-La-Ti
+- Ni-Ga-Nd
+- Fe-Pd-Pb
+- Fe-Cr-Al
+- Mn-Al-C
+- Fe-Ni-Si
+- Ti-Fe-Al
+---
+- Li-Cu-Sb
+- Zn-Sn-O
+- Cu-Al-Mn
+---
+- Ti-V-Cr
+- Ti-V-Al
+- Ti-V-Ni
+- Ti-V-H
+- Mg-Ti-H
+- Fe-Ti-H
+---
+- Ni-Cr-W
+- Fe-Mo-B
+- Zn-Sn-P
+- Li-Zr-O
+- Mg-Al-C
+- Ti-Al-N
+- Fe-Ni-Cr
+---
+- Be-Al-Mg
+- Be-Ti-Zr
+- Be-Ni-Cr
+- Be-Li-Mg
+- Be-Li-Al
+- Be-Li-Ti
+
+## Quaternary system
+- Fe-Cr-Al-Y
+- Mn-Al-C-Ni
+- Li-La-Ti-Zr
+- Fe-Pd-In-Sn
+---
+- Li-La-Zr-O
+- Fe-Ni-Cr-Al
+- Ti-Al-Nb-Mo
