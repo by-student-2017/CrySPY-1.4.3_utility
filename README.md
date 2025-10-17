@@ -21,6 +21,12 @@
 - Li-La-Ti-Zr
 - Fe-Pd-In-Sn
 
+## How to use "plot3d.py" or "plot3dn.py"
+```
+python3 plot3d.py
+python3 plot3dn.py
+```
+
 # How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
 ```
