@@ -13,6 +13,12 @@
 - Fe-Ni-Si
 - Ti-Fe-Al
 
+## Quaternary system
+- Fe-Cr-Al-Y
+- Mn-Al-C-Ni
+- Li-La-Ti-Zr
+- Fe-Pd-In-Sn
+
 # How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
 ```
