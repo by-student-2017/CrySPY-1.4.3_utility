@@ -170,3 +170,9 @@ pip install --upgrade numba
 - Fe-Al-Cr-Si
 - Ga-Zn-Sn-O
 - Ti-Nb-Mo-Zr
+---
+- Ga-Au-Pt-Gd
+- Li-La-Zr-O
+- Zn-Ga-In-O
+- Mo-Nb-Si-B
+- Li-Na-K-Cl
