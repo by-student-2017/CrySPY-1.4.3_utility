@@ -1,6 +1,7 @@
 # CrySPY-1.4.3_utility
 - This is unofficial, but it has more examples than the original. I added them after confirming that it works.
 - This is a calculation example. For practical use, it is recommended to increase the number of nat and tot_struc.
+- The random seed is changed so the results will not match those in the data. Therefore, even in almost identical environments, the results will be different.
 - LAQA: only VASP, QE, or soiap for now
 
 ## Calculated phase diagram
