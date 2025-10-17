@@ -8,6 +8,10 @@
 - Li-La-Ti
 - Ni-Ga-Nd
 - Fe-Pd-Pb
+- Fe-Cr-Al
+- Mn-Al-C
+- Fe-Ni-Si
+- Ti-Fe-Al
 
 # How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
