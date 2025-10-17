@@ -2,6 +2,13 @@
 - This is unofficial, but it has more examples than the original. I added them after confirming that it works.
 - LAQA: only VASP, QE, or soiap for now
 
+# How to use "repeat_cryspy.sh"
+- "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
+```
+chmod +x repeat_cryspy.sh
+bash repeat_cryspy.sh
+```
+
 # DFTB+ Installation
 - Older versions of DFTB+ allow you to use Pressure with LBFGS, so in some cases you may want to consider using an older version. 
 ```
