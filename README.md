@@ -2,8 +2,10 @@
 - This is unofficial, but it has more examples than the original. I added them after confirming that it works.
 - LAQA: only VASP, QE, or soiap for now
 
-## Ternary system
+## Calculated phase diagram
 - The "end_point" is a parameter that specifies the search range of the chemical potential. The standard is to obtain the DFT energy of a single molecule from databases such as Material Projects, literature, or your own calculations, and expand it by about +/- 1 eV.
+
+## Ternary system
 - Fe-Pd-In
 - Li-La-Ti
 - Ni-Ga-Nd
