@@ -119,7 +119,7 @@ pip install --upgrade numba
 - [1] CCMSハンズオン: CrySPY講習会 (2025/10/15)
 - [2] ASEとCrySPYでサクッと結晶構造探索 #ASE - Qiita
 - [3] Hitoshi GOMI's webpage
-- [4] マテリアルズインフォマティクス 伊藤 聡(編) - 共立出版 | 版元ドットコム
+- [4] マテリアルズインフォマティクス 伊藤 聡(編) - 共立出版
 - [5] 物性研スパコンohtakaで結晶構造探索を行う #Python - Qiita
 - [6] CrySPY: a crystal structure prediction tool accelerated by machine learning
 - [7] csp-cryspy · PyPI
