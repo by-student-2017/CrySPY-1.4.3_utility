@@ -22,6 +22,13 @@ python3 plot3dn.py
 python3 pplot_v1.py
 ```
 
+# Automatic generation of input files (EA-vc version)
+- Since it is troublesome to create an input file, a Python code called make_input.py is provided for chgnet. The usage is as follows:
+```
+python3 make_input.py Al C Ni Fe
+```
+- Write the elements after python3 make_input.py. You can also create ternary and quinary systems.
+
 # How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
 ```
