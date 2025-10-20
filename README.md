@@ -17,7 +17,7 @@ python3 plot3d.py
 ```
 python3 plot3dn.py
 ```
-- The number of atoms of one element in the quaternary system is fixed (nat is fixed to a certain value) and the calculation is performed as a pseudo-ternary system, and the results are shown in the figures. The name "v1" is used because the guide lines have not yet been drawn properly.
+- The number of atoms of one element in the quaternary system is fixed (nat is fixed to a certain value) and the calculation is performed as a pseudo-ternary system, and the results are shown in the figures. The name "v1" is used because the guide lines have not yet been drawn properly. ("PTD" is an abbreviation for pseudo-ternary diagram.)
 ```
 python3 pplot_v1.py
 ```
