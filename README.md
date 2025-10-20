@@ -80,7 +80,7 @@ sudo apt install unzip
 unzip master.zip
 mv CrySPY-1.4.3_utility-master CrySPY_utility
 ```
-## for show svg fomat data
+## For show svg fomat data
 ```
 sudo apt update
 sudo apt -y install eog
