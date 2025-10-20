@@ -1,0 +1,927 @@
+# generated using pymatgen
+data_Mn2Al7Ni5C2
+_symmetry_space_group_name_H-M   Pmmm
+_cell_length_a   3.72464087
+_cell_length_b   7.09651973
+_cell_length_c   9.90435016
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   47
+_chemical_formula_structural   Mn2Al7Ni5C2
+_chemical_formula_sum   'ID_0'
+_cell_volume   261.79165895
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z'
+  8  'x, -y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  2  0.24982214  0.00000000  0.00000000  1
+  Al  Al1  4  0.50000000  0.28577715  0.26286297  1
+  Al  Al2  2  0.50000000  0.32829216  0.00000000  1
+  Al  Al3  1  0.50000000  0.50000000  0.50000000  1
+  Ni  Ni4  2  0.00000000  0.50000000  0.17780476  1
+  Ni  Ni5  2  0.50000000  0.00000000  0.36791064  1
+  Ni  Ni6  1  0.00000000  0.00000000  0.50000000  1
+  C  C7  1  0.00000000  0.50000000  0.00000000  1
+  C  C8  1  0.00000000  0.50000000  0.50000000  1
+# generated using pymatgen
+data_Mn2Al4C
+_symmetry_space_group_name_H-M   Pmmm
+_cell_length_a   4.14492677
+_cell_length_b   5.56290913
+_cell_length_c   8.21171530
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   47
+_chemical_formula_structural   Mn2Al4C
+_chemical_formula_sum   'ID_1'
+_cell_volume   189.34450787
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z'
+  8  'x, -y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  2  0.50000000  0.50000000  0.32613138  1
+  Mn  Mn1  1  0.00000000  0.00000000  0.50000000  1
+  Mn  Mn2  1  0.50000000  0.50000000  0.00000000  1
+  Al  Al3  4  0.00000000  0.25764727  0.18998263  1
+  Al  Al4  2  0.50000000  0.00000000  0.33438176  1
+  Al  Al5  1  0.00000000  0.50000000  0.50000000  1
+  Al  Al6  1  0.50000000  0.00000000  0.00000000  1
+  C  C7  1  0.00000000  0.00000000  0.00000000  1
+  C  C8  1  0.00000000  0.50000000  0.00000000  1
+# generated using pymatgen
+data_Mn6Al11Ni5C2
+_symmetry_space_group_name_H-M   R3m
+_cell_length_a   9.59613472
+_cell_length_b   9.59613472
+_cell_length_c   13.20375830
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   160
+_chemical_formula_structural   Mn6Al11Ni5C2
+_chemical_formula_sum   'ID_2'
+_cell_volume   1052.98181414
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  '-y, -x, z'
+  5  '-x+y, y, z'
+  6  'x, x-y, z'
+  7  'x+2/3, y+1/3, z+1/3'
+  8  '-y+2/3, x-y+1/3, z+1/3'
+  9  '-x+y+2/3, -x+1/3, z+1/3'
+  10  '-y+2/3, -x+1/3, z+1/3'
+  11  '-x+y+2/3, y+1/3, z+1/3'
+  12  'x+2/3, x-y+1/3, z+1/3'
+  13  'x+1/3, y+2/3, z+2/3'
+  14  '-y+1/3, x-y+2/3, z+2/3'
+  15  '-x+y+1/3, -x+2/3, z+2/3'
+  16  '-y+1/3, -x+2/3, z+2/3'
+  17  '-x+y+1/3, y+2/3, z+2/3'
+  18  'x+1/3, x-y+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  18  0.02769966  0.25784180  0.37337611  1
+  Al  Al1  9  0.00330860  0.50165430  0.54256829  1
+  Al  Al2  9  0.02120008  0.51060004  0.85486488  1
+  Al  Al3  9  0.19928922  0.09964461  0.00078371  1
+  Al  Al4  3  0.00000000  0.00000000  0.28733678  1
+  Al  Al5  3  0.00000000  0.00000000  0.47846812  1
+  Ni  Ni6  9  0.10510068  0.89489932  0.70421835  1
+  Ni  Ni7  3  0.00000000  0.00000000  0.12392451  1
+  Ni  Ni8  3  0.00000000  0.00000000  0.87255337  1
+  C  C9  3  0.00000000  0.00000000  0.63015342  1
+  C  C10  3  0.00000000  0.00000000  0.73598860  1
+# generated using pymatgen
+data_Mn11Al2Ni7C2
+_symmetry_space_group_name_H-M   I-4
+_cell_length_a   6.02851627
+_cell_length_b   6.02851627
+_cell_length_c   14.33194070
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   82
+_chemical_formula_structural   Mn11Al2Ni7C2
+_chemical_formula_sum   'ID_3'
+_cell_volume   520.86584218
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  'y+1/2, -x+1/2, -z+1/2'
+  7  '-x+1/2, -y+1/2, z+1/2'
+  8  '-y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  8  0.12923395  0.86391875  0.13694596  1
+  Mn  Mn1  8  0.24454570  0.25230656  0.01204050  1
+  Mn  Mn2  4  0.00000000  0.00000000  0.36580147  1
+  Mn  Mn3  2  0.00000000  0.50000000  0.25000000  1
+  Al  Al4  4  0.00000000  0.50000000  0.58910021  1
+  Ni  Ni5  8  0.23135465  0.23523901  0.19443852  1
+  Ni  Ni6  4  0.00000000  0.50000000  0.08965903  1
+  Ni  Ni7  2  0.00000000  0.50000000  0.75000000  1
+  C  C8  2  0.00000000  0.00000000  0.00000000  1
+  C  C9  2  0.00000000  0.00000000  0.50000000  1
+# generated using pymatgen
+data_Mn8Al5(Ni3C)2
+_symmetry_space_group_name_H-M   P-62m
+_cell_length_a   7.93958873
+_cell_length_b   7.93958873
+_cell_length_c   6.89687901
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   189
+_chemical_formula_structural   Mn8Al5(Ni3C)2
+_chemical_formula_sum   'ID_4'
+_cell_volume   376.51237271
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+y, -x, -z'
+  3  '-y, x-y, z'
+  4  'x, y, -z'
+  5  '-x+y, -x, z'
+  6  '-y, x-y, -z'
+  7  'y, x, z'
+  8  '-x, -x+y, -z'
+  9  'x-y, -y, z'
+  10  'y, x, -z'
+  11  '-x, -x+y, z'
+  12  'x-y, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  6  0.13858564  0.48337064  0.00000000  1
+  Mn  Mn1  2  0.33333333  0.66666667  0.50000000  1
+  Al  Al2  3  0.00000000  0.71040460  0.00000000  1
+  Al  Al3  2  0.00000000  0.00000000  0.16265431  1
+  Ni  Ni4  6  0.00000000  0.54575023  0.30813831  1
+  C  C5  2  0.00000000  0.00000000  0.41255845  1
+# generated using pymatgen
+data_MnAl12(Ni5C)2
+_symmetry_space_group_name_H-M   P-62m
+_cell_length_a   4.95841201
+_cell_length_b   4.95841201
+_cell_length_c   15.07011600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   189
+_chemical_formula_structural   MnAl12(Ni5C)2
+_chemical_formula_sum   'ID_5'
+_cell_volume   320.87246292
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+y, -x, -z'
+  3  '-y, x-y, z'
+  4  'x, y, -z'
+  5  '-x+y, -x, z'
+  6  '-y, x-y, -z'
+  7  'y, x, z'
+  8  '-x, -x+y, -z'
+  9  'x-y, -y, z'
+  10  'y, x, -z'
+  11  '-x, -x+y, z'
+  12  'x-y, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  1  0.00000000  0.00000000  0.50000000  1
+  Al  Al1  6  0.00000000  0.32601756  0.36356892  1
+  Al  Al2  6  0.00000000  0.67632086  0.20383765  1
+  Ni  Ni3  6  0.00000000  0.42732853  0.07911529  1
+  Ni  Ni4  3  0.00000000  0.53786115  0.50000000  1
+  Ni  Ni5  1  0.00000000  0.00000000  0.00000000  1
+  C  C6  2  0.00000000  0.00000000  0.27796028  1
+# generated using pymatgen
+data_Mn6Al5Ni4C
+_symmetry_space_group_name_H-M   Immm
+_cell_length_a   4.98193150
+_cell_length_b   7.20989541
+_cell_length_c   11.91783631
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   71
+_chemical_formula_structural   Mn6Al5Ni4C
+_chemical_formula_sum   'ID_6'
+_cell_volume   428.07920616
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z'
+  8  'x, -y, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-x+1/2, -y+1/2, -z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'x+1/2, y+1/2, -z+1/2'
+  13  'x+1/2, -y+1/2, -z+1/2'
+  14  '-x+1/2, y+1/2, z+1/2'
+  15  '-x+1/2, y+1/2, -z+1/2'
+  16  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  8  0.00000000  0.30309159  0.30300872  1
+  Mn  Mn1  4  0.00000000  0.13941429  0.50000000  1
+  Al  Al2  4  0.00000000  0.00000000  0.16712458  1
+  Al  Al3  4  0.00000000  0.29823634  0.00000000  1
+  Al  Al4  2  0.00000000  0.50000000  0.50000000  1
+  Ni  Ni5  8  0.24270475  0.50000000  0.15670424  1
+  C  C6  2  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Mn4Al5(Ni5C)2
+_symmetry_space_group_name_H-M   I222
+_cell_length_a   7.61544377
+_cell_length_b   8.57719581
+_cell_length_c   12.46338831
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   23
+_chemical_formula_structural   Mn4Al5(Ni5C)2
+_chemical_formula_sum   'ID_7'
+_cell_volume   814.09796025
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  'x, -y, -z'
+  4  '-x, y, -z'
+  5  'x+1/2, y+1/2, z+1/2'
+  6  '-x+1/2, -y+1/2, z+1/2'
+  7  'x+1/2, -y+1/2, -z+1/2'
+  8  '-x+1/2, y+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  8  0.03616733  0.24692187  0.25589679  1
+  Al  Al1  4  0.00000000  0.22052618  0.00000000  1
+  Al  Al2  4  0.24734442  0.50000000  0.50000000  1
+  Al  Al3  2  0.00000000  0.50000000  0.00000000  1
+  Ni  Ni4  8  0.20644517  0.27930630  0.86972028  1
+  Ni  Ni5  4  0.00000000  0.00000000  0.14665181  1
+  Ni  Ni6  4  0.00000000  0.50000000  0.17490103  1
+  Ni  Ni7  4  0.00000000  0.50000000  0.36088025  1
+  C  C8  2  0.00000000  0.00000000  0.00000000  1
+  C  C9  2  0.00000000  0.50000000  0.50000000  1
+# generated using pymatgen
+data_Al2Ni9C2
+_symmetry_space_group_name_H-M   P4/mmm
+_cell_length_a   10.96766659
+_cell_length_b   10.96766659
+_cell_length_c   3.42392219
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   123
+_chemical_formula_structural   Al2Ni9C2
+_chemical_formula_sum   'ID_8'
+_cell_volume   411.86260826
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x, -y, -z'
+  10  '-x, y, z'
+  11  '-y, -x, -z'
+  12  'y, x, z'
+  13  '-x, y, -z'
+  14  'x, -y, z'
+  15  'y, x, -z'
+  16  '-y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Al  Al0  2  0.00000000  0.50000000  0.50000000  1
+  Ni  Ni1  4  0.00000000  0.29788375  0.50000000  1
+  Ni  Ni2  4  0.12042419  0.12042419  0.50000000  1
+  Ni  Ni3  1  0.00000000  0.00000000  0.00000000  1
+  C  C4  1  0.00000000  0.00000000  0.50000000  1
+  C  C5  1  0.50000000  0.50000000  0.50000000  1
+# generated using pymatgen
+data_Mn6Al6C
+_symmetry_space_group_name_H-M   P6mm
+_cell_length_a   6.77751352
+_cell_length_b   6.77751352
+_cell_length_c   12.03449341
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   183
+_chemical_formula_structural   Mn6Al6C
+_chemical_formula_sum   'ID_9'
+_cell_volume   478.73946489
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'x-y, x, z'
+  3  '-y, x-y, z'
+  4  '-x, -y, z'
+  5  '-x+y, -x, z'
+  6  'y, -x+y, z'
+  7  'y, x, z'
+  8  'x, x-y, z'
+  9  'x-y, -y, z'
+  10  '-y, -x, z'
+  11  '-x, -x+y, z'
+  12  '-x+y, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  6  0.00000000  0.30449831  0.55167584  1
+  Mn  Mn1  3  0.00000000  0.50000000  0.92879472  1
+  Mn  Mn2  1  0.00000000  0.00000000  0.21316330  1
+  Mn  Mn3  1  0.00000000  0.00000000  0.43648234  1
+  Mn  Mn4  1  0.00000000  0.00000000  0.68817122  1
+  Al  Al5  6  0.00000000  0.33389485  0.34603558  1
+  Al  Al6  3  0.00000000  0.50000000  0.14524378  1
+  Al  Al7  3  0.00000000  0.50000000  0.72457418  1
+  C  C8  2  0.33333333  0.66666667  0.83134094  1
+# generated using pymatgen
+data_Mn4Al7(Ni2C)2
+_symmetry_space_group_name_H-M   P-62m
+_cell_length_a   4.59479215
+_cell_length_b   4.59479215
+_cell_length_c   11.94269168
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   189
+_chemical_formula_structural   Mn4Al7(Ni2C)2
+_chemical_formula_sum   'ID_14'
+_cell_volume   218.35572963
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x+y, -x, -z'
+  3  '-y, x-y, z'
+  4  'x, y, -z'
+  5  '-x+y, -x, z'
+  6  '-y, x-y, -z'
+  7  'y, x, z'
+  8  '-x, -x+y, -z'
+  9  'x-y, -y, z'
+  10  'y, x, -z'
+  11  '-x, -x+y, z'
+  12  'x-y, -y, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  4  0.33333333  0.66666667  0.64529481  1
+  Al  Al1  6  0.00000000  0.34498071  0.17638378  1
+  Al  Al2  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni3  2  0.00000000  0.00000000  0.33352839  1
+  Ni  Ni4  2  0.33333333  0.66666667  0.00000000  1
+  C  C5  2  0.33333333  0.66666667  0.50000000  1
+# generated using pymatgen
+data_Mn9AlC2
+_symmetry_space_group_name_H-M   R3
+_cell_length_a   7.93506380
+_cell_length_b   7.93506380
+_cell_length_c   7.05318448
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   146
+_chemical_formula_structural   Mn9AlC2
+_chemical_formula_sum   'ID_11'
+_cell_volume   384.60659003
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'x+2/3, y+1/3, z+1/3'
+  5  '-y+2/3, x-y+1/3, z+1/3'
+  6  '-x+y+2/3, -x+1/3, z+1/3'
+  7  'x+1/3, y+2/3, z+2/3'
+  8  '-y+1/3, x-y+2/3, z+2/3'
+  9  '-x+y+1/3, -x+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  9  0.04354923  0.68229146  0.93310007  1
+  Mn  Mn1  9  0.04365761  0.24885485  0.46608345  1
+  Mn  Mn2  9  0.16370773  0.47247339  0.73272892  1
+  Al  Al3  3  0.00000000  0.00000000  0.76811449  1
+  C  C4  3  0.00000000  0.00000000  0.26575875  1
+  C  C5  3  0.00000000  0.00000000  0.47334063  1
+# generated using pymatgen
+data_Mn3Al3Ni6C
+_symmetry_space_group_name_H-M   P4/mbm
+_cell_length_a   5.93670397
+_cell_length_b   5.93670397
+_cell_length_c   10.99443457
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   127
+_chemical_formula_structural   Mn3Al3Ni6C
+_chemical_formula_sum   'ID_12'
+_cell_volume   387.49284381
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+  6  'x, y, -z'
+  7  'y, -x, z'
+  8  '-y, x, -z'
+  9  'x+1/2, -y+1/2, -z'
+  10  '-x+1/2, y+1/2, z'
+  11  '-y+1/2, -x+1/2, -z'
+  12  'y+1/2, x+1/2, z'
+  13  '-x+1/2, y+1/2, -z'
+  14  'x+1/2, -y+1/2, z'
+  15  'y+1/2, x+1/2, -z'
+  16  '-y+1/2, -x+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  4  0.00000000  0.00000000  0.16658850  1
+  Mn  Mn1  2  0.00000000  0.00000000  0.50000000  1
+  Al  Al2  4  0.00000000  0.50000000  0.38657896  1
+  Al  Al3  2  0.00000000  0.50000000  0.00000000  1
+  Ni  Ni4  8  0.15378212  0.65378212  0.21529792  1
+  Ni  Ni5  4  0.24741885  0.25258115  0.00000000  1
+  C  C6  2  0.00000000  0.00000000  0.00000000  1
+# generated using pymatgen
+data_Mn6Al7(Ni6C)2
+_symmetry_space_group_name_H-M   R-3m
+_cell_length_a   5.25812341
+_cell_length_b   5.25812341
+_cell_length_c   42.85614282
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   166
+_chemical_formula_structural   Mn6Al7(Ni6C)2
+_chemical_formula_sum   'ID_13'
+_cell_volume   1026.13680010
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x-y, z'
+  4  'y, -x+y, -z'
+  5  '-x+y, -x, z'
+  6  'x-y, x, -z'
+  7  'y, x, -z'
+  8  '-y, -x, z'
+  9  'x-y, -y, -z'
+  10  '-x+y, y, z'
+  11  '-x, -x+y, -z'
+  12  'x, x-y, z'
+  13  'x+2/3, y+1/3, z+1/3'
+  14  '-x+2/3, -y+1/3, -z+1/3'
+  15  '-y+2/3, x-y+1/3, z+1/3'
+  16  'y+2/3, -x+y+1/3, -z+1/3'
+  17  '-x+y+2/3, -x+1/3, z+1/3'
+  18  'x-y+2/3, x+1/3, -z+1/3'
+  19  'y+2/3, x+1/3, -z+1/3'
+  20  '-y+2/3, -x+1/3, z+1/3'
+  21  'x-y+2/3, -y+1/3, -z+1/3'
+  22  '-x+y+2/3, y+1/3, z+1/3'
+  23  '-x+2/3, -x+y+1/3, -z+1/3'
+  24  'x+2/3, x-y+1/3, z+1/3'
+  25  'x+1/3, y+2/3, z+2/3'
+  26  '-x+1/3, -y+2/3, -z+2/3'
+  27  '-y+1/3, x-y+2/3, z+2/3'
+  28  'y+1/3, -x+y+2/3, -z+2/3'
+  29  '-x+y+1/3, -x+2/3, z+2/3'
+  30  'x-y+1/3, x+2/3, -z+2/3'
+  31  'y+1/3, x+2/3, -z+2/3'
+  32  '-y+1/3, -x+2/3, z+2/3'
+  33  'x-y+1/3, -y+2/3, -z+2/3'
+  34  '-x+y+1/3, y+2/3, z+2/3'
+  35  '-x+1/3, -x+y+2/3, -z+2/3'
+  36  'x+1/3, x-y+2/3, z+2/3'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  9  0.00000000  0.50000000  0.00000000  1
+  Mn  Mn1  6  0.00000000  0.00000000  0.09028340  1
+  Mn  Mn2  3  -0.00000000  -0.00000000  0.50000000  1
+  Al  Al3  18  0.00483290  0.50241645  0.09154233  1
+  Al  Al4  3  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni5  18  0.00094124  0.50047062  0.47139205  1
+  Ni  Ni6  18  0.00412834  0.50206417  0.37884962  1
+  C  C7  6  0.00000000  0.00000000  0.16658629  1
+# generated using pymatgen
+data_Mn4Al3Ni6C
+_symmetry_space_group_name_H-M   P4/nmm
+_cell_length_a   7.42078284
+_cell_length_b   7.42078284
+_cell_length_c   6.06899954
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   129
+_chemical_formula_structural   Mn4Al3Ni6C
+_chemical_formula_sum   'ID_15'
+_cell_volume   334.20777577
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y+1/2, x+1/2, z'
+  3  '-x, -y, z'
+  4  'y+1/2, -x+1/2, z'
+  5  'x+1/2, -y+1/2, -z'
+  6  '-y, -x, -z'
+  7  '-x+1/2, y+1/2, -z'
+  8  'y, x, -z'
+  9  '-x+1/2, -y+1/2, -z'
+  10  'y, -x, -z'
+  11  'x+1/2, y+1/2, -z'
+  12  '-y, x, -z'
+  13  '-x, y, z'
+  14  'y+1/2, x+1/2, z'
+  15  'x, -y, z'
+  16  '-y+1/2, -x+1/2, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  8  0.00000000  0.21862954  0.67950340  1
+  Al  Al1  4  0.25000000  0.25000000  0.00000000  1
+  Al  Al2  2  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni3  8  0.00000000  0.25077748  0.27024163  1
+  Ni  Ni4  2  0.00000000  0.50000000  0.52221209  1
+  Ni  Ni5  2  0.00000000  0.50000000  0.95078845  1
+  C  C6  2  0.00000000  0.00000000  0.50000000  1
+# generated using pymatgen
+data_Mn7Al3(Ni5C)2
+_symmetry_space_group_name_H-M   P3
+_cell_length_a   4.86387427
+_cell_length_b   4.86387427
+_cell_length_c   12.22958281
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   143
+_chemical_formula_structural   Mn7Al3(Ni5C)2
+_chemical_formula_sum   'ID_16'
+_cell_volume   250.55723807
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  3  0.33804321  0.15212973  0.95022697  1
+  Mn  Mn1  1  0.00000000  0.00000000  0.12028461  1
+  Mn  Mn2  1  0.00000000  0.00000000  0.29661718  1
+  Mn  Mn3  1  0.00000000  0.00000000  0.61159079  1
+  Mn  Mn4  1  0.66666667  0.33333333  0.28478813  1
+  Al  Al5  1  0.33333333  0.66666667  0.28775848  1
+  Al  Al6  1  0.33333333  0.66666667  0.61282131  1
+  Al  Al7  1  0.66666667  0.33333333  0.62110259  1
+  Ni  Ni8  3  0.00004119  0.50594476  0.11777898  1
+  Ni  Ni9  3  0.02385261  0.66637090  0.77255462  1
+  Ni  Ni10  3  0.38026878  0.00311644  0.45271021  1
+  Ni  Ni11  1  0.33333333  0.66666667  0.94701359  1
+  C  C12  1  0.00000000  0.00000000  0.45497653  1
+  C  C13  1  0.00000000  0.00000000  0.84346386  1
+# generated using pymatgen
+data_Mn7Al6(Ni4C)2
+_symmetry_space_group_name_H-M   P-4m2
+_cell_length_a   6.70372290
+_cell_length_b   6.70372290
+_cell_length_c   7.10016859
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   115
+_chemical_formula_structural   Mn7Al6(Ni4C)2
+_chemical_formula_sum   'ID_17'
+_cell_volume   319.08087158
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  '-x, y, z'
+  6  '-y, -x, -z'
+  7  'x, -y, z'
+  8  'y, x, -z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  4  0.34214053  0.50000000  0.27274311  1
+  Mn  Mn1  2  0.00000000  0.50000000  0.41671133  1
+  Mn  Mn2  1  0.00000000  0.00000000  0.50000000  1
+  Al  Al3  4  0.20268593  0.50000000  0.93464592  1
+  Al  Al4  2  0.00000000  0.00000000  0.17273016  1
+  Ni  Ni5  8  0.17546646  0.28034736  0.65808376  1
+  C  C6  1  0.50000000  0.50000000  0.00000000  1
+  C  C7  1  0.50000000  0.50000000  0.50000000  1
+# generated using pymatgen
+data_Mn10Al10Ni11C2
+_symmetry_space_group_name_H-M   I-4m2
+_cell_length_a   6.67696105
+_cell_length_b   6.67696105
+_cell_length_c   19.32596394
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   119
+_chemical_formula_structural   Mn10Al10Ni11C2
+_chemical_formula_sum   'ID_18'
+_cell_volume   861.58643043
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  'y, -x, -z'
+  3  '-x, -y, z'
+  4  '-y, x, -z'
+  5  '-x, y, z'
+  6  '-y, -x, -z'
+  7  'x, -y, z'
+  8  'y, x, -z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  'y+1/2, -x+1/2, -z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  '-y+1/2, x+1/2, -z+1/2'
+  13  '-x+1/2, y+1/2, z+1/2'
+  14  '-y+1/2, -x+1/2, -z+1/2'
+  15  'x+1/2, -y+1/2, z+1/2'
+  16  'y+1/2, x+1/2, -z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  8  0.20954158  0.20954158  0.50000000  1
+  Mn  Mn1  4  0.00000000  0.00000000  0.19132120  1
+  Mn  Mn2  4  0.00000000  0.00000000  0.43930346  1
+  Mn  Mn3  4  0.00000000  0.50000000  0.54686653  1
+  Al  Al4  16  0.19298229  0.30344431  0.86970498  1
+  Al  Al5  2  0.00000000  0.00000000  0.00000000  1
+  Al  Al6  2  0.00000000  0.50000000  0.75000000  1
+  Ni  Ni7  8  0.00000000  0.32929455  0.38075345  1
+  Ni  Ni8  8  0.24335804  0.25664196  0.25000000  1
+  Ni  Ni9  4  0.00000000  0.00000000  0.31296392  1
+  Ni  Ni10  2  0.00000000  0.50000000  0.25000000  1
+  C  C11  4  0.00000000  0.50000000  0.04378710  1
+# generated using pymatgen
+data_Mn4Al3NiC2
+_symmetry_space_group_name_H-M   Immm
+_cell_length_a   4.66614947
+_cell_length_b   6.85537432
+_cell_length_c   9.15267418
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   71
+_chemical_formula_structural   Mn4Al3NiC2
+_chemical_formula_sum   'ID_19'
+_cell_volume   292.77758400
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-x, -y, z'
+  4  'x, y, -z'
+  5  'x, -y, -z'
+  6  '-x, y, z'
+  7  '-x, y, -z'
+  8  'x, -y, z'
+  9  'x+1/2, y+1/2, z+1/2'
+  10  '-x+1/2, -y+1/2, -z+1/2'
+  11  '-x+1/2, -y+1/2, z+1/2'
+  12  'x+1/2, y+1/2, -z+1/2'
+  13  'x+1/2, -y+1/2, -z+1/2'
+  14  '-x+1/2, y+1/2, z+1/2'
+  15  '-x+1/2, y+1/2, -z+1/2'
+  16  'x+1/2, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  4  0.00000000  0.00000000  0.30114611  1
+  Mn  Mn1  4  0.00000000  0.33324053  0.00000000  1
+  Al  Al2  4  0.00000000  0.50000000  0.25951716  1
+  Al  Al3  2  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni4  2  0.00000000  0.50000000  0.50000000  1
+  C  C5  4  0.15020165  0.00000000  0.50000000  1
+# generated using pymatgen
+data_Mn11Al7NiC2
+_symmetry_space_group_name_H-M   P31m
+_cell_length_a   4.58133480
+_cell_length_b   4.58133480
+_cell_length_c   20.94275726
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000000
+_symmetry_Int_Tables_number   157
+_chemical_formula_structural   Mn11Al7NiC2
+_chemical_formula_sum   'ID_10'
+_cell_volume   380.66991300
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-y, x-y, z'
+  3  '-x+y, -x, z'
+  4  'y, x, z'
+  5  'x-y, -y, z'
+  6  '-x, -x+y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  3  0.00000000  0.50009576  0.49262103  1
+  Mn  Mn1  3  0.00000000  0.50110567  0.38547553  1
+  Mn  Mn2  2  0.33333333  0.66666667  0.60173913  1
+  Mn  Mn3  1  0.00000000  0.00000000  0.32402657  1
+  Mn  Mn4  1  0.00000000  0.00000000  0.43728870  1
+  Mn  Mn5  1  0.00000000  0.00000000  0.66955397  1
+  Al  Al6  3  0.00000000  0.66223346  0.82017581  1
+  Al  Al7  2  0.33333333  0.66666667  0.27752070  1
+  Al  Al8  1  0.00000000  0.00000000  0.20972431  1
+  Al  Al9  1  0.00000000  0.00000000  0.55555660  1
+  Ni  Ni10  1  0.00000000  0.00000000  0.10476166  1
+  C  C11  1  0.00000000  0.00000000  0.75239479  1
+  C  C12  1  0.00000000  0.00000000  0.88131196  1

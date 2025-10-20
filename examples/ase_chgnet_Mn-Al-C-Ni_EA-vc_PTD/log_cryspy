@@ -1,0 +1,812 @@
+[2025-10-20 09:45:09,618][cryspy_init][INFO] 
+
+
+Start CrySPY 1.4.3
+
+
+[2025-10-20 09:45:09,618][cryspy_init][INFO] # ---------- Library version info
+[2025-10-20 09:45:09,619][cryspy_init][INFO] ase version: 3.26.0
+[2025-10-20 09:45:09,622][cryspy_init][INFO] pandas version: 2.3.3
+[2025-10-20 09:45:09,622][cryspy_init][INFO] pymatgen version: 2025.10.7
+[2025-10-20 09:45:09,623][cryspy_init][INFO] pyxtal version: 1.1.1
+[2025-10-20 09:45:09,623][cryspy_init][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:45:09,623][write_input][INFO] [basic]
+[2025-10-20 09:45:09,623][write_input][INFO] algo = EA-vc
+[2025-10-20 09:45:09,623][write_input][INFO] calc_code = ASE
+[2025-10-20 09:45:09,624][write_input][INFO] nstage = 1
+[2025-10-20 09:45:09,624][write_input][INFO] njob = 5
+[2025-10-20 09:45:09,624][write_input][INFO] jobcmd = bash
+[2025-10-20 09:45:09,624][write_input][INFO] jobfile = job_cryspy
+[2025-10-20 09:45:09,624][write_input][INFO] 
+[2025-10-20 09:45:09,624][write_input][INFO] [structure]
+[2025-10-20 09:45:09,624][write_input][INFO] struc_mode = crystal
+[2025-10-20 09:45:09,624][write_input][INFO] atype = ('Al', 'C', 'Mn', 'Ni')
+[2025-10-20 09:45:09,624][write_input][INFO] mindist_factor = 1.0
+[2025-10-20 09:45:09,624][write_input][INFO] vol_factor = 1.1
+[2025-10-20 09:45:09,624][write_input][INFO] symprec = 0.01
+[2025-10-20 09:45:09,624][write_input][INFO] spgnum = all
+[2025-10-20 09:45:09,624][write_input][INFO] use_find_wy = False
+[2025-10-20 09:45:09,624][write_input][INFO] ll_nat = (0, 2, 0, 0)
+[2025-10-20 09:45:09,624][write_input][INFO] ul_nat = (12, 2, 12, 12)
+[2025-10-20 09:45:09,624][write_input][INFO] 
+[2025-10-20 09:45:09,624][write_input][INFO] [option]
+[2025-10-20 09:45:09,624][write_input][INFO] check_mindist_opt = True
+[2025-10-20 09:45:09,624][write_input][INFO] stop_chkpt = 0
+[2025-10-20 09:45:09,624][write_input][INFO] load_struc_flag = False
+[2025-10-20 09:45:09,624][write_input][INFO] stop_next_struc = False
+[2025-10-20 09:45:09,624][write_input][INFO] append_struc_ea = False
+[2025-10-20 09:45:09,624][write_input][INFO] energy_step_flag = False
+[2025-10-20 09:45:09,624][write_input][INFO] struc_step_flag = False
+[2025-10-20 09:45:09,624][write_input][INFO] force_step_flag = False
+[2025-10-20 09:45:09,624][write_input][INFO] stress_step_flag = False
+[2025-10-20 09:45:09,624][write_input][INFO] 
+[2025-10-20 09:45:09,624][write_input][INFO] [EA]
+[2025-10-20 09:45:09,624][write_input][INFO] n_pop = 20
+[2025-10-20 09:45:09,625][write_input][INFO] n_crsov = 5
+[2025-10-20 09:45:09,625][write_input][INFO] n_perm = 2
+[2025-10-20 09:45:09,625][write_input][INFO] n_strain = 2
+[2025-10-20 09:45:09,625][write_input][INFO] n_rand = 2
+[2025-10-20 09:45:09,625][write_input][INFO] n_elite = 2
+[2025-10-20 09:45:09,625][write_input][INFO] fit_reverse = False
+[2025-10-20 09:45:09,625][write_input][INFO] n_fittest = 10
+[2025-10-20 09:45:09,625][write_input][INFO] slct_func = TNM
+[2025-10-20 09:45:09,625][write_input][INFO] t_size = 2
+[2025-10-20 09:45:09,625][write_input][INFO] crs_lat = random
+[2025-10-20 09:45:09,625][write_input][INFO] nat_diff_tole = 4
+[2025-10-20 09:45:09,625][write_input][INFO] ntimes = 1
+[2025-10-20 09:45:09,625][write_input][INFO] sigma_st = 0.5
+[2025-10-20 09:45:09,625][write_input][INFO] maxcnt_ea = 50
+[2025-10-20 09:45:09,625][write_input][INFO] maxgen_ea = 0
+[2025-10-20 09:45:09,625][write_input][INFO] n_add = 3
+[2025-10-20 09:45:09,625][write_input][INFO] add_max = 3
+[2025-10-20 09:45:09,625][write_input][INFO] n_elim = 3
+[2025-10-20 09:45:09,625][write_input][INFO] elim_max = 3
+[2025-10-20 09:45:09,625][write_input][INFO] n_subs = 3
+[2025-10-20 09:45:09,625][write_input][INFO] subs_max = 3
+[2025-10-20 09:45:09,625][write_input][INFO] target = random
+[2025-10-20 09:45:09,625][write_input][INFO] end_point = (-3.74, -9.2, -7.4, -5.4)
+[2025-10-20 09:45:09,625][write_input][INFO] show_max = 0.2
+[2025-10-20 09:45:09,625][write_input][INFO] label_stable = True
+[2025-10-20 09:45:09,625][write_input][INFO] vmax = 0.2
+[2025-10-20 09:45:09,625][write_input][INFO] bottom_margin = 0.02
+[2025-10-20 09:45:09,625][write_input][INFO] fig_format = svg
+[2025-10-20 09:45:09,625][write_input][INFO] 
+[2025-10-20 09:45:09,625][write_input][INFO] [ASE]
+[2025-10-20 09:45:09,626][write_input][INFO] kpt_flag = False
+[2025-10-20 09:45:09,626][write_input][INFO] force_gamma = False
+[2025-10-20 09:45:09,626][write_input][INFO] ase_python = chgnet_in.py
+[2025-10-20 09:45:09,626][cryspy_init][INFO] # ---------- Initial structure generation
+[2025-10-20 09:45:09,626][rs_gen][INFO] # ------ mindist
+[2025-10-20 09:45:09,628][struc_util][INFO] Al - Al: 1.21
+[2025-10-20 09:45:09,628][struc_util][INFO] Al - C: 0.995
+[2025-10-20 09:45:09,628][struc_util][INFO] Al - Mn: 1.2999999999999998
+[2025-10-20 09:45:09,628][struc_util][INFO] Al - Ni: 1.225
+[2025-10-20 09:45:09,628][struc_util][INFO] C - C: 0.78
+[2025-10-20 09:45:09,628][struc_util][INFO] C - Mn: 1.085
+[2025-10-20 09:45:09,628][struc_util][INFO] C - Ni: 1.01
+[2025-10-20 09:45:09,628][struc_util][INFO] Mn - Mn: 1.39
+[2025-10-20 09:45:09,628][struc_util][INFO] Mn - Ni: 1.315
+[2025-10-20 09:45:09,628][struc_util][INFO] Ni - Ni: 1.24
+[2025-10-20 09:45:09,628][rs_gen][INFO] # ------ generate structures
+[2025-10-20 09:45:09,708][gen_pyxtal][INFO] Structure ID      0: (7, 2, 2, 5) Space group:  47 -->  47 Pmmm
+[2025-10-20 09:45:09,760][gen_pyxtal][INFO] Structure ID      1: (8, 2, 4, 0) Space group:  10 -->  10 P2/m
+[2025-10-20 09:45:09,874][gen_pyxtal][INFO] Structure ID      2: (11, 2, 6, 5) Space group: 160 --> 160 R3m
+[2025-10-20 09:45:10,365][gen_pyxtal][INFO] Structure ID      3: (2, 2, 11, 7) Space group:  82 -->  82 I-4
+[2025-10-20 09:45:10,466][gen_pyxtal][INFO] Structure ID      4: (5, 2, 8, 6) Space group: 174 --> 174 P-6
+[2025-10-20 09:45:10,770][gen_pyxtal][INFO] Structure ID      5: (12, 2, 1, 10) Space group: 150 --> 150 P321
+[2025-10-20 09:45:10,795][gen_pyxtal][INFO] Structure ID      6: (10, 2, 12, 8) Space group:  48 -->  48 Pnnn
+[2025-10-20 09:45:10,910][gen_pyxtal][INFO] Structure ID      7: (5, 2, 4, 10) Space group:  23 -->  23 I222
+[2025-10-20 09:45:10,939][gen_pyxtal][INFO] Structure ID      8: (2, 2, 0, 9) Space group:  89 --> 123 P4/mmm
+[2025-10-20 09:45:10,976][gen_pyxtal][INFO] Structure ID      9: (12, 2, 12, 0) Space group: 183 --> 183 P6mm
+[2025-10-20 09:45:11,057][gen_pyxtal][INFO] Structure ID     10: (7, 2, 11, 1) Space group: 157 --> 157 P31m
+[2025-10-20 09:45:11,090][gen_pyxtal][INFO] Structure ID     11: (1, 2, 9, 0) Space group: 146 --> 146 R3
+[2025-10-20 09:45:11,319][gen_pyxtal][INFO] Structure ID     12: (6, 2, 6, 12) Space group: 117 --> 117 P-4b2
+[2025-10-20 09:45:11,368][gen_pyxtal][INFO] Structure ID     13: (7, 2, 6, 12) Space group: 148 --> 148 R-3
+[2025-10-20 09:45:11,466][gen_pyxtal][INFO] Structure ID     14: (7, 2, 4, 4) Space group: 189 --> 189 P-62m
+[2025-10-20 09:45:11,619][gen_pyxtal][INFO] Structure ID     15: (6, 2, 8, 12) Space group:  85 -->  85 P4/n
+[2025-10-20 09:45:11,707][gen_pyxtal][INFO] Structure ID     16: (3, 2, 7, 10) Space group: 143 --> 143 P3
+[2025-10-20 09:45:11,744][gen_pyxtal][INFO] Structure ID     17: (6, 2, 7, 8) Space group: 115 --> 115 P-4m2
+[2025-10-20 09:45:12,994][gen_pyxtal][INFO] Structure ID     18: (10, 2, 10, 11) Space group: 119 --> 119 I-4m2
+[2025-10-20 09:45:13,169][gen_pyxtal][INFO] Structure ID     19: (3, 2, 4, 1) Space group:  71 -->  71 Immm
+[2025-10-20 09:45:13,664][cryspy_init][INFO] Elapsed time for structure generation: 0:00:04.038288
+[2025-10-20 09:45:13,668][ea_init][INFO] # ---------- Initialize evolutionary algorithm
+[2025-10-20 09:45:13,669][ea_init][INFO] # ------ Generation 1
+[2025-10-20 09:45:13,669][ea_init][INFO] 20 structures by random
+[2025-10-20 09:45:14,825][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:45:14,825][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:45:14,830][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:45:14,832][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:45:15,184][ctrl_job][INFO] ID      0: submit job, Stage 1
+[2025-10-20 09:45:15,185][ctrl_job][INFO] ID      1: submit job, Stage 1
+[2025-10-20 09:45:15,187][ctrl_job][INFO] ID      2: submit job, Stage 1
+[2025-10-20 09:45:15,189][ctrl_job][INFO] ID      3: submit job, Stage 1
+[2025-10-20 09:45:15,190][ctrl_job][INFO] ID      4: submit job, Stage 1
+[2025-10-20 09:45:16,695][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:45:16,696][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:45:16,699][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:45:16,700][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:45:16,700][ctrl_job][INFO] ID      0: still queueing or running
+[2025-10-20 09:45:16,700][ctrl_job][INFO] ID      1: still queueing or running
+[2025-10-20 09:45:16,701][ctrl_job][INFO] ID      2: still queueing or running
+[2025-10-20 09:45:16,701][ctrl_job][INFO] ID      3: still queueing or running
+[2025-10-20 09:45:16,701][ctrl_job][INFO] ID      4: still queueing or running
+[2025-10-20 09:45:50,837][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:45:50,838][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:45:50,844][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:45:50,845][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:45:50,845][ctrl_job][INFO] ID      0: still queueing or running
+[2025-10-20 09:45:50,845][ctrl_job][INFO] ID      1: still queueing or running
+[2025-10-20 09:45:50,845][ctrl_job][INFO] ID      2: still queueing or running
+[2025-10-20 09:45:50,845][ctrl_job][INFO] ID      3: still queueing or running
+[2025-10-20 09:45:50,846][ctrl_job][INFO] ID      4: still queueing or running
+[2025-10-20 09:45:53,009][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:45:53,009][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:45:53,062][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:45:53,064][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:45:53,064][ctrl_job][INFO] ID      0: still queueing or running
+[2025-10-20 09:45:53,064][ctrl_job][INFO] ID      1: still queueing or running
+[2025-10-20 09:45:53,064][ctrl_job][INFO] ID      2: still queueing or running
+[2025-10-20 09:45:53,064][ctrl_job][INFO] ID      3: still queueing or running
+[2025-10-20 09:45:53,064][ctrl_job][INFO] ID      4: still queueing or running
+[2025-10-20 09:45:55,622][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:45:55,630][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:45:55,649][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:45:55,653][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:45:55,661][ctrl_job][INFO] ID      0: still queueing or running
+[2025-10-20 09:45:55,661][ctrl_job][INFO] ID      1: still queueing or running
+[2025-10-20 09:45:55,661][ctrl_job][INFO] ID      2: still queueing or running
+[2025-10-20 09:45:55,661][ctrl_job][INFO] ID      3: still queueing or running
+[2025-10-20 09:45:55,661][ctrl_job][INFO] ID      4: still queueing or running
+[2025-10-20 09:47:34,781][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:47:34,781][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:47:34,784][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:47:34,785][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:47:34,785][ctrl_job][INFO] ID      0: Stage 1 Done!
+[2025-10-20 09:47:35,154][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:47:35,160][ctrl_job][INFO]     collect results: E = -5.058717250823975 eV/atom
+[2025-10-20 09:47:35,161][ctrl_job][INFO]                      Ef = 0.34003274917602533 eV/atom
+[2025-10-20 09:47:35,172][ctrl_job][INFO] ID      1: Stage 1 Done!
+[2025-10-20 09:47:35,173][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:47:35,176][ctrl_job][INFO]     collect results: E = -5.909620761871338 eV/atom
+[2025-10-20 09:47:35,176][ctrl_job][INFO]                      Ef = -0.3439064761570525 eV/atom
+[2025-10-20 09:47:35,187][ctrl_job][INFO] ID      2: Stage 1 Done!
+[2025-10-20 09:47:35,188][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:47:35,195][ctrl_job][INFO]     collect results: E = -5.958488464355469 eV/atom
+[2025-10-20 09:47:35,195][ctrl_job][INFO]                      Ef = -0.5026551310221354 eV/atom
+[2025-10-20 09:47:35,208][ctrl_job][INFO] ID      3: Stage 1 Done!
+[2025-10-20 09:47:35,209][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:47:35,215][ctrl_job][INFO]     collect results: E = -7.482838153839111 eV/atom
+[2025-10-20 09:47:35,215][ctrl_job][INFO]                      Ef = -0.8882926992936571 eV/atom
+[2025-10-20 09:47:35,225][ctrl_job][INFO] ID      4: Stage 1 Done!
+[2025-10-20 09:47:35,226][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:47:35,231][ctrl_job][INFO]     collect results: E = -6.060137748718262 eV/atom
+[2025-10-20 09:47:35,231][ctrl_job][INFO]                      Ef = 0.06843367985316706 eV/atom
+[2025-10-20 09:47:35,242][cryspy][INFO] 
+
+recheck 1
+
+[2025-10-20 09:47:35,243][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:47:35,245][ctrl_job][INFO] ID      5: submit job, Stage 1
+[2025-10-20 09:47:35,246][ctrl_job][INFO] ID      6: submit job, Stage 1
+[2025-10-20 09:47:35,248][ctrl_job][INFO] ID      7: submit job, Stage 1
+[2025-10-20 09:47:35,249][ctrl_job][INFO] ID      8: submit job, Stage 1
+[2025-10-20 09:47:35,251][ctrl_job][INFO] ID      9: submit job, Stage 1
+[2025-10-20 09:47:42,524][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:47:42,525][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:47:42,534][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:47:42,540][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:47:42,540][ctrl_job][INFO] ID      5: still queueing or running
+[2025-10-20 09:47:42,540][ctrl_job][INFO] ID      6: still queueing or running
+[2025-10-20 09:47:42,540][ctrl_job][INFO] ID      7: still queueing or running
+[2025-10-20 09:47:42,540][ctrl_job][INFO] ID      8: still queueing or running
+[2025-10-20 09:47:42,540][ctrl_job][INFO] ID      9: still queueing or running
+[2025-10-20 09:48:42,937][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:48:42,937][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:48:42,940][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:48:42,942][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:48:42,942][ctrl_job][INFO] ID      5: Stage 1 Done!
+[2025-10-20 09:48:43,299][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:48:43,309][ctrl_job][INFO]     collect results: E = -5.245903968811035 eV/atom
+[2025-10-20 09:48:43,309][ctrl_job][INFO]                      Ef = -0.25870396881103463 eV/atom
+[2025-10-20 09:48:43,323][ctrl_job][INFO] ID      6: Stage 1 Done!
+[2025-10-20 09:48:43,324][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:48:43,335][ctrl_job][INFO]     collect results: E = -6.639871597290039 eV/atom
+[2025-10-20 09:48:43,335][ctrl_job][INFO]                      Ef = -0.7711215972900383 eV/atom
+[2025-10-20 09:48:43,349][ctrl_job][INFO] ID      7: Stage 1 Done!
+[2025-10-20 09:48:43,349][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:48:43,355][ctrl_job][INFO]     collect results: E = -5.583512306213379 eV/atom
+[2025-10-20 09:48:43,355][ctrl_job][INFO]                      Ef = 0.16410674140566917 eV/atom
+[2025-10-20 09:48:43,365][ctrl_job][INFO] ID      8: Stage 1 Done!
+[2025-10-20 09:48:43,366][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:48:43,369][ctrl_job][INFO]     collect results: E = -4.323568344116211 eV/atom
+[2025-10-20 09:48:43,370][ctrl_job][INFO]                      Ef = 1.4056624251145582 eV/atom
+[2025-10-20 09:48:43,383][ctrl_job][INFO] ID      9: Stage 1 Done!
+[2025-10-20 09:48:43,383][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:48:43,391][ctrl_job][INFO]     collect results: E = -5.868053436279297 eV/atom
+[2025-10-20 09:48:43,391][ctrl_job][INFO]                      Ef = -0.018822667048526753 eV/atom
+[2025-10-20 09:48:43,403][cryspy][INFO] 
+
+recheck 1
+
+[2025-10-20 09:48:43,403][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:48:43,405][ctrl_job][INFO] ID     10: submit job, Stage 1
+[2025-10-20 09:48:43,406][ctrl_job][INFO] ID     11: submit job, Stage 1
+[2025-10-20 09:48:43,408][ctrl_job][INFO] ID     12: submit job, Stage 1
+[2025-10-20 09:48:43,410][ctrl_job][INFO] ID     13: submit job, Stage 1
+[2025-10-20 09:48:43,412][ctrl_job][INFO] ID     14: submit job, Stage 1
+[2025-10-20 09:48:45,291][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:48:45,291][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:48:45,295][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:48:45,297][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:48:45,297][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:48:45,297][ctrl_job][INFO] ID     11: still queueing or running
+[2025-10-20 09:48:45,297][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:48:45,297][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:48:45,297][ctrl_job][INFO] ID     14: still queueing or running
+[2025-10-20 09:48:47,262][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:48:47,262][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:48:47,283][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:48:47,296][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:48:47,296][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:48:47,296][ctrl_job][INFO] ID     11: still queueing or running
+[2025-10-20 09:48:47,296][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:48:47,297][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:48:47,297][ctrl_job][INFO] ID     14: still queueing or running
+[2025-10-20 09:48:49,429][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:48:49,440][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:48:49,456][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:48:49,472][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:48:49,477][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:48:49,477][ctrl_job][INFO] ID     11: still queueing or running
+[2025-10-20 09:48:49,478][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:48:49,478][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:48:49,478][ctrl_job][INFO] ID     14: still queueing or running
+[2025-10-20 09:48:51,816][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:48:51,818][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:48:51,830][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:48:51,838][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:48:51,841][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:48:51,841][ctrl_job][INFO] ID     11: still queueing or running
+[2025-10-20 09:48:51,841][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:48:51,841][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:48:51,841][ctrl_job][INFO] ID     14: still queueing or running
+[2025-10-20 09:48:53,439][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:48:53,439][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:48:53,445][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:48:53,449][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:48:53,449][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:48:53,449][ctrl_job][INFO] ID     11: still queueing or running
+[2025-10-20 09:48:53,449][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:48:53,449][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:48:53,449][ctrl_job][INFO] ID     14: still queueing or running
+[2025-10-20 09:48:55,528][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:48:55,535][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:48:55,547][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:48:55,555][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:48:55,559][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:48:55,560][ctrl_job][INFO] ID     11: still queueing or running
+[2025-10-20 09:48:55,560][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:48:55,560][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:48:55,560][ctrl_job][INFO] ID     14: still queueing or running
+[2025-10-20 09:48:57,391][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:48:57,391][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:48:57,402][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:48:57,410][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:48:57,410][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:48:57,410][ctrl_job][INFO] ID     11: still queueing or running
+[2025-10-20 09:48:57,410][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:48:57,410][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:48:57,410][ctrl_job][INFO] ID     14: still queueing or running
+[2025-10-20 09:49:25,176][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:49:25,177][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:49:25,194][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:49:25,214][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:49:25,214][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:49:25,214][ctrl_job][INFO] ID     11: still queueing or running
+[2025-10-20 09:49:25,214][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:49:25,214][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:49:25,214][ctrl_job][INFO] ID     14: Stage 1 Done!
+[2025-10-20 09:49:26,529][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:49:26,658][ctrl_job][INFO]     collect results: E = -6.024951934814453 eV/atom
+[2025-10-20 09:49:26,658][ctrl_job][INFO]                      Ef = -0.3908342877556297 eV/atom
+[2025-10-20 09:49:26,687][cryspy][INFO] 
+
+recheck 1
+
+[2025-10-20 09:49:26,688][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:49:26,688][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:49:26,688][ctrl_job][INFO] ID     11: Stage 1 Done!
+[2025-10-20 09:49:26,689][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:49:26,766][ctrl_job][INFO]     collect results: E = -8.530795097351074 eV/atom
+[2025-10-20 09:49:26,766][ctrl_job][INFO]                      Ef = -1.1357950973510729 eV/atom
+[2025-10-20 09:49:26,880][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:49:26,880][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:49:26,888][ctrl_job][INFO] ID     15: submit job, Stage 1
+[2025-10-20 09:49:26,889][cryspy][INFO] 
+
+recheck 2
+
+[2025-10-20 09:49:26,890][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:49:26,890][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:49:26,890][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:49:26,890][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:49:26,890][ctrl_job][INFO] ID     15: still queueing or running
+[2025-10-20 09:49:26,893][ctrl_job][INFO] ID     16: submit job, Stage 1
+[2025-10-20 09:49:28,966][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:49:28,966][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:49:28,988][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:49:28,991][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:49:28,992][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:49:28,992][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:49:28,992][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:49:28,992][ctrl_job][INFO] ID     15: still queueing or running
+[2025-10-20 09:49:28,992][ctrl_job][INFO] ID     16: still queueing or running
+[2025-10-20 09:49:31,799][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:49:31,803][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:49:31,822][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:49:31,843][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:49:31,843][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:49:31,843][ctrl_job][INFO] ID     12: still queueing or running
+[2025-10-20 09:49:31,843][ctrl_job][INFO] ID     13: still queueing or running
+[2025-10-20 09:49:31,843][ctrl_job][INFO] ID     15: still queueing or running
+[2025-10-20 09:49:31,843][ctrl_job][INFO] ID     16: still queueing or running
+[2025-10-20 09:50:21,961][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:50:21,970][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:50:21,991][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:50:21,994][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:50:21,994][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:50:21,994][ctrl_job][INFO] ID     12: Stage 1 Done!
+[2025-10-20 09:50:23,238][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:50:23,513][ctrl_job][INFO]     collect results: E = -5.862269401550293 eV/atom
+[2025-10-20 09:50:23,514][ctrl_job][INFO]                      Ef = -0.09150017078106165 eV/atom
+[2025-10-20 09:50:23,571][ctrl_job][INFO] ID     13: Stage 1 Done!
+[2025-10-20 09:50:23,573][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:50:23,619][ctrl_job][INFO]     collect results: E = -6.31756591796875 eV/atom
+[2025-10-20 09:50:23,619][ctrl_job][INFO]                      Ef = -0.622010362413195 eV/atom
+[2025-10-20 09:50:23,728][ctrl_job][INFO] ID     15: still queueing or running
+[2025-10-20 09:50:23,728][ctrl_job][INFO] ID     16: still queueing or running
+[2025-10-20 09:50:23,728][cryspy][INFO] 
+
+recheck 1
+
+[2025-10-20 09:50:23,729][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:50:23,729][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:50:23,729][ctrl_job][INFO] ID     15: still queueing or running
+[2025-10-20 09:50:23,730][ctrl_job][INFO] ID     16: still queueing or running
+[2025-10-20 09:50:23,755][ctrl_job][INFO] ID     17: submit job, Stage 1
+[2025-10-20 09:50:23,772][ctrl_job][INFO] ID     18: submit job, Stage 1
+[2025-10-20 09:50:33,536][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:50:33,536][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:50:33,548][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:50:33,565][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:50:33,565][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:50:33,566][ctrl_job][INFO] ID     15: still queueing or running
+[2025-10-20 09:50:33,566][ctrl_job][INFO] ID     16: still queueing or running
+[2025-10-20 09:50:33,566][ctrl_job][INFO] ID     17: still queueing or running
+[2025-10-20 09:50:33,566][ctrl_job][INFO] ID     18: still queueing or running
+[2025-10-20 09:51:09,323][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:51:09,323][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:51:09,330][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:51:09,336][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:51:09,336][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:51:09,336][ctrl_job][INFO] ID     15: Stage 1 Done!
+[2025-10-20 09:51:10,281][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:51:10,327][ctrl_job][INFO]     collect results: E = -6.620415210723877 eV/atom
+[2025-10-20 09:51:10,328][ctrl_job][INFO]                      Ef = -0.7332723535810199 eV/atom
+[2025-10-20 09:51:10,361][ctrl_job][INFO] ID     16: Stage 1 Done!
+[2025-10-20 09:51:10,362][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:51:10,383][ctrl_job][INFO]     collect results: E = -6.958636283874512 eV/atom
+[2025-10-20 09:51:10,383][ctrl_job][INFO]                      Ef = -0.8031817384199669 eV/atom
+[2025-10-20 09:51:10,418][ctrl_job][INFO] ID     17: Stage 1 Done!
+[2025-10-20 09:51:10,422][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:51:10,444][ctrl_job][INFO]     collect results: E = -6.312944412231445 eV/atom
+[2025-10-20 09:51:10,444][ctrl_job][INFO]                      Ef = -0.4068574557097062 eV/atom
+[2025-10-20 09:51:10,475][ctrl_job][INFO] ID     18: Stage 1 Done!
+[2025-10-20 09:51:10,477][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:51:10,507][ctrl_job][INFO]     collect results: E = -6.312098979949951 eV/atom
+[2025-10-20 09:51:10,507][ctrl_job][INFO]                      Ef = -0.5787656466166171 eV/atom
+[2025-10-20 09:51:10,543][cryspy][INFO] 
+
+recheck 1
+
+[2025-10-20 09:51:10,543][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:51:10,544][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:51:10,548][ctrl_job][INFO] ID     19: submit job, Stage 1
+[2025-10-20 09:51:14,219][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:51:14,219][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:51:14,228][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:51:14,233][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:51:14,233][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:51:14,233][ctrl_job][INFO] ID     19: still queueing or running
+[2025-10-20 09:51:17,512][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:51:17,515][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:51:17,526][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:51:17,537][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:51:17,537][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:51:17,537][ctrl_job][INFO] ID     19: still queueing or running
+[2025-10-20 09:51:50,696][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:51:50,696][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:51:50,702][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:51:50,707][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:51:50,707][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:51:50,707][ctrl_job][INFO] ID     19: Stage 1 Done!
+[2025-10-20 09:51:51,556][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:51:51,563][ctrl_job][INFO]     collect results: E = -6.640949249267578 eV/atom
+[2025-10-20 09:51:51,563][ctrl_job][INFO]                      Ef = -0.17894924926757794 eV/atom
+[2025-10-20 09:51:55,258][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:51:55,258][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:51:55,265][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:51:55,272][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:51:55,272][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:51:57,802][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:51:57,802][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:51:57,808][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:51:57,812][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:51:57,812][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:52:01,069][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:52:01,069][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:52:01,079][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:52:01,087][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:52:01,087][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:52:28,133][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:52:28,134][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:52:28,140][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:52:28,144][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:52:28,144][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:52:30,943][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:52:30,943][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:52:30,955][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:52:30,963][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:52:30,963][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:52:35,029][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:52:35,029][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:52:35,036][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:52:35,040][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:52:35,040][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:52:44,307][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:52:44,307][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:52:44,313][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:52:44,318][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:52:44,318][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:52:47,720][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:52:47,720][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:52:47,727][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:52:47,731][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:52:47,731][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:52:51,115][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:52:51,115][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:52:51,122][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:52:51,128][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:52:51,128][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:52:54,665][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:52:54,665][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:52:54,679][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:52:54,688][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:52:54,688][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:52:57,773][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:52:57,773][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:52:57,786][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:52:57,791][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:52:57,791][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:53:00,196][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:53:00,197][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:53:00,207][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:53:00,215][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:53:00,215][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:53:02,940][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:53:02,940][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:53:02,946][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:53:02,950][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:53:02,950][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:53:27,459][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:53:27,459][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:53:27,470][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:53:27,478][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:53:27,478][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:53:30,597][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:53:30,597][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:53:30,601][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:53:30,604][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:53:30,604][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:53:33,048][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:53:33,048][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:53:33,052][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:53:33,056][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:53:33,057][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:53:35,023][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:53:35,023][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:53:35,029][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:53:35,035][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:53:35,035][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:53:37,851][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:53:37,852][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:53:37,858][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:53:37,863][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:53:37,863][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:53:41,904][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:53:41,904][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:53:41,914][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:53:41,923][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:53:41,923][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:53:47,477][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:53:47,477][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:53:47,484][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:53:47,489][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:53:47,489][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:53:53,070][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:53:53,070][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:53:53,076][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:53:53,080][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:53:53,080][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:54:01,945][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:54:01,945][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:54:01,960][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:54:01,967][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:54:01,967][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:54:06,496][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:54:06,496][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:54:06,506][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:54:06,523][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:54:06,526][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:54:13,339][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:54:13,339][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:54:13,345][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:54:13,349][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:54:13,350][ctrl_job][INFO] ID     10: still queueing or running
+[2025-10-20 09:54:50,366][cryspy_restart][INFO] 
+
+
+Restart CrySPY 1.4.3
+
+
+[2025-10-20 09:54:50,367][cryspy_restart][INFO] # ---------- Read input file, cryspy.in
+[2025-10-20 09:54:50,370][calc_files_ase][INFO] # ---------- check required files in calc_in/
+[2025-10-20 09:54:50,372][ctrl_job][INFO] # ---------- job status
+[2025-10-20 09:54:50,372][ctrl_job][INFO] ID     10: Stage 1 Done!
+[2025-10-20 09:54:50,755][select_code][INFO] # ------ check mindist for optimized structure
+[2025-10-20 09:54:50,761][ctrl_job][INFO]     collect results: E = -6.70971155166626 eV/atom
+[2025-10-20 09:54:50,762][ctrl_job][INFO]                      Ef = -0.4535210754757841 eV/atom
+[2025-10-20 09:54:50,777][ctrl_job][INFO] Done generation 1
+[2025-10-20 09:54:50,777][ctrl_job][INFO] Calculate convex hull for generation 1
+[2025-10-20 09:54:51,165][ctrl_job][INFO] 
+EA is ready
