@@ -34,6 +34,7 @@ python3 make_input.py Al C Ni Fe
 - For accurate results, it is strongly recommended to re-optimize the final structures and energies using DFT or other first-principles methods.
 - If necessary, you can edit element_data_chgnet.txt to replace entries with known stable phases or literature values.
 - If the generated results appear incorrect, check and adjust this file accordingly.
+- If you want to use B_aB12, just change B_dia to a directory named B_aB12, change POSCAR to correspond to the structure of aB12, and change the end_point in cryspy to the eV/atom of aB12. These can be done after "make_input.py". 
 
 # How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
