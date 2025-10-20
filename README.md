@@ -115,6 +115,15 @@ pip install --upgrade numba
 - The actual k-points to be set can be determined using "kpt_check.py".
 - A kppovl value of 40 is appropriate for rough calculations, while a value of 80 is appropriate for full calculations, so no special changes are necessary.
 
+## References
+- [1] CCMSハンズオン: CrySPY講習会 (2025/10/15)
+- [2] ASEとCrySPYでサクッと結晶構造探索 #ASE - Qiita
+- [3] Hitoshi GOMI's webpage
+- [4] マテリアルズインフォマティクス 伊藤 聡(編) - 共立出版 | 版元ドットコム
+- [5] 物性研スパコンohtakaで結晶構造探索を行う #Python - Qiita
+- [6] CrySPY: a crystal structure prediction tool accelerated by machine learning
+- [7] csp-cryspy · PyPI
+
 ## Ternary system
 - Fe-Pd-In
 - Li-La-Ti
