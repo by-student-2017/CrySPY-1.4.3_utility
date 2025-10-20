@@ -23,12 +23,17 @@ python3 pplot_v1.py
 ```
 
 # Automatic generation of input files (EA-vc + CHGNet version)
-- Since it is troublesome to create an input file, a Python code called make_input.py is provided for chgnet (see "ase_chgnet_auto_EA-vc"). The usage is as follows:
+- Since creating an input file manually can be cumbersome, a Python script called make_input.py is provided for CHGNet (see ase_chgnet_auto_EA-vc).
 ```
 python3 make_input.py Al C Ni Fe
 ```
-- Write the elements after python3 make_input.py. You can also create ternary and quinary systems.
-- The "element_data_chgnet.txt" is important because it is used to create POSCAR in ASE. If the results are incorrect, please check the "element_data_chgnet.txt" and correct them.
+- Specify the elements after make_input.py. You can also create ternary or quinary systems.
+- The file element_data_chgnet.txt is critical because it is used by ASE to generate POSCAR files.
+- This file contains reference structures and lattice constants, which may include simplified or metastable phases for convenience (e.g., Boron as a diamond structure).
+- These values are intended for efficient initial structure generation and may differ from actual ground-state phases.
+- For accurate results, it is strongly recommended to re-optimize the final structures and energies using DFT or other first-principles methods.
+- If necessary, you can edit element_data_chgnet.txt to replace entries with known stable phases or literature values.
+- If the generated results appear incorrect, check and adjust this file accordingly.
 
 # How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
