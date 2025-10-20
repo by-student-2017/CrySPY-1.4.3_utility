@@ -61,9 +61,9 @@ pip install --upgrade numba
 ```
 
 ## The "kppvol" and actual k-points
-- The "kppvol" is k-points/volume [A^-3].
-- The actual k-points to be set can be determined using "kpt_check.py".
-- A kppovl value of 40 is appropriate for rough calculations, while a value of 80 is appropriate for full calculations, so no special changes are necessary.
+- The "kppvol" is k-points/volume [A^-3].
+- The actual k-points to be set can be determined using "kpt_check.py".
+- A kppovl value of 40 is appropriate for rough calculations, while a value of 80 is appropriate for full calculations, so no special changes are necessary.
 
 ## Ternary system
 - Fe-Pd-In
