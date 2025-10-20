@@ -22,7 +22,7 @@ python3 plot3dn.py
 python3 pplot_v1.py
 ```
 
-# Automatic generation of input files (EA-vc + CHGNet version)
+## Automatic generation of input files (EA-vc + CHGNet version)
 - Since creating an input file manually can be cumbersome, a Python script called make_input.py is provided for CHGNet (see ase_chgnet_auto_EA-vc).
 ```
 python3 make_input.py Al C Ni Fe
@@ -36,14 +36,14 @@ python3 make_input.py Al C Ni Fe
 - If the generated results appear incorrect, check and adjust this file accordingly.
 - If you want to use B_aB12, just change B_dia to a directory named B_aB12, change POSCAR to correspond to the structure of aB12, and change the end_point in cryspy to the eV/atom of aB12. These can be done after "make_input.py". 
 
-# How to use "repeat_cryspy.sh"
+## How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
 ```
 chmod +x repeat_cryspy.sh
 bash repeat_cryspy.sh
 ```
 
-# DFTB+ Installation
+## DFTB+ Installation
 - Older versions of DFTB+ allow you to use Pressure with LBFGS, so in some cases you may want to consider using an older version. 
 ```
 ### DFTB+ ver. 24.1
@@ -54,7 +54,7 @@ echo 'export PATH=$PATH:$HOME/dftbplus-24.1.x86_64-linux/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-# Environments
+## Environments
 ```
 [2025-10-16 16:02:16,307][cryspy_init][INFO]
 
