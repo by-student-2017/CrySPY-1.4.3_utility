@@ -130,6 +130,8 @@ pip install --upgrade numba
 ---
 
 ## Phase diagrams attracting attention
+- Phase diagrams for precious metals, rare earths, and other elements that are difficult to obtain through experiments should ideally be compiled at each calculation level through cooperation between countries.
+
 ### Ternary system
 - Fe-Pd-In
 - Li-La-Ti
