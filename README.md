@@ -9,13 +9,17 @@
 ## Calculated phase diagram
 - The "end_point" is a parameter that specifies the search range of the chemical potential. The standard is to obtain the DFT energy of a single molecule from databases such as Material Projects, literature, or your own calculations, and expand it by about +/- 1 eV.
 
-## How to use "plot3d.py" or "plot3dn.py"
+## How to use "plot3d.py", "plot3dn.py" or "pplot_v1.py"
 - It is designed to correspond to a four-element system. The figure can be obtained by the following command.
 ```
 python3 plot3d.py
 ```
 ```
 python3 plot3dn.py
+```
+- The number of atoms of one element in the quaternary system is fixed (nat is fixed to a certain value) and the calculation is performed as a pseudo-ternary system, and the results are shown in the figures.
+```
+python3 pplot_v1.py
 ```
 
 # How to use "repeat_cryspy.sh"
