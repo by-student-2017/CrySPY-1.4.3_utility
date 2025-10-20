@@ -36,6 +36,9 @@ python3 make_input.py Al C Ni Fe
 - If the generated results appear incorrect, check and adjust this file accordingly.
 - If you want to use B_aB12, just change B_dia to a directory named B_aB12, change POSCAR to correspond to the structure of aB12, and change the end_point in cryspy to the eV/atom of aB12. These can be done after "make_input.py". 
 
+## Automatic generation of input files (EA-vc + DFTB+(GFN1-xTB) version)
+- "element_data_dftb.txt" has not been rewritten with the GFN1-xTB results in DFTB+ (I plan to fix this in the future if I have time). Therefore, an element_structure file will be created, so please calculate it and correct the end_point.
+
 ## How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
 ```
