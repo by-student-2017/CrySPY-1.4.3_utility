@@ -60,7 +60,7 @@ pip3 install dscribe==2.1.2
 pip install --upgrade numba
 ```
 ## Recalculation methods for low-cost calculations like Lammps (or CHGNet) and high-cost calculations like QE (VASP, DFTB+(xTB)).
-- After performing the calculation using the low-cost method, copy data/pkl_data/init_struct_data.pkl and data/pkl_data/opt_struc_data.pkl.
+- After performing the calculation using the low-cost method, copy "data/pkl_data/init_struct_data.pkl" and "data/pkl_data/opt_struc_data.pkl".
 - Use the load_struc_flag = True option.
 - The [option] load_struc_flag = True setting is only loaded the first time the program is run, so you don't need to worry about it from the second time onwards.
 
