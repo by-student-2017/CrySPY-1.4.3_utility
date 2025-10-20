@@ -54,6 +54,38 @@ echo 'export PATH=$PATH:$HOME/dftbplus-24.1.x86_64-linux/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+## Installation (CrySPY)
+```
+# Installation (CrySPY)
+cd $HOME
+pip install csp-cryspy==1.4.3
+pip install numexpr==2.14.1
+pip install bottleneck==1.6.0
+pip install chgnet==0.4.2
+mkdir work
+cd work
+git clone https://github.com/Tomoki-YAMASHITA/CrySPY_utility.git
+```
+## Note: Other method 1 (Tutorial files)
+```
+wget https://github.com/Tomoki-YAMASHITA/CrySPY_utility/archive/refs/heads/master.zip
+sudo apt install unzip
+unzip master.zip
+mv CrySPY_utility-master CrySPY_utility
+```
+## Note: Other method 2 (Tutorial files) (This gihtub has more examples.)
+```
+wget https://github.com/by-student-2017/CrySPY-1.4.3_utility/archive/refs/heads/master.zip
+sudo apt install unzip
+unzip master.zip
+mv CrySPY-1.4.3_utility-master CrySPY_utility
+```
+## for show svg fomat data
+```
+sudo apt update
+sudo apt -y install eog
+```
+
 ## Environments
 ```
 [2025-10-16 16:02:16,307][cryspy_init][INFO]
