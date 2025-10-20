@@ -1,0 +1,19 @@
+[basic]
+algo = RS
+calc_code = QE
+tot_struc = 5
+nstage = 4
+njob = 1
+jobcmd = bash
+jobfile = job_cryspy
+
+[structure]
+atype = Si
+nat = 8
+
+[QE]
+qe_infile = pwscf.in
+qe_outfile = pwscf.out
+kppvol =  40  80  80  80
+
+[option]
