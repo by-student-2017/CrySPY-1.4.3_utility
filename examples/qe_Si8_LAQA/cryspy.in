@@ -1,0 +1,23 @@
+[basic]
+algo = LAQA
+calc_code = QE
+tot_struc = 10
+nstage = 1
+njob = 1
+jobcmd = bash
+jobfile = job_cryspy
+
+[structure]
+atype = Si
+nat = 8
+mindist_1 = 1.5
+
+[QE]
+qe_infile = pwscf.in
+qe_outfile = pwscf.out
+kppvol = 80
+
+[LAQA]
+nselect_laqa = 2
+
+[option]
