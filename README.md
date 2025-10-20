@@ -60,8 +60,8 @@ pip3 install dscribe==2.1.2
 pip install --upgrade numba
 ```
 
-## "kppvol" and actual k score
-- "kppvol" is k-points/volume [A^-3].
+## The "kppvol" and actual k score
+- The "kppvol" is k-points/volume [A^-3].
 - The actual k-points to be set can be determined using "kpt_check.py".
 - A kppovl value of 40 is appropriate for rough calculations, while a value of 80 is appropriate for full calculations, so no special changes are necessary.
 
