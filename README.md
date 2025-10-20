@@ -127,6 +127,8 @@ pip install --upgrade numba
 - [6] CrySPY: a crystal structure prediction tool accelerated by machine learning
 - [7] csp-cryspy · PyPI
 
+---
+
 ## Phase diagrams attracting attention
 ### Ternary system
 - Fe-Pd-In
