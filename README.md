@@ -28,7 +28,7 @@ python3 pplot_v1.py
 python3 make_input.py Al C Ni Fe
 ```
 - Write the elements after python3 make_input.py. You can also create ternary and quinary systems.
-- 
+- The "element_data_chgnet.txt" is important because it is used to create POSCAR in ASE. If the results are incorrect, please check the "element_data_chgnet.txt" and correct them.
 
 # How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
