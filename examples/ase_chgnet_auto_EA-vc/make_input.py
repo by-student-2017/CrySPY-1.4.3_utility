@@ -103,18 +103,22 @@ for el in elements:
     poscar_path = os.path.join('poscars', f"POSCAR_{el}")
 
     try:
-        if struct in ['fcc', 'bcc', 'hcp', 'dia', 'sc']:
-            # Use ASE bulk for standard structures
-            ase_struct_map = {
-                'fcc': 'fcc',
-                'bcc': 'bcc',
-                'hcp': 'hcp',
-                'dia': 'diamond',
-                'sc': 'sc'
-            }
+        # Map for ASE-supported structures
+        ase_struct_map = {
+            'fcc': 'fcc',
+            'bcc': 'bcc',
+            'hcp': 'hcp',
+            'dia': 'diamond',
+            'sc': 'sc',
+            'rock': 'rocksalt',
+            'zb': 'zincblende',
+            'wz': 'wurtzite'
+        }
+
+        if struct in ase_struct_map:
             atoms = bulk(el, ase_struct_map[struct], a=a_val)
         elif struct == 'bct':
-            # Tetragonal cell
+            # Body-centered tetragonal
             cell = [[a_val, 0, 0],
                     [0, a_val, 0],
                     [0, 0, c_val]]
@@ -124,7 +128,6 @@ for el in elements:
             cell = [[a_val, 0, 0],
                     [-a_val/2, (a_val*(3)**0.5)/2, 0],
                     [0, 0, c_val]]
-            # Approximate ABAC positions for 4 atoms
             positions = [
                 [0, 0, 0],
                 [a_val/2, (a_val*(3)**0.5)/6, c_val/4],
@@ -139,10 +142,23 @@ for el in elements:
                     [0, 0, c_val]]
             atoms = Atoms(el, positions=[[0, 0, 0]], cell=cell, pbc=True)
         elif struct == 'mon':
-            # Monoclinic cell (approximate, beta angle ~ 90 deg)
+            # Monoclinic cell
             cell = [[a_val, 0, 0],
                     [0, b_val, 0],
-                    [0.1*a_val, 0, c_val]]  # slight tilt
+                    [0.1*a_val, 0, c_val]]
+            atoms = Atoms(el, positions=[[0, 0, 0]], cell=cell, pbc=True)
+        elif struct == 'αB12':
+            # Approximate alpha-Boron structure (simplified)
+            cell = [[a_val, 0, 0],
+                    [0, a_val, 0],
+                    [0, 0, a_val]]
+            positions = [[0, 0, 0]]  # Placeholder for simplicity
+            atoms = Atoms(el, positions=positions, cell=cell, pbc=True)
+        elif struct == 'βSn':
+            # Approximate beta-Sn structure (tetragonal)
+            cell = [[a_val, 0, 0],
+                    [0, a_val, 0],
+                    [0, 0, c_val]]
             atoms = Atoms(el, positions=[[0, 0, 0]], cell=cell, pbc=True)
         else:
             # Default fallback
