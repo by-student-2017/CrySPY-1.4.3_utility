@@ -3,6 +3,7 @@ import os
 import shutil
 from ase.build import bulk
 from ase.io import write
+from ase import Atoms
 
 # File containing element, structure, and energy data
 energy_table_file = 'element_data_chgnet.txt'
@@ -34,7 +35,7 @@ with open(energy_table_file, 'r') as f:
 # Get elements from command line arguments
 elements = sys.argv[1:]
 if len(elements) < 2:
-    print("Usage: python make.py Element1 Element2 [Element3 ...]")
+    print("Usage: python make_input.py Element1 Element2 [Element3 ...]")
     sys.exit(1)
 
 # Prepare cryspy.in content
@@ -48,7 +49,7 @@ cryspy_lines.append("jobcmd = bash")
 cryspy_lines.append("jobfile = job_cryspy\n")
 
 # Determine column width
-col_width = max(len(el) for el in elements) + 0  # 0 extra spaces for padding
+col_width = max(len(el) for el in elements)
 cryspy_lines.append("[structure]")
 cryspy_lines.append("atype  = " + " ".join(f"{el:<{col_width}}" for el in elements))
 cryspy_lines.append("ll_nat = " + " ".join(f"{0:<{col_width}}" for _ in elements))
@@ -93,30 +94,64 @@ print("cryspy.in generated with accurate end_point values.")
 # Prepare POSCAR files
 os.makedirs('poscars', exist_ok=True)
 
-# Map abbreviations to ASE keywords
-ase_struct_map = {
-    'fcc': 'fcc',
-    'bcc': 'bcc',
-    'hcp': 'hcp',
-    'dia': 'diamond',
-    'bct': 'bcc',  # fallback to bcc for bct
-    'dhcp': 'hcp', # fallback to hcp for dhcp
-    'ort': 'sc',   # fallback
-    'mon': 'sc',   # fallback
-    'sc': 'sc'
-}
-
 for el in elements:
     struct = element_data.get(el, {}).get('structure', 'sc')
-    ase_struct = ase_struct_map.get(struct, 'sc')
     a_val = element_data.get(el, {}).get('a', 4.0)
+    b_val = element_data.get(el, {}).get('b', a_val)
+    c_val = element_data.get(el, {}).get('c', a_val)
+
+    poscar_path = os.path.join('poscars', f"POSCAR_{el}")
+
     try:
-        atoms = bulk(el, ase_struct, a=a_val)
+        if struct in ['fcc', 'bcc', 'hcp', 'dia', 'sc']:
+            # Use ASE bulk for standard structures
+            ase_struct_map = {
+                'fcc': 'fcc',
+                'bcc': 'bcc',
+                'hcp': 'hcp',
+                'dia': 'diamond',
+                'sc': 'sc'
+            }
+            atoms = bulk(el, ase_struct_map[struct], a=a_val)
+        elif struct == 'bct':
+            # Tetragonal cell
+            cell = [[a_val, 0, 0],
+                    [0, a_val, 0],
+                    [0, 0, c_val]]
+            atoms = Atoms(el, positions=[[0, 0, 0]], cell=cell, pbc=True)
+        elif struct == 'dhcp':
+            # Double hcp: ABAC stacking
+            cell = [[a_val, 0, 0],
+                    [-a_val/2, (a_val*(3)**0.5)/2, 0],
+                    [0, 0, c_val]]
+            # Approximate ABAC positions for 4 atoms
+            positions = [
+                [0, 0, 0],
+                [a_val/2, (a_val*(3)**0.5)/6, c_val/4],
+                [0, 0, c_val/2],
+                [a_val/2, (a_val*(3)**0.5)/6, 3*c_val/4]
+            ]
+            atoms = Atoms(el*4, positions=positions, cell=cell, pbc=True)
+        elif struct == 'ort':
+            # Orthorhombic cell
+            cell = [[a_val, 0, 0],
+                    [0, b_val, 0],
+                    [0, 0, c_val]]
+            atoms = Atoms(el, positions=[[0, 0, 0]], cell=cell, pbc=True)
+        elif struct == 'mon':
+            # Monoclinic cell (approximate, beta angle ~ 90 deg)
+            cell = [[a_val, 0, 0],
+                    [0, b_val, 0],
+                    [0.1*a_val, 0, c_val]]  # slight tilt
+            atoms = Atoms(el, positions=[[0, 0, 0]], cell=cell, pbc=True)
+        else:
+            # Default fallback
+            atoms = bulk(el, 'sc', a=a_val)
     except Exception:
         atoms = bulk(el, 'sc', a=4.0)
-    poscar_path = os.path.join('poscars', f"POSCAR_{el}")
+
     write(poscar_path, atoms, format='vasp')
-    print(f"Generated POSCAR for {el} ({struct} -> ASE: {ase_struct})")
+    print(f"Generated POSCAR for {el} ({struct})")
 
 print("POSCAR files generated in 'poscars' directory.")
 
