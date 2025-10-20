@@ -1,0 +1,30 @@
+ &control
+    title = 'Si8'
+    calculation = 'vc-relax'
+    nstep = 200
+    restart_mode = 'from_scratch',
+    pseudo_dir = './../../pp/'
+    outdir='./out.d/'
+ /
+
+ &system
+    ibrav = 0
+    nat = 8
+    ntyp = 1
+    ecutwfc = 44.0
+    occupations = 'smearing'
+    degauss = 0.01
+ /
+
+ &electrons
+ /
+
+ &ions
+ /
+
+ &cell
+   press = 100000.0
+ /
+
+ATOMIC_SPECIES
+  Si  28.086  Si.pbe-n-kjpaw_psl.1.0.0.UPF
