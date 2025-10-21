@@ -15,7 +15,8 @@ variable elem string "Cu Ag Au Pt"
 # Setup force field
 # If you use a potential file, you should write the file name in cryspy.in like "lammps_potential = SiO.tersoff"
 pair_style eam/alloy
-pair_coeff * * ./../CuAgAuNiPdPtAlPbFeMoTaWMgCoTiZr_Zhou04.eam.alloy ${elem}
+#pair_coeff * * ./../CuAgAuNiPdPtAlPbFeMoTaWMgCoTiZr_Zhou04.eam.alloy ${elem}
+pair_coeff * * ./../../CuAgAuNiPdPtAlPbFeMoTaWMgCoTiZrCrNbHfVZn_Zhou04.eam.alloy ${elem}
 
 # Setup output
 thermo  1
