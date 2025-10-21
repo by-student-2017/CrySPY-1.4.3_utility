@@ -8,6 +8,7 @@
 
 ## Calculated phase diagram
 - The "end_point" is a parameter that specifies the search range of the chemical potential. The standard is to obtain the DFT energy of a single molecule from databases such as Material Projects, literature, or your own calculations, and expand it by about +/- 1 eV.
+- The element_structure file in the example is not actually necessary for EA-vc. It is output for reference. Therefore, the make_input_*.py shown below can be made simpler. Since simpler is often better, users may wish to simplify it themselves.
 
 ## How to use "plot3d.py", "plot3dn.py" or "pplot_v1.py"
 - It is designed to correspond to a four-element system. The figure can be obtained by the following command.
@@ -38,6 +39,9 @@ python3 make_input.py Al C Ni Fe
 
 ## Automatic generation of input files (EA-vc + DFTB+(GFN1-xTB) version)
 - The "element_data_dftb.txt" has not been rewritten with the GFN1-xTB results in DFTB+ (I plan to fix this in the future if I have time). Therefore, an element_structure file will be created, so please calculate it and correct the end_point.
+
+## Automatic generation of input files (EA-vc + QE version)
+- The "element_data_qe.txt" does not reflect the results of QE (we plan to fix this in the future if we have time). Therefore, the element_structure file will be created, so please perform the calculation and correct the end_point (element_structure may also not be created correctly, so please check).
 
 ## How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
