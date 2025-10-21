@@ -323,6 +323,8 @@ pip install matgl
 ```
 pip install deepmd-kit==3.1.1
 pip install tensorflow==2.10 tensorflow-gpu==2.10
+wget https://deepmodeling.com/model_zoo/metal/graph.pb -O graph_metal.pb
+wget https://deepmodeling.com/model_zoo/oxide/graph.pb -O graph_oxide.pb
 ```
 - High accuracy and physical interpretation possible
 ```
