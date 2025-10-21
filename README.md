@@ -116,6 +116,15 @@ pip install --upgrade numba
 ```
 pip freeze > requirements.txt
 ```
+### Tested Environment
+- OS: Microsoft Windows 11 Home 64 bit
+- BIOS: 1.14.0
+- CPU： 12th Gen Intel(R) Core(TM) i7-12700
+- Base Board：0R6PCT (A01)
+- Memory：32 GB
+- GPU: NVIDIA GeForce RTX3070
+- WSL2: VERSION="22.04.1 LTS (Jammy Jellyfish)"
+- Python 3.10.12
 
 ## Recalculation methods for low-cost calculations like Lammps (or CHGNet) and high-cost calculations like QE (VASP, DFTB+(xTB)).
 - After performing the calculation using the low-cost method, copy "data/pkl_data/init_struct_data.pkl" and "data/pkl_data/opt_struc_data.pkl".
