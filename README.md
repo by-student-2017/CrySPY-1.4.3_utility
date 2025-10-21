@@ -301,3 +301,15 @@ pip install equiformer
 ```
 pip install matgl
 ```
+- Large-scale MD, DFT-level accuracy
+```
+pip install deepmd-kit
+```
+- High accuracy and physical interpretation possible
+```
+pip install pyace
+```
+- QM accuracy in molecular systems
+```
+pip install torchmd-net
+```
