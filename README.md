@@ -309,8 +309,8 @@ pip freeze > requirements.txt
 ## Undeveloped
 - MACE
 ```
-pip install mace-torch
-pip install mace-models
+pip install mace-torch==0.3.14
+pip install mace-models==0.1.6
 ```
 - MACE (GPU case)
 ```
