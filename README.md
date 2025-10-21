@@ -153,7 +153,7 @@ pip freeze > requirements.txt
 ## Phase diagrams attracting attention
 - Phase diagrams for precious metals, rare earths, and other elements that are difficult to obtain through experiments should ideally be compiled at each calculation level through cooperation between countries.
 - The general rule for state diagrams is to arrange them in alphabetical order. General names may not always be arranged in alphabetical order. Just be aware of the general rule.
-- 
+- Phase diagrams are being collected by NIMS, but not all the information is available. It would be great if they could be compiled using Phase0 or similar. 
 
 ### Ternary system
 - Fe-Pd-In
