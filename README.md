@@ -307,8 +307,6 @@ pip freeze > requirements.txt
 
 
 ## Undeveloped
-pip install m3gnet
-```
 - Supports crystal, molecular, and surface systems
 ```
 pip install matgl
