@@ -318,6 +318,7 @@ pip install cuequivariance cuequivariance-torch
 ```
 - SevenNet
 ```
+pip install e3nn>=0.5.0
 pip install sevenn==0.11.2
 ```
 - ORB v3
