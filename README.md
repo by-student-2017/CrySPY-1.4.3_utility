@@ -116,7 +116,7 @@ pip install --upgrade numba
 ```
 pip freeze > requirements.txt
 ```
-### Tested Environment
+### PC specs used for test
 - OS: Microsoft Windows 11 Home 64 bit
 - BIOS: 1.14.0
 - CPU： 12th Gen Intel(R) Core(TM) i7-12700
