@@ -316,12 +316,12 @@ pip install mace-models==0.1.6
 ```
 pip install cuequivariance cuequivariance-torch
 ```
-- SevenNet
+- SevenNet (It's difficult for me.)
 ```
 pip install e3nn>=0.5.0
 pip install sevenn==0.11.2
 ```
-- ORB v3
+- ORB v3 (It's difficult for me.)
 ```
 pip install orb-models==0.5.5
 pip install --extra-index-url=https://pypi.nvidia.com "cuml-cu12==25.2.*"
