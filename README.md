@@ -322,6 +322,7 @@ pip install matgl
 - Large-scale MD, DFT-level accuracy
 ```
 pip install deepmd-kit==3.1.1
+pip install tensorflow==2.10 tensorflow-gpu==2.10
 ```
 - High accuracy and physical interpretation possible
 ```
