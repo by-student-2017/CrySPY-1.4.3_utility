@@ -49,6 +49,9 @@ python3 make_input.py Al C Ni Fe
 ## Automatic generation of input files (EA-vc + Lammps version)
 - The Lammps results are not reflected in "element_data_lammps.txt" (we plan to fix this in the future if we have time). Therefore, the element_structure file will be created, so please run the calculation and correct the end_point (the element_structure may not have been created correctly, so please check).
 
+## Automatic generation of input files (EA-vc + Lammps version)
+- The MACE results are not reflected in "element_data_mace.txt" (I plan to fix this in the future if I have time). Therefore, the element_structure file will be created, so please run the calculation and correct the end_point (it's possible that the element_structure was not created correctly, so please check). As with CHGNet, I think it's fine to match it to the VASP results. It's also a good idea to organize it with Material Projects data.
+
 ## How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
 ```
