@@ -12,7 +12,7 @@
 - The general rule for state diagrams is to arrange them in alphabetical order. General names may not always be arranged in alphabetical order. Just be aware of the general rule.
 - Temperature control is performed using molecular dynamics (MD). The effects of lattice vibrations (phonons) are taken into account, but the calculation takes time.
 - For pressure application at 0 K, it is also a good idea to use QE or the old DFTB+. It is also a good method to find candidates from there and examine them in more detail using MD etc.
-- If you apply temperature and pressure, the diagram will only be accurate if the energy and end_point values in element_data_*.txt are adjusted to match the unit system used for temperature and pressure. If your goal is simply to highlight differences in the stable structure, you can make the diagram easier to read by setting these values to zero or to a slightly positive number.
+- When applying temperature and pressure, the diagram will only be accurate if the energy and end_point values in element_data_*.txt are adjusted to reflect the crystal structure at those conditions. If your goal is simply to highlight differences in stable structures, you can make the diagram easier to read by setting these values to zero or to a slightly positive number.
 
 ## How to use "plot3d.py", "plot3dn.py" or "pplot_v1.py"
 - It is designed to correspond to a four-element system. The figure can be obtained by the following command.
