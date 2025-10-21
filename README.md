@@ -321,7 +321,7 @@ pip install matgl
 ```
 - SevenNet
 ```
-pip install sevenn
+pip install sevenn==0.11.2
 ```
 - ORB v3
 ```
