@@ -53,6 +53,10 @@ python3 make_input.py Al C Ni Fe
 ## Automatic generation of input files (EA-vc + MACE version)
 - The MACE results are not reflected in "element_data_mace.txt" (I plan to fix this in the future if I have time). Therefore, the element_structure file will be created, so please run the calculation and correct the end_point (it's possible that the element_structure was not created correctly, so please check). As with CHGNet, I think it's fine to match it to the VASP results. It's also a good idea to organize it with Material Projects data.
 
+## Random Search (RS)
+- Even after a series of calculations has finished, you can continue the calculations by increasing the value of tot_struc in cryspy.in.
+- This is an important method if you want to find the most stable phase rather than a phase diagram.
+
 ## How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
 ```
