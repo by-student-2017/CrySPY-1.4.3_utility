@@ -315,10 +315,6 @@ pip install chgnet
 ```
 pip install m3gnet
 ```
-- DFT level (RMSE < 5 meV/atom), phonon and defect calculations also possible
-```
-pip install equiformer
-```
 - Supports crystal, molecular, and surface systems
 ```
 pip install matgl
