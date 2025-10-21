@@ -24,9 +24,10 @@ Hamiltonian = xTB {
   }
   Charge = 0.0
   KPointsAndWeights = SuperCellFolding {
-    4 0 0
-    0 4 0
-    0 0 4
+    #kppvol = 25
+    nkx 0   0
+    0   nky 0
+    0   0   nkz
     0.0 0.0 0.0
   }
   ShellResolvedSCC = No
