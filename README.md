@@ -11,6 +11,7 @@
 - The element_structure file in the example is not actually necessary for EA-vc. It is output for reference. Therefore, the make_input_*.py shown below can be made simpler. Since simpler is often better, users may wish to simplify it themselves.
 - The general rule for state diagrams is to arrange them in alphabetical order. General names may not always be arranged in alphabetical order. Just be aware of the general rule.
 - Temperature control is performed using molecular dynamics (MD). The effects of lattice vibrations (phonons) are taken into account, but the calculation takes time.
+- For pressure application at 0 K, it is also a good idea to use QE or the old DFTB+. It is also a good method to find candidates from there and examine them in more detail using MD etc.
 
 ## How to use "plot3d.py", "plot3dn.py" or "pplot_v1.py"
 - It is designed to correspond to a four-element system. The figure can be obtained by the following command.
