@@ -9,6 +9,8 @@
 ## Calculated phase diagram
 - The "end_point" is a parameter that specifies the search range of the chemical potential. The standard is to obtain the DFT energy of a single molecule from databases such as Material Projects, literature, or your own calculations, and expand it by about +/- 1 eV.
 - The element_structure file in the example is not actually necessary for EA-vc. It is output for reference. Therefore, the make_input_*.py shown below can be made simpler. Since simpler is often better, users may wish to simplify it themselves.
+- The general rule for state diagrams is to arrange them in alphabetical order. General names may not always be arranged in alphabetical order. Just be aware of the general rule.
+- Temperature control is performed using molecular dynamics (MD). The effects of lattice vibrations (phonons) are taken into account, but the calculation takes time.
 
 ## How to use "plot3d.py", "plot3dn.py" or "pplot_v1.py"
 - It is designed to correspond to a four-element system. The figure can be obtained by the following command.
@@ -149,6 +151,8 @@ pip freeze > requirements.txt
 
 ## Phase diagrams attracting attention
 - Phase diagrams for precious metals, rare earths, and other elements that are difficult to obtain through experiments should ideally be compiled at each calculation level through cooperation between countries.
+- The general rule for state diagrams is to arrange them in alphabetical order. General names may not always be arranged in alphabetical order. Just be aware of the general rule.
+- 
 
 ### Ternary system
 - Fe-Pd-In
