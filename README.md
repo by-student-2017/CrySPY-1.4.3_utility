@@ -319,3 +319,17 @@ pip install m3gnet
 ```
 pip install matgl
 ```
+- SevenNet
+```
+pip install sevenn
+```
+- ORB v3
+```
+pip install orb-models
+pip install --extra-index-url=https://pypi.nvidia.com "cuml-cu12==25.2.*"
+```
+- MACE
+```
+pip install mace-torch
+pip install mace-models
+```
