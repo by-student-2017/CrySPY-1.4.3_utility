@@ -101,12 +101,12 @@ mv CrySPY-1.4.3_utility-master CrySPY_utility
 sudo apt update
 sudo apt -y install eog
 ```
-- MACE
+## MACE Installation
 ```
 pip install mace-torch==0.3.14
 pip install mace-models==0.1.6
 ```
-- MACE (GPU case)
+### MACE (GPU case)
 ```
 pip install cuequivariance cuequivariance-torch
 ```
