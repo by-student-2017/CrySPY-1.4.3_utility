@@ -282,3 +282,22 @@ pip install --upgrade numba
 - Mo-Nb-Ti-Zr
 - Sc-Y-Ti-Zr
 - Hf-Nb-Mo-Zr
+
+
+## The potential of general-purpose machine learning
+- CHGNet (Crystal Hamiltonian Graph Network)
+```
+pip install chgnet
+```
+- M3GNet (MatErials 3-body Graph Network)
+```
+pip install m3gnet
+```
+- DFT level (RMSE < 5 meV/atom), phonon and defect calculations also possible
+```
+pip install equiformer
+```
+- Supports crystal, molecular, and surface systems
+```
+pip install matgl
+```
