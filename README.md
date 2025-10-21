@@ -307,9 +307,14 @@ pip freeze > requirements.txt
 
 
 ## Undeveloped
-- Supports crystal, molecular, and surface systems
+- MACE
 ```
-pip install matgl
+pip install mace-torch
+pip install mace-models
+```
+- MACE (GPU case)
+```
+pip install cuequivariance cuequivariance-torch
 ```
 - SevenNet
 ```
@@ -320,12 +325,7 @@ pip install sevenn==0.11.2
 pip install orb-models==0.5.5
 pip install --extra-index-url=https://pypi.nvidia.com "cuml-cu12==25.2.*"
 ```
-- MACE
+- Supports crystal, molecular, and surface systems
 ```
-pip install mace-torch
-pip install mace-models
-```
-- MACE (GPU case)
-```
-pip install cuequivariance cuequivariance-torch
+pip install matgl
 ```
