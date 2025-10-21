@@ -46,6 +46,9 @@ python3 make_input.py Al C Ni Fe
 ## Automatic generation of input files (EA-vc + QE version)
 - The "element_data_qe.txt" does not reflect the results of QE (we plan to fix this in the future if we have time). Therefore, the element_structure file will be created, so please perform the calculation and correct the end_point (element_structure may also not be created correctly, so please check).
 
+## Automatic generation of input files (EA-vc + Lammps version)
+- The Lammps results are not reflected in "element_data_lammps.txt" (we plan to fix this in the future if we have time). Therefore, the element_structure file will be created, so please run the calculation and correct the end_point (the element_structure may not have been created correctly, so please check).
+
 ## How to use "repeat_cryspy.sh"
 - "repeat_cryspy.sh" can be used anywhere. You can copy it and use it instead of cryspy as follows.
 ```
