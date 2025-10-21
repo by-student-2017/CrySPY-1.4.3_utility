@@ -101,6 +101,15 @@ mv CrySPY-1.4.3_utility-master CrySPY_utility
 sudo apt update
 sudo apt -y install eog
 ```
+- MACE
+```
+pip install mace-torch==0.3.14
+pip install mace-models==0.1.6
+```
+- MACE (GPU case)
+```
+pip install cuequivariance cuequivariance-torch
+```
 
 ## Environments
 ```
@@ -310,15 +319,6 @@ pip freeze > requirements.txt
 
 
 ## Undeveloped
-- MACE
-```
-pip install mace-torch==0.3.14
-pip install mace-models==0.1.6
-```
-- MACE (GPU case)
-```
-pip install cuequivariance cuequivariance-torch
-```
 - SevenNet (It's difficult for me.)
 ```
 pip install e3nn>=0.5.0
