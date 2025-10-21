@@ -14,6 +14,6 @@ nat = 8
 [QE]
 qe_infile = pwscf.in
 qe_outfile = pwscf.out
-kppvol =  40  80  80  80
+kppvol =  25  40  40  40
 
 [option]
