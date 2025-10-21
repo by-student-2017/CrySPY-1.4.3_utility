@@ -329,6 +329,7 @@ wget https://deepmodeling.com/model_zoo/oxide_sio2/graph.pb -O graph_sio2.pb
 - High accuracy and physical interpretation possible
 ```
 pip install pyace==0.1.1
+pip install --upgrade pyace
 ```
 - QM accuracy in molecular systems
 ```
