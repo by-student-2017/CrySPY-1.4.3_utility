@@ -306,13 +306,7 @@ pip freeze > requirements.txt
 - Hf-Nb-Mo-Zr
 
 
-## The potential of general-purpose machine learning
-- CHGNet (Crystal Hamiltonian Graph Network)
-```
-pip install chgnet
-```
-- M3GNet (MatErials 3-body Graph Network)
-```
+## Undeveloped
 pip install m3gnet
 ```
 - Supports crystal, molecular, and surface systems
