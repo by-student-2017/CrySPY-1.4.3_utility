@@ -325,3 +325,7 @@ pip install --extra-index-url=https://pypi.nvidia.com "cuml-cu12==25.2.*"
 pip install mace-torch
 pip install mace-models
 ```
+- MACE (GPU case)
+```
+pip install cuequivariance cuequivariance-torch
+```
