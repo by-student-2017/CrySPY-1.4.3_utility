@@ -325,7 +325,7 @@ pip install sevenn==0.11.2
 ```
 - ORB v3
 ```
-pip install orb-models
+pip install orb-models==0.5.5
 pip install --extra-index-url=https://pypi.nvidia.com "cuml-cu12==25.2.*"
 ```
 - MACE
