@@ -1,0 +1,36 @@
+[basic]
+algo = EA-vc
+calc_code = QE
+nstage = 2
+njob = 1
+jobcmd = bash
+jobfile = job_cryspy
+
+[structure]
+atype  = Nd Fe B 
+ll_nat = 0  0  0 
+ul_nat = 12 12 12
+
+[QE]
+qe_infile = pwscf.in
+qe_outfile = pwscf.out
+kppvol =  25  40
+
+[EA]
+n_pop = 20
+n_crsov = 5
+n_perm = 2
+n_strain = 2
+n_rand = 2
+n_add = 3
+n_elim = 3
+n_subs = 3
+target = random
+n_elite = 2
+n_fittest = 10
+slct_func = TNM
+t_size = 2
+maxgen_ea = 0
+end_point  = -4.9500 -8.2800 -6.0000
+
+[option]
