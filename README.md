@@ -321,7 +321,7 @@ pip install matgl
 ```
 - Large-scale MD, DFT-level accuracy
 ```
-pip install deepmd-kit
+pip install deepmd-kit==3.1.1
 ```
 - High accuracy and physical interpretation possible
 ```
