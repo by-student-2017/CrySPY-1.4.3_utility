@@ -1,122 +1,98 @@
-#!/usr/bin/env python3
 import sys
 import os
 import shutil
-import math
 from ase.build import bulk
 from ase.io import write
 from ase import Atoms
 
-# ====== 1. 引数チェック ======
+# File containing element, structure, and energy data
+energy_table_file = 'element_data_dftb.txt'
+
+# Read the energy table into a dictionary
+element_data = {}
+with open(energy_table_file, 'r') as f:
+    for line in f:
+        line = line.strip()
+        # Skip header or empty lines
+        if not line or line.startswith('Element') or line.startswith('='):
+            continue
+        parts = line.split()
+        if len(parts) >= 6:
+            element = parts[0]
+            structure = parts[1]
+            try:
+                energy = float(parts[2])
+            except ValueError:
+                energy = -4.5000  # fallback energy
+            element_data[element] = {
+                'structure': structure,
+                'energy': energy,
+                'a': float(parts[3]),
+                'b': float(parts[4]),
+                'c': float(parts[5])
+            }
+
+# Get elements from command line arguments
 elements = sys.argv[1:]
-if len(elements) < 1:
-    print("Usage: python make_input_dftb.py Element1 [Element2 ...]")
+if len(elements) < 2:
+    print("Usage: python make_input.py Element1 Element2 [Element3 ...]")
     sys.exit(1)
 
-# ====== 2. element_data読み込み ======
-element_data = {}
-if os.path.isfile('element_data_dftb.txt'):
-    with open('element_data_dftb.txt') as f:
-        for line in f:
-            parts = line.split()
-            if len(parts) >= 6 and not line.startswith('Element'):
-                element_data[parts[0]] = {
-                    'structure': parts[1],
-                    'energy': float(parts[2]),
-                    'a': float(parts[3]),
-                    'b': float(parts[4]),
-                    'c': float(parts[5])
-                }
+# Prepare cryspy.in content
+cryspy_lines = []
+cryspy_lines.append("[basic]")
+cryspy_lines.append("algo = EA-vc")
+cryspy_lines.append("calc_code = ASE")
+cryspy_lines.append("nstage = 1")
+cryspy_lines.append("njob = 5")
+cryspy_lines.append("jobcmd = bash")
+cryspy_lines.append("jobfile = job_cryspy\n")
 
-# ====== 3. cryspy.in生成 ======
-max_len = max(len(el) for el in elements)
-atype_line = "atype  = " + " ".join(el.ljust(max_len) for el in elements)
-ll_nat_line = "ll_nat = " + " ".join("0".ljust(max_len) for _ in elements)
-ul_nat_line = "ul_nat = " + " ".join("8".ljust(max_len) for _ in elements)
-end_point_line = "end_point = " + " ".join("0.0".ljust(max_len) for _ in elements)
+# Determine column width
+col_width = max(len(el) for el in elements)
+cryspy_lines.append("[structure]")
+cryspy_lines.append("atype  = " + " ".join(f"{el:<{col_width}}" for el in elements))
+cryspy_lines.append("ll_nat = " + " ".join(f"{0:<{col_width}}" for _ in elements))
+cryspy_lines.append("ul_nat = " + " ".join(f"{12:<{col_width}}" for _ in elements) + "\n")
 
-cryspy_lines = [
-    "[basic]",
-    "algo = EA-vc",
-    "calc_code = ASE",
-    "nstage = 1",
-    "njob = 1",
-    "jobcmd = bash",
-    "jobfile = job_cryspy\n",
-    "[structure]",
-    atype_line,
-    ll_nat_line,
-    ul_nat_line + "\n",
-    "[ASE]",
-    "ase_python = ase_in.py\n",
-    "[EA]",
-    "n_pop = 20",
-    "n_crsov = 5",
-    "n_perm = 2",
-    "n_strain = 2",
-    "n_rand = 2",
-    "n_add = 3",
-    "n_elim = 3",
-    "n_subs = 3",
-    "target = random",
-    "n_elite = 2",
-    "n_fittest = 10",
-    "slct_func = TNM",
-    "t_size = 2",
-    "maxgen_ea = 0",
-    end_point_line + "\n",
-    "[option]",
-    "load_struc_flag = True",
-    "symprec = 0.1",
-    "out_cif = False\n"
-]
+cryspy_lines.append("[ASE]")
+cryspy_lines.append("ase_python = ase_in.py\n")
 
+cryspy_lines.append("[EA]")
+cryspy_lines.append("n_pop = 20")
+cryspy_lines.append("n_crsov = 5")
+cryspy_lines.append("n_perm = 2")
+cryspy_lines.append("n_strain = 2")
+cryspy_lines.append("n_rand = 2")
+cryspy_lines.append("n_add = 3")
+cryspy_lines.append("n_elim = 3")
+cryspy_lines.append("n_subs = 3")
+cryspy_lines.append("target = random")
+cryspy_lines.append("n_elite = 2")
+cryspy_lines.append("n_fittest = 10")
+cryspy_lines.append("slct_func = TNM")
+cryspy_lines.append("t_size = 2")
+cryspy_lines.append("maxgen_ea = 0")
+
+# Generate end_point values from table or fallback
+end_points = []
+for el in elements:
+    if el in element_data:
+        end_points.append(f"{element_data[el]['energy']:.4f}")
+    else:
+        end_points.append("-4.5000")
+cryspy_lines.append("end_point = " + " ".join(end_points) + "\n")
+
+cryspy_lines.append("[option]\n")
+
+# Write cryspy.in file
 with open('cryspy.in', 'w') as f:
     f.write("\n".join(cryspy_lines))
-print("Created cryspy.in")
 
-# ====== 4. calc_in置換 ======
-src = 'calc_in_dftb'
-dst = 'calc_in'
-if os.path.exists(dst):
-    shutil.rmtree(dst)
-    print(f"Removed existing directory: {dst}")
-if os.path.isdir(src):
-    shutil.copytree(src, dst)
-    print(f"Copied {src} to {dst}")
-else:
-    print(f"Error: Source directory {src} not found")
+print("cryspy.in generated with accurate end_point values.")
 
-# ====== 5. 原子座標とセル生成関数 ======
-def get_positions(struct, a, c):
-    if struct == "bcc":
-        return [(0,0,0), (0.5*a,0.5*a,0.5*a)]
-    elif struct == "hcp":
-        return [(0,0,0), (2/3*a,1/3*a,c/2)]
-    elif struct == "dhcp":
-        return [(0,0,0), (a/2,a*(3)**0.5/6,c/4), (0,0,c/2), (a/2,a*(3)**0.5/6,3*c/4)]
-    elif struct == "dia":
-        return [(0,0,0), (0.25*a,0.25*a,0.25*a)]
-    else:
-        return [(0,0,0)]
-
-def get_cell_parameters(struct, a, b, c):
-    if struct in ["fcc", "bcc", "sc", "dia"]:
-        return [(a,0,0),(0,b,0),(0,0,c)]
-    elif struct in ["hcp","dhcp"]:
-        return [(a,0,0),(-a/2,a*math.sqrt(3)/2,0),(0,0,c)]
-    elif struct == "ort":
-        return [(a,0,0),(0,b,0),(0,0,c)]
-    elif struct == "mon":
-        beta = math.radians(100)
-        return [(a,0,0),(0,b,0),(c*math.cos(beta),0,c*math.sin(beta))]
-    else:
-        return [(a,0,0),(0,b,0),(0,0,c)]
-
-# ====== 6. 構造ディレクトリ生成 ======
-xx_tmp_dir = 'Xx_tmp'
-if not os.path.isdir(xx_tmp_dir):
-    os.makedirs(xx_tmp_dir)
+# Prepare POSCAR files
+os.makedirs('poscars', exist_ok=True)
 
 for el in elements:
     struct = element_data.get(el, {}).get('structure', 'sc')
@@ -124,22 +100,102 @@ for el in elements:
     b_val = element_data.get(el, {}).get('b', a_val)
     c_val = element_data.get(el, {}).get('c', a_val)
 
-    subdir_name = f"{el}_{struct}"
-    os.makedirs(subdir_name, exist_ok=True)
+    poscar_path = os.path.join('poscars', f"POSCAR_{el}")
 
-    # ASEでgeometry.genとPOSCAR出力
     try:
-        ase_struct_map = {'fcc':'fcc','bcc':'bcc','hcp':'hcp','dia':'diamond','sc':'sc'}
+        # Map for ASE-supported structures
+        ase_struct_map = {
+            'fcc': 'fcc',
+            'bcc': 'bcc',
+            'hcp': 'hcp',
+            'dia': 'diamond',
+            'sc': 'sc',
+            'rock': 'rocksalt',
+            'zb': 'zincblende',
+            'wz': 'wurtzite'
+        }
+
         if struct in ase_struct_map:
             atoms = bulk(el, ase_struct_map[struct], a=a_val)
+        elif struct == 'bct':
+            # Body-centered tetragonal
+            cell = [[a_val, 0, 0],
+                    [0, a_val, 0],
+                    [0, 0, c_val]]
+            atoms = Atoms(el, positions=[[0, 0, 0]], cell=cell, pbc=True)
+        elif struct == 'dhcp':
+            # Double hcp: ABAC stacking
+            cell = [[a_val, 0, 0],
+                    [-a_val/2, (a_val*(3)**0.5)/2, 0],
+                    [0, 0, c_val]]
+            positions = [
+                [0, 0, 0],
+                [a_val/2, (a_val*(3)**0.5)/6, c_val/4],
+                [0, 0, c_val/2],
+                [a_val/2, (a_val*(3)**0.5)/6, 3*c_val/4]
+            ]
+            atoms = Atoms(el*4, positions=positions, cell=cell, pbc=True)
+        elif struct == 'ort':
+            # Orthorhombic cell
+            cell = [[a_val, 0, 0],
+                    [0, b_val, 0],
+                    [0, 0, c_val]]
+            atoms = Atoms(el, positions=[[0, 0, 0]], cell=cell, pbc=True)
+        elif struct == 'mon':
+            # Monoclinic cell
+            cell = [[a_val, 0, 0],
+                    [0, b_val, 0],
+                    [0.1*a_val, 0, c_val]]
+            atoms = Atoms(el, positions=[[0, 0, 0]], cell=cell, pbc=True)
+        elif struct == 'αB12':
+            # Approximate alpha-Boron structure (simplified)
+            cell = [[a_val, 0, 0],
+                    [0, a_val, 0],
+                    [0, 0, a_val]]
+            positions = [[0, 0, 0]]  # Placeholder for simplicity
+            atoms = Atoms(el, positions=positions, cell=cell, pbc=True)
+        elif struct == 'βSn':
+            # Approximate beta-Sn structure (tetragonal)
+            cell = [[a_val, 0, 0],
+                    [0, a_val, 0],
+                    [0, 0, c_val]]
+            atoms = Atoms(el, positions=[[0, 0, 0]], cell=cell, pbc=True)
         else:
-            atoms = Atoms(el, positions=get_positions(struct,a_val,c_val),
-                          cell=get_cell_parameters(struct,a_val,b_val,c_val), pbc=True)
+            # Default fallback
+            atoms = bulk(el, 'sc', a=a_val)
     except Exception:
-        atoms = bulk(el,'sc',a=4.0)
+        atoms = bulk(el, 'sc', a=4.0)
 
-    write(os.path.join(subdir_name,'geometry.gen'), atoms, format='gen')
-    write(os.path.join(subdir_name,'POSCAR'), atoms, format='vasp')
+    write(poscar_path, atoms, format='vasp')
+    print(f"Generated POSCAR for {el} ({struct})")
 
-    print(f"Created {subdir_name} with geometry.gen and POSCAR.")
+print("POSCAR files generated in 'poscars' directory.")
 
+# Additional step: create subdirectories in current working directory and copy files
+xx_tmp_dir = 'Xx_tmp'
+if not os.path.isdir(xx_tmp_dir):
+    print(f"Warning: {xx_tmp_dir} directory does not exist. Skipping copy step.")
+else:
+    for el in elements:
+        struct = element_data.get(el, {}).get('structure', 'sc')
+        subdir_name = f"{el}_{struct}"
+        os.makedirs(subdir_name, exist_ok=True)
+        # Copy contents of Xx_tmp into subdir
+        for item in os.listdir(xx_tmp_dir):
+            s = os.path.join(xx_tmp_dir, item)
+            d = os.path.join(subdir_name, item)
+            if os.path.isdir(s):
+                shutil.copytree(s, d, dirs_exist_ok=True)
+            else:
+                shutil.copy2(s, d)
+        # Copy and rename POSCAR file
+        poscar_src = os.path.join('poscars', f"POSCAR_{el}")
+        poscar_dst = os.path.join(subdir_name, "POSCAR")
+        if os.path.isfile(poscar_src):
+            shutil.copy2(poscar_src, poscar_dst)
+        print(f"Created directory {subdir_name} with POSCAR and copied Xx_tmp contents.")
+
+# Delete the 'poscars' directory to clean up intermediate files
+if os.path.isdir('poscars'):
+    shutil.rmtree('poscars')
+    print("Cleaned up: 'poscars' directory deleted.")

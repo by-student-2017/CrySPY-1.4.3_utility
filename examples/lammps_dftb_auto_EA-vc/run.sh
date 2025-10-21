@@ -33,6 +33,7 @@ restart_if_needed() {
 
 # --- Stage 1: Lammps 計算 ---
 echo "===== Stage 1: Lammps calculation START ====="
+cp -r calc_in_lammps calc_in
 cp -r Xx_tmp_lammps Xx_tmp
 python3 make_input_lammps.py "$@"
 cryspy -n
@@ -43,9 +44,11 @@ echo "===== Stage 1: Lammps calculation END ====="
 
 # --- Stage 2: DFTB+ 計算 ---
 echo "===== Stage 2: DFTB+ calculation START ====="
-python3 make_input_dftb.py "$@"
+rm -fr calc_in
 rm -fr Xx_tmp
+cp -r calc_in_dftb calc_in
 cp -r Xx_tmp_dftb Xx_tmp
+python3 make_input_dftb.py "$@"
 cryspy -n
 run_stage
 restart_if_needed
