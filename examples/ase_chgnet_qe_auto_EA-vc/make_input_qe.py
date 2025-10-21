@@ -17,6 +17,20 @@ with open('pp_table.txt') as f:
         if len(parts) >= 2 and not line.startswith('Element'):
             pp_table[parts[0]] = parts[1]
 
+# element_data_qe.txt読み込み（構造情報と格子定数）
+element_data = {}
+with open('element_data_qe.txt') as f:
+    for line in f:
+        parts = line.split()
+        if len(parts) >= 6 and not line.startswith('Element'):
+            element_data[parts[0]] = {
+                'structure': parts[1],
+                'energy': float(parts[2]),
+                'a': float(parts[3]),
+                'b': float(parts[4]),
+                'c': float(parts[5])
+            }
+
 # ppディレクトリ作成
 pp_dir = "pp"
 os.makedirs(pp_dir, exist_ok=True)
@@ -43,6 +57,14 @@ max_len = max(len(el) for el in elements)
 atype_line = "atype  = " + " ".join(el.ljust(max_len) for el in elements)
 ll_nat_line = "ll_nat = " + " ".join("0".ljust(max_len) for _ in elements)
 ul_nat_line = "ul_nat = " + " ".join("12".ljust(max_len) for _ in elements)
+
+end_points = []
+for el in elements:
+    if el in element_data and 'energy' in element_data[el]:
+        end_points.append(f"{element_data[el]['energy']:.4f}")
+    else:
+        end_points.append("-4.5000")  # デフォルト値
+end_point_line = "end_point  = " + " ".join(ep.ljust(max_len) for ep in end_points)
 
 # CrySPY設定ファイル生成
 cryspy_lines = [
@@ -75,7 +97,8 @@ cryspy_lines = [
     "n_fittest = 10",
     "slct_func = TNM",
     "t_size = 2",
-    "maxgen_ea = 0\n",
+    "maxgen_ea = 0",
+    end_point_line + "\n",
     "[option]",
     "load_struc_flag = True\n"
 ]
