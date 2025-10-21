@@ -12,6 +12,9 @@ run_stage() {
     if [ "$LOG_LASTLINE" = "Done all structures!" ]; then
       echo "Stage completed."
       break
+    elif [ "${LOG_LASTLINE:0:17}" = "Reached maxgen_ea" ]; then
+      echo "[INFO] EA max generation reached. Exiting."
+      break
     elif [ "$LOG_LASTLINE" = "EA is ready" ]; then
       echo "EA stage detected, continuing..."
       cryspy -n
