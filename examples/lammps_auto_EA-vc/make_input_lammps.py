@@ -73,15 +73,15 @@ with open('cryspy.in', 'w') as f:
     f.write("\n".join(cryspy_lines))
 print("Created cryspy.in")
 
-# ====== 3. calc_in_lammpsをコピー ======
-calc_in_lammps_dir = 'calc_in_lammps'
+# ====== 3. calc_inをコピー ======
+calc_in_dir = 'calc_in'
 calc_in_dst = 'calc_in'
-if not os.path.isdir(calc_in_lammps_dir):
-    print("Error: calc_in_lammps directory not found")
+if not os.path.isdir(calc_in_dir):
+    print("Error: calc_in directory not found")
     sys.exit(1)
 if os.path.exists(calc_in_dst):
     shutil.rmtree(calc_in_dst)
-shutil.copytree(calc_in_lammps_dir, calc_in_dst)
+shutil.copytree(calc_in_dir, calc_in_dst)
 print(f"Copied calc_in template to {calc_in_dst}")
 
 # ====== 4. calc_in内のin_tmp.lmp編集 ======
