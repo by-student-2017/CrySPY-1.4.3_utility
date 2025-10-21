@@ -5,10 +5,36 @@ from ase.io import read, write
 import subprocess
 import sys
 import os
+import re
+import subprocess
 
 # ---------- input structure
 # CrySPY outputs 'POSCAR' as an input file in work/xxxxxx directory
 atoms = read('POSCAR', format='vasp')
+cell = atoms.cell.lengths()  # [a, b, c]
+
+# ---------- Extract kppvol from dftb_in.hsd (comment line #kppvol = value)
+kppvol = None
+if os.path.exists("dftb_in.hsd"):
+    with open("dftb_in.hsd", "r") as f:
+        for line in f:
+            if line.strip().startswith("#kppvol"):
+                match = re.search(r'#kppvol\\s*=\\s*(\\d+(\\.\\d+)?)', line)
+                if match:
+                    kppvol = float(match.group(1))
+                break
+
+# Default if not found
+if kppvol is None:
+    kppvol = 40.0
+
+# ---------- calculate k-points based on cell lengths and kppvol
+volume = cell[0] * cell[1] * cell[2]
+total_kpoints = kppvol * volume
+scale = total_kpoints ** (1/3)  # cubic root for 3D distribution
+nkx = max(1, round(scale * cell[0] / sum(cell)))
+nky = max(1, round(scale * cell[1] / sum(cell)))
+nkz = max(1, round(scale * cell[2] / sum(cell)))
 
 # ---------- setting and run
 #atoms.calc = XTB(method='GFN1-xTB') # GFN1-xTB, GFN2-xTB, GFN-FF
@@ -18,8 +44,22 @@ atoms = read('POSCAR', format='vasp')
 if not os.path.exists("dftb_in.hsd"):
     subprocess.run(["cp", "./../../dftb_in.hsd", "./"], check=True)
 
+# Read dftb_in.hsd content
+with open("dftb_in.hsd", "r") as f:
+    content = f.read()
+
+# Replace nkx, nky, nkz lines
+content = re.sub(r'nkx', f'{nkx}', content)
+content = re.sub(r'nky', f'{nky}', content)
+content = re.sub(r'nkz', f'{nkz}', content)
+
+# Write updated content back to dftb_in.hsd
+with open("dftb_in.hsd", "w") as f:
+    f.write(content)
+
 # ---------- run
 #converged = opt.run(fmax=0.01, steps=2000)
+#cpu_count = os.cpu_count() or 1
 cpu_count = 1
 subprocess.run(f"mpirun -np {cpu_count} dftb+ | tee dftb_out.log", shell=True)
 
