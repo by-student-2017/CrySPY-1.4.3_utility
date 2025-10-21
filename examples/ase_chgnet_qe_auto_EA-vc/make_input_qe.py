@@ -39,6 +39,11 @@ for el in elements:
     else:
         print(f"Warning: No pseudopotential entry for {el} in pp_table.txt")
 
+max_len = max(len(el) for el in elements)
+atype_line = "atype  = " + " ".join(el.ljust(max_len) for el in elements)
+ll_nat_line = "ll_nat = " + " ".join("0".ljust(max_len) for _ in elements)
+ul_nat_line = "ul_nat = " + " ".join("12".ljust(max_len) for _ in elements)
+
 # CrySPY設定ファイル生成
 cryspy_lines = [
     "[basic]",
@@ -49,9 +54,9 @@ cryspy_lines = [
     "jobcmd = bash",
     "jobfile = job_cryspy\n",
     "[structure]",
-    "atype  = " + " ".join(elements),
-    "ll_nat = " + " ".join(["0"] * len(elements)),
-    "ul_nat = " + " ".join(["12"] * len(elements)) + "\n",
+    atype_line,
+    ll_nat_line,
+    ul_nat_line + "\n",
     "[QE]",
     "qe_infile = pwscf.in",
     "qe_outfile = pwscf.out",
