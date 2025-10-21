@@ -15,7 +15,7 @@ mindist_1 = 1.5
 [QE]
 qe_infile = pwscf.in
 qe_outfile = pwscf.out
-kppvol = 80
+kppvol = 40
 
 [LAQA]
 nselect_laqa = 2
