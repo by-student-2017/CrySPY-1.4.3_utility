@@ -2,10 +2,11 @@ import sys
 import os
 import shutil
 import subprocess
+import math
 
 elements = sys.argv[1:]
-if len(elements) < 2:
-    print("Usage: python make_input_qe.py Element1 Element2 [Element3 ...]")
+if len(elements) < 1:
+    print("Usage: python make_input_qe.py Element1 [Element2 ...]")
     sys.exit(1)
 
 # 擬ポテンシャルテーブル読み込み
@@ -35,7 +36,7 @@ with open('element_data_qe.txt') as f:
 pp_dir = "pp"
 os.makedirs(pp_dir, exist_ok=True)
 
-# 擬ポテンシャルダウンロード
+# 必要な擬ポテンシャルのみダウンロード
 for el in elements:
     pseudo = pp_table.get(el)
     if pseudo:
@@ -52,6 +53,7 @@ for el in elements:
             print(f"{pseudo} already exists in {pp_dir}")
     else:
         print(f"Warning: No pseudopotential entry for {el} in pp_table.txt")
+
 
 max_len = max(len(el) for el in elements)
 atype_line = "atype  = " + " ".join(el.ljust(max_len) for el in elements)
@@ -106,65 +108,133 @@ cryspy_lines = [
 with open('cryspy.in', 'w') as f:
     f.write("\n".join(cryspy_lines))
 
-# calc_in_qe → calc_in にテンプレートコピー
-os.makedirs('calc_in', exist_ok=True)
+# 原子座標生成
+def get_positions(struct, a, c):
+    if struct == "bcc":
+        return [(0,0,0), (0.5*a,0.5*a,0.5*a)]
+    elif struct == "hcp":
+        return [(0,0,0), (2/3*a,1/3*a,c/2)]
+    elif struct == "dhcp":
+        return [(0,0,0), (a/2,a*(3)**0.5/6,c/4), (0,0,c/2), (a/2,a*(3)**0.5/6,3*c/4)]
+    elif struct == "dia":
+        return [(0,0,0), (0.25*a,0.25*a,0.25*a)]
+    else:
+        return [(0,0,0)]
 
-# カラム幅設定
-col_width_el = max(len(el) for el in elements) + 2
-col_width_mass = 6
-col_width_pp = max(len(pp_table.get(el, "UNKNOWN.UPF")) for el in elements) + 2
+# 格子ベクトル生成
+def get_cell_parameters(struct, a, b, c):
+    if struct in ["fcc", "bcc", "sc", "dia"]:
+        return [
+            (a, 0.0, 0.0),
+            (0.0, b, 0.0),
+            (0.0, 0.0, c)
+        ]
+    elif struct in ["hcp", "dhcp"]:
+        return [
+            (a, 0.0, 0.0),
+            (-a/2, a*math.sqrt(3)/2, 0.0),
+            (0.0, 0.0, c)
+        ]
+    elif struct == "ort":  # orthorhombic
+        return [
+            (a, 0.0, 0.0),
+            (0.0, b, 0.0),
+            (0.0, 0.0, c)
+        ]
+    elif struct == "mon":  # monoclinic (β angle assumed ~90° for simplicity)
+        beta = math.radians(100)  # example angle
+        return [
+            (a, 0.0, 0.0),
+            (0.0, b, 0.0),
+            (c*math.cos(beta), 0.0, c*math.sin(beta))
+        ]
+    else:
+        return [
+            (a, 0.0, 0.0),
+            (0.0, b, 0.0),
+            (0.0, 0.0, c)
+        ]
 
-ntyp = len(elements)
+# Xx_tmpからサブディレクトリ作成
+xx_tmp_dir = 'Xx_tmp'
+pwscf_template = os.path.join(xx_tmp_dir, 'pwscf_tmp.in')
 
-for i in [1, 2]:
-    tmp_file = os.path.join('calc_in_qe', f"{i}_pwscf_tmp.in")
-    out_file = os.path.join('calc_in', f"{i}_pwscf.in")
+if os.path.isfile(pwscf_template):
+    for el in elements:
+        struct = element_data.get(el, {}).get('structure', 'sc')
+        a_val = element_data.get(el, {}).get('a', 4.0)
+        b_val = element_data.get(el, {}).get('b', a_val)
+        c_val = element_data.get(el, {}).get('c', a_val)
 
-    if not os.path.isfile(tmp_file):
-        print(f"Template {tmp_file} not found!")
-        continue
+        positions = get_positions(struct, a_val, c_val)
+        nat_value = len(positions)
 
-    with open(tmp_file) as f:
-        lines = f.readlines()
+        subdir_name = f"{el}_{struct}"
+        os.makedirs(subdir_name, exist_ok=True)
 
-    new_lines = []
-    in_system_section = False
-    for line in lines:
-        if line.strip().lower().startswith("&system"):
-            in_system_section = True
+        # Xx_tmpの内容コピー
+        for item in os.listdir(xx_tmp_dir):
+            if item == 'pwscf_tmp.in':
+                continue
+            s = os.path.join(xx_tmp_dir, item)
+            d = os.path.join(subdir_name, item)
+            if os.path.isdir(s):
+                shutil.copytree(s, d, dirs_exist_ok=True)
+            else:
+                shutil.copy2(s, d)
 
-        if "__NTYP__" in line:
-            line = line.replace("__NTYP__", str(ntyp))
+        # pwscf.in再構築
+        with open(pwscf_template) as f:
+            lines = f.readlines()
 
-        if in_system_section and line.strip() == "/":
-            new_lines.append(f"    nspin = 2,\n")
-            for idx in range(ntyp):
-                mag = 0.3 if idx == 0 else 0.0
-                new_lines.append(f"    starting_magnetization({idx+1}) = {mag}\n")
-            in_system_section = False
+        new_lines = []
+        in_system_section = False
+        for line in lines:
+            if "starting_magnetization" in line or line.strip().startswith("ATOMIC_SPECIES") or line.strip().startswith("ATOMIC_POSITIONS"):
+                continue
 
-        new_lines.append(line)
+            if line.strip().lower().startswith("&system"):
+                in_system_section = True
 
-        if line.strip().startswith("ATOMIC_SPECIES"):
-            for el in elements:
-                pseudo = pp_table.get(el, "UNKNOWN.UPF")
-                formatted_line = (
-                    f"{el.ljust(col_width_el)}"
-                    f"{'-1.0'.ljust(col_width_mass)}"
-                    f"{pseudo.ljust(col_width_pp)}\n"
-                )
-                new_lines.append(formatted_line)
+            if "nat" in line:
+                line = f"    nat = {nat_value}\n"
+            if "ntyp" in line:
+                line = "    ntyp = 1\n"
 
-    with open(out_file, 'w') as f:
-        f.writelines(new_lines)
+            if in_system_section and line.strip() == "/":
+                new_lines.append(f"    nspin = 2,\n")
+                new_lines.append(f"    starting_magnetization(1) = 0.3\n")
+                in_system_section = False
 
-    print(f"Generated {out_file}")
+            new_lines.append(line)
 
-# job_cryspyコピー
-job_src = os.path.join('calc_in_qe', 'job_cryspy')
-job_dst = os.path.join('calc_in', 'job_cryspy')
-if os.path.isfile(job_src):
-    shutil.copy2(job_src, job_dst)
-    print(f"Copied job_cryspy to {job_dst}")
+        # ATOMIC_SPECIES
+        pseudo = pp_table.get(el, "UNKNOWN.UPF")
+        new_lines.append("ATOMIC_SPECIES\n")
+        new_lines.append(f"{el.ljust(4)}  -1.0  {pseudo}\n")
+
+        # ATOMIC_POSITIONS
+        new_lines.append("ATOMIC_POSITIONS (angstrom)\n")
+        for pos in positions:
+            new_lines.append(f"{el}  {pos[0]:.6f}  {pos[1]:.6f}  {pos[2]:.6f}\n")
+
+        # CELL_PARAMETERS
+        new_lines.append("CELL_PARAMETERS (angstrom)\n")
+        for vec in get_cell_parameters(struct, a_val, b_val, c_val):
+            new_lines.append(f"{vec[0]:.6f} {vec[1]:.6f} {vec[2]:.6f}\n")
+
+        # K_POINTS automatic
+        k_density = 40
+        nkx = max(1, int(round(k_density / a_val)))
+        nky = max(1, int(round(k_density / b_val)))
+        nkz = max(1, int(round(k_density / c_val)))
+        new_lines.append("K_POINTS automatic\n")
+        new_lines.append(f"{nkx} {nky} {nkz} 0 0 0\n")
+
+        pwscf_dst = os.path.join(subdir_name, 'pwscf.in')
+        with open(pwscf_dst, 'w') as f:
+            f.writelines(new_lines)
+
+        print(f"Created directory {subdir_name} with pwscf.in and Xx_tmp contents.")
 else:
-    print("Warning: job_cryspy not found in calc_in_qe")
+    print("Error: pwscf_tmp.in not found in Xx_tmp")

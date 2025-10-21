@@ -34,6 +34,7 @@ restart_if_needed() {
 # --- Stage 1: CHGNet計算 ---
 echo "===== Stage 1: CHGNet calculation START ====="
 cp -r calc_in_chgnet calc_in
+cp -r Xx_tmp_chgnet Xx_tmp
 python3 make_input_chgnet.py "$@"
 cryspy -n
 run_stage
@@ -43,7 +44,10 @@ echo "===== Stage 1: CHGNet calculation END ====="
 
 # --- Stage 2: QE計算 ---
 echo "===== Stage 2: QE calculation START ====="
+rm -fr calc_in
 cp -r calc_in_qe calc_in
+rm -fr Xx_tmp
+cp -r Xx_tmp_qe Xx_tmp
 python3 make_input_qe.py "$@"
 cryspy -n
 run_stage
