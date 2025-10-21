@@ -7,9 +7,6 @@
 ####$ -q ibis1.q
 ####$ -q ibis2.q
 
-export OMP_NUM_THREADS=1
-export NSLOTS=4
-
 mpirun -np $NSLOTS pw.x < pwscf.in > pwscf.out
 
 
