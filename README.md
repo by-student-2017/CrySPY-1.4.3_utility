@@ -30,6 +30,10 @@ python3 pplot_v1.py
 ```
 python3 plot1d.py
 ```
+- Instead of plot1d.py, a gnuplot version is also available. The usage is as follows (-persist can be omitted):
+```
+gnuplot -persist plot1d.gpl
+```
 
 ## Automatic generation of input files (EA-vc + CHGNet version)
 - Since creating an input file manually can be cumbersome, a Python script called make_input.py is provided for CHGNet (see ase_chgnet_auto_EA-vc).
