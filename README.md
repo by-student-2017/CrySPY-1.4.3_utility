@@ -206,6 +206,10 @@ Phase diagrams are essential for understanding phase stability and material prop
 - **Current Status and Future Needs:**  
   Phase diagrams are being collected by organizations such as **NIMS**, but the available information is incomplete. It would be highly beneficial to compile these datasets using integrated platforms such as **Phase0** or similar frameworks to enable collaborative development and global accessibility.
 
+- **Next Research Stage:**  
+  Once phase diagrams are clarified, researchers can advance to the next stage: performing molecular dynamics (MD) simulations in composition regions of interest. These simulations enable the study of dislocation behavior, mechanical properties, and environmental effects, providing deeper insights into material performance under realistic conditions.  
+  **Note:** CrySPY focuses on crystal structure prediction. For MD and related property evaluations, tools such as **ASE**, **LAMMPS**, **Quantum ESPRESSO (QE)**, **VASP**, **Siesta**, **CP2K**, and **OpenMX** should be utilized.
+
 # Ternary Alloy Systems
 
 This document lists selected ternary alloy systems of interest for advanced materials research. Each entry includes a short description and the current status of phase diagram development.
