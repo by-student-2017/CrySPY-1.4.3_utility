@@ -47,7 +47,8 @@ ax.scatter(
     edgecolors='black',     # marker_edge_color
     linewidths=1.0,         # marker_edge_width
     alpha=1.0,
-    label='Energy'
+    label='Energy',
+    picker=True             # クリックイベント: On
 )
 
 # 最小値の点
@@ -94,6 +95,32 @@ ax.tick_params(direction='in', length=6, width=1)
 ax.grid(True)
 ax.legend()
 fig.tight_layout()
+
+# アノテーション（最初は非表示）
+annot = ax.annotate("", xy=(0,0), xytext=(15,15), textcoords="offset points",
+                    bbox=dict(boxstyle="round", fc="w"),
+                    arrowprops=dict(arrowstyle="->"))
+annot.set_visible(False)
+
+# クリックイベント
+def on_pick(event):
+    ind = event.ind[0]
+    row = df_filtered.iloc[ind]
+    x = ids[ind]
+    y = energy_values.iloc[ind]
+    text = (
+        f"ID={x}\n"
+        f"E={y:.3f} eV/atom\n"
+        f"Init-Spg: {row['Spg_num']} ({row['Spg_sym']})\n"
+        f"OPT-Spg: {row['Spg_num_opt']} ({row['Spg_sym_opt']})\n"
+        f"Magmom: {row['Magmom']}, Opt: {row['Opt']}"
+    )
+    annot.xy = (x, y)
+    annot.set_text(text)
+    annot.set_visible(True)
+    fig.canvas.draw_idle()
+
+fig.canvas.mpl_connect('pick_event', on_pick)
 
 # SVG形式で保存
 fig.savefig('energy_scatter_plot.svg', format='svg')
