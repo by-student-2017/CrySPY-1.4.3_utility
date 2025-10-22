@@ -1,7 +1,7 @@
 [basic]
 algo = RS
 calc_code = ASE
-tot_struc = 5
+tot_struc = 40
 nstage = 1
 njob = 5
 jobcmd = bash
