@@ -52,12 +52,16 @@ python3 make_input.py Al C Ni Fe
 
 ## Automatic generation of input files (EA-vc + DFTB+(GFN1-xTB) version)
 - The "element_data_dftb.txt" has not been rewritten with the GFN1-xTB results in DFTB+ (I plan to fix this in the future if I have time). Therefore, an element_structure file will be created, so please calculate it and correct the end_point.
+- GFN2-xTB can also be specified in dftb_in.hsd, but GFN2-xTB is difficult to handle due to its computational cost and convergence. In the paper, good results were obtained with GFN1-xTB for MOF, so here we create an example using GFN1-xTB.
+- Interested readers may want to try using GFN1-xTB or the skf file.
 
 ## Automatic generation of input files (EA-vc + QE version)
 - The "element_data_qe.txt" does not reflect the results of QE (we plan to fix this in the future if we have time). Therefore, the element_structure file will be created, so please perform the calculation and correct the end_point (element_structure may also not be created correctly, so please check).
+- QE and VASP can also be discussed in terms of enthalpy by entering only pressure. Please refer to the official manual.
 
 ## Automatic generation of input files (EA-vc + Lammps version)
 - The Lammps results are not reflected in "element_data_lammps.txt" (we plan to fix this in the future if we have time). Therefore, the element_structure file will be created, so please run the calculation and correct the end_point (the element_structure may not have been created correctly, so please check).
+- The Lammps EAM potential code has been rewritten to fully match the Zhou 2004 data published by NIST, and parameters for previously reported elements have been added. It is theoretically more expressive than Lennard-Jones (LJ), so it may be worth considering using it. However, not all elements are included.
 
 ## Automatic generation of input files (EA-vc + MACE version)
 - The MACE results are not reflected in "element_data_mace.txt" (I plan to fix this in the future if I have time). Therefore, the element_structure file will be created, so please run the calculation and correct the end_point (it's possible that the element_structure was not created correctly, so please check). As with CHGNet, I think it's fine to match it to the VASP results. It's also a good idea to organize it with Material Projects data.
