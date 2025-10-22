@@ -1,0 +1,44 @@
+set terminal svg size 800,600 font "Liberation Serif,14"
+set output "energy_scatter_plot.svg"
+
+set datafile separator whitespace
+datafile = "data/cryspy_rslt"
+
+# ヘッダーを無視して統計を取る（6列目: E_eV_atom）
+stats datafile every ::1 using 6 name "S" nooutput
+
+min_energy = S_min
+mean = S_mean
+std = S_stddev
+min_id = S_index_min
+
+# y範囲
+ymin = min_energy - 0.2 * std
+ymax = mean + 1.0 * std
+set yrange [ymin:ymax]
+
+# 軸ラベル
+set xlabel "Structure ID"
+set ylabel "Energy (eV/atom)"
+set grid
+set tics in
+
+# タイトル
+set title sprintf("Lowest Energy: ID=%d, Energy=%.3f eV/atom", min_id, min_energy)
+
+# 破線
+set arrow from graph 0, first min_energy to graph 1, first min_energy nohead lc rgb "gray" dt 2 lw 1
+set arrow from first min_id, graph 0 to first min_id, graph 1 nohead lc rgb "gray" dt 2 lw 1
+
+# マウス有効化
+set mouse
+
+# プロット（X=行番号、Y=6列目）
+plot datafile every ::1 using 1:6 with points pt 7 ps 1.5 lc rgb "#ADD8E6" title "Energy", \
+     '' every ::1 using (int($1)==min_id ? $0 : 1/0):6 with points pt 7 ps 1.5 lc rgb "red" title "Min Energy"
+
+set output
+set terminal qt
+replot
+pause -1 "Press Enter to close"
+
