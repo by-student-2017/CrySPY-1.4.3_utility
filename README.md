@@ -152,7 +152,7 @@ Start CrySPY 1.4.3
 [2025-10-16 16:02:16,311][cryspy_init][INFO] pyxtal version: 1.1.1
 [2025-10-16 16:02:16,311][cryspy_init][INFO] # ---------- Read input file, cryspy.in
 ```
-- BO (numba==0.62.1 case)
+- BO (numba==0.62.1 case) (using COMBO code)
 ```
 pip3 install physbo==2.2.0
 pip3 install dscribe==2.1.2
