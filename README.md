@@ -64,6 +64,12 @@ chmod +x repeat_cryspy.sh
 bash repeat_cryspy.sh
 ```
 
+## Useful features
+- Deleting old files: "cryspy -c" or "cryspy --clean"
+- Enthalpy: "pv_term = True" and "press = 400"
+- Replot: "cryspy-Eplot" or "cryspy-calc-convex-hull 1"
+- Jupyter Notebook: https://tomoki-yamashita.github.io/CrySPY_doc/tutorial/interactive/index.html
+
 ## DFTB+ Installation
 - Older versions of DFTB+ allow you to use Pressure with LBFGS, so in some cases you may want to consider using an older version. 
 ```
