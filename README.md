@@ -3,7 +3,7 @@
 - This is a calculation example. For practical use, it is recommended to increase the number of nat and tot_struc.
 - LAQA: only VASP, QE, or soiap for now
 
-## Note: Results and random numbers
+## Results and random numbers
 - The random seed is changed so the results will not match those in the data. Therefore, even if the environment is almost the same and the user is the same, the results will be different.
 
 ## Calculated phase diagram
