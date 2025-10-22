@@ -158,10 +158,6 @@ pip3 install physbo==2.2.0
 pip3 install dscribe==2.1.2
 pip install --upgrade numba
 ```
-### requirements.txt
-```
-pip freeze > requirements.txt
-```
 ### PC specs used for test
 - OS: Microsoft Windows 11 Home 64 bit
 - BIOS: 1.14.0
@@ -171,6 +167,10 @@ pip freeze > requirements.txt
 - GPU: NVIDIA GeForce RTX3070
 - WSL2: VERSION="22.04.1 LTS (Jammy Jellyfish)"
 - Python 3.10.12
+### requirements.txt
+```
+pip freeze > requirements.txt
+```
 
 ## Recalculation methods for low-cost calculations like Lammps (or CHGNet) and high-cost calculations like QE (VASP, DFTB+(xTB)).
 - After performing the calculation using the low-cost method, copy "data/pkl_data/init_struct_data.pkl" and "data/pkl_data/opt_struc_data.pkl".
