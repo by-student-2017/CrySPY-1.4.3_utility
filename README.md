@@ -209,6 +209,13 @@ Phase diagrams are essential for understanding phase stability and material prop
 - **Next Research Stage:**  
   Once phase diagrams are clarified, researchers can advance to the next stage: performing molecular dynamics (MD) simulations in composition regions of interest. These simulations enable the study of dislocation behavior, mechanical properties, and environmental effects, providing deeper insights into material performance under realistic conditions.  
   **Note:** CrySPY focuses on crystal structure prediction. For MD and related property evaluations, tools such as **ASE**, **LAMMPS**, **Quantum ESPRESSO (QE)**, **VASP**, **Siesta**, **CP2K**, and **OpenMX** should be utilized.
+  + #### Related Topics
+  + Lammps: https://github.com/by-student-2017/lammps_education_metal_win
+  + CP2k: https://github.com/by-student-2017/CP2k-v.9.1-examples
+  + DFTB+: https://github.com/by-student-2017/DFTBplus-v.23.1-examples
+  + Phase field: https://github.com/by-student-2017/Phase-field
+  + CALPHAD: https://github.com/by-student-2017/OpenCALPHAD-v6-examples
+  + CALPHAD: https://github.com/by-student-2017/pycalphad-v.0.10.3-examples
 
 # Ternary Alloy Systems
 
