@@ -185,160 +185,540 @@ pip freeze > requirements.txt
 
 ---
 
-## Phase diagrams attracting attention
-- Phase diagrams for precious metals, rare earths, and other elements that are difficult to obtain through experiments should ideally be compiled at each calculation level through cooperation between countries.
-- The general rule for state diagrams is to arrange them in alphabetical order. General names may not always be arranged in alphabetical order. Just be aware of the general rule.
-- Phase diagrams are being collected by NIMS, but not all the information is available. It would be great if they could be compiled using Phase0 or similar. 
+## Phase Diagrams Attracting Attention
 
-### Ternary system
-- Fe-Pd-In
-- Li-La-Ti
-- Ni-Ga-Nd
-- Fe-Pd-Pb
-- Fe-Cr-Al
-- Mn-Al-C
-- Fe-Ni-Si
-- Ti-Fe-Al
----
-- Li-Cu-Sb
-- Zn-Sn-O
-- Cu-Al-Mn
----
-- Ti-V-Cr
-- Ti-V-Al
-- Ti-V-Ni
-- Ti-V-H
-- Mg-Ti-H
-- Fe-Ti-H
----
-- Ni-Cr-W
-- Fe-Mo-B
-- Zn-Sn-P
-- Li-Zr-O
-- Mg-Al-C
-- Ti-Al-N
-- Fe-Ni-Cr
----
-- Be-Al-Mg
-- Be-Ti-Zr
-- Be-Ni-Cr
-- Be-Li-Mg
-- Be-Li-Al
-- Be-Li-Ti
----
-- Co-Cr-Al
-- Ni-Co-Ti
-- Fe-Co-Ni
-- Mg-Zn-Ca
-- Li-Ni-Mn
-- Ti-Zr-Hf
-- Cu-Zn-Al
-- Nb-Ti-Al
-- Si-Ge-Sn
-- Zn-Ga-O
----
-- Co-Ni-Al
-- Ti-Nb-Zr
-- Mo-Si-B
-- Al-Ti-C
-- Cr-Mn-Ni
-- Ga-In-Zn
-- Li-Si-P
-- Mg-Sn-Ca
----
-- La-Si-Mg
-- Zr-Y-Ti
-- Li-Zr-P
-- Fe-Mo-B
----
-- Li-Mg-Si
-- Na-Li-Zr
-- Ti-Nb-Mo
-- Cr-Al-Si
-- Ga-Zn-Sn
-- Nb-Mo-Si
-- Sc-Y-Zr
----
-- Ca-Mg-Al
-- Ti-Si-C
-- Al-Cr-Nb
-- Li-Mg-Zn
-- Fe-Al-Si
-- Ga-Zn-Sn
----
-- Al-Nb-Mo
-- Ti-Cr-Mo
-- Ca-Mg-Zn
----
-- Nb-Mo-Zr
-- Nb-Zr-Hf
-- Nb-Zr-Al
-- Nb-Zr-Si
----
-- Sc-Y-Zr
-- Sc-Y-Ti
-- Sc-Y-Al
-- Sc-Y-Nb
----
-- Ti-Zr-Hf
-- Ti-Nb-Hf
-- Hf-Zr-Si
+Phase diagrams are essential for understanding phase stability and material properties. The following points highlight current challenges and recommendations:
 
-### Quaternary system
-- Fe-Cr-Al-Y
-- Mn-Al-C-Ni
-- Li-La-Ti-Zr
-- Fe-Pd-In-Sn
----
-- Li-La-Zr-O
-- Fe-Ni-Cr-Al
-- Ti-Al-Nb-Mo
----
-- Co-Cr-Fe-Ni
-- Al-Co-Cr-Ni
-- Li-Ni-Mn-Co
-- Ti-Zr-Hf-Nb
-- Fe-Co-Ni-Cr
-- Cu-Al-Mn-Ni
-- Zn-Ga-In-O
-- Si-Ge-Sn-Pb
-- Mg-Zn-Ca-Sr
----
-- Co-Cr-Ni-Mo
-- Al-Ti-Nb-Zr
-- Li-Na-K-Cl
-- Ga-In-Zn-O
-- Fe-Ni-Co-Cr
-- Mo-Si-B-Ti
----
-- Li-Mn-Co-Ni
-- Ga-Zn-In-O
-----
-- Li-Mg-Si-O
-- Ti-Nb-Mo-Zr
-- Co-Cr-Ni-Mo
-- Ga-Zn-Sn-O
-- Li-Na-K-F
-- Mo-Nb-Si-B
----
-- Al-Cr-Nb-Ti
-- Li-Mg-Si-O
-- Fe-Al-Cr-Si
-- Ti-Nb-Mo-Zr
----
-- Ga-Au-Pt-Gd
-- Li-La-Zr-O
-- Zn-Ga-In-O
-- Mo-Nb-Si-B
-- Li-Na-K-Cl
----
-- Li-Mg-Al-O
-- Mo-Nb-Ti-Zr
-- Sc-Y-Ti-Zr
-- Hf-Nb-Mo-Zr
+- **International Collaboration:**  
+  Phase diagrams for precious metals, rare earths, and other elements that are difficult to obtain experimentally should ideally be compiled at multiple computational levels (e.g., CALPHAD, first-principles) through cooperation between countries.
 
+- **Organization Rule:**  
+  The general convention for arranging phase diagrams is alphabetical order. While common names may occasionally deviate, awareness of this rule ensures consistency.
 
-## Undeveloped
+- **Current Status and Future Needs:**  
+  Phase diagrams are being collected by organizations such as **NIMS**, but the available information is incomplete. It would be highly beneficial to compile these datasets using integrated platforms such as **Phase0** or similar frameworks to enable collaborative development and global accessibility.
+
+# Ternary Alloy Systems
+
+This document lists selected ternary alloy systems of interest for advanced materials research. Each entry includes a short description and the current status of phase diagram development.
+
+---
+
+### Fe-Pd-In
+Intermetallic system with potential catalytic and electronic properties.  
+*Phase Diagram:* Not fully established.
+
+### Li-La-Ti
+Lithium-based system for solid-state electrolytes and advanced ceramics.  
+*Phase Diagram:* Limited data.
+
+### Ni-Ga-Nd
+System with possible magnetic and electronic applications.  
+*Phase Diagram:* Sparse.
+
+### Fe-Pd-Pb
+Intermetallic system with potential for corrosion-resistant coatings.  
+*Phase Diagram:* Unknown.
+
+### Fe-Cr-Al
+Oxidation-resistant alloy system for high-temperature applications.  
+*Phase Diagram:* Well-studied in binary subsets; ternary incomplete.
+
+### Mn-Al-C
+Lightweight alloy system with possible magnetic properties.  
+*Phase Diagram:* Developing.
+
+### Fe-Ni-Si
+System relevant to steels and magnetic materials.  
+*Phase Diagram:* Partial data.
+
+### Ti-Fe-Al
+Refractory alloy system for structural applications.  
+*Phase Diagram:* Sparse.
+
+---
+
+### Li-Cu-Sb
+Lithium alloy system for battery anodes.  
+*Phase Diagram:* Limited.
+
+### Zn-Sn-O
+Transparent oxide semiconductor system.  
+*Phase Diagram:* Developing.
+
+### Cu-Al-Mn
+Shape-memory alloy system for actuators.  
+*Phase Diagram:* Partial.
+
+---
+
+### Ti-V-Cr
+Refractory alloy system for high-temperature uses.  
+*Phase Diagram:* Sparse.
+
+### Ti-V-Al
+Lightweight alloy system for aerospace.  
+*Phase Diagram:* Limited.
+
+### Ti-V-Ni
+System with hydrogen storage potential.  
+*Phase Diagram:* Developing.
+
+### Ti-V-H
+Hydride-forming system for energy storage.  
+*Phase Diagram:* Sparse.
+
+### Mg-Ti-H
+Hydride system for hydrogen storage.  
+*Phase Diagram:* Limited.
+
+### Fe-Ti-H
+Hydride-forming alloy system.  
+*Phase Diagram:* Sparse.
+
+---
+
+### Ni-Cr-W
+High-temperature alloy system for corrosion resistance.  
+*Phase Diagram:* Partial.
+
+### Fe-Mo-B
+System for hard coatings and wear resistance.  
+*Phase Diagram:* Sparse.
+
+### Zn-Sn-P
+Semiconductor alloy system for electronics.  
+*Phase Diagram:* Developing.
+
+### Li-Zr-O
+Lithium zirconate system for solid electrolytes.  
+*Phase Diagram:* Limited.
+
+### Mg-Al-C
+Lightweight alloy system for structural applications.  
+*Phase Diagram:* Sparse.
+
+### Ti-Al-N
+System for hard coatings and cutting tools.  
+*Phase Diagram:* Well-studied in binary; ternary incomplete.
+
+### Fe-Ni-Cr
+Basis for stainless steels and superalloys.  
+*Phase Diagram:* Well-characterized.
+
+---
+
+### Be-Al-Mg
+Lightweight alloy system for aerospace.  
+*Phase Diagram:* Sparse.
+
+### Be-Ti-Zr
+Refractory alloy system for extreme environments.  
+*Phase Diagram:* Limited.
+
+### Be-Ni-Cr
+System for corrosion-resistant alloys.  
+*Phase Diagram:* Sparse.
+
+### Be-Li-Mg
+Lightweight alloy system for structural uses.  
+*Phase Diagram:* Limited.
+
+### Be-Li-Al
+Lightweight alloy system for aerospace.  
+*Phase Diagram:* Sparse.
+
+### Be-Li-Ti
+System for advanced lightweight alloys.  
+*Phase Diagram:* Sparse.
+
+---
+
+### Co-Cr-Al
+Oxidation-resistant alloy system for coatings.  
+*Phase Diagram:* Developing.
+
+### Ni-Co-Ti
+System for high-temperature alloys.  
+*Phase Diagram:* Sparse.
+
+### Fe-Co-Ni
+Magnetic alloy system for soft magnets.  
+*Phase Diagram:* Well-studied.
+
+### Mg-Zn-Ca
+Biodegradable alloy system for medical implants.  
+*Phase Diagram:* Limited.
+
+### Li-Ni-Mn
+Cathode material system for Li-ion batteries.  
+*Phase Diagram:* Well-characterized.
+
+### Ti-Zr-Hf
+Refractory alloy system for high-temperature uses.  
+*Phase Diagram:* Sparse.
+
+### Cu-Zn-Al
+Shape-memory alloy system for actuators.  
+*Phase Diagram:* Partial.
+
+### Nb-Ti-Al
+Refractory alloy system for aerospace.  
+*Phase Diagram:* Sparse.
+
+### Si-Ge-Sn
+Semiconductor alloy system for thermoelectrics.  
+*Phase Diagram:* Developing.
+
+### Zn-Ga-O
+Transparent oxide semiconductor system.  
+*Phase Diagram:* Limited.
+
+---
+
+### Co-Ni-Al
+System for high-temperature alloys.  
+*Phase Diagram:* Sparse.
+
+### Ti-Nb-Zr
+Refractory alloy system for biomedical and aerospace.  
+*Phase Diagram:* Limited.
+
+### Mo-Si-B
+System for oxidation-resistant coatings.  
+*Phase Diagram:* Sparse.
+
+### Al-Ti-C
+System for hard coatings and cutting tools.  
+*Phase Diagram:* Developing.
+
+### Cr-Mn-Ni
+System relevant to stainless steels.  
+*Phase Diagram:* Well-characterized.
+
+### Ga-In-Zn
+Transparent oxide semiconductor system.  
+*Phase Diagram:* Developing.
+
+### Li-Si-P
+System for battery anodes and solid electrolytes.  
+*Phase Diagram:* Limited.
+
+### Mg-Sn-Ca
+Biodegradable alloy system for implants.  
+*Phase Diagram:* Sparse.
+
+---
+
+### La-Si-Mg
+System for advanced ceramics.  
+*Phase Diagram:* Limited.
+
+### Zr-Y-Ti
+System for high-temperature ceramics and alloys.  
+*Phase Diagram:* Sparse.
+
+### Li-Zr-P
+System for solid electrolytes.  
+*Phase Diagram:* Limited.
+
+### Fe-Mo-B
+System for hard coatings and wear resistance.  
+*Phase Diagram:* Sparse.
+
+---
+
+### Li-Mg-Si
+System for lightweight alloys and battery materials.  
+*Phase Diagram:* Limited.
+
+### Na-Li-Zr
+System for solid electrolytes.  
+*Phase Diagram:* Sparse.
+
+### Ti-Nb-Mo
+Refractory alloy system for high-temperature uses.  
+*Phase Diagram:* Sparse.
+
+### Cr-Al-Si
+System for oxidation-resistant coatings.  
+*Phase Diagram:* Developing.
+
+### Ga-Zn-Sn
+Transparent oxide semiconductor system.  
+*Phase Diagram:* Limited.
+
+### Nb-Mo-Si
+System for refractory alloys.  
+*Phase Diagram:* Sparse.
+
+### Sc-Y-Zr
+Rare-earth alloy system for advanced applications.  
+*Phase Diagram:* Limited.
+
+---
+
+### Ca-Mg-Al
+Lightweight alloy system for structural uses.  
+*Phase Diagram:* Sparse.
+
+### Ti-Si-C
+System for hard coatings and ceramics.  
+*Phase Diagram:* Developing.
+
+### Al-Cr-Nb
+Refractory alloy system for aerospace.  
+*Phase Diagram:* Sparse.
+
+### Li-Mg-Zn
+Lightweight alloy system for structural uses.  
+*Phase Diagram:* Limited.
+
+### Fe-Al-Si
+System for oxidation-resistant alloys.  
+*Phase Diagram:* Developing.
+
+### Ga-Zn-Sn
+Transparent oxide semiconductor system.  
+*Phase Diagram:* Limited.
+
+---
+
+### Al-Nb-Mo
+Refractory alloy system for high-temperature uses.  
+*Phase Diagram:* Sparse.
+
+### Ti-Cr-Mo
+System for corrosion-resistant alloys.  
+*Phase Diagram:* Limited.
+
+### Ca-Mg-Zn
+Biodegradable alloy system for implants.  
+*Phase Diagram:* Sparse.
+
+---
+
+### Nb-Mo-Zr
+Refractory alloy system for high-temperature uses.  
+*Phase Diagram:* Sparse.
+
+### Nb-Zr-Hf
+Refractory alloy system for extreme environments.  
+*Phase Diagram:* Limited.
+
+### Nb-Zr-Al
+System for advanced structural alloys.  
+*Phase Diagram:* Sparse.
+
+### Nb-Zr-Si
+System for oxidation-resistant coatings.  
+*Phase Diagram:* Limited.
+
+---
+
+### Sc-Y-Zr
+Rare-earth alloy system for advanced applications.  
+*Phase Diagram:* Limited.
+
+### Sc-Y-Ti
+System for advanced lightweight alloys.  
+*Phase Diagram:* Sparse.
+
+### Sc-Y-Al
+System for advanced structural alloys.  
+*Phase Diagram:* Limited.
+
+### Sc-Y-Nb
+System for refractory alloys.  
+*Phase Diagram:* Sparse.
+
+---
+
+### Ti-Zr-Hf
+Refractory alloy system for high-temperature uses.  
+*Phase Diagram:* Sparse.
+
+### Ti-Nb-Hf
+System for biomedical and aerospace alloys.  
+*Phase Diagram:* Limited.
+
+### Hf-Zr-Si
+System for oxidation-resistant coatings.  
+*Phase Diagram:* Sparse.
+
+# Quaternary Alloy Systems
+
+This document lists selected quaternary alloy systems of interest for advanced materials research. Each entry includes a short description and the current status of phase diagram development.
+
+---
+
+### Fe-Cr-Al-Y
+High-temperature alloy system with excellent oxidation resistance.  
+*Phase Diagram:* Not fully established.
+
+### Mn-Al-C-Ni
+Candidate for lightweight structural materials; magnetic properties possible.  
+*Phase Diagram:* Incomplete.
+
+### Li-La-Ti-Zr
+Lithium-based system for solid-state electrolytes and advanced ceramics.  
+*Phase Diagram:* Limited data.
+
+### Fe-Pd-In-Sn
+Potential for intermetallic compounds with catalytic properties.  
+*Phase Diagram:* Not well documented.
+
+---
+
+### Li-La-Zr-O
+Known for lithium-conducting ceramics (e.g., LLZO).  
+*Phase Diagram:* Partially studied.
+
+### Fe-Ni-Cr-Al
+Basis for superalloys used in high-temperature applications.  
+*Phase Diagram:* Well-studied for ternary subsets; quaternary incomplete.
+
+### Ti-Al-Nb-Mo
+Refractory alloy system for aerospace and turbine blades.  
+*Phase Diagram:* Sparse data.
+
+---
+
+### Co-Cr-Fe-Ni
+Core of high-entropy alloys with excellent mechanical properties.  
+*Phase Diagram:* Under development.
+
+### Al-Co-Cr-Ni
+High-entropy alloy system with oxidation resistance.  
+*Phase Diagram:* Incomplete.
+
+### Li-Ni-Mn-Co
+Cathode material system for Li-ion batteries (NMC).  
+*Phase Diagram:* Well-characterized for practical compositions.
+
+### Ti-Zr-Hf-Nb
+Refractory HEA system for extreme environments.  
+*Phase Diagram:* Limited experimental data.
+
+### Fe-Co-Ni-Cr
+High-entropy alloy system with balanced strength and ductility.  
+*Phase Diagram:* Developing.
+
+### Cu-Al-Mn-Ni
+Shape-memory alloy system for actuators.  
+*Phase Diagram:* Partial data.
+
+### Zn-Ga-In-O
+Transparent conductive oxide system for electronics.  
+*Phase Diagram:* Not fully mapped.
+
+### Si-Ge-Sn-Pb
+Semiconductor alloy system for thermoelectric applications.  
+*Phase Diagram:* Sparse.
+
+### Mg-Zn-Ca-Sr
+Biodegradable alloy system for medical implants.  
+*Phase Diagram:* Limited.
+
+---
+
+### Co-Cr-Ni-Mo
+Corrosion-resistant alloy system for biomedical and industrial uses.  
+*Phase Diagram:* Incomplete.
+
+### Al-Ti-Nb-Zr
+High-temperature alloy system for aerospace.  
+*Phase Diagram:* Sparse.
+
+### Li-Na-K-Cl
+Alkali halide system for molten salt applications.  
+*Phase Diagram:* Well-known for binary/ternary; quaternary less studied.
+
+### Ga-In-Zn-O
+Transparent oxide semiconductor system.  
+*Phase Diagram:* Developing.
+
+### Fe-Ni-Co-Cr
+High-entropy alloy system for structural applications.  
+*Phase Diagram:* Partial.
+
+### Mo-Si-B-Ti
+Refractory alloy system for oxidation-resistant coatings.  
+*Phase Diagram:* Sparse.
+
+---
+
+### Li-Mn-Co-Ni
+Cathode material system for Li-ion batteries.  
+*Phase Diagram:* Well-characterized for practical ranges.
+
+### Ga-Zn-In-O
+Transparent conductive oxide system.  
+*Phase Diagram:* Limited.
+
+---
+
+### Li-Mg-Si-O
+Lithium silicate-based system for solid electrolytes.  
+*Phase Diagram:* Incomplete.
+
+### Ti-Nb-Mo-Zr
+Refractory alloy system for high-temperature structural uses.  
+*Phase Diagram:* Sparse.
+
+### Ga-Zn-Sn-O
+Transparent oxide semiconductor system.  
+*Phase Diagram:* Developing.
+
+### Li-Na-K-F
+Alkali fluoride system for molten salts.  
+*Phase Diagram:* Limited.
+
+### Mo-Nb-Si-B
+Refractory alloy system for oxidation-resistant coatings.  
+*Phase Diagram:* Sparse.
+
+---
+
+### Al-Cr-Nb-Ti
+High-temperature alloy system for aerospace.  
+*Phase Diagram:* Sparse.
+
+### Fe-Al-Cr-Si
+Oxidation-resistant alloy system for structural uses.  
+*Phase Diagram:* Limited.
+
+---
+
+### Ga-Au-Pt-Gd
+Exotic alloy system with potential magnetic and catalytic properties.  
+*Phase Diagram:* Unknown.
+
+### Zn-Ga-In-O
+Transparent conductive oxide system for electronics.  
+*Phase Diagram:* Not fully mapped.
+
+---
+
+### Li-Mg-Al-O
+Lithium-aluminate-based system for ceramics and electrolytes.  
+*Phase Diagram:* Limited.
+
+### Mo-Nb-Ti-Zr
+Refractory alloy system for high-temperature structural uses.  
+*Phase Diagram:* Sparse.
+
+### Sc-Y-Ti-Zr
+Rare-earth and transition metal system for advanced alloys.  
+*Phase Diagram:* Incomplete.
+
+### Hf-Nb-Mo-Zr
+Refractory alloy system for extreme environments.  
+*Phase Diagram:* Not yet fully established.
+
+---
+
+# Undeveloped
 - SevenNet (It's difficult for me.)
 ```
 pip install e3nn>=0.5.0
