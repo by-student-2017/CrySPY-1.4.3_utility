@@ -34,6 +34,7 @@ python3 plot1d.py
 ```
 gnuplot -persist plot1d.gpl
 ```
+- Gnuplot can also be used to create ternary and quaternary phase diagrams, but changing the axis angles is extremely tedious, so it is not provided here. (Readers with ample time might want to try making them, although researchers with such time are probably a rare breed these days.)
 
 ## Automatic generation of input files (EA-vc + CHGNet version)
 - Since creating an input file manually can be cumbersome, a Python script called make_input.py is provided for CHGNet (see ase_chgnet_auto_EA-vc).
