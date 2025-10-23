@@ -7,7 +7,7 @@ Usage:
     python make_input_lammps.py Element1 Element2 [Element3 ... Element10]
 
 Example for a 5-element system:
-    python make_input_lammps.py Al Ni Fe Co
+    python make_input_lammps.py Al Ni Fe Co Zr
 
 
 Note
