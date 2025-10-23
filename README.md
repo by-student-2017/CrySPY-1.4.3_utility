@@ -125,6 +125,10 @@ mv CrySPY-1.4.3_utility-master CrySPY_utility
 sudo apt update
 sudo apt -y install eog
 ```
+### Usage eog
+```
+eog data/convex_hull/conv_hull_gen_1.svg
+```
 ## For gnuplot (plot1d.gpl)
 ```
 sudo apt -y install gnuplot
