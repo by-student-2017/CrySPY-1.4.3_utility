@@ -79,7 +79,7 @@ bash repeat_cryspy.sh
 
 ## Useful features
 - Deleting old files: "cryspy -c" or "cryspy --clean"
-- Enthalpy: "pv_term = True" and "press = 400"
+- Enthalpy: "pv_term = True" and "press = 400". see "qe_Sr4O4_RS_pv_term"
 - Replot: "cryspy-Eplot" or "cryspy-calc-convex-hull 1"
 - Jupyter Notebook: https://tomoki-yamashita.github.io/CrySPY_doc/tutorial/interactive/index.html
 
