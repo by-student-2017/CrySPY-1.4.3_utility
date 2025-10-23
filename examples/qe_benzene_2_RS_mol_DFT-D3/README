@@ -1,0 +1,13 @@
+you do not have to prepare the molecular structure file of benzene.
+This will be loaded from PyXtal's database.
+See, https://pyxtal.readthedocs.io/en/latest/Others.html
+
+pp directory: Directory to store pseudopotential files
+
+DFTB-D3 is specified for use with "vdw_corr = 'DFT-D3'" in the QE input files
+ (calc_in/1_pwscf.in and calc_in/2_pwscf.in).
+
+Usage
+1. cryspy
+2. bash repeat_cryspy.sh
+

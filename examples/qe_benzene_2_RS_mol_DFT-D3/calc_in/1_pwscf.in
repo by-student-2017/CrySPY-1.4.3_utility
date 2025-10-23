@@ -1,0 +1,30 @@
+ &control
+    title = '2 benzene'
+    calculation = 'relax'
+    nstep = 30
+    restart_mode = 'from_scratch',
+    pseudo_dir = './../../pp/'
+    outdir='./outdir/'
+ /
+
+ &system
+    ibrav = 0
+    nat = 24
+    ntyp = 2
+    occupations = 'smearing'
+    degauss = 0.01
+    vdw_corr = 'DFT-D3'
+ /
+
+ &electrons
+ /
+
+ &ions
+ /
+
+ &cell
+ /
+
+ATOMIC_SPECIES
+   H  1.008  H.pbe-kjpaw_psl.1.0.0.UPF
+   C  12.01  C.pbe-n-kjpaw_psl.1.0.0.UPF
