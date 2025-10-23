@@ -186,6 +186,20 @@ pip freeze > requirements.txt
 - The actual k-points to be set can be determined using "kpt_check.py".
 - A kppovl value of 40 is appropriate for rough calculations, while a value of 80 is appropriate for full calculations, so no special changes are necessary.
 
+## kppvol (k-points per volume) Standards and Accuracy Guidelines
+- Energy convergence depends on the system size and band structure, but as a rule of thumb:
+- kppvol = 30–50: Accuracy of a few meV/atom in solids
+- kppvol = 60–80: Often aiming for 1 meV/atom or less
+- (kppvol = 25: 5-10 meV/atom, kppvol = 35: 2-5 meV/atom, kppvol = 40: 2-4 meV/atom)
+### In metallic systems, introducing smearing (Methfessel-Paxton, Gaussian, etc.) reduces the energy oscillations caused by discontinuities in the Fermi surface, making it easier to maintain accuracy even with a somewhat coarse k-point mesh.
+- Metals with smearing: kppvol 35–45, approximately a few meV/atom
+- High accuracy (phase transitions and small energy differences): kppvol ≥ 60 recommended
+- kppvol = 35 is somewhat coarse, and typically results in an error of 2–5 meV/atom.
+### Changing the calculation conditions for the purpose of exploration
+- For magnetic systems, the energy difference is very small (often less than a few meV/atom), so the accuracy requirements are high. Especially when comparing magnetic order (FM vs AFM) or the stability of spin structures, an error of 1 meV/atom level can have a significant impact on the results. However, the accuracy requirements vary depending on your application in CrySPY:
+- Initial structure search (EA or random search): A rough search is OK. kppvol = 30–40 is sufficient. Since the goal is candidate generation, some error is acceptable.
+- Final evaluation (determination of magnetic order and relative stability): High accuracy is required. kppvol >= 60 is recommended. Magnetic systems have complex band structures, and smearing has limited effectiveness, so a dense k-point is required.
+
 ## References
 - [1] CCMSハンズオン: CrySPY講習会 (2025/10/15)
 - [2] マテリアルズインフォマティクス 伊藤 聡(編) - 共立出版
