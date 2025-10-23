@@ -1,0 +1,27 @@
+[basic]
+algo = RS
+calc_code = ASE
+tot_struc = 4
+nstage = 1
+njob = 2
+jobcmd = bash
+jobfile = job_cryspy
+
+[structure]
+struc_mode = mol_bs
+atype = Li P S
+nat = 6 2 8
+mol_file = ./Li.xyz  ./PS4.xyz
+nmol = 6 2
+vol_factor = 2.0
+mindist_1 = 2.0 2.0 2.0
+mindist_2 = 2.0 3.0 2.0
+mindist_3 = 2.0 2.0 2.0
+mindist_mol_bs_1 = 2.0 3.0
+mindist_mol_bs_2 = 3.0 3.0
+
+[ASE]
+ase_python = mace_in.py
+
+[option]
+
