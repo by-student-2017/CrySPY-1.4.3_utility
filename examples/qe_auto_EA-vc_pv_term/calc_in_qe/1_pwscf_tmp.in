@@ -1,0 +1,29 @@
+ &control
+    title = 'case'
+    calculation = 'relax'
+    nstep = 100
+    restart_mode = 'from_scratch',
+    pseudo_dir = './../../pp/'
+    outdir='./out.d/'
+ /
+
+ &system
+    ibrav = 0
+    nat = 1
+    ntyp = 2
+    occupations = 'smearing'
+    degauss = 0.01
+ /
+
+ &electrons
+    mixing_beta = 0.4
+ /
+
+ &ions
+ /
+
+ &cell
+    press = 1000
+ /
+
+ATOMIC_SPECIES
