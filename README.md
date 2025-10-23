@@ -215,6 +215,7 @@ Phase diagrams are essential for understanding phase stability and material prop
   **Note:** CrySPY focuses on crystal structure prediction. For MD and related property evaluations, tools such as **ASE**, **LAMMPS**, **Quantum ESPRESSO (QE)**, **VASP**, **Siesta**, **CP2K**, and **OpenMX** should be utilized.
   + #### Related Topics
   + Lammps: https://github.com/by-student-2017/lammps_education_metal_win
+  + Lammps (+ charge): https://github.com/by-student-2017/lammps_education_reaxff_win
   + CP2k: https://github.com/by-student-2017/CP2k-v.9.1-examples
   + DFTB+: https://github.com/by-student-2017/DFTBplus-v.23.1-examples
   + Phase field: https://github.com/by-student-2017/Phase-field
