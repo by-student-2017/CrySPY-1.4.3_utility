@@ -5,11 +5,11 @@ import subprocess
 import math
 
 elements = sys.argv[1:]
-if len(elements) < 1:
-    print("Usage: python make_input_qe.py Element1 [Element2 ...]")
+if len(elements) < 2:
+    print("Usage: python make_input_qe.py Element1 Element2 [Element3 ...]")
     sys.exit(1)
 
-# 擬ポテンシャルテーブル読み込み
+# ===== 擬ポテンシャルテーブル読み込み =====
 pp_table = {}
 base_url = "https://pseudopotentials.quantum-espresso.org/upf_files/"
 with open('pp_table.txt') as f:
@@ -18,7 +18,7 @@ with open('pp_table.txt') as f:
         if len(parts) >= 2 and not line.startswith('Element'):
             pp_table[parts[0]] = parts[1]
 
-# element_data_qe.txt読み込み（構造情報と格子定数）
+# ===== element_data_qe.txt読み込み =====
 element_data = {}
 with open('element_data_qe.txt') as f:
     for line in f:
@@ -32,43 +32,24 @@ with open('element_data_qe.txt') as f:
                 'c': float(parts[5])
             }
 
-# ppディレクトリ作成
+# ===== 擬ポテンシャルダウンロード =====
 pp_dir = "pp"
 os.makedirs(pp_dir, exist_ok=True)
-
-# 必要な擬ポテンシャルのみダウンロード
 for el in elements:
     pseudo = pp_table.get(el)
     if pseudo:
         file_path = os.path.join(pp_dir, pseudo)
         if not os.path.isfile(file_path):
             url = base_url + pseudo
-            print(f"Downloading {pseudo} for {el} from {url}...")
-            try:
-                subprocess.run(["wget", "-q", "-O", file_path, url], check=True)
-                print(f"Downloaded: {file_path}")
-            except subprocess.CalledProcessError:
-                print(f"Warning: Failed to download {pseudo} for {el}")
+            print(f"Downloading {pseudo} for {el}...")
+            subprocess.run(["wget", "-q", "-O", file_path, url], check=True)
         else:
-            print(f"{pseudo} already exists in {pp_dir}")
+            print(f"{pseudo} already exists.")
     else:
-        print(f"Warning: No pseudopotential entry for {el} in pp_table.txt")
+        print(f"Warning: No pseudopotential entry for {el}")
 
-
-max_len = max(len(el) for el in elements)
-atype_line = "atype  = " + " ".join(el.ljust(max_len) for el in elements)
-ll_nat_line = "ll_nat = " + " ".join("0".ljust(max_len) for _ in elements)
-ul_nat_line = "ul_nat = " + " ".join("12".ljust(max_len) for _ in elements)
-
-end_points = []
-for el in elements:
-    if el in element_data and 'energy' in element_data[el]:
-        end_points.append(f"{element_data[el]['energy']:.4f}")
-    else:
-        end_points.append("-4.5000")  # デフォルト値
-end_point_line = "end_point  = " + " ".join(ep.ljust(max_len) for ep in end_points)
-
-# CrySPY設定ファイル生成
+# ===== CrySPY設定ファイル生成 =====
+col_width = max(len(el) for el in elements)
 cryspy_lines = [
     "[basic]",
     "algo = EA-vc",
@@ -78,13 +59,13 @@ cryspy_lines = [
     "jobcmd = bash",
     "jobfile = job_cryspy\n",
     "[structure]",
-    atype_line,
-    ll_nat_line,
-    ul_nat_line + "\n",
+    "atype  = " + " ".join(f"{el:<{col_width}}" for el in elements),
+    "ll_nat = " + " ".join(f"{0:<{col_width}}" for _ in elements),
+    "ul_nat = " + " ".join(f"{12:<{col_width}}" for _ in elements) + "\n",
     "[QE]",
     "qe_infile = pwscf.in",
     "qe_outfile = pwscf.out",
-    "kppvol =  25  40",
+    "kppvol = 25 40",
     "pv_term = True\n",
     "[EA]",
     "n_pop = 20",
@@ -100,141 +81,167 @@ cryspy_lines = [
     "n_fittest = 10",
     "slct_func = TNM",
     "t_size = 2",
-    "maxgen_ea = 0",
-    end_point_line + "\n",
+    "maxgen_ea = 5",
+    "end_point = " + " ".join(f"{element_data.get(el, {}).get('energy', -4.5):.4f}" for el in elements) + "\n",
     "[option]\n"
 ]
-
 with open('cryspy.in', 'w') as f:
     f.write("\n".join(cryspy_lines))
+print("cryspy.in generated.")
 
-# 原子座標生成
-def get_positions(struct, a, c):
-    if struct == "bcc":
-        return [(0,0,0), (0.5*a,0.5*a,0.5*a)]
-    elif struct == "hcp":
-        return [(0,0,0), (2/3*a,1/3*a,c/2)]
-    elif struct == "dhcp":
-        return [(0,0,0), (a/2,a*(3)**0.5/6,c/4), (0,0,c/2), (a/2,a*(3)**0.5/6,3*c/4)]
-    elif struct == "dia":
-        return [(0,0,0), (0.25*a,0.25*a,0.25*a)]
-    else:
-        return [(0,0,0)]
+# ===== calc_in生成 =====
+src_dir = "calc_in_qe"
+dst_dir = "calc_in"
+if os.path.isdir(src_dir):
+    shutil.copytree(src_dir, dst_dir, dirs_exist_ok=True)
+else:
+    os.makedirs(dst_dir, exist_ok=True)
 
-# 格子ベクトル生成
-def get_cell_parameters(struct, a, b, c):
-    if struct in ["fcc", "bcc", "sc", "dia"]:
-        return [
-            (a, 0.0, 0.0),
-            (0.0, b, 0.0),
-            (0.0, 0.0, c)
-        ]
-    elif struct in ["hcp", "dhcp"]:
-        return [
-            (a, 0.0, 0.0),
-            (-a/2, a*math.sqrt(3)/2, 0.0),
-            (0.0, 0.0, c)
-        ]
-    elif struct == "ort":  # orthorhombic
-        return [
-            (a, 0.0, 0.0),
-            (0.0, b, 0.0),
-            (0.0, 0.0, c)
-        ]
-    elif struct == "mon":  # monoclinic (β angle assumed ~90° for simplicity)
-        beta = math.radians(100)  # example angle
-        return [
-            (a, 0.0, 0.0),
-            (0.0, b, 0.0),
-            (c*math.cos(beta), 0.0, c*math.sin(beta))
-        ]
-    else:
-        return [
-            (a, 0.0, 0.0),
-            (0.0, b, 0.0),
-            (0.0, 0.0, c)
-        ]
+template_files = [os.path.join(dst_dir, "1_pwscf_tmp.in"), os.path.join(dst_dir, "2_pwscf_tmp.in")]
+target_files = [os.path.join(dst_dir, "1_pwscf.in"), os.path.join(dst_dir, "2_pwscf.in")]
 
-# Xx_tmpからサブディレクトリ作成
+for tmp_file, out_file in zip(template_files, target_files):
+    if not os.path.isfile(tmp_file):
+        continue
+    with open(tmp_file) as f:
+        lines = f.readlines()
+
+    new_lines = []
+    species_added = False
+    skip_block = False
+    for line in lines:
+        if "ntyp" in line:
+            line = f"    ntyp = {len(elements)}\n"
+        if line.strip().startswith("ATOMIC_SPECIES") and not species_added:
+            new_lines.append("ATOMIC_SPECIES\n")
+            for el in elements:
+                pseudo = pp_table.get(el, "UNKNOWN.UPF")
+                new_lines.append(f"{el}  -1.0  {pseudo}\n")
+            species_added = True
+            skip_block = True
+            continue
+        if line.strip().startswith("ATOMIC_POSITIONS") or \
+           line.strip().startswith("CELL_PARAMETERS") or \
+           line.strip().startswith("K_POINTS"):
+            skip_block = True
+            continue
+        if skip_block and (line.strip() == "" or line.strip().startswith("/")):
+            skip_block = False
+        if not skip_block:
+            new_lines.append(line)
+
+    with open(out_file, 'w') as f:
+        f.writelines(new_lines)
+
+# 削除: *_tmp.in
+for fname in os.listdir(dst_dir):
+    if fname.endswith("_tmp.in"):
+        os.remove(os.path.join(dst_dir, fname))
+
+print("calc_in generated with 1_pwscf.in and 2_pwscf.in.")
+
+# ===== 構造ディレクトリ生成 =====
 xx_tmp_dir = 'Xx_tmp'
-pwscf_template = os.path.join(xx_tmp_dir, 'pwscf_tmp.in')
+if not os.path.isdir(xx_tmp_dir):
+    print("Warning: Xx_tmp not found.")
+else:
+    def get_positions(struct, a, c):
+        if struct == "fcc":
+            return [(0,0,0)]
+        elif struct == "bcc":
+            return [(0,0,0), (0.5*a,0.5*a,0.5*a)]
+        elif struct == "hcp":
+            return [(0,0,0), (2/3*a,1/3*a,c/2)]
+        elif struct == "dhcp":
+            return [
+                (0,0,0),
+                (a/2,a*(3)**0.5/6,c/4),
+                (0,0,c/2),
+                (a/2,a*(3)**0.5/6,3*c/4)
+            ]
+        else:
+            return [(0,0,0)]
 
-if os.path.isfile(pwscf_template):
+    def get_cell_parameters(struct, a, b, c):
+        if struct in ["fcc", "bcc", "sc", "dia"]:
+            return [(a,0,0),(0,b,0),(0,0,c)]
+        elif struct in ["hcp","dhcp"]:
+            return [(a,0,0),(-a/2,a*math.sqrt(3)/2,0),(0,0,c)]
+        else:
+            return [(a,0,0),(0,b,0),(0,0,c)]
+
     for el in elements:
-        struct = element_data.get(el, {}).get('structure', 'sc')
+        struct = element_data.get(el, {}).get('structure', 'fcc')
         a_val = element_data.get(el, {}).get('a', 4.0)
         b_val = element_data.get(el, {}).get('b', a_val)
         c_val = element_data.get(el, {}).get('c', a_val)
 
-        positions = get_positions(struct, a_val, c_val)
-        nat_value = len(positions)
+        subdir = f"{el}_{struct}"
+        os.makedirs(subdir, exist_ok=True)
 
-        subdir_name = f"{el}_{struct}"
-        os.makedirs(subdir_name, exist_ok=True)
-
-        # Xx_tmpの内容コピー
+        # Xx_tmpコピー
         for item in os.listdir(xx_tmp_dir):
-            if item == 'pwscf_tmp.in':
-                continue
             s = os.path.join(xx_tmp_dir, item)
-            d = os.path.join(subdir_name, item)
+            d = os.path.join(subdir, item)
             if os.path.isdir(s):
                 shutil.copytree(s, d, dirs_exist_ok=True)
             else:
                 shutil.copy2(s, d)
 
-        # pwscf.in再構築
-        with open(pwscf_template) as f:
-            lines = f.readlines()
+        # pwscf_tmp.inを反映
+        template_path = os.path.join(xx_tmp_dir, "pwscf_tmp.in")
+        if os.path.isfile(template_path):
+            with open(template_path) as f:
+                lines = f.readlines()
 
-        new_lines = []
-        in_system_section = False
-        for line in lines:
-            if "starting_magnetization" in line or line.strip().startswith("ATOMIC_SPECIES") or line.strip().startswith("ATOMIC_POSITIONS"):
-                continue
+            new_lines = []
+            species_added = False
+            skip_block = False
+            positions = get_positions(struct, a_val, c_val)
+            nat_value = len(positions)
 
-            if line.strip().lower().startswith("&system"):
-                in_system_section = True
+            for line in lines:
+                if "nat" in line:
+                    line = f"    nat = {nat_value}\n"
+                if "ntyp" in line:
+                    line = "    ntyp = 1\n"
+                if line.strip().startswith("ATOMIC_SPECIES") and not species_added:
+                    new_lines.append("ATOMIC_SPECIES\n")
+                    pseudo = pp_table.get(el, "UNKNOWN.UPF")
+                    new_lines.append(f"{el}  -1.0  {pseudo}\n")
+                    species_added = True
+                    skip_block = True
+                    continue
+                if line.strip().startswith("ATOMIC_POSITIONS") or \
+                   line.strip().startswith("CELL_PARAMETERS") or \
+                   line.strip().startswith("K_POINTS"):
+                    skip_block = True
+                    continue
+                if skip_block and (line.strip() == "" or line.strip().startswith("/")):
+                    skip_block = False
+                if not skip_block:
+                    new_lines.append(line)
 
-            if "nat" in line:
-                line = f"    nat = {nat_value}\n"
-            if "ntyp" in line:
-                line = "    ntyp = 1\n"
+            # 追加: 座標・セル・k点
+            new_lines.append("ATOMIC_POSITIONS (angstrom)\n")
+            for pos in positions:
+                new_lines.append(f"{el}  {pos[0]:.6f}  {pos[1]:.6f}  {pos[2]:.6f}\n")
+            new_lines.append("CELL_PARAMETERS (angstrom)\n")
+            for vec in get_cell_parameters(struct, a_val, b_val, c_val):
+                new_lines.append(f"{vec[0]:.6f} {vec[1]:.6f} {vec[2]:.6f}\n")
+            new_lines.append("K_POINTS automatic\n")
+            nkx = max(1, int(round(40 / a_val)))
+            nky = max(1, int(round(40 / b_val)))
+            nkz = max(1, int(round(40 / c_val)))
+            new_lines.append(f"{nkx} {nky} {nkz} 0 0 0\n")
 
-            if in_system_section and line.strip() == "/":
-                new_lines.append(f"    nspin = 2,\n")
-                new_lines.append(f"    starting_magnetization(1) = 0.3\n")
-                in_system_section = False
+            with open(os.path.join(subdir, "pwscf.in"), 'w') as f:
+                f.writelines(new_lines)
 
-            new_lines.append(line)
+        # 削除: pwscf_tmp.in
+        tmp_in_path = os.path.join(subdir, "pwscf_tmp.in")
+        if os.path.isfile(tmp_in_path):
+            os.remove(tmp_in_path)
+            print(f"Removed template file: {tmp_in_path}")
 
-        # ATOMIC_SPECIES
-        pseudo = pp_table.get(el, "UNKNOWN.UPF")
-        new_lines.append("ATOMIC_SPECIES\n")
-        new_lines.append(f"{el.ljust(4)}  -1.0  {pseudo}\n")
-
-        # ATOMIC_POSITIONS
-        new_lines.append("ATOMIC_POSITIONS (angstrom)\n")
-        for pos in positions:
-            new_lines.append(f"{el}  {pos[0]:.6f}  {pos[1]:.6f}  {pos[2]:.6f}\n")
-
-        # CELL_PARAMETERS
-        new_lines.append("CELL_PARAMETERS (angstrom)\n")
-        for vec in get_cell_parameters(struct, a_val, b_val, c_val):
-            new_lines.append(f"{vec[0]:.6f} {vec[1]:.6f} {vec[2]:.6f}\n")
-
-        # K_POINTS automatic
-        k_density = 40
-        nkx = max(1, int(round(k_density / a_val)))
-        nky = max(1, int(round(k_density / b_val)))
-        nkz = max(1, int(round(k_density / c_val)))
-        new_lines.append("K_POINTS automatic\n")
-        new_lines.append(f"{nkx} {nky} {nkz} 0 0 0\n")
-
-        pwscf_dst = os.path.join(subdir_name, 'pwscf.in')
-        with open(pwscf_dst, 'w') as f:
-            f.writelines(new_lines)
-
-        print(f"Created directory {subdir_name} with pwscf.in and Xx_tmp contents.")
-else:
-    print("Error: pwscf_tmp.in not found in Xx_tmp")
+        print(f"Created {subdir} with pwscf.in and Xx_tmp contents.")
