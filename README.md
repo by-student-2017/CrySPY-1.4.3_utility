@@ -235,7 +235,7 @@ Phase diagrams are essential for understanding phase stability and material prop
   + Lammps: https://github.com/by-student-2017/lammps_education_metal_win
   + Lammps (+ charge): https://github.com/by-student-2017/lammps_education_reaxff_win
   + DFTB+: https://github.com/by-student-2017/DFTBplus-v.23.1-examples
-    + [DFTB.org Parameter Repository:「Periodic Table Baseline Parameter Set (PTBP)」](https://dftb.org/parameters/download.html): CrySPY → CHGNet, MACE or DFTB+ (fast search with GFN1-xTB) → Evaluate top candidates with DFTB+ (PTBP) for electric field properties → Finally evaluate with DFT.
+    + [DFTB.org Parameter Repository:「Periodic Table Baseline Parameter Set (PTBP)」](https://dftb.org/parameters/download.html): CrySPY -> CHGNet, MACE or DFTB+ (fast search with GFN1-xTB) -> Evaluate top candidates with DFTB+ (PTBP) for electric field properties -> Finally evaluate with DFT.
     + SOAC: [GitHub - Voss-Lab/SK_repository](https://github.com/Voss-Lab/SK_repository/tree/main)
     + Handbook of the Band Structure of Elemental Solids
     + SlaKoNet: A Unified Slater-Koster Tight-Binding Framework: https://github.com/atomgptlab/slakonet
