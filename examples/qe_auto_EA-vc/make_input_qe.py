@@ -29,7 +29,8 @@ with open('element_data_qe.txt') as f:
                 'energy': float(parts[2]),
                 'a': float(parts[3]),
                 'b': float(parts[4]),
-                'c': float(parts[5])
+                'c': float(parts[5]),
+                'maginit': float(parts[6])
             }
 
 # ===== 擬ポテンシャルダウンロード =====
@@ -120,7 +121,8 @@ for tmp_file, out_file in zip(template_files, target_files):
         if system_block and line.strip() == "/":
             if nspin_value == 2:
                 for i in range(ntyp_value):
-                    new_lines.append(f"    starting_magnetization({i+1}) = 0.4\n")
+                    maginit = element_data.get(el, {}).get('maginit', 0.0)
+                    new_lines.append(f"    starting_magnetization({i+1}) = {maginit:.2f}\n")
             system_block = False
 
         if "ntyp" in line:
@@ -223,7 +225,7 @@ else:
                     nspin_value = int(line.split("=")[1].strip())
                 if system_block and line.strip() == "/":
                     if nspin_value == 2:
-                        new_lines.append(f"    starting_magnetization(1) = 0.4\n")
+                        new_lines.append(f"    starting_magnetization(1) = {maginit:.2f}\n")
                     system_block = False
 
                 if "nat" in line:
