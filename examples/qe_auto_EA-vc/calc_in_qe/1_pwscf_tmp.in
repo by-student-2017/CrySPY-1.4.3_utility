@@ -13,7 +13,7 @@
     ntyp = 2
     occupations = 'smearing'
     smearing = 'mp'
-    degauss = 0.01
+    degauss = 0.02
  /
 
  &electrons
