@@ -108,9 +108,24 @@ for tmp_file, out_file in zip(template_files, target_files):
     new_lines = []
     species_added = False
     skip_block = False
+    nspin_value = None
+    ntyp_value = len(elements)
+    system_block = False
+
     for line in lines:
+        if line.strip().startswith("&system"):
+            system_block = True
+        if system_block and "nspin" in line:
+            nspin_value = int(line.split("=")[1].strip())
+        if system_block and line.strip() == "/":
+            if nspin_value == 2:
+                for i in range(ntyp_value):
+                    new_lines.append(f"    starting_magnetization({i+1}) = 0.4\n")
+            system_block = False
+
         if "ntyp" in line:
-            line = f"    ntyp = {len(elements)}\n"
+            line = f"    ntyp = {ntyp_value}\n"
+
         if line.strip().startswith("ATOMIC_SPECIES") and not species_added:
             new_lines.append("ATOMIC_SPECIES\n")
             for el in elements:
@@ -119,13 +134,13 @@ for tmp_file, out_file in zip(template_files, target_files):
             species_added = True
             skip_block = True
             continue
-        if line.strip().startswith("ATOMIC_POSITIONS") or \
-           line.strip().startswith("CELL_PARAMETERS") or \
-           line.strip().startswith("K_POINTS"):
+
+        if line.strip().startswith(("ATOMIC_POSITIONS", "CELL_PARAMETERS", "K_POINTS")):
             skip_block = True
             continue
         if skip_block and (line.strip() == "" or line.strip().startswith("/")):
             skip_block = False
+
         if not skip_block:
             new_lines.append(line)
 
@@ -198,8 +213,19 @@ else:
             skip_block = False
             positions = get_positions(struct, a_val, c_val)
             nat_value = len(positions)
+            nspin_value = None
+            system_block = False
 
             for line in lines:
+                if line.strip().startswith("&system"):
+                    system_block = True
+                if system_block and "nspin" in line:
+                    nspin_value = int(line.split("=")[1].strip())
+                if system_block and line.strip() == "/":
+                    if nspin_value == 2:
+                        new_lines.append(f"    starting_magnetization(1) = 0.4\n")
+                    system_block = False
+
                 if "nat" in line:
                     line = f"    nat = {nat_value}\n"
                 if "ntyp" in line:
@@ -211,9 +237,7 @@ else:
                     species_added = True
                     skip_block = True
                     continue
-                if line.strip().startswith("ATOMIC_POSITIONS") or \
-                   line.strip().startswith("CELL_PARAMETERS") or \
-                   line.strip().startswith("K_POINTS"):
+                if line.strip().startswith(("ATOMIC_POSITIONS", "CELL_PARAMETERS", "K_POINTS")):
                     skip_block = True
                     continue
                 if skip_block and (line.strip() == "" or line.strip().startswith("/")):
