@@ -13,10 +13,12 @@
     ntyp = 2
     occupations = 'smearing'
     degauss = 0.01
+    nspin = 2
  /
 
  &electrons
     mixing_beta = 0.4
+    conv_thr = 1.0d-4
  /
 
  &ions
