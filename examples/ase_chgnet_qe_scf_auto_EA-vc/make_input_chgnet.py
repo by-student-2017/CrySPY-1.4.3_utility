@@ -73,7 +73,7 @@ cryspy_lines.append("n_elite = 2")
 cryspy_lines.append("n_fittest = 10")
 cryspy_lines.append("slct_func = TNM")
 cryspy_lines.append("t_size = 2")
-cryspy_lines.append("maxgen_ea = 5")
+cryspy_lines.append("maxgen_ea = 1")
 
 # Generate end_point values from table or fallback
 end_points = []
