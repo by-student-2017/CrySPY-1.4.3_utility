@@ -13,6 +13,7 @@
     ntyp = 1
     occupations = 'smearing'
     degauss = 0.01
+    nspin = 2
  /
 
  &electrons
