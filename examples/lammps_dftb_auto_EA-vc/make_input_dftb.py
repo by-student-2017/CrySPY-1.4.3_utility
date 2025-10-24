@@ -44,7 +44,7 @@ cryspy_lines.append("[basic]")
 cryspy_lines.append("algo = EA-vc")
 cryspy_lines.append("calc_code = ASE")
 cryspy_lines.append("nstage = 1")
-cryspy_lines.append("njob = 5")
+cryspy_lines.append("njob = 1")
 cryspy_lines.append("jobcmd = bash")
 cryspy_lines.append("jobfile = job_cryspy\n")
 
