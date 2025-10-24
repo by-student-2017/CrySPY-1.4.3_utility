@@ -236,7 +236,7 @@ Phase diagrams are essential for understanding phase stability and material prop
   + Lammps (+ charge): https://github.com/by-student-2017/lammps_education_reaxff_win
   + CP2k: https://github.com/by-student-2017/CP2k-v.9.1-examples
   + DFTB+: https://github.com/by-student-2017/DFTBplus-v.23.1-examples
-    + DFTB.org Parameter Repository:「Periodic Table Baseline Parameter Set (PTBP)」
+    + [DFTB.org Parameter Repository:「Periodic Table Baseline Parameter Set (PTBP)」](https://dftb.org/parameters/download.html)
     + SOAC: [GitHub - Voss-Lab/SK_repository](https://github.com/Voss-Lab/SK_repository/tree/main)
     + Handbook of the Band Structure of Elemental Solids
     + SlaKoNet: A Unified Slater-Koster Tight-Binding Framework: https://github.com/atomgptlab/slakonet
