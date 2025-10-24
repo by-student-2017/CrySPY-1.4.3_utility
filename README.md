@@ -81,6 +81,12 @@ chmod +x repeat_cryspy.sh
 bash repeat_cryspy.sh
 ```
 
+## Linking different calculation codes
+- We built a system that allows calculations to continue using different calculation codes by utilizing "load_struc_flag=True".
+- I'm using Quantum ESPRESSO (QE) because I don't have a VASP license or the budget for a high-performance computer.
+Since CHGNet and MACE utilize VASP data, calculations don't proceed as smoothly with QE (whereas structural optimization would likely be much faster with VASP).
+- I think that by improving "ase_chgnet_qe_auto_EA-vc", it would be relatively easy to create combinations with other calculation codes, so I hope users will do their best with VASP on their own.
+
 ## Useful features
 - Deleting old files: "cryspy -c" or "cryspy --clean"
 - Enthalpy: "pv_term = True" and "press = 400". see "qe_Sr4O4_RS_pv_term"
