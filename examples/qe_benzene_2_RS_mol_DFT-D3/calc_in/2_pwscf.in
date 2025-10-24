@@ -12,11 +12,13 @@
     nat = 24
     ntyp = 2
     occupations = 'smearing'
-    degauss = 0.01
+    smearing = 'mp'
+    degauss = 0.02
     vdw_corr = 'DFT-D3'
  /
 
  &electrons
+    conv_thr = 1.0d-4
  /
 
  &ions
