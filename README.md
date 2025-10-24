@@ -180,11 +180,6 @@ pip install --upgrade numba
 pip freeze > requirements.txt
 ```
 
-## Recalculation methods for low-cost calculations like Lammps (or CHGNet) and high-cost calculations like QE (VASP, DFTB+(xTB)).
-- After performing the calculation using the low-cost method, copy "data/pkl_data/init_struct_data.pkl" and "data/pkl_data/opt_struc_data.pkl".
-- Use the load_struc_flag = True option.
-- The [option] load_struc_flag = True setting is only loaded the first time the program is run, so you don't need to worry about it from the second time onwards.
-
 ## The "kppvol" and actual k-points
 - The "kppvol" is k-points/volume [A^-3].
 - The actual k-points to be set can be determined using "kpt_check.py".
