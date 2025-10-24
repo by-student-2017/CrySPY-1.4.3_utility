@@ -215,7 +215,7 @@ pip freeze > requirements.txt
 - [6] CrySPY: a crystal structure prediction tool accelerated by machine learning
 - [7] csp-cryspy · PyPI
 
-## manual
+## Manual
 - https://tomoki-yamashita.github.io/CrySPY_doc/tutorial/index.html
 
 ---
