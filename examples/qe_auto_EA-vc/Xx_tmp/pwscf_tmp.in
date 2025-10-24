@@ -14,6 +14,8 @@
     occupations = 'smearing'
     smearing = 'mp'
     degauss = 0.02
+    nspin = 2
+    starting_magnetization(1) = 0.4
  /
 
  &electrons
