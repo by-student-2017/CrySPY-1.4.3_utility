@@ -1,4 +1,4 @@
-Element Structure       Energy (eV/atom)        a (Å)   b (Å)   c (Å)
+Element Structure Energy (eV/atom) a (A)  b (A)   c (A)
 H       dia     0.0000 3.75    3.75    3.75
 He      sc      0.0000 3.57    3.57    3.57
 Li      bcc     0.0000 3.49    3.49    3.49
