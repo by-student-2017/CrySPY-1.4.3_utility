@@ -6,7 +6,7 @@ export OMP_NUM_THREADS=1
 # ---------- ASE
 python3 ase_in.py > out.log
 
-# ---------- qe if crash
+# ---------- for crash --> skip
 if [ -e "CRASH" ]; then
     sed -i -e '3 s/^.*$/skip/' stat_job
     exit 1
