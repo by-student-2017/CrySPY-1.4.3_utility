@@ -13,6 +13,7 @@ atype = H C
 nat = 12 12
 mol_file = benzene
 nmol = 2
+mindist_factor = 0.7
 
 [QE]
 qe_infile = pwscf.in
