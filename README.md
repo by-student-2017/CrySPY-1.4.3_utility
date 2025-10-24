@@ -2,6 +2,7 @@
 - This is unofficial, but it has more examples than the original. I added them after confirming that it works.
 - This is a calculation example. For practical use, it is recommended to increase the number of nat and tot_struc.
 - LAQA: only VASP, QE, or soiap for now
+- The "element_data_*.txt" series was not prepared with complete accuracy due to time constraints, so please make any necessary adjustments yourself. I don't have the research environment necessary to properly organize this.
 
 ## Results and random numbers
 - The random seed is changed so the results will not match those in the data. Therefore, even if the environment is almost the same and the user is the same, the results will be different.
