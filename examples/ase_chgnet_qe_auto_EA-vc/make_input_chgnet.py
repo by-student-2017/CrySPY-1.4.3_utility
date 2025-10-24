@@ -54,7 +54,7 @@ cryspy_lines.append("[structure]")
 cryspy_lines.append("atype  = " + " ".join(f"{el:<{col_width}}" for el in elements))
 cryspy_lines.append("ll_nat = " + " ".join(f"{0:<{col_width}}" for _ in elements))
 cryspy_lines.append("ul_nat = " + " ".join(f"{12:<{col_width}}" for _ in elements))
-cryspy_lines.append("mindist_factor = 1.0\n"
+cryspy_lines.append("mindist_factor = 1.0\n")
 
 cryspy_lines.append("[ASE]")
 cryspy_lines.append("ase_python = chgnet_in.py\n")
