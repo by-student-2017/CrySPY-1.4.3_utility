@@ -1,5 +1,5 @@
-Element Structure       Energy (eV/atom)        a (Å)   b (Å)   c (Å)   MagInit
-H       dia     -9.178837383561e-1 3.75    3.75    3.75   0.01
+Element Structure Energy (eV/atom) a (A)  b (A)   c (A)  MagInit
+H       dia     -0.917883738356e0 3.75    3.75    3.75   0.01
 He      sc      -5.786186616829e0 3.57    3.57    3.57   0.01
 Li      bcc     -1.490453444003e1 3.49    3.49    3.49   0.01
 Be      hcp     -6.543984556678e0 2.29    2.29    3.74   0.01
