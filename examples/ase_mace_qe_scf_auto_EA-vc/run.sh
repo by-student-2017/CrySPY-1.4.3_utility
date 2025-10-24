@@ -27,7 +27,7 @@ restart_if_needed() {
   fi
 }
 
-# --- Stage 1: CHGNet計算 ---
+# --- Stage 1: MACE計算 ---
 echo "===== Stage 1: MACE calculation START ====="
 cp -r calc_in_mace calc_in
 cp -r Xx_tmp_mace Xx_tmp
