@@ -21,3 +21,9 @@ if [ -e "CRASH" ]; then
     sed -i -e '3 s/^.*$/skip/' stat_job
     exit 1
 fi
+
+# ---------- for error --> skip
+if [ ! -f "log.tote" ]; then
+    sed -i -e '3 s/^.*$/skip/' stat_job
+    exit 1
+fi
