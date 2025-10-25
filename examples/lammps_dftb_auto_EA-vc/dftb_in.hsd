@@ -18,7 +18,7 @@ Hamiltonian = xTB {
   SCCTolerance = 1.0e-3
   MaxSCCIterations = 1000
   Mixer = Broyden {
-    MixingParameter = 0.20
+    MixingParameter = 0.10
     InverseJacobiWeight = 0.01 # default value
     WeightFactor = 0.01        # default value
   }
