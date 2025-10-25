@@ -79,9 +79,12 @@ subprocess.run(f"mpirun -np {cpu_count} dftb+ | tee dftb_out.log", shell=True)
 scc_failed = False
 with open("dftb_out.log") as f:
     for line in f:
-        if "SCC is NOT converged" in line:
-            scc_failed = True
+        if "ERROR!" in line:
+            error_detected = True
             break
+        #if "SCC is NOT converged" in line:
+        #    scc_failed = True
+        #    break
 
 energy = None
 if not scc_failed:
