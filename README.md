@@ -55,6 +55,7 @@ python3 make_input.py Al C Ni Fe
 - The "element_data_dftb.txt" has not been rewritten with the GFN1-xTB results in DFTB+ (I plan to fix this in the future if I have time). Therefore, an element_structure file will be created, so please calculate it and correct the end_point.
 - GFN2-xTB can also be specified in dftb_in.hsd, but GFN2-xTB is difficult to handle due to its computational cost and convergence. In the paper, good results were obtained with GFN1-xTB for MOF, so here we create an example using GFN1-xTB.
 - Interested readers may want to try using GFN2-xTB or the skf file, etc.
+- "repeat_monitor_cryspy.sh" is a script that skips a job if the same ID appears 10 times in log_cryspy with the status "still queueing or running". This effectively acts as a limit on the computation time.
 
 ## Automatic generation of input files (EA-vc + QE version)
 - The "element_data_qe.txt" does not reflect the results of QE (we plan to fix this in the future if we have time). Therefore, the element_structure file will be created, so please perform the calculation and correct the end_point (element_structure may also not be created correctly, so please check).
