@@ -7,16 +7,16 @@ Driver = GeometryOptimization {
   LatticeOpt = Yes
   OutputPrefix = "geom.out"
   Convergence {
-    GradElem = 1E-3
+    GradElem = 5E-3
   }
-  MaxSteps = 200
+  MaxSteps = 50
 }
 
 Hamiltonian = xTB {
   Method = "GFN1-xTB" # GFN1-xTB, IPEA1-xTB, or GFN2-xTB
   SCC = Yes
   SCCTolerance = 1.0e-3
-  MaxSCCIterations = 1000
+  MaxSCCIterations = 300
   Mixer = Broyden {
     MixingParameter = 0.10
     InverseJacobiWeight = 0.01 # default value
