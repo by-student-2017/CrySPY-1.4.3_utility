@@ -74,8 +74,8 @@ with open('cryspy.in', 'w') as f:
     f.write("\n".join(cryspy_lines))
 print("Created cryspy.in")
 
-# ====== 3. calc_inをコピー ======
-calc_in_dir = 'calc_in'
+# ====== 3. calc_in_tmpをコピー ======
+calc_in_dir = 'calc_in_tmp'
 calc_in_dst = 'calc_in'
 if not os.path.isdir(calc_in_dir):
     print("Error: calc_in directory not found")
