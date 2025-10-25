@@ -1,4 +1,4 @@
-Element Structure       Energy (eV/atom)        a (Å)   b (Å)   c (Å)   MagInit
+Element	Structure	Energy (eV/atom)	a (A)	b (A)	c (A)	MagInit
 H	hcp	-1.2489.E+01	3.900	3.900	6.356	0.01
 He	fcc	-7.8726.E+01	4.430	4.430	4.430	0.01
 Li	bcc	-2.0279.E+02	3.427	3.427	3.427	0.01
@@ -93,4 +93,3 @@ Pa	hcp	-1.3547.E+04	3.190	3.190	5.685	0.01
 U	fcc	-1.3985.E+04	4.432	4.432	4.432	0.01
 Np	fcc	-1.4454.E+04	4.353	4.353	4.353	0.01
 Pu	fcc	-1.4956.E+04	4.788	4.788	4.788	0.01
-
