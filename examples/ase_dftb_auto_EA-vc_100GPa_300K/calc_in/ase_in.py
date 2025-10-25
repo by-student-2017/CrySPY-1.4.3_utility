@@ -95,7 +95,9 @@ if not scc_failed:
                 break
 
 with open('log.tote', 'w') as f:
-    if energy is not None:
+    if energy is None:
+        f.write("nan\n")
+    else:
         f.write(f"{energy:.6f}\n")
 
 # ------ struc
