@@ -74,14 +74,29 @@ subprocess.run(f"mpirun -np {cpu_count} dftb+ | tee dftb_out.log", shell=True)
 #e = cell_filter.atoms.get_total_energy()    # eV/cell
 #with open('log.tote', mode='w') as f:
 #    f.write(str(e))
-energy = None
-with open("detailed.out") as f:
+
+# ------ check SCC
+scc_failed = False
+with open("dftb_out.log") as f:
     for line in f:
-        if line.strip().startswith("Total energy:"):
-            energy = float(line.split()[-2])
+        if "SCC is NOT converged" in line:
+            scc_failed = True
             break
+
+energy = None
+if not scc_failed:
+    with open("detailed.out") as f:
+        for line in f:
+            if line.strip().startswith("Total energy:"):
+                try:
+                    energy = float(line.split()[-2])
+                except ValueError:
+                    energy = None
+                break
+
 with open('log.tote', 'w') as f:
-    f.write(f"{energy:.6f}\n")
+    if energy is not None:
+        f.write(f"{energy:.6f}\n")
 
 # ------ struc
 #opt_atoms = cell_filter.atoms.copy()
@@ -91,7 +106,8 @@ opt_atoms = read('geom.out.gen', format='gen')
 write('CONTCAR', opt_atoms, format='vasp', direct=True)
 
 # ------ check_opt
-converged = os.path.exists('CONTCAR')
+#converged = os.path.exists('CONTCAR')
+converged = os.path.exists('CONTCAR') and os.path.getsize('log.tote') > 0
 with open('out_check_opt', mode='w') as f:
     if converged:
         f.write('done\n')
