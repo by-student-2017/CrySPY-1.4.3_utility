@@ -75,7 +75,7 @@ subprocess.run(f"mpirun -np {cpu_count} dftb+ | tee dftb_out.log", shell=True)
 #with open('log.tote', mode='w') as f:
 #    f.write(str(e))
 
-# ------ check SCC
+# ------ check ERROR!
 error_detected = False
 with open("dftb_out.log") as f:
     for line in f:
