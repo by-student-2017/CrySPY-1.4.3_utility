@@ -75,19 +75,16 @@ subprocess.run(f"mpirun -np {cpu_count} dftb+ | tee dftb_out.log", shell=True)
 #with open('log.tote', mode='w') as f:
 #    f.write(str(e))
 
-# ------ check SCC
-scc_failed = False
+# ------ check ERROR!
+error_detected = False
 with open("dftb_out.log") as f:
     for line in f:
         if "ERROR!" in line:
             error_detected = True
             break
-        #if "SCC is NOT converged" in line:
-        #    scc_failed = True
-        #    break
 
 energy = None
-if not scc_failed:
+if not error_detected:
     with open("detailed.out") as f:
         for line in f:
             if line.strip().startswith("Total energy:"):
