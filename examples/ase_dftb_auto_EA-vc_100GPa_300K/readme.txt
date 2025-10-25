@@ -4,10 +4,10 @@ This script generates cryspy.in and POSCAR files for evolutionary algorithm runs
 It supports 2 to 10 elements (or more) dynamically.
 
 Usage:
-    python make_input.py Element1 Element2 [Element3 ... Element10]
+    python3 make_input.py Element1 Element2 [Element3 ... Element10]
 
 Example for a 5-element system:
-    python make_input.py Al C Ni Fe Co
+    python3 make_input.py Al C Ni Fe Co
 
 
 Note
