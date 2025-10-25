@@ -33,10 +33,13 @@ Hamiltonian = xTB {
   SCC = Yes
   SCCTolerance = 1.0e-3
   MaxSCCIterations = 1000
-  Mixer = Broyden {
-    MixingParameter = 0.20
-    InverseJacobiWeight = 0.01 # default value
-    WeightFactor = 0.01        # default value
+  #Mixer = Broyden {
+  #  MixingParameter = 0.20
+  #  InverseJacobiWeight = 0.01 # default value
+  #  WeightFactor = 0.01        # default value
+  #}
+  Mixer = Pulay {
+     MixingParameter = 0.10
   }
   Charge = 0.0
   KPointsAndWeights = SuperCellFolding {
