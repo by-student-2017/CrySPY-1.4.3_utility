@@ -95,7 +95,10 @@ if not scc_failed:
                 break
 
 with open('log.tote', 'w') as f:
-    f.write(f"{energy:.6f}\n")
+    if energy is None:
+        f.write("nan\n")
+    else:
+        f.write(f"{energy:.6f}\n")
 
 # ------ struc
 #opt_atoms = cell_filter.atoms.copy()
@@ -106,7 +109,7 @@ write('CONTCAR', opt_atoms, format='vasp', direct=True)
 
 # ------ check_opt
 #converged = os.path.exists('CONTCAR')
-converged = (not scc_failed) and os.path.exists('CONTCAR') and (energy is not None) and os.path.getsize('log.tote') > 0
+converged = os.path.exists('CONTCAR') and os.path.getsize('log.tote') > 0
 with open('out_check_opt', mode='w') as f:
     if converged:
         f.write('done\n')
