@@ -56,6 +56,7 @@ python3 make_input.py Al C Ni Fe
 - GFN2-xTB can also be specified in dftb_in.hsd, but GFN2-xTB is difficult to handle due to its computational cost and convergence. In the paper, good results were obtained with GFN1-xTB for MOF, so here we create an example using GFN1-xTB.
 - Interested readers may want to try using GFN2-xTB or the skf file, etc.
 - "repeat_monitor_cryspy.sh" is a script that skips a job if the same ID appears 10 times in log_cryspy with the status "still queueing or running". This effectively acts as a limit on the computation time.
+- Since the convergence tends to worsen when proceeding through multiple cycles of structural optimization, I also created "ase_dftb_1opt_auto_EA-vc," which performs structural optimization only once. There are no major changes, as it only involves changing MaxSteps = 40 to 1 in "dftb_in.hsd".
 
 ## Automatic generation of input files (EA-vc + QE version)
 - The "element_data_qe.txt" does not reflect the results of QE (we plan to fix this in the future if we have time). Therefore, the element_structure file will be created, so please perform the calculation and correct the end_point (element_structure may also not be created correctly, so please check).
