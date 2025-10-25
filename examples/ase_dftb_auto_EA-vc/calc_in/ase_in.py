@@ -109,7 +109,7 @@ write('CONTCAR', opt_atoms, format='vasp', direct=True)
 
 # ------ check_opt
 #converged = os.path.exists('CONTCAR')
-converged = os.path.exists('CONTCAR') and os.path.getsize('log.tote') > 0
+converged = os.path.exists('CONTCAR') and (energy is not None)
 with open('out_check_opt', mode='w') as f:
     if converged:
         f.write('done\n')
