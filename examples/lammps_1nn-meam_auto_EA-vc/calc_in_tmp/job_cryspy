@@ -1,0 +1,14 @@
+#/bin/bash
+# "in.si" --> "lammps_infile = in.si" in cryspy.in
+# "out.si" --> "lammps_outfile = out.si" in cryspy.in
+
+# ---------- OpenMP
+export OMP_NUM_THREADS=1
+
+# ---------- OpenMPI
+export NSLOTS=4
+
+# ---------- Run Lammps
+#mpirun -np $NSLOTS /usr/bin/lmp -in ./in.lmp -log ./out.lmp -screen none
+#mpirun -np $NSLOTS lmp -in ./in.lmp -log ./out.lmp -screen none
+mpirun -np $NSLOTS $HOME/.local/bin/lmp  -in ./in.lmp -log ./out.lmp -screen none
