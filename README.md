@@ -70,6 +70,12 @@ python3 make_input.py Al C Ni Fe
 
 ## Automatic generation of input files (EA-vc + MACE version)
 - The MACE results are not reflected in "element_data_mace.txt" (I plan to fix this in the future if I have time). Therefore, the element_structure file will be created, so please run the calculation and correct the end_point (it's possible that the element_structure was not created correctly, so please check). As with CHGNet, I think it's fine to match it to the VASP results. It's also a good idea to organize it with Material Projects data.
+### Model selection in calc_in/mace_in.py
+- In `calc_in/mace_in.py`, specify the MACE model:
+  ```python
+  # High accuracy -> MACE-MP-0
+  # Lightweight & fast -> MACE-MP-0_small
+  model = mace_models.load("MACE-MP-0")  # or "MACE-MP-0_small"
 
 ## Enthalpy (pv_term) (such as in high-pressure research)
 - Examples of input files are located in the directory labeled "pv_term".
