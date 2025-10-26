@@ -7,6 +7,7 @@ import sys
 import os
 import re
 import subprocess
+from collections import Counter
 
 # ---------- input structure
 # CrySPY outputs 'POSCAR' as an input file in work/xxxxxx directory
@@ -93,6 +94,40 @@ if not error_detected:
                 except ValueError:
                     energy = None
                 break
+
+# ---------- compute formation energy
+symbols = atoms.get_chemical_symbols()
+composition = Counter(symbols)
+num_atoms = len(symbols)
+
+# Get unique element order from POSCAR
+unique_elements = []
+for s in symbols:
+    if s not in unique_elements:
+        unique_elements.append(s)
+
+# Read end_point from cryspy.in
+end_point_values = []
+if os.path.exists("./../../cryspy.in"):
+    with open("./../../cryspy.in", "r") as f:
+        for line in f:
+            if line.strip().startswith("end_point"):
+                nums = re.findall(r'[-+]?\d*\.\d+|\d+', line)
+                if nums:
+                    end_point_values = list(map(float, nums[1:]))  # skip 'end_point'
+                break
+
+# Compute reference energy
+E_ref = 0.0
+if end_point_values and len(end_point_values) == len(unique_elements):
+    for i, elem in enumerate(unique_elements):
+        E_ref += composition[elem] * end_point_values[i]
+
+# Formation energy check
+if energy is not None and E_ref != 0:
+    E_form = (energy - E_ref) / num_atoms
+    if E_form < -10.0*2 or E_form > 10.0*5:  # abnormal threshold
+        energy = None
 
 with open('log.tote', 'w') as f:
     if energy is None:
