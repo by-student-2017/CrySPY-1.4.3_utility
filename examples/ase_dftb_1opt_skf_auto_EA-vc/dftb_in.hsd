@@ -19,7 +19,7 @@ Hamiltonian = DFTB {
   SCCTolerance = 1.0e-3
   MaxSCCIterations = 300
   Mixer = Broyden {
-    MixingParameter = 0.10
+    MixingParameter = 0.05
     InverseJacobiWeight = 0.01 # default value
     WeightFactor = 0.01        # default value
   }
@@ -45,7 +45,7 @@ Hamiltonian = DFTB {
   Solver = RelativelyRobust {}
   ReadInitialCharges = No
   InitialCharges = {}
-  EwaldParameter = 0.0000000000000000
+  #EwaldParameter = 0.0000000000000000
   EwaldTolerance = 1.0000000000000001E-009
   ConvergentSCCOnly = Yes
   ElectricField = {}
