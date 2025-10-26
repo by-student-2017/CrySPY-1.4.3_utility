@@ -6,10 +6,9 @@ import subprocess
 import sys
 import os
 import re
-import subprocess
+from collections import Counter
 
 # ---------- input structure
-# CrySPY outputs 'POSCAR' as an input file in work/xxxxxx directory
 atoms = read('POSCAR', format='vasp')
 cell = atoms.cell.lengths()  # [a, b, c]
 
@@ -19,7 +18,7 @@ if os.path.exists("dftb_in.hsd"):
     with open("dftb_in.hsd", "r") as f:
         for line in f:
             if line.strip().startswith("#kppvol"):
-                match = re.search(r'#kppvol\\s*=\\s*(\\d+(\\.\\d+)?)', line)
+                match = re.search(r'#kppvol\s*=\s*(\d+(\.\d+)?)', line)
                 if match:
                     kppvol = float(match.group(1))
                 break
@@ -37,10 +36,6 @@ nky = max(1, round(scale * cell[1] / sum(cell)))
 nkz = max(1, round(scale * cell[2] / sum(cell)))
 
 # ---------- setting and run
-#atoms.calc = XTB(method='GFN1-xTB') # GFN1-xTB, GFN2-xTB, GFN-FF
-#atoms.set_constraint([FixSymmetry(atoms)])
-#cell_filter = FrechetCellFilter(atoms, hydrostatic_strain=False)
-#opt = BFGS(cell_filter)
 if not os.path.exists("dftb_in.hsd"):
     subprocess.run(["cp", "./../../dftb_in.hsd", "./"], check=True)
 
@@ -57,25 +52,11 @@ content = re.sub(r'nkz', f'{nkz}', content)
 with open("dftb_in.hsd", "w") as f:
     f.write(content)
 
-# ---------- run
-#converged = opt.run(fmax=0.01, steps=2000)
-#cpu_count = os.cpu_count() or 1
+# ---------- run DFTB+
 cpu_count = 1
 subprocess.run(f"mpirun -np {cpu_count} dftb+ | tee dftb_out.log", shell=True)
 
-# ---------- rule in ASE interface
-# output file for energy: 'log.tote' in eV/cell
-#                         CrySPY reads the last line of 'log.tote' file
-# outimized structure: 'CONTCAR' file in vasp format
-# check_opt: 'out_check_opt' file ('done' or 'not yet')
-#                         CrySPY reads the last line of 'out_check_opt' file
-
-# ------ energy
-#e = cell_filter.atoms.get_total_energy()    # eV/cell
-#with open('log.tote', mode='w') as f:
-#    f.write(str(e))
-
-# ------ check ERROR!
+# ---------- check ERROR!
 error_detected = False
 with open("dftb_out.log") as f:
     for line in f:
@@ -89,26 +70,57 @@ if not error_detected:
         for line in f:
             if line.strip().startswith("Total energy:"):
                 try:
-                    energy = float(line.split()[-2])
+                    energy = float(line.split()[-2])  # eV/cell
                 except ValueError:
                     energy = None
                 break
 
+# ---------- compute formation energy
+symbols = atoms.get_chemical_symbols()
+composition = Counter(symbols)
+num_atoms = len(symbols)
+
+# Get unique element order from POSCAR
+unique_elements = []
+for s in symbols:
+    if s not in unique_elements:
+        unique_elements.append(s)
+
+# Read end_point from cryspy.in
+end_point_values = []
+if os.path.exists("./../../cryspy.in"):
+    with open("./../../cryspy.in", "r") as f:
+        for line in f:
+            if line.strip().startswith("end_point"):
+                nums = re.findall(r'[-+]?\d*\.\d+|\d+', line)
+                if nums:
+                    end_point_values = list(map(float, nums[1:]))  # skip 'end_point'
+                break
+
+# Compute reference energy
+E_ref = 0.0
+if end_point_values and len(end_point_values) == len(unique_elements):
+    for i, elem in enumerate(unique_elements):
+        E_ref += composition[elem] * end_point_values[i]
+
+# Formation energy check
+if energy is not None and E_ref != 0:
+    E_form = (energy - E_ref) / num_atoms
+    if E_form < -10.0*2 or E_form > 10.0*5:  # abnormal threshold
+        energy = None
+
+# ---------- write energy
 with open('log.tote', 'w') as f:
     if energy is None:
         f.write("nan\n")
     else:
         f.write(f"{energy:.6f}\n")
 
-# ------ struc
-#opt_atoms = cell_filter.atoms.copy()
-#opt_atoms.set_constraint(None)    # remove constraint for pymatgen
-#write('CONTCAR', opt_atoms, format='vasp', direct=True)
+# ---------- write optimized structure
 opt_atoms = read('geom.out.gen', format='gen')
 write('CONTCAR', opt_atoms, format='vasp', direct=True)
 
-# ------ check_opt
-#converged = os.path.exists('CONTCAR')
+# ---------- check_opt
 converged = os.path.exists('CONTCAR') and (energy is not None)
 with open('out_check_opt', mode='w') as f:
     if converged:
