@@ -51,12 +51,13 @@ python3 make_input.py Al C Ni Fe
 - If the generated results appear incorrect, check and adjust this file accordingly.
 - If you want to use B_aB12, just change B_dia to a directory named B_aB12, change POSCAR to correspond to the structure of aB12, and change the end_point in cryspy to the eV/atom of aB12. These can be done after "make_input.py". 
 
-## Automatic generation of input files (EA-vc + DFTB+(GFN1-xTB) version)
+## Automatic generation of input files (EA-vc + DFTB+ version)
 - The "element_data_dftb.txt" has not been rewritten with the GFN1-xTB results in DFTB+ (I plan to fix this in the future if I have time). Therefore, an element_structure file will be created, so please calculate it and correct the end_point.
 - GFN2-xTB can also be specified in dftb_in.hsd, but GFN2-xTB is difficult to handle due to its computational cost and convergence. In the paper, good results were obtained with GFN1-xTB for MOF, so here we create an example using GFN1-xTB.
 - Interested readers may want to try using GFN2-xTB or the skf file, etc.
 - "repeat_monitor_cryspy.sh" is a script that skips a job if the same ID appears 10 times in log_cryspy with the status "still queueing or running". This effectively acts as a limit on the computation time.
 - Since the convergence tends to worsen when proceeding through multiple cycles of structural optimization, I also created "ase_dftb_1opt_auto_EA-vc," which performs structural optimization only once. There are no major changes, as it only involves changing MaxSteps = 40 to 1 in "dftb_in.hsd".
+- I also created an example for Slater-Koster files (skf) using "ase_dftb_skf_auto_EA-vc". An example using PTBP is shown. The skf file for the region between La and Lu is not available in PTBP (this point warrants further discussion in a research paper). Similar to "xTB", the structural optimization doesn't work well after the third cycle. Therefore, I set "Maxsteps = 2".
 
 ## Automatic generation of input files (EA-vc + QE version)
 - The "element_data_qe.txt" does not reflect the results of QE (we plan to fix this in the future if we have time). Therefore, the element_structure file will be created, so please perform the calculation and correct the end_point (element_structure may also not be created correctly, so please check).
