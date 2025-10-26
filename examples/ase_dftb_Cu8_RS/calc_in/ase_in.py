@@ -128,6 +128,7 @@ if energy is not None and E_ref != 0:
     if E_form < -10.0*2 or E_form > 10.0*5:  # abnormal threshold
         energy = None
 
+# ---------- write energy
 with open('log.tote', 'w') as f:
     if energy is None:
         f.write("nan\n")
