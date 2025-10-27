@@ -230,7 +230,13 @@ pip freeze > requirements.txt
 
 ---
 
-## Template
+## Recommended Population Size for CrySPY EA Runs
+- Small-scale: n_pop = 100–200 (for trend observation)
+- Medium-scale: n_pop = 500–1000 (sufficient for most research papers)
+- Large-scale: n_pop = 2000 (comprehensive exploration, suitable for phase diagram studies)
+- Ultra-large: n_pop = 4000 (rarely necessary, only for special cases)
+- For phase diagram studies, n_pop = 2000 with maxgen_ea = 5–10 is generally sufficient to claim thorough exploration in a publication.
+### Template
 - If you want to explore the phase diagram in more detail, you will have to increase the values ​​for nat and n_pop. An example of n_pop is shown below.
 - n_pop 100 case
 ```
