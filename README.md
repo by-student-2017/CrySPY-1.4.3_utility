@@ -230,6 +230,101 @@ pip freeze > requirements.txt
 
 ---
 
+## Template
+- If you want to explore the phase diagram in more detail, you will have to increase the values ​​for nat and n_pop. An example of n_pop is shown below.
+- n_pop 100 case
+```
+[EA]
+n_pop = 100
+n_crsov = 30
+n_perm = 10
+n_strain = 10
+n_rand = 30
+n_add = 10
+n_elim = 5
+n_subs = 5
+target = random
+n_elite = 2
+n_fittest = 10
+slct_func = TNM
+t_size = 2
+maxgen_ea = 5
+```
+- n_pop 200 case
+```
+[EA]
+n_pop = 200
+n_crsov = 60
+n_perm = 20
+n_strain = 20
+n_rand = 60
+n_add = 20
+n_elim = 10
+n_subs = 10
+target = random
+n_elite = 2
+n_fittest = 10
+slct_func = TNM
+t_size = 2
+maxgen_ea = 5
+```
+- n_pop 400 case
+```
+[EA]
+n_pop = 400
+n_crsov = 120
+n_perm = 40
+n_strain = 40
+n_rand = 120
+n_add = 40
+n_elim = 20
+n_subs = 20
+target = random
+n_elite = 2
+n_fittest = 10
+slct_func = TNM
+t_size = 2
+maxgen_ea = 5
+```
+- n_pop 1000 case
+```
+[EA]
+n_pop = 1000
+n_crsov = 300
+n_perm = 100
+n_strain = 100
+n_rand = 300
+n_add = 100
+n_elim = 50
+n_subs = 50
+target = random
+n_elite = 2
+n_fittest = 10
+slct_func = TNM
+t_size = 2
+maxgen_ea = 5
+```
+- n_pop 2000 case
+```
+[EA]
+n_pop = 2000
+n_crsov = 600
+n_perm = 200
+n_strain = 200
+n_rand = 600
+n_add = 200
+n_elim = 100
+n_subs = 100
+target = random
+n_elite = 2
+n_fittest = 10
+slct_func = TNM
+t_size = 2
+maxgen_ea = 5
+```
+
+---
+
 ## Phase Diagrams Attracting Attention
 
 Phase diagrams are essential for understanding phase stability and material properties. The following points highlight current challenges and recommendations:
