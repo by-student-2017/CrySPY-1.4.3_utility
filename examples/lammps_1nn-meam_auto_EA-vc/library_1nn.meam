@@ -341,6 +341,11 @@
 6.880545     6.03    8.62    2.58      2.91    3.007846  1.16  1.20
 1.0         12.72    6.44   -1.61      1.0     3
 
+# Please note that the data below is not fitted using MPtraj. 
+# The parameters were estimated from experimental values ​​and literature data.
+# F, Cl, He, Ne, Ar, Kr, Xe, B
+# Using the modified Rose function might be better than using the LJ function.
+
 # F: Fluorine, atomic number 9, atomic weight 18.998
 # alpha = sqrt(K/esub)*re, K≈8 eV/Å, esub=1.171 eV, re=1.418 Å → alpha≈3.5
 # b0: Strong directional bonding, set to 0.07 (similar to O)
@@ -412,4 +417,5 @@
 'B'          'dim'   1       5         10.81
 5.40         5.40    5.4     5.4       0.0     2.6304  5.734   1.84
 1.0          0.42    0.02    0.00      1      -5
+
 
