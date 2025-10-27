@@ -347,9 +347,9 @@
 # Using the modified Rose function might be better than using the LJ function.
 
 # F: Fluorine, atomic number 9, atomic weight 18.998
-# alpha = sqrt(K/esub)*re, K≈8 eV/Å, esub=1.171 eV, re=1.418 Å → alpha≈3.5
+# alpha = sqrt(K/esub)*re, K~8 eV/A, esub=1.171 eV, re=1.418 A -> alpha~3.5
 # b0: Strong directional bonding, set to 0.07 (similar to O)
-# alat: F2 bond length = 1.418 Å
+# alat: F2 bond length = 1.418 A
 # esub: Experimental sublimation energy = 1.171 eV
 # asub: Slightly smaller than O, set to 3.0
 # t0–t3: Angular dependence is weak, same as H, N, O
@@ -359,9 +359,9 @@
 1.0          0.07    0.00    0.00      1      -5
 
 # Cl: Chlorine, atomic number 17, atomic weight 35.45
-# alpha = sqrt(K/esub)*re, K≈4 eV/Å, esub=6.343 eV, re=1.891 Å → alpha≈1.6
+# alpha = sqrt(K/esub)*re, K~4 eV/A, esub=6.343 eV, re=1.891 A -> alpha~1.6
 # b0: Weak directional bonding, set to 0.04
-# alat: Cl2 bond length = 1.891 Å
+# alat: Cl2 bond length = 1.891 A
 # esub: Experimental sublimation energy = 6.343 eV
 # asub: Larger value, set to 4.5
 # t0–t3: Angular dependence is weak, standard values
@@ -372,36 +372,36 @@
 
 # He: Helium, atomic number 2, atomic weight 4.0026
 # alpha = sqrt(K/esub)*re -> ~3.0
-# b0: negligible angular dependence → 0.01
-# alat: ~1.2 Å, esub: 0.08 eV, asub: 1.0 (small)
+# b0: negligible angular dependence -> 0.01
+# alat: ~1.2 A, esub: 0.08 eV, asub: 1.0 (small)
 'He'         'dim'   1       2         4.0026
 3.00         3.00    3.0     3.0       0.0     1.20    0.08    1.00
 1.0          0.01    0.00    0.00      1      -5
 
 # Ne: Neon, atomic number 10, atomic weight 20.18
 # alpha ~3.5, b0 small -> 0.02
-# alat: 1.6 Å, esub: 0.17 eV, asub: 1.5
+# alat: 1.6 A, esub: 0.17 eV, asub: 1.5
 'Ne'         'dim'   1       10        20.18
 3.50         3.50    3.5     3.5       0.0     1.60    0.17    1.50
 1.0          0.02    0.00    0.00      1      -5
 
 # Ar: Argon, atomic number 18, atomic weight 39.95
 # alpha ~7.2, b0 small -> 0.02
-# alat: 1.9 Å, esub: 0.07 eV, asub: 2.0
+# alat: 1.9 A, esub: 0.07 eV, asub: 2.0
 'Ar'         'dim'   1       18        39.95
 7.20         7.20    7.2     7.2       0.0     1.90    0.07    2.00
 1.0          0.02    0.00    0.00      1      -5
 
 # Kr: Krypton, atomic number 36, atomic weight 83.80
 # alpha ~7.3, b0 small -> 0.02
-# alat: 2.0 Å, esub: 0.09 eV, asub: 2.5
+# alat: 2.0 A, esub: 0.09 eV, asub: 2.5
 'Kr'         'dim'   1       36        83.80
 7.30         7.30    7.3     7.3       0.0     2.00    0.09    2.50
 1.0          0.02    0.00    0.00      1      -5
 
 # Xe: Xenon, atomic number 54, atomic weight 131.29
 # alpha ~7.8, b0 small -> 0.02
-# alat: 2.2 Å, esub: 0.12 eV, asub: 3.0
+# alat: 2.2 A, esub: 0.12 eV, asub: 3.0
 'Xe'         'dim'   1       54        131.29
 7.80         7.80    7.8     7.8       0.0     2.20    0.12    3.00
 1.0          0.02    0.00    0.00      1      -5
@@ -411,7 +411,7 @@
 # Keeps key physical values (alpha, alat, esub) and main b0 term.
 # Angular dependence reduced; better than Lennard-Jones for covalent bonding.
 # B: Boron, atomic number 5, atomic weight 10.81
-# alpha from 2NN fit (~5.4), alat=2.6304 Å, esub=5.734 eV, asub=1.84
+# alpha from 2NN fit (~5.4), alat=2.6304 A, esub=5.734 eV, asub=1.84
 # b0 kept from 2NN dominant term, b1–b3 simplified
 # t1 increased for covalent character
 'B'          'dim'   1       5         10.81
