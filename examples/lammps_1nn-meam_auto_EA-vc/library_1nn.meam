@@ -401,3 +401,10 @@
 7.80         7.80    7.8     7.8       0.0     2.20    0.12    3.00
 1.0          0.02    0.00    0.00      1      -5
 
+# B: Boron, atomic number 5, atomic weight 10.81
+# alpha from 2NN fit (~5.4), alat=2.6304 Å, esub=5.734 eV, asub=1.84
+# b0 kept from 2NN dominant term, b1–b3 simplified
+# t1 increased for covalent character
+'B'          'dim'   1       5         10.81
+5.40         5.40    5.4     5.4       0.0     2.6304  5.734   1.84
+1.0          0.42    0.02    0.00      1      -5
