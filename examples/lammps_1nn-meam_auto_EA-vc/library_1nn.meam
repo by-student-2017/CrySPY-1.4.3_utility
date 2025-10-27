@@ -282,7 +282,9 @@
 8.16765      7.18    1.77    1.25      6.57    3.579844  0.67  1.09
 1.0          4.63    4.51   -3.52      1.0     3
 
-# results_1NN-MEAM_rc55_augt1-0
+# The following is a fit performed previously with "augt = 0".
+# The cases "augt1 = 0" and "augt1 = 1" (LAMMPS default) are only slightly different, 
+# not to a degree that would be cause for concern.
 'P'          'sc'    6       15        30.974
 5.345223     5.77    2.71    4.92      2.68    2.447489  3.286  1.83
 1.0          1.14    2.32    2.24      1.0     3
@@ -338,4 +340,5 @@
 'Cd'         'hcp'   12      48        112.41
 6.880545     6.03    8.62    2.58      2.91    3.007846  1.16  1.20
 1.0         12.72    6.44   -1.61      1.0     3
+
 
