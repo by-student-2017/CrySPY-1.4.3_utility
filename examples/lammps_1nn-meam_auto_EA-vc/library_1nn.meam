@@ -341,12 +341,62 @@
 6.880545     6.03    8.62    2.58      2.91    3.007846  1.16  1.20
 1.0         12.72    6.44   -1.61      1.0     3
 
-# This is a dummy
+# F: Fluorine, atomic number 9, atomic weight 18.998
+# alpha = sqrt(K/esub)*re, K≈8 eV/Å, esub=1.171 eV, re=1.418 Å → alpha≈3.5
+# b0: Strong directional bonding, set to 0.07 (similar to O)
+# alat: F2 bond length = 1.418 Å
+# esub: Experimental sublimation energy = 1.171 eV
+# asub: Slightly smaller than O, set to 3.0
+# t0–t3: Angular dependence is weak, same as H, N, O
+# rozero=1, ibar=-5 are standard MEAM settings
 'F'          'dim'   1       9         18.998
 3.50         3.50    3.5     3.5       0.0     1.418   1.171   3.00
 1.0          0.07    0.00    0.00      1      -5
 
+# Cl: Chlorine, atomic number 17, atomic weight 35.45
+# alpha = sqrt(K/esub)*re, K≈4 eV/Å, esub=6.343 eV, re=1.891 Å → alpha≈1.6
+# b0: Weak directional bonding, set to 0.04
+# alat: Cl2 bond length = 1.891 Å
+# esub: Experimental sublimation energy = 6.343 eV
+# asub: Larger value, set to 4.5
+# t0–t3: Angular dependence is weak, standard values
+# rozero=1, ibar=-5 are standard MEAM settings
 'Cl'         'dim'   1       17        35.45
 1.60         1.60    1.6     1.6       0.0     1.891   6.343   4.50
 1.0          0.04    0.00    0.00      1      -5
 
+# He: Helium, atomic number 2, atomic weight 4.0026
+# alpha = sqrt(K/esub)*re → ~3.0
+# b0: negligible angular dependence → 0.01
+# alat: ~1.2 Å, esub: 0.08 eV, asub: 1.0 (small)
+'He'         'dim'   1       2         4.0026
+3.00         3.00    3.0     3.0       0.0     1.20    0.08    1.00
+1.0          0.01    0.00    0.00      1      -5
+
+# Ne: Neon, atomic number 10, atomic weight 20.18
+# alpha ~3.5, b0 small → 0.02
+# alat: 1.6 Å, esub: 0.17 eV, asub: 1.5
+'Ne'         'dim'   1       10        20.18
+3.50         3.50    3.5     3.5       0.0     1.60    0.17    1.50
+1.0          0.02    0.00    0.00      1      -5
+
+# Ar: Argon, atomic number 18, atomic weight 39.95
+# alpha ~7.2, b0 small → 0.02
+# alat: 1.9 Å, esub: 0.07 eV, asub: 2.0
+'Ar'         'dim'   1       18        39.95
+7.20         7.20    7.2     7.2       0.0     1.90    0.07    2.00
+1.0          0.02    0.00    0.00      1      -5
+
+# Kr: Krypton, atomic number 36, atomic weight 83.80
+# alpha ~7.3, b0 small → 0.02
+# alat: 2.0 Å, esub: 0.09 eV, asub: 2.5
+'Kr'         'dim'   1       36        83.80
+7.30         7.30    7.3     7.3       0.0     2.00    0.09    2.50
+1.0          0.02    0.00    0.00      1      -5
+
+# Xe: Xenon, atomic number 54, atomic weight 131.29
+# alpha ~7.8, b0 small → 0.02
+# alat: 2.2 Å, esub: 0.12 eV, asub: 3.0
+'Xe'         'dim'   1       54        131.29
+7.80         7.80    7.8     7.8       0.0     2.20    0.12    3.00
+1.0          0.02    0.00    0.00      1      -5
