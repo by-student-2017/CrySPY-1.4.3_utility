@@ -2,6 +2,7 @@ import re
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import griddata
+from matplotlib.path import Path
 
 cryspy_in_file = 'cryspy.in'
 cryspy_rslt_file = 'data/cryspy_rslt'
@@ -34,7 +35,6 @@ def read_rslt(file_path):
     with open(file_path) as f:
         lines = f.readlines()
 
-    # ヘッダー行を探す
     try:
         headers = next(line.strip().split() for line in lines if line.strip().startswith("Gen"))
     except StopIteration:
@@ -61,7 +61,7 @@ def read_rslt(file_path):
             spg_syms.append(parts[3])
             spg_nums_opt.append(parts[4])
             spg_syms_opt.append(parts[5])
-            energies.append(float(parts[6]))
+            energies.append(float(parts[6]) if parts[6] != 'NaN' else np.nan)
             magmoms.append(parts[-2])
             opts.append(parts[-1])
             compositions.append(comp_nums)
@@ -86,22 +86,35 @@ def barycentric_to_cartesian(a, b, c):
     return b + c / 2, (np.sqrt(3) / 2) * c
 
 xy_points = [barycentric_to_cartesian(*pc) for pc in pseudo_compositions]
-xs, ys = zip(*xy_points)
+
+# --- NaN 除外 ---
+energies = np.array(energies)
+xy_points = np.array(xy_points)
+valid_mask = ~np.isnan(energies)
+xy_points_valid = xy_points[valid_mask]
+energies_valid = energies[valid_mask]
 
 # --- 補間 ---
 grid_x, grid_y = np.meshgrid(np.linspace(0, 1, 200), np.linspace(0, np.sqrt(3)/2, 200))
-grid_z = griddata(xy_points, energies, (grid_x, grid_y), method='linear')
+grid_z = griddata(xy_points_valid, energies_valid, (grid_x, grid_y), method='linear')
+
+# --- 三角形外をマスク ---
+triangle = np.array([[0, 0], [1, 0], [0.5, np.sqrt(3)/2]])
+path = Path(triangle)
+mask = ~path.contains_points(np.c_[grid_x.ravel(), grid_y.ravel()])
+grid_z = grid_z.copy()
+grid_z.ravel()[mask] = np.nan
 
 # --- プロット ---
 fig, ax = plt.subplots(figsize=(8, 7))
 contour = ax.contourf(grid_x, grid_y, grid_z, levels=20, cmap='coolwarm', alpha=0.8)
 cbar = plt.colorbar(contour, ax=ax)
-cbar.set_label("Ef_eV_atom")
+cbar.set_label("Formation energy, Ef (eV/atom)")
 
-ax.scatter(xs, ys, c=energies, cmap='coolwarm', s=60, edgecolors='white', linewidths=1,
-           vmin=min(energies), vmax=max(energies))
+ax.scatter(xy_points_valid[:, 0], xy_points_valid[:, 1], c=energies_valid, cmap='coolwarm', s=60,
+           edgecolors='white', linewidths=1, vmin=min(energies_valid), vmax=max(energies_valid))
 
-triangle = np.array([[0, 0], [1, 0], [0.5, np.sqrt(3)/2]])
+# 三角形枠
 ax.plot(*triangle[[0, 1]].T, 'k-')
 ax.plot(*triangle[[1, 2]].T, 'k-')
 ax.plot(*triangle[[2, 0]].T, 'k-')
@@ -125,7 +138,7 @@ def on_hover(event):
     if event.inaxes != ax:
         return
     closest_text, min_dist = "", float('inf')
-    for i, (x, y) in enumerate(xy_points):
+    for i, (x, y) in enumerate(xy_points_valid):
         xp, yp = ax.transData.transform((x, y))
         dist = np.hypot(event.x - xp, event.y - yp)
         if dist < min_dist and dist < 15:
@@ -134,7 +147,7 @@ def on_hover(event):
             if fixed_info:
                 comp_text += f" | Fixed: {', '.join(fixed_info)}"
             closest_text = (
-                f"ID: {ids[i]}\nGen: {gens[i]}\nEf: {energies[i]:.3f} eV/atom\nComp: {comp_text}\n"
+                f"ID: {ids[i]}\nGen: {gens[i]}\nEf: {energies_valid[i]:.3f} eV/atom\nComp: {comp_text}\n"
                 f"Ini_Sym: {spg_nums[i]} ({spg_syms[i]})\n"
                 f"Opt_sym: {spg_nums_opt[i]} ({spg_syms_opt[i]})\n"
                 f"Magmom: {magmoms[i]}\nOpt: {opts[i]}"
