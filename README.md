@@ -242,8 +242,8 @@ pip freeze > requirements.txt
 - Ultra-large: n_pop = 4000 (rarely necessary, only for special cases)
 - For phase diagram studies, n_pop = 2000 with maxgen_ea = 5–10 is generally sufficient to claim thorough exploration in a publication.
 ### ul_nat（Upper Limit）
-- Small-scale exploration: ul_nat ≈ 6-12 (lightweight)
-- Phase diagram purpose: ul_nat ≈ 12-24 (ensuring diversity)
+- Small-scale exploration: ul_nat ~ 6-12 (lightweight)
+- Phase diagram purpose: ul_nat ~ 12-24 (ensuring diversity)
 - Extra large scale: ul_nat > 24 (mostly unnecessary, special cases only)
 - For discussing phase diagrams, ul_nat of 12-24 is appropriate.
 #### Template
@@ -263,7 +263,7 @@ n_elite = 2
 n_fittest = 10
 slct_func = TNM
 t_size = 2
-maxgen_ea = 5
+maxgen_ea = 10
 ```
 - n_pop 200 case
 ```
@@ -277,11 +277,11 @@ n_add = 20
 n_elim = 10
 n_subs = 10
 target = random
-n_elite = 2
+n_elite = 3
 n_fittest = 10
 slct_func = TNM
 t_size = 2
-maxgen_ea = 5
+maxgen_ea = 10
 ```
 - n_pop 500 case
 ```
@@ -295,11 +295,11 @@ n_add = 50
 n_elim = 25
 n_subs = 25
 target = random
-n_elite = 2
-n_fittest = 10
+n_elite = 4
+n_fittest = 15
 slct_func = TNM
 t_size = 2
-maxgen_ea = 5
+maxgen_ea = 10
 ```
 - n_pop 700 case
 ```
@@ -313,11 +313,11 @@ n_add = 70
 n_elim = 35
 n_subs = 35
 target = random
-n_elite = 2
-n_fittest = 10
+n_elite = 5
+n_fittest = 20
 slct_func = TNM
 t_size = 2
-maxgen_ea = 5
+maxgen_ea = 10
 ```
 - n_pop 1000 case
 ```
@@ -331,29 +331,29 @@ n_add = 100
 n_elim = 50
 n_subs = 50
 target = random
-n_elite = 2
-n_fittest = 10
+n_elite = 5
+n_fittest = 20
 slct_func = TNM
 t_size = 2
-maxgen_ea = 5
+maxgen_ea = 10
 ```
-- n_pop 2000 case
+- n_pop 1400 case
 ```
 [EA]
-n_pop = 2000
-n_crsov = 600
-n_perm = 200
-n_strain = 200
-n_rand = 600
-n_add = 200
-n_elim = 100
-n_subs = 100
+n_pop = 1400
+n_crsov = 210
+n_perm = 70
+n_strain = 70
+n_rand = 210
+n_add = 70
+n_elim = 35
+n_subs = 35
 target = random
 n_elite = 2
 n_fittest = 10
 slct_func = TNM
 t_size = 2
-maxgen_ea = 5
+maxgen_ea = 10
 ```
 
 ---
