@@ -15,7 +15,7 @@
 - For pressure application at 0 K, it is also a good idea to use QE or the old DFTB+. It is also a good method to find candidates from there and examine them in more detail using MD etc.
 - When applying temperature and pressure, the diagram will only be accurate if the energy and end_point values in element_data_*.txt are adjusted to reflect the crystal structure at those conditions. If your goal is simply to highlight differences in stable structures, you can make the diagram easier to read by setting these values to zero or to a slightly positive number.
 
-## How to use "plot3d.py", "plot3dn.py", "pplot_v1.py", or "plot1d.py"
+## How to use "plot3d.py", "plot3dn.py", "pplot_v1.py", "pplotc.py" or "plot1d.py"
 - It is designed to correspond to a four-element system. The figure can be obtained by the following command.
 ```
 python3 plot3d.py
@@ -27,7 +27,11 @@ python3 plot3dn.py
 ```
 python3 pplot_v1.py
 ```
-- Use "cryspy_rslt" obtained in any calculation to plot a diagram of Structure ID vs. Energy (eV/atom).
+- A contour plot showing a pseudo-ternary system when the number of atoms is fixed in a multi-component system, with the remaining components consisting of three elements. The data is obtained from "data/cryspy_rslt".
+```
+python3 pplotc.py
+```
+- Use "data/cryspy_rslt" obtained in any calculation to plot a diagram of Structure ID vs. Energy (eV/atom).
 ```
 python3 plot1d.py
 ```
