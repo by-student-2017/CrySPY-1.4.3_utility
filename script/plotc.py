@@ -27,28 +27,79 @@ def extract_elements_and_fixed(file_path):
 elements, fixed_info = extract_elements_and_fixed(cryspy_in_file)
 fixed_elements = [fi.split('=')[0] for fi in fixed_info]
 
-# --- 組成とエネルギー ---
-def read_rslt(file_path):
-    compositions, energies = [], []
-    pattern_comp = re.compile(r'\(([\d,\s]+)\)')
-    with open(file_path, 'r') as f:
-        for line in f:
-            line = line.strip()
-            if not line or line.startswith('Gen'):
-                continue
-            parts = line.split()
-            try:
-                energy = float(parts[6])
-            except (ValueError, IndexError):
-                continue
-            match = pattern_comp.search(line)
-            if match:
-                nums = tuple(map(int, match.group(1).split(',')))
-                compositions.append(nums)
-                energies.append(energy)
-    return compositions, energies
+# --- 組成・エネルギー・追加情報 ---
+pattern_comp = re.compile(r'\(([\d,\s]+)\)')
 
-compositions, energies = read_rslt(cryspy_rslt_file)
+def read_rslt(file_path):
+    ids, gens, compositions, energies = [], [], [], []
+    spg_nums, spg_syms, spg_nums_opt, spg_syms_opt = [], [], [], []
+    magmoms, opts = [], []
+
+    header_map = {}
+    with open(file_path, 'r') as f:
+        lines = f.readlines()
+
+    # ヘッダー行を解析
+    for line in lines:
+        if line.strip().startswith("Gen"):
+            headers = line.strip().split()
+            header_map = {name: idx for idx, name in enumerate(headers)}
+            break
+
+    # CrySPY形式の必須列
+    required_cols = ["Gen", "Spg_num", "Spg_sym", "Spg_num_opt", "Spg_sym_opt", "Ef_eV_atom", "Magmom", "Opt"]
+    for col in required_cols:
+        if col not in header_map:
+            raise ValueError(f"Missing column: {col}")
+
+    # データ行を処理
+    for line in lines:
+        line = line.strip()
+        if not line or line.startswith("Gen"):
+            continue
+
+        # 組成抽出
+        match = pattern_comp.search(line)
+        comp_nums = ()
+        if match:
+            comp_nums = tuple(map(int, match.group(1).split(',')))
+            line_clean = pattern_comp.sub('', line).strip()
+        else:
+            line_clean = line
+
+        parts = line_clean.split()
+        if len(parts) < len(header_map):
+            continue
+
+        try:
+            # IDはCrySPYの最初の列（0,1,2...）を使用
+            id_val = parts[0]
+            gen = parts[1]
+            spg_num = parts[2]
+            spg_sym = parts[3]
+            spg_num_opt = parts[4]
+            spg_sym_opt = parts[5]
+            energy = float(parts[6])
+            magmom = parts[-2]
+            opt = parts[-1]
+        except (ValueError, IndexError):
+            continue
+
+        ids.append(id_val)
+        gens.append(gen)
+        compositions.append(comp_nums)
+        energies.append(energy)
+        spg_nums.append(spg_num)
+        spg_syms.append(spg_sym)
+        spg_nums_opt.append(spg_num_opt)
+        spg_syms_opt.append(spg_sym_opt)
+        magmoms.append(magmom)
+        opts.append(opt)
+
+    return ids, gens, compositions, energies, spg_nums, spg_syms, spg_nums_opt, spg_syms_opt, magmoms, opts
+
+(ids, gens, compositions, energies, spg_nums, spg_syms,
+ spg_nums_opt, spg_syms_opt, magmoms, opts) = read_rslt(cryspy_rslt_file)
 
 # --- 擬似三元組成 ---
 pseudo_indices = [i for i, el in enumerate(elements) if el not in fixed_elements]
@@ -118,7 +169,12 @@ def on_hover(event):
             comp_text = ', '.join(f"{el}={count}" for el, count in zip(elements, compositions[i]))
             if fixed_info:
                 comp_text += f" | Fixed: {', '.join(fixed_info)}"
-            closest_text = f"ID: {i+1}\nEf: {energies[i]:.3f} eV/atom\nComp: {comp_text}"
+            closest_text = (
+                f"ID: {ids[i]}\nGen: {gens[i]}\nEf: {energies[i]:.3f} eV/atom\nComp: {comp_text}\n"
+                f"Ini_Sym: {spg_nums[i]} ({spg_syms[i]})\n"
+                f"Opt_sym: {spg_nums_opt[i]} ({spg_syms_opt[i]})\n"
+                f"Magmom: {magmoms[i]}\nOpt: {opts[i]}"
+            )
 
     annot.set_text(closest_text)
     fig.canvas.draw_idle()
