@@ -428,6 +428,24 @@ slct_func = TNM
 t_size = 2
 maxgen_ea = 5
 ```
+- n_pop 1400 case
+```
+[EA]
+n_pop = 1400
+n_crsov = 200
+n_perm = 70
+n_strain = 70
+n_rand = 1000
+n_add = 30
+n_elim = 20
+n_subs = 10
+target = random
+n_elite = 3
+n_fittest = 20
+slct_func = TNM
+t_size = 2
+maxgen_ea = 5
+```
 
 ---
 
