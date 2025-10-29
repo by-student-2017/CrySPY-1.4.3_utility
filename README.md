@@ -355,18 +355,18 @@ slct_func = TNM
 t_size = 2
 maxgen_ea = 10
 ```
-#### TemplateExploration-focused)
+#### Template (Exploration-focused: phase diagram)
 - n_pop 200 case
 ```
 [EA]
 n_pop = 200
-n_crsov = 60
-n_perm = 20
-n_strain = 20
-n_rand = 80
-n_add = 10
-n_elim = 5
-n_subs = 5
+n_crsov = 35
+n_perm = 10
+n_strain = 10
+n_rand = 135
+n_add = 5
+n_elim = 3
+n_subs = 2
 target = random
 n_elite = 3
 n_fittest = 10
@@ -378,55 +378,55 @@ maxgen_ea = 10
 ```
 [EA]
 n_pop = 500
-n_crsov = 150
-n_perm = 50
-n_strain = 50
-n_rand = 200
-n_add = 25
-n_elim = 15
-n_subs = 10
+n_crsov = 100
+n_perm = 40
+n_strain = 40
+n_rand = 300
+n_add = 10
+n_elim = 5
+n_subs = 5
 target = random
-n_elite = 5
-n_fittest = 20
+n_elite = 3
+n_fittest = 10
 slct_func = TNM
 t_size = 2
-maxgen_ea = 10
+maxgen_ea = 5
 ```
 - n_pop 700 case
 ```
 [EA]
 n_pop = 700
-n_crsov = 175
-n_perm = 50
-n_strain = 50
-n_rand = 350
-n_add = 50
-n_elim = 25
-n_subs = 25
+n_crsov = 100
+n_perm = 30
+n_strain = 30
+n_rand = 500
+n_add = 20
+n_elim = 10
+n_subs = 10
 target = random
-n_elite = 5
+n_elite = 3
 n_fittest = 20
 slct_func = TNM
 t_size = 2
-maxgen_ea = 10
+maxgen_ea = 5
 ```
 - n_pop 1000 case
 ```
 [EA]
 n_pop = 1000
-n_crsov = 300
-n_perm = 100
-n_strain = 100
-n_rand = 400
-n_add = 50
-n_elim = 25
-n_subs = 25
+n_crsov = 150
+n_perm = 50
+n_strain = 50
+n_rand = 700
+n_add = 25
+n_elim = 15
+n_subs = 10
 target = random
-n_elite = 5
+n_elite = 3
 n_fittest = 20
 slct_func = TNM
 t_size = 2
-maxgen_ea = 10
+maxgen_ea = 5
 ```
 
 ---
