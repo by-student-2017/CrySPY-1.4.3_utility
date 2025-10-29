@@ -360,13 +360,13 @@ maxgen_ea = 10
 ```
 [EA]
 n_pop = 200
-n_crsov = 50
-n_perm = 20
-n_strain = 20
-n_rand = 100
+n_crsov = 40
+n_perm = 15
+n_strain = 15
+n_rand = 90
 n_add = 10
-n_elim = 5
-n_subs = 20
+n_elim = 15
+n_subs = 15
 target = random
 n_elite = 5
 n_fittest = 20
@@ -378,13 +378,13 @@ maxgen_ea = 10
 ```
 [EA]
 n_pop = 500
-n_crsov = 150
-n_perm = 60
-n_strain = 60
+n_crsov = 130
+n_perm = 50
+n_strain = 50
 n_rand = 200
-n_add = 30
-n_elim = 10
-n_subs = 30
+n_add = 25
+n_elim = 20
+n_subs = 25
 target = random
 n_elite = 5
 n_fittest = 30
@@ -396,13 +396,13 @@ maxgen_ea = 5
 ```
 [EA]
 n_pop = 700
-n_crsov = 150
-n_perm = 50
-n_strain = 50
-n_rand = 400
-n_add = 30
-n_elim = 10
-n_subs = 40
+n_crsov = 130
+n_perm = 45
+n_strain = 45
+n_rand = 390
+n_add = 25
+n_elim = 30
+n_subs = 35
 target = random
 n_elite = 5
 n_fittest = 30
@@ -414,13 +414,13 @@ maxgen_ea = 5
 ```
 [EA]
 n_pop = 1000
-n_crsov = 200
-n_perm = 80
-n_strain = 80
-n_rand = 600
-n_add = 40
-n_elim = 20
-n_subs = 50
+n_crsov = 180
+n_perm = 70
+n_strain = 70
+n_rand = 580
+n_add = 30
+n_elim = 35
+n_subs = 35
 target = random
 n_elite = 5
 n_fittest = 40
