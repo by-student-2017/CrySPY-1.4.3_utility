@@ -341,16 +341,89 @@ maxgen_ea = 10
 ```
 [EA]
 n_pop = 1400
-n_crsov = 210
-n_perm = 70
-n_strain = 70
-n_rand = 210
-n_add = 70
-n_elim = 35
-n_subs = 35
+n_crsov = 420
+n_perm = 140
+n_strain = 140
+n_rand = 420
+n_add = 140
+n_elim = 70
+n_subs = 70
 target = random
-n_elite = 2
+n_elite = 5
+n_fittest = 20
+slct_func = TNM
+t_size = 2
+maxgen_ea = 10
+```
+#### TemplateExploration-focused)
+- n_pop 200 case
+```
+[EA]
+n_pop = 200
+n_crsov = 60
+n_perm = 20
+n_strain = 20
+n_rand = 80
+n_add = 10
+n_elim = 5
+n_subs = 5
+target = random
+n_elite = 3
 n_fittest = 10
+slct_func = TNM
+t_size = 2
+maxgen_ea = 10
+```
+- n_pop 500 case
+```
+[EA]
+n_pop = 500
+n_crsov = 150
+n_perm = 50
+n_strain = 50
+n_rand = 200
+n_add = 25
+n_elim = 15
+n_subs = 10
+target = random
+n_elite = 5
+n_fittest = 20
+slct_func = TNM
+t_size = 2
+maxgen_ea = 10
+```
+- n_pop 700 case
+```
+[EA]
+n_pop = 700
+n_crsov = 175
+n_perm = 50
+n_strain = 50
+n_rand = 350
+n_add = 50
+n_elim = 25
+n_subs = 25
+target = random
+n_elite = 5
+n_fittest = 20
+slct_func = TNM
+t_size = 2
+maxgen_ea = 10
+```
+- n_pop 1000 case
+```
+[EA]
+n_pop = 1000
+n_crsov = 300
+n_perm = 100
+n_strain = 100
+n_rand = 400
+n_add = 50
+n_elim = 25
+n_subs = 25
+target = random
+n_elite = 5
+n_fittest = 20
 slct_func = TNM
 t_size = 2
 maxgen_ea = 10
