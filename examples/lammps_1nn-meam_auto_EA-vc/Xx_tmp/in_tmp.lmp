@@ -15,7 +15,10 @@ variable elem string "Cu Ag Au Pt"
 # Setup force field
 # If you use a potential file, you should write the file name in cryspy.in like "lammps_potential = SiO.tersoff"
 pair_style meam
-pair_coeff * * ./../library_1nn.meam ${elem} NULL ${elem}
+#pair_coeff * * ./../../library_1nn.meam ${elem} NULL ${elem}
+pair_coeff * * ./../../library_1nn.meam ${elem} ./../../1nn.meam ${elem}
+# Some elements cannot be calculated if "rc" is not within an appropriate range. In such cases, 1nn.meam is used to set rc. 
+# I personally set rc = 5.5 for the elements I fitted, because it is applicable to a large number of elements.
 
 # Setup output
 thermo  1
